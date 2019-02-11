@@ -7,10 +7,10 @@ If the **[orient]** attribute exists: Use it to orient the copy/instance.
 //If the orient attributes does not exist:  
 Orient the copy/instance using **[N]** as the +Z axis and up as +Y axis.  
 If N does not exist, use **[v]** (velocity) if it exists.  
-If the **[rot]** attribute exists, apply it after the above.
-If **[pscale]** exists, use it to scale the to scale the copy/instance (multiplied by scale if it exists).
-If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).
-If **[trans]** exists, use it and P to move the copy/instance.
+If the **[rot]** attribute exists, apply it after the above.  
+If **[pscale]** exists, use it to scale the to scale the copy/instance (multiplied by scale if it exists).  
+If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
+If **[trans]** exists, use it and P to move the copy/instance.  
 
 ```cpp
 v@pivot // Local pivot point for the copy
