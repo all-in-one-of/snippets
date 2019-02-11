@@ -1,6 +1,10 @@
-T | lo | med | hi 
---- | --- | --- | ---
-pixel sample | 4x4 | - | 7x7
+T | lo | med | hi | production 
+--- | --- | --- | --- | ---
+pixel sample | 4x4 | - | 7x7 | 10x10
+Min/Max ray samples | - | 1/9 | - | 2/9
+Noise Levels | - | 0.1 | - | 0.08
+Sample Lock | - | ON | - | OFF
+Reflect/Refract/Diffuse lim | - | - | - | 4/4/1
 
 
 PBR       realistic light with multip dif bounces. (use rayytrace) and phis light www.sidefx.com/tutorials/mantra-pbr-sampling-render-settings-path-tracer-houdini-16-1/
@@ -10,7 +14,7 @@ GI - diffuse limits
 ```
 MICRO POLIGON  (divide to micro polis in buckets) (same as pbr but mp)
 ```css
- - rendering DICEING: shader quality 1 >>5
+ - rendering DICEING: shader quality 1 >> 5
  ```
 
 RAY TRACRING: reflection & refraction. (cleaner resoult because not diceing) its going pixel by pixelon image.
