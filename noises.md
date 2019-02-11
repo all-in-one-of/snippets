@@ -35,25 +35,21 @@ compute band-limited noise. This type of noise is ideal for shading
 **Sparse Convolution** // similar to Worley The noise returned is based on the weights of all of the closest points, with each point’s contribution based on a meta-ball like rolloff curve. That is, if the sample point is close to the sphere, its contribution will be greater. The bounds on the noise are roughly (-1.7, 1.7) when turbulence is 0  
 
 **Curl noise** // VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise  
-```
--
-```
-
-Costs:
-
-COST | NOISE | !
---- | --- | ---
-1.0 | Perlin Noise | (see Periodic  Noise operator)
-1.1 | Original Perlin Noise | (see Turbulent Noise operator)
-1.8 | Worley Noise | ff
-1.8 | Periodic Worley Noise | (see Periodic Worley Noise operator)
-1.9 | Voronoi Noise | (see Voronoi   Noise operator)
-2.1 | Sparse Convolution Noise | (see Turbulent Noise operator)
-2.3 | Alligator Noise | (see Turbulent Noise operator)
 
 
 
+COST | NOISE | ! | VEX
+--- | --- | --- | 
+1.0 | Perlin Noise | (see Periodic  Noise operator) | (string value "pnoise")
+1.1 | Original Perlin Noise | (see Turbulent Noise operator) | (string value "onoise")
+1.8 | Worley Noise | - | 
+1.8 | Periodic Worley Noise | (see Periodic Worley Noise operator) | 
+1.9 | Voronoi Noise | (see Voronoi   Noise operator) | 
+2.1 | Sparse Convolution Noise | (see Turbulent Noise operator) | (string value "snoise")
+2.3 | Alligator Noise | (see Turbulent Noise operator) | (string value "anoise")
 
+Simplex noise             (string value "xnoise")
+Zero Centered Perlin      (string value "correctnoise")
 
 SET RANDOM COLOR: 
 ```cpp
@@ -83,11 +79,4 @@ int p = ps[0];
 vector offset =  xnoise(v@P + set(p,p,p)) - {.5,.5,.5};
 v@P += offset;
 ```
-```
-Perlin noise              (string value "pnoise")
-Original Perlin noise     (string value "onoise")
-Sparse Convolution noise  (string value "snoise")
-Alligator noise           (string value "anoise")
-Simplex noise             (string value "xnoise")
-Zero Centered Perlin      (string value "correctnoise")
-```
+
