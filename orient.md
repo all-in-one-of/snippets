@@ -11,6 +11,8 @@ If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale i
 If **[trans]** exists, use it and P to move the copy/instance.  
 
 ```cpp
+
+
 v@pivot // Local pivot point for the copy
 3@ or 4@transform  // Transformation matrix overriding everything except translations from P, pivot, and trans.
 p@orient // float4 (quaternion) //Orientation of the copy
@@ -19,10 +21,8 @@ v@v // Velocity of the copy (motion blur, and used as +Z axis of the copy if no 
 p@rot // float4 (quaternion) // Additional rotation (applied after the orientation attributes above)
 f@pscale  // Uniform scale
 v@scale // float3 // Non-uniform scale
-
-
-v@P //  Translation of the copy
 v@trans // Translation of the copy, in addition to P
+v@P //  Translation of the copy
 
 v@up // Up vector of the copy (+Y axis of the copy, if no orient)
 ```
