@@ -33,8 +33,7 @@ v@up // Up vector of the copy (+Y axis of the copy, if no orient)
 roatate matrix
 ```cpp
 int numbers[] = array(1,2,3,4);
-vector myVectorArray[] = v[]@myVectorArray; // this is how you can create local array variables and load array attributes into them
-
+vector myVectorArray[] = v[]@myVectorArray; // load array attributes into local var
 matrix3 m = ident(); // create a matrix
 vector axis = {0,0,1}; // rot axis
 float angle = radians(ch('amount')); // rot to radians 
