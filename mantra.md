@@ -1,3 +1,8 @@
+T | lo | med | hi 
+--- | --- | --- | ---
+pixel sample | 4x4 | - | 7x7
+
+
 PBR       realistic light with multip dif bounces. (use rayytrace) and phis light www.sidefx.com/tutorials/mantra-pbr-sampling-render-settings-path-tracer-houdini-16-1/
 ```css
 [mantra] rendering >  shadeing:  ENABLE ABSORBTIONA AND NESTED DIELECTRICS ~!!!! turn on !
