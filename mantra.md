@@ -2,21 +2,25 @@
 
 
 ### PBR      
-realistic light with multip dif bounces. (use rayytrace) and phis light www.sidefx.com/tutorials/mantra-pbr-sampling-render-settings-path-tracer-houdini-16-1/
+
 ```css
+realistic light with multip dif bounces. (use rayytrace) and phis light 
+www.sidefx.com/tutorials/mantra-pbr-sampling-render-settings-path-tracer-houdini-16-1/
 [mantra] rendering >  shadeing:  ENABLE ABSORBTIONA AND NESTED DIELECTRICS ~!!!! turn on !
 GI - diffuse limits
 ```
 
 ### MICRO POLIGON  
-(divide to micro polis in buckets) (same as pbr but mp)
+
 ```css
- - rendering DICEING: shader quality 1 >> 5
+-(divide to micro polis in buckets) (same as pbr but mp)
+- rendering DICEING: shader quality 1 >> 5
  ```
 
 ### RAY TRACRING: 
+```css
 reflection & refraction. (cleaner resoult because not diceing) its going pixel by pixelon image.
-
+```
 
 setting | lo | med | hi | production 
 --- | --- | --- | --- | ---
