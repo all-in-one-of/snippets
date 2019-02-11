@@ -34,6 +34,7 @@ v@up // Up vector of the copy (+Y axis of the copy, if no orient)
 
 roatate matrix
 ```cpp
+//quaternion rotation
 int numbers[] = array(1,2,3,4);
 vector myVectorArray[] = v[]@myVectorArray; // load array attributes into local var
 matrix3 m = ident(); // create a matrix
@@ -41,4 +42,13 @@ vector axis = {0,0,1}; // rot axis
 float angle = radians(ch('amount')); // rot to radians 
 rotate(m, angle, axis); // rotate the matrix
 @P *= m; // apply rotation
+```
+rotate packed geo:
+```cpp
+// run over poinwrangle with packed geo input:
+matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
+vector axis = normalize(chv("axis"));
+float angle = radians(chf("angle"));
+rotate(x, angle, axis);
+setprimintrinsic(0, "transform", @primnum, x, "set");
 ```
