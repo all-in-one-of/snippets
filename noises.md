@@ -14,33 +14,34 @@ alligator //
 hebyshev  // kwadratowy H16.5z
 manhattan // kwadratowy H16.5
 ```
-Anti Alias noise  - [0.5 - .5]  // (szybszy niz unified) compute band-limited noise.
+###Anti Alias noise  - [0.5 - .5]  
+// (szybszy niz unified) compute band-limited noise.
 ```
 compute band-limited noise. This type of noise is ideal for shading
 ```
-Unified noise [0-1]  // normal > normalize > N  // wiecej opcji niz AA   (Presents a unified interface and uniform output range for all the noise types available in VEX.)
+###Unified noise [0-1]  
+// normal > normalize > N  // wiecej opcji niz AA   (Presents a unified interface and uniform output range for all the noise types available in VEX.)
 ```
 -
 ```
 
 
 
-Turbulence noise compute turbulence with roughness and attenuation
-```cpp
-Original Perlin // similar to Perlin noise, but marginally less efficient in computation and with different characteristics. The bounds on the noise are roughly (-1, 1) when turbulence is 0.
-Perlin  // sums octaves of a noise with range about (0, 1), resulting in a non-zero centered result. Thus the zero centered perlin better matches the ranges of the other noise fields.
-Simplex // close to Perlin noise, except with the samples on a simplex mesh rather than a grid. This results in less grid artifacts. It also uses a higher order bspline to provide better derivatives
-Alligator  // similar to Worley It is currently not possible to simulate Alligator noise using the Worley functions, but it is possible to get a very similar 'look'. The bounds on the noise are roughly (0, 0.5) when turbulence is 0.
-Sparse Convolution // similar to Worley The noise returned is based on the weights of all of the closest points, with each point’s contribution based on a meta-ball like rolloff curve. That is, if the sample point is close to the sphere, its contribution will be greater. The bounds on the noise are roughly (-1.7, 1.7) when turbulence is 0
+###Turbulence noise compute turbulence with roughness and attenuation
 
-```
-Curl noise // VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise
+**Original Perlin **// similar to Perlin noise, but marginally less efficient in computation and with different characteristics. The bounds on the noise are roughly (-1, 1) when turbulence is 0.
+**Perlin ** // sums octaves of a noise with range about (0, 1), resulting in a non-zero centered result. Thus the zero centered perlin better matches the ranges of the other noise fields.
+**Simplex **// close to Perlin noise, except with the samples on a simplex mesh rather than a grid. This results in less grid artifacts. It also uses a higher order bspline to provide better derivatives
+**Alligator ** // similar to Worley It is currently not possible to simulate Alligator noise using the Worley functions, but it is possible to get a very similar 'look'. The bounds on the noise are roughly (0, 0.5) when turbulence is 0.
+**Sparse Convolution** // similar to Worley The noise returned is based on the weights of all of the closest points, with each point’s contribution based on a meta-ball like rolloff curve. That is, if the sample point is close to the sphere, its contribution will be greater. The bounds on the noise are roughly (-1.7, 1.7) when turbulence is 0
+
+** Curl noise ** // VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise
 ```
 -
 ```
 
 Costs:
-```
+
 1.0 | Perlin Noise             (see Periodic  Noise operator)
 1.1 | Original Perlin Noise    (see Turbulent Noise operator)
 1.8 | Worley Noise
@@ -48,7 +49,6 @@ Costs:
 1.9 | Voronoi Noise            (see Voronoi   Noise operator)
 2.1 | Sparse Convolution Noise (see Turbulent Noise operator)
 2.3 | Alligator Noise          (see Turbulent Noise operator)
-```
 
 
 
