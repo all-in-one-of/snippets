@@ -7,7 +7,7 @@ v@opinmut1_P // fetch attribute from second input
 f@foo // fetch first input foo
 f@opinput1_foo // fetch second input foo
 
-@opinput1_N - normal from 1st input (counting from 0)
+v@opinput1_N - normal from 1st input (counting from 0)
 point(1, @N, ptnum) - normal from 1st input (counting from 0)
 
 opinput(".", 0) //
