@@ -1,6 +1,7 @@
 Transform Q:
 
-If pivot exists, use it as the **[local transformation]** of the copy/instance.
+If pivot exists, use it as the **[local transformation]** of the copy/instance.--
+
 If the **[transform]** attribute exists: Use it as a 3×3/4×4 matrix to transform the copy/instance.
 //If the transform attribute does not exist:
 If the **[orient]** attribute exists: Use it to orient the copy/instance.
