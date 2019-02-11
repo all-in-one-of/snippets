@@ -1,10 +1,13 @@
 ```If you find yourself editing a lot of python code, you might like the joy of Sublime or vi(m) to edit your files. Place your python code in $HOME/houdiniXX.X/scripts/python, for example as "test.py", then inside Houdini, drop a python node and do as follows:
 import test
 reload(test)
-from test import *```
+from test import *
+```
 Group related:
 Create group:
-```myGrp=geo.createPrimGroup('name')```
+```
+myGrp=geo.createPrimGroup('name')
+```
 Add Point to group:
 ```point=geo.createPoint()
 myGrp=geo.createPointGroup('name')
