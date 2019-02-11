@@ -28,3 +28,16 @@ v@up // Up vector of the copy (+Y axis of the copy, if no orient)
 ```
 
  if it's 1, you can use the scale() vex function(edited)like: scale(3@transform, vector(@pscale));
+ 
+
+roatate matrix
+```cpp
+int numbers[] = array(1,2,3,4);
+vector myVectorArray[] = v[]@myVectorArray; // this is how you can create local array variables and load array attributes into them
+
+matrix3 m = ident(); // create a matrix
+vector axis = {0,0,1}; // rot axis
+float angle = radians(ch('amount')); // rot to radians 
+rotate(m, angle, axis); // rotate the matrix
+@P *= m; // apply rotation
+```
