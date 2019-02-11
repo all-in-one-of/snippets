@@ -1,5 +1,5 @@
 
-
+# RENDERING
 
 ### PBR      
 
@@ -42,3 +42,19 @@ Color Limit 4
 
 ### PHOTON MAP 
 generaiotn (Final gather) for final gather
+
+# SHADING
+
+SHADERS: prinviple shader vs classic shadre
+
+### Volume Shaders
+
+Render VOLUMES:  Voulme shader: base `volume shader` or `pyro shader`
+
+`pyro shader` shader use 2 field: smoke field: density /// color form temperature // intensity from heat ///
+only flame simple
+```for shader flame simple change to density evetywhere```
+fog simple
+```for fog same setup but fire intendity to 0 and increse smoke desn and attenuation color to get shift // (fit range in smoke field)
+smokefield shape > tagget range max 6
+color maping na ramp```
