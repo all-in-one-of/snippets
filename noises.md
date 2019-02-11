@@ -14,12 +14,12 @@ alligator //
 hebyshev  // kwadratowy H16.5z
 manhattan // kwadratowy H16.5
 ```
-###Anti Alias noise  - [0.5 - .5]  
+### Anti Alias noise  - [0.5 - .5]  
 // (szybszy niz unified) compute band-limited noise.
 ```
 compute band-limited noise. This type of noise is ideal for shading
 ```
-###Unified noise [0-1]  
+### Unified noise [0-1]  
 // normal > normalize > N  // wiecej opcji niz AA   (Presents a unified interface and uniform output range for all the noise types available in VEX.)
 ```
 -
@@ -27,7 +27,7 @@ compute band-limited noise. This type of noise is ideal for shading
 
 
 
-###Turbulence noise compute turbulence with roughness and attenuation
+### Turbulence noise compute turbulence with roughness and attenuation
 
 **Original Perlin **// similar to Perlin noise, but marginally less efficient in computation and with different characteristics. The bounds on the noise are roughly (-1, 1) when turbulence is 0.
 **Perlin ** // sums octaves of a noise with range about (0, 1), resulting in a non-zero centered result. Thus the zero centered perlin better matches the ranges of the other noise fields.
