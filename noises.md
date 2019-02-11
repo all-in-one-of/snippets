@@ -20,11 +20,6 @@ compute band-limited noise. This type of noise is ideal for shading
 
 ### Unified noise [0-1]  
 // normal > normalize > N  // wiecej opcji niz AA   (Presents a unified interface and uniform output range for all the noise types available in VEX.)
-```
--
-```
-
-
 
 ### Turbulence noise compute turbulence with roughness and attenuation
 
@@ -34,7 +29,8 @@ compute band-limited noise. This type of noise is ideal for shading
 **Alligator** // similar to Worley It is currently not possible to simulate Alligator noise using the Worley functions, but it is possible to get a very similar 'look'. The bounds on the noise are roughly (0, 0.5) when turbulence is 0.  
 **Sparse Convolution** // similar to Worley The noise returned is based on the weights of all of the closest points, with each point’s contribution based on a meta-ball like rolloff curve. That is, if the sample point is close to the sphere, its contribution will be greater. The bounds on the noise are roughly (-1.7, 1.7) when turbulence is 0  
 
-**Curl noise** // VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise  
+### Curl noise
+// VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise  
 
 ---
 
