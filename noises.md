@@ -39,12 +39,12 @@ compute band-limited noise. This type of noise is ideal for shading
 
 
 COST | NOISE | ! | VEX
---- | --- | --- | 
+--- | --- | --- | 2
 1.0 | Perlin Noise | (see Periodic  Noise operator) | (string value "pnoise")
 1.1 | Original Perlin Noise | (see Turbulent Noise operator) | (string value "onoise")
-1.8 | Worley Noise | - | 
-1.8 | Periodic Worley Noise | (see Periodic Worley Noise operator) | 
-1.9 | Voronoi Noise | (see Voronoi   Noise operator) | 
+1.8 | Worley Noise | - | 2
+1.8 | Periodic Worley Noise | (see Periodic Worley Noise operator) | 2
+1.9 | Voronoi Noise | (see Voronoi   Noise operator) | 2
 2.1 | Sparse Convolution Noise | (see Turbulent Noise operator) | (string value "snoise")
 2.3 | Alligator Noise | (see Turbulent Noise operator) | (string value "anoise")
 
