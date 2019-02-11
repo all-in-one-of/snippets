@@ -66,9 +66,11 @@ vector frequency = chv("Frequency");
 vector offset = chv("Offset");
 
 vector dir = curlnoise((@P * frequency) + offset);  //  perlin
-vector dir = curlxnoise((@P * frequency) + offset);  //  simplex Computes a divergence free vector field based on the cross product of the derivatives of two simplex noise functions.
+vector dir = curlxnoise((@P * frequency) + offset);  
+//  simplex Computes a divergence free vector field 
+based on the cross product of the derivatives of two 
+simplex noise functions.
 ```
-Simplex: noise is very close to Perlin noise, except with the samples on a simplex mesh rather than a grid. This results in less grid artifacts. It also uses a higher order bspline to provide better derivatives.
 ```
 int ps[] = pointprims(0,@ptnum);
 int p = ps[0];
