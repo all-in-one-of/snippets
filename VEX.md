@@ -18,24 +18,23 @@ int test(int a, b; string c) {
 
 ```
 [CONDITIONING]:
-
+```glsl
+if(b < a) {
+    s@out = "true";
+}
+else {
+    s@out = "false";
+}
+```
 ```glsl
 if(b < a)
     s@out = "true";
 else
     s@out = "false";
 ```
-```glsl
 
-if(b < a) {
-s@out = "true";
-}
-else {
-s@out = "false";
-}
-```
+ (condition) ? true : false // conditional (ternary) 
 ```cpp
-// (condition) ? true : false // conditional (ternary) 
 @Cd = (@ptnum <= 0 || @ptnum >= (@numpt-1)) ? 1 : 0;  // simple condition
 v@P.x *= v@P.x > 0 ? 0.5 : 1.5; //
 int condition = (@P.x > 0) ? 1 : 3; //
