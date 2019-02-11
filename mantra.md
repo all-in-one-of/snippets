@@ -1,10 +1,4 @@
-T | lo | med | hi | production 
---- | --- | --- | --- | ---
-pixel sample | 4x4 | - | 7x7 | 10x10
-Min/Max ray samples | - | 1/9 | - | 2/9
-Noise Levels | - | 0.1 | - | 0.08
-Sample Lock | - | ON | - | OFF
-Reflect/Refract/Diffuse lim | - | - | - | 4/4/1
+
 
 
 PBR       realistic light with multip dif bounces. (use rayytrace) and phis light www.sidefx.com/tutorials/mantra-pbr-sampling-render-settings-path-tracer-houdini-16-1/
@@ -18,19 +12,14 @@ MICRO POLIGON  (divide to micro polis in buckets) (same as pbr but mp)
  ```
 
 RAY TRACRING: reflection & refraction. (cleaner resoult because not diceing) its going pixel by pixelon image.
-```css
-[mantra] rendering > sampling  > pixel sample: mnoznik 
--prev 4x4 
--high 7x7
--production 10x10 (jak duzo ruchu albo fur)
 
-<Min/Max ray samples>
--normal 1/9
--production 2/9
 
-Noise Levels 
--normal: 0.1
--production: 0.08
+setting | lo | med | hi | production 
+--- | --- | --- | --- | ---
+pixel sample | 4x4 | - | 7x7 | 10x10 (fur or huge motion)
+Min/Max ray samples | - | 1/9 | - | 2/9
+Noise Levels | - | 0.1 | - | 0.08
+Sample Lock | - | ON | - | OFF
 
 [light] light: sample quality on lights more than 1 (on direct samples) now direct light is clean. 
 
