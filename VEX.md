@@ -57,7 +57,7 @@ for (int i=0; i<11; i++) {
 }
 i@valA = valA;
 ```
-```
+```cpp
 for(int i = 0; i < npoints(0); i++) { }; // for na wszystkich punktach:
 for (int i=0; i<@numpt; i++) { }; // for na wszystkich punktach:
 ```
@@ -69,7 +69,7 @@ foreach (int num; vertices) {
  @Cd = @P;
 }
 ```
-```
+```cpp
 // for convenient iterating over elements of an array we// can use foreach loop
 int nbs[] = nearpoints(0, v@P, .5);
 vector P_avg = {0};
@@ -79,7 +79,7 @@ foreach(int nb_ptnum; nbs) {
 P_avg /= len(nbs);
 v@P = P_avg;
 ```
-```
+```cpp
 // we can also stop the loop at any point by using "break" keyword
 int valB = 5;
 for (int i=0; i<13; i++) {
@@ -88,7 +88,7 @@ for (int i=0; i<13; i++) {
 }
 i@valB = valB;
 ```
-```
+```cpp
 // we can also use "continue" keyword to jump to the next loop iteration 
 // in this example we average point position with positions of neighbours 
 // which are above it in world space (their Y coordinate is larger)
