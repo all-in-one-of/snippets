@@ -3,17 +3,20 @@ Inputs:
 ```cpp
 @P // fetch point position from first imput
 v@opinmut1_P // fetch attribute from second input
+
 f@foo // fetch first input foo
 f@opinput1_foo // fetch second input foo
+
 @opinput1_N - normal from 1st input (counting from 0)
-point(1, @N, ptnum)
+point(1, @N, ptnum) - normal from 1st input (counting from 0)
 
 opinput(".", 0) //
-opname(".")  // operatorstring $OS  @OpInput1  
 opinputpath(".", 0)  // path of the node connected to the first input.
 opinputpath("../",0) // path of geo (level up)
 op:`opinputpath("../", 1)` // Second context geometry
 geoself()
+
+opname(".")  // operatorstring $OS  @OpInput1  
 ```
 
 GROUP AS ATTRIBUTE
