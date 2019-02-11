@@ -18,6 +18,13 @@ int test(int a, b; string c) {
 
 ```
 [CONDITIONING]:
+
+```glsl
+if(b < a)
+    s@out = "true";
+else
+    s@out = "false";
+```
 ```glsl
 
 if(b < a) {
@@ -26,46 +33,35 @@ s@out = "true";
 else {
 s@out = "false";
 }
-
+```
+```cpp
 // (condition) ? true : false // conditional (ternary) 
-
 @Cd = (@ptnum <= 0 || @ptnum >= (@numpt-1)) ? 1 : 0;  // simple condition
-
+v@P.x *= v@P.x > 0 ? 0.5 : 1.5; //
 int condition = (@P.x > 0) ? 1 : 3; //
-
-v@P.x *= v@P.x > 0 ? 0.5 : 1.5;     //
-
 // one statement condition can be written in the same line
 if (v@P.y < 0) v@Cd = {1,0,0}; 
 else if (v@P.x < 0)  v@Cd = {0,1,0}; 
 // or in any other line, since VEX is not indented language, 
 // but this works only for one operation, else-if block will end with the first semicolon
-
 //  use of logical AND: &&, OR: ||
 if (v@P.y < 0 && v@P.x > 0) v@P -= v@N * .3;    
 if (v@Cd == {0,0,1} || v@Cd == {1,0,0}) v@P += v@N * .4;   
 
-//if else short-ish (when there is only one line of code to execute
-if(b < a)
-    s@out = "true";
-else
-    s@out = "false";
-
 ```
-
-
 [FOR LOOP]
 ```cpp
-
-for(int i = 0; i < npoints(0); i++) { }; // for na wszystkich punktach:
-for (int i=0; i<@numpt; i++) { }; // for na wszystkich punktach:
-
 // VEX uses C-like syntax for for-loops
 int valA = 2;
 for (int i=0; i<11; i++) {
     valA *= 2;
 }
-i@valA = valA;```
+i@valA = valA;
+```
+```
+for(int i = 0; i < npoints(0); i++) { }; // for na wszystkich punktach:
+for (int i=0; i<@numpt; i++) { }; // for na wszystkich punktach:
+```
 [FOREACH LOOP] arrys
 ```cpp
 int vertices[] = pointvertices(0, 10);
@@ -73,30 +69,31 @@ foreach (int num; vertices) {
  @P %= num/10;
  @Cd = @P;
 }
-
+```
+```
 // for convenient iterating over elements of an array we// can use foreach loop
 int nbs[] = nearpoints(0, v@P, .5);
-
 vector P_avg = {0};
 foreach(int nb_ptnum; nbs) {
     P_avg += point(0, "P", nb_ptnum);
 }
 P_avg /= len(nbs);
-
 v@P = P_avg;
-
+```
+```
 // we can also stop the loop at any point by using "break" keyword
 int valB = 5;
 for (int i=0; i<13; i++) {
     valB *= 5;
     if (valB > 10000000) break;
 }
-
 i@valB = valB;
-
-// we can also use "continue" keyword to jump to the next loop iteration // in this example we average point position with positions of neighbours // which are above it in world space (their Y coordinate is larger)
+```
+```
+// we can also use "continue" keyword to jump to the next loop iteration 
+// in this example we average point position with positions of neighbours 
+// which are above it in world space (their Y coordinate is larger)
 int pts[] = neighbours(0, @ptnum);
-
 vector P_avg_upper = {0};
 int count = 0;
 
