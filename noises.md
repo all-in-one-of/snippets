@@ -1,4 +1,4 @@
-NOISE TYPES:
+# NOISE TYPES:
 ```cpp
 perlin // perlin moze miec artefakty 
 simplex  // faster
