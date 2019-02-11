@@ -12,7 +12,12 @@ i@ // int
 4@myMatrix4x4 = matrix( ident() );
 s@myString = "abc";
 ```
+```cpp
+s@shop_materialpath /*Path to a material. You can add this attribute to points using the Material surface node. When you instance an object onto a point with this attribute, the instanced object uses the given material.*/
+Not supported in the viewport.
 
+s@material_override /*A serialized Python dictionary mapping parameter names to values. You can add this attribute to points using the "override" controls on the Material surface node. When you instance an object onto a point with this attribute, the instanced object applies the given overrides to its material.*/
+```
 
 ATTRIBUTES: 
 Time:
