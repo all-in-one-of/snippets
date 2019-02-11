@@ -36,9 +36,9 @@ compute band-limited noise. This type of noise is ideal for shading
 
 **Curl noise** // VECTOR NOISE!!!  function for perlin or simplex This operator generates divergence-free 3D noise  
 
+---
 
-
-COST | NOISE | ! | VEX
+COST | NOISE | - | VEX
 --- | --- | --- | --- 
 1.0 | Perlin Noise | (see Periodic  Noise operator) | (string value "pnoise")
 1.1 | Original Perlin Noise | (see Turbulent Noise operator) | (string value "onoise")
@@ -47,8 +47,8 @@ COST | NOISE | ! | VEX
 1.9 | Voronoi Noise | (see Voronoi   Noise operator) | -
 2.1 | Sparse Convolution Noise | (see Turbulent Noise operator) | (string value "snoise")
 2.3 | Alligator Noise | (see Turbulent Noise operator) | (string value "anoise")
-- | Simplex noise | - | (string value "xnoise")
-- |Zero Centered Perlin | - | (string value "correctnoise")
+x | Simplex noise | - | (string value "xnoise")
+x |Zero Centered Perlin | - | (string value "correctnoise")
 
            
 SET RANDOM COLOR: 
