@@ -94,13 +94,3 @@ f@rough // Roughness
 f@fresnel // Fresnel coefficient
 f@shadow // Shadow intensity
 f@sbias // Shadow bias```
-COPY TO POINT SOP```cpp
-v@P //   Instance Position
-f@pscale  //  Uniform scale
-v@scale  //  Non-Uniform scale
-v@N //   Normal (+Z axis of the copy, if no orient)
-v@up  //  Up-Vector. Used with @N to orient inst(+Y axis of the copy, if no orient)
-v@orient  //  Quaternion defining the rotation of a point/particle/instance
-v@rot // Quaternion defining additional rotation (applied after @orient)
-v@v  //  Velocity (motion blur, also used as +Z axis of the cop
-```
