@@ -12,21 +12,22 @@ If **[pscale]** exists, use it to scale the to scale the copy/instance (multipli
 If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
 If **[trans]** exists, use it and P to move the copy/instance.  
 
+
+
 ```cpp
 
-
 v@pivot // Local pivot point for the copy
-3@ or 4@transform  // Transformation matrix overriding everything except translations from P, pivot, and trans.
+3@ or 4@transform  // Transformmatrix overriding everything except translations from [P], [pivot], and [trans]
 p@orient // float4 (quaternion) //Orientation of the copy
 v@N // Normal (+Z axis of the copy, if no orient)
+v@up // Up vector of the copy use with @N to orient inst (+Y axis of the copy, if no orient)
 v@v // Velocity of the copy (motion blur, and used as +Z axis of the copy if no orient or N)
-p@rot // float4 (quaternion) // Additional rotation (applied after the orientation attributes above)
-f@pscale  // Uniform scale
+p@rot // float4 (quaternion) // Additional Q rotation (applied after the orientation attributes above)
+f@pscale  // Uniform scale 
 v@scale // float3 // Non-uniform scale
 v@trans // Translation of the copy, in addition to P
-v@P //  Translation of the copy
+v@P //  Translation of the copy  //   Instance Position
 
-v@up // Up vector of the copy (+Y axis of the copy, if no orient)
 ```
 
  if it's 1, you can use the scale() vex function(edited)like: scale(3@transform, vector(@pscale));
