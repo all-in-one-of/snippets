@@ -32,3 +32,24 @@ vector min, max;
 getbbox(min, max);
 vector center = (min+max)/2;
 ```
+
+
+### Conversion
+Conversion:
+
+`atof()`  
+`atoi()`  
+
+`degrees ()`  
+`eulertoquaternion()`  
+`qconvert()`  
+`radians()`  
+
+`hsctorgb()`  
+`rgbtohsv()`  
+`rgbtoxyz()`  
+`zyztorgb()`  
+
+`serialize ()`  
+`unserialize()`  
+
