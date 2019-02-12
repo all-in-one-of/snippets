@@ -7,7 +7,7 @@
 ++ - add one
 % - modulus
 ```
-Conditionals:
+### Conditionals:
 ``` coffeescript
 ! - Logic negation
 == - equal
