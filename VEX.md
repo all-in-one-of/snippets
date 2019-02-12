@@ -33,25 +33,28 @@ else
     s@out = "false";
 ```
 
- (condition) ? true : false // conditional (ternary) 
+(condition) ? true : false // conditional (ternary)  
+simple condition can be written in the same line
 ```cpp
-@Cd = (@ptnum <= 0 || @ptnum >= (@numpt-1)) ? 1 : 0;  // simple condition
-v@P.x *= v@P.x > 0 ? 0.5 : 1.5; //
-int condition = (@P.x > 0) ? 1 : 3; //
-
-// one statement condition can be written in the same line
+@Cd = (@ptnum <= 0 || @ptnum >= (@numpt-1)) ? 1 : 0;  
+v@P.x *= v@P.x > 0 ? 0.5 : 1.5;
+int condition = (@P.x > 0) ? 1 : 3;
+```
+or in any other line, since VEX is not indented language, 
+but this works only for one operation, else-if block will 
+end with the first semicolon
+```cpp
 if (v@P.y < 0) v@Cd = {1,0,0}; 
 else if (v@P.x < 0)  v@Cd = {0,1,0}; 
-// or in any other line, since VEX is not indented language, 
-// but this works only for one operation, else-if block will end with the first semicolon
-//  use of logical AND: &&, OR: ||
+```
+ use of logical operators AND: &&, OR: ||
+```cpp
 if (v@P.y < 0 && v@P.x > 0) v@P -= v@N * .3;    
 if (v@Cd == {0,0,1} || v@Cd == {1,0,0}) v@P += v@N * .4;   
-
 ```
 ## For Loop
+VEX uses C-like syntax for for-loops
 ```cpp
-// VEX uses C-like syntax for for-loops
 int valA = 2;
 for (int i=0; i<11; i++) {
     valA *= 2;
