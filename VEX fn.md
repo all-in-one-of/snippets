@@ -1,4 +1,4 @@
-ARRAYS
+### Arrays
 
 `resize()` Sets the length of the array. If the array is enlarged, intermediate values will be 0 or "".  
 `len()` length of an array.  
