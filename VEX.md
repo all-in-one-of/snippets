@@ -117,3 +117,24 @@ i@MyArray[1] = @primnum; // Set primnum in array[1]
 removevalue(i[]@MyArray, ValueToRemove); 
 i[]@connected_pts = neighbours(0, @ptnum);
 ```
+```cpp
+v[]@myarray;
+for(int i=0; i<@numpt; i++)
+{
+vector item = point(0, 'P', i);
+insert(@myarray, 0, item);
+}
+/*This code, even thou it also runs in detail mode, iterates over the geometry points, reads their positions (with use of “point” function) and puts each value into a detail array called “myarray”. This is a vector array```
+
+```cpp
+int importarray[] = detail(0, 'pt');
+foreach(int i; importarray)
+{
+if(i%2 == 0)
+{
+setpointattrib(0, 'Cd', i, {1,0,0});
+}
+}
+/*This code expects an existing detail array called “pt” (listing input point numbers). It is imported as a local point array and iterated over in foreach loop.
+If any array element modulo of 2  is equal to zero, point with the same number is colored.
+```
