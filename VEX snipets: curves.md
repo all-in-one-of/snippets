@@ -16,7 +16,7 @@ uv4 = primuvconvert("op:../curve1", uv4, 0, chi("mode"));
 f@curveu = uv4.x;
 ```
 
- - | -
+ awd- | -
 --- | ---
 //PRIMUV_REAL_TO_UNIT |          0 // 0.11..   
 //PRIMUV_REAL_TO_UNITLEN |       1 // 0.9..
