@@ -16,17 +16,17 @@ uv4 = primuvconvert("op:../curve1", uv4, 0, chi("mode"));
 f@curveu = uv4.x;
 ```
 
- awd- | -
+ convert | arg; | value
 --- | ---
-//PRIMUV_REAL_TO_UNIT |          0 // 0.11..   
-//PRIMUV_REAL_TO_UNITLEN |       1 // 0.9..
-//PRIMUV_REAL_TO_LEN  |          2 // 15..
-//PRIMUV_UNIT_TO_REAL  |         3 // 9
-//PRIMUV_UNIT_TO_UNITLEN  |      4 0-1
-//PRIMUV_UNIT_TO_LEN    |        5 dlugosc w unitach // 33 
-//PRIMUV_UNITLEN_TO_REAL  |      6 // 9
-//PRIMUV_UNITLEN_TO_UNIT |       7 0-1
-//PRIMUV_UNITLEN_TO_LEN  |       8 dlugosc w unitach // 33
-//PRIMUV_LEN_TO_REAL    |        9 // 0.06
-//PRIMUV_LEN_TO_UNIT    |        10 // 0.07
-//PRIMUV_LEN_TO_UNITLEN   |      11 // 0.033
+real > unit |          0  |  0.11..   
+real > unitlen |       1  |  0.9..
+real > len |          2 |  15..
+unit > real  |         3  |  9
+unit > unitlen  |      4  | 0-1
+unit > len    |        5  | dlugosc w unitach // 33 
+unitlen > real  |      6  |  9
+unitlen > unit  |       7  | 0-1
+unitlen > len  |       8  | dlugosc w unitach // 33
+len > real   |        9  |  0.06
+len > unit    |        10  |  0.07
+len > unitlen |      11  |  0.033
