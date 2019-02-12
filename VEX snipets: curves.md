@@ -23,10 +23,10 @@ real > unitlen |       1  |  0.9..
 real > len |          2 |  15..
 unit > real  |         3  |  9
 unit > unitlen  |      4  | 0-1
-unit > len    |        5  | dlugosc w unitach // 33 
+unit > len    |        5  | dl! // 33 
 unitlen > real  |      6  |  9
 unitlen > unit  |       7  | 0-1
-unitlen > len  |       8  | dlugosc w unitach // 33
+unitlen > len  |       8  | dl! // 33
 len > real   |        9  |  0.06
 len > unit    |        10  |  0.07
 len > unitlen |      11  |  0.033
