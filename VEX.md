@@ -91,8 +91,7 @@ for (int i=0; i<13; i++) {
 }
 i@valB = valB;
 ```
-"continue" keyword to jump to the next loop iteration. in this example we average point position with positions of neighbours 
-// which are above it in world space (their Y coordinate is larger)
+"continue" keyword to jump to the next loop iteration. in this example we average point position with positions of neighbours which are above it in world space (their Y coordinate is larger)
 ```cpp
 int pts[] = neighbours(0, @ptnum);
 vector P_avg_upper = {0};
