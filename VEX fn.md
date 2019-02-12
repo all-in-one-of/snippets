@@ -22,10 +22,10 @@ In addition, the following functions work with arrays:
 
 ### BOUNDS
 
-`getbbox(min, max)`
-`getbbox_center()` relative bbox
-`centroid("../in",D_X)` relative bbox
-`relbbox()` relative bbox
+`getbbox(min, max)`  
+`getbbox_center()` relative bbox  
+`centroid("../in",D_X)` relative bbox  
+`relbbox()` relative bbox  
 
 ```cpp
 vector min, max;
