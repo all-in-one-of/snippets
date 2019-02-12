@@ -1,5 +1,5 @@
 
-Inputs:
+### Inputs:
 ```cpp
 @P // fetch point position from first imput
 v@opinmut1_P // fetch attribute from second input
@@ -19,14 +19,26 @@ geoself()
 opname(".")  // operatorstring $OS  @OpInput1  
 ```
 
-Why its 'Cd' and not '@Cd' is less easy to explain. The @ syntax is specific to wrangles, if you look in vops you see they don't use that prefix. Internally attributes are just plain names, the @ is a shorthand so wrangles know when you're referring to attributes vs referring to local variables. As such, the point() function, which is much older than wrangles are, doesn't use @'s.
+`point(1, 'Cd', pt);` Why its 'Cd' and not '@Cd' is less easy to explain. The @ syntax is specific to wrangles, if you look in vops you see they don't use that prefix. Internally attributes are just plain names, the @ is a shorthand so wrangles know when you're referring to attributes vs referring to local variables. As such, the point() function, which is much older than wrangles are, doesn't use @'s.
 ```
-point(1, 'Cd', pt);
 @P = point(1, 'P', @ptnum);
 @P = @opinput1_P;
 ```
+### Delete last point
+```cpp
+@ptnum == `npoints(0)-1` //group the last point on curve
+@ptnum == @numpt-1 // group the last point on curve
+@ptnum%(@numpt-1)==0  //1st AND last point at the same time
 
-GROUP AS ATTRIBUTE
+0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //
+0 `npoints(0)-1` // select first and last point
+/*to delete last point
+- Delete By Pattern: $N
+- Delete By Expression: $PT==$NPT-1
+- Delete By Range: change Start to: $N*/
+```
+
+### GROUP AS ATTRIBUTE
 ```cpp
 i@group_mygroup=1; // in groups
 group_name //In other than GroupSOP, specify a named group (created with the GroupSOP)
@@ -56,9 +68,7 @@ else {
 
 
 ```
-
-
-ATTRIBUTE AS GROUP
+### ATTRIBUTE AS GROUP
 ```cpp
 Group:
 Attributes as groups, or groups with @ syntax
@@ -91,17 +101,4 @@ chramp(ramp_path, position, component_index)
 `ch("../A/sx")/2` 
 
 // `What’s more is, you can execute script in those fields by putting it in back-ticks.`
-```
-delete last point
-```cpp
-@ptnum == `npoints(0)-1` //group the last point on curve
-@ptnum == @numpt-1 // group the last point on curve
-@ptnum%(@numpt-1)==0  //1st AND last point at the same time
-
-0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //
-0 `npoints(0)-1` // select first and last point
-/*to delete last point
-- Delete By Pattern: $N
-- Delete By Expression: $PT==$NPT-1
-- Delete By Range: change Start to: $N*/
 ```
