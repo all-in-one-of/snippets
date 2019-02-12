@@ -35,7 +35,7 @@ vector center = (min+max)/2;
 
 
 ### Conversion
-Conversion:
+
 
 `atof()`  
 `atoi()`  
