@@ -1,10 +1,10 @@
 # Curve/Spline
-curve >> resample // refine
+
 Gradient along curve:
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-//Curve on Ramp:
+Curve on Ramp:
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); 
 @Cd.y = chramp('colorRamp', gradient);  
