@@ -1,6 +1,6 @@
 
 
-Arithmetic 
+### Arithmetic 
 ```cpp
 =, == (same as), !=, >, <, >=,  <=
 +=  
@@ -15,7 +15,7 @@ Conditionals:
 || - Logic OR
 && - Logic AND
 ```
-Patterns:
+### Patterns:
 ```cpp
 
 //Pattern may be a numeric pattern, attribute pattern, or group name pattern.
@@ -33,7 +33,7 @@ g*,^geo* //- Match any string beginning with g, but not any string beginning wit
 !pattern  //Every point/primitive except the ones matching the pattern. 
 //For example, !1-10 means every point/prim except the numbers 1 to 10. 
 ```
-Points/primitives numbered:
+### Points/primitives numbered:
 ```cpp
 n  // number n.
 n-m  //  from n to m (inclusive).
