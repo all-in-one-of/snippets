@@ -20,3 +20,15 @@ In addition, the following functions work with arrays:
 `addattribute()`
 `metaimport()`
 
+### BOUNDS
+
+`getbbox(min, max)`
+`getbbox_center()` relative bbox
+`centroid("../in",D_X)` relative bbox
+`relbbox()` relative bbox
+
+```cpp
+vector min, max;
+getbbox(min, max);
+vector center = (min+max)/2;
+```
