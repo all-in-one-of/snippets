@@ -1,3 +1,5 @@
+# Wrangler:
+
 **[attrib wrangle]:** //CVEX-contects  more generic and the trend seems to be steering away from sop/pop specific nodes. wrapper around the more generic "attribvop" sop.   Attrib Wrangle/VOP and other CVEX nodes like Geo Wrangle DOP, POP Wrangle DOP, Volume Wrangle...) and their VOP equivalents node set to run over Detail (only once) addprim() addpoint() addvertex() removeprim() removepoint() (There is no removevertex() functiononly Attribwrangle you can add geometry (points, prims etC), which you can't in a point wrangle.  Also the functions to access geometry are differen
 
 **[pointwrangle]:**  //wraps around a vopsop which provides a bit more data to vex in order to qualify it as "vop" contex (still some functions  unique to Point Wrangle)
@@ -11,6 +13,9 @@ i@ // int
 4@myMatrix4x4 = matrix( ident() );
 s@myString = "abc";
 ```
+
+# ATTRIBUTES: 
+Material:
 ```cpp
 s@shop_materialpath /*Path to a material. 
 You can add this attribute to points using the Material surface node. 
@@ -24,7 +29,6 @@ a point with this attribute, the instanced object applies the given
 overrides to its material.*/
 ```
 
-ATTRIBUTES: 
 Time:
 ```cpp
 f@Time // Current time, in seconds//Float time ($T)
