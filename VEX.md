@@ -38,6 +38,7 @@ else
 @Cd = (@ptnum <= 0 || @ptnum >= (@numpt-1)) ? 1 : 0;  // simple condition
 v@P.x *= v@P.x > 0 ? 0.5 : 1.5; //
 int condition = (@P.x > 0) ? 1 : 3; //
+
 // one statement condition can be written in the same line
 if (v@P.y < 0) v@Cd = {1,0,0}; 
 else if (v@P.x < 0)  v@Cd = {0,1,0}; 
@@ -70,7 +71,6 @@ foreach (int num; vertices) {
 }
 ```
 ```cpp
-// for convenient iterating over elements of an array we// can use foreach loop
 int nbs[] = nearpoints(0, v@P, .5);
 vector P_avg = {0};
 foreach(int nb_ptnum; nbs) {
@@ -79,8 +79,8 @@ foreach(int nb_ptnum; nbs) {
 P_avg /= len(nbs);
 v@P = P_avg;
 ```
+"break" keyword - can stop the loop at any point
 ```cpp
-// we can also stop the loop at any point by using "break" keyword
 int valB = 5;
 for (int i=0; i<13; i++) {
     valB *= 5;
@@ -88,10 +88,9 @@ for (int i=0; i<13; i++) {
 }
 i@valB = valB;
 ```
-```cpp
-// we can also use "continue" keyword to jump to the next loop iteration 
-// in this example we average point position with positions of neighbours 
+"continue" keyword to jump to the next loop iteration. in this example we average point position with positions of neighbours 
 // which are above it in world space (their Y coordinate is larger)
+```cpp
 int pts[] = neighbours(0, @ptnum);
 vector P_avg_upper = {0};
 int count = 0;
