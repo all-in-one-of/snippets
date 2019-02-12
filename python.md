@@ -1,6 +1,6 @@
-```
+
 If you find yourself editing a lot of python code, you might like the joy of Sublime or vi(m) to edit your files. Place your python code in $HOME/houdiniXX.X/scripts/python, for example as "test.py", then inside Houdini, drop a python node and do as follows:
-import test
+```import test
 reload(test)
 from test import *
 ```
@@ -20,7 +20,7 @@ Iterate group:
 groups = geo.primGroups()
 for group in groups:
     print group.name
-    ```
+```
 Delete group, leaving contents intact:
 ```
 group.destroy()
