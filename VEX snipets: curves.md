@@ -17,7 +17,7 @@ f@curveu = uv4.x;
 ```
 
  convert | arg; | value
---- | ---
+--- | --- | ---
 real > unit |          0  |  0.11..   
 real > unitlen |       1  |  0.9..
 real > len |          2 |  15..
