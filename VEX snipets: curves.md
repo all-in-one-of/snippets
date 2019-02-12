@@ -1,17 +1,15 @@
-// curve >> resample
-// curveu (resample sop ?)- unit curve parametter for point
-refine 
-
-Curve/Spline
+# Curve/Spline
+curve >> resample // refine
+Gradient along curve:
 ```cpp
-float ValueAlongSpline = @ptnum/(@numpt-1.0); // Gradient along curve 
+float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-
+//Curve on Ramp:
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); 
-@Cd.y = chramp('colorRamp', gradient);  //Curve on Ramp:
+@Cd.y = chramp('colorRamp', gradient);  
 ```
-
+meaure:
 ```cpp
 vector2 uv4 = set(f@curveu, 0);
 uv4 = primuvconvert("op:../curve1", uv4, 0, chi("mode"));
