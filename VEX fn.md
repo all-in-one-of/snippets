@@ -20,7 +20,7 @@ In addition, the following functions work with arrays:
 `addattribute()`
 `metaimport()`
 
-### BOUNDS
+### Bounds
 
 `getbbox(min, max)`  
 `getbbox_center()` relative bbox  
