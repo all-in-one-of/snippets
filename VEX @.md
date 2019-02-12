@@ -16,7 +16,8 @@ s@myString = "abc";
 
 
 Why its 'Cd' and not '@Cd' is less easy to explain. The @ syntax is specific to wrangles, if you look in vops you see they don't use that prefix. Internally attributes are just plain names, the @ is a shorthand so wrangles know when you're referring to attributes vs referring to local variables. As such, the point() function, which is much older than wrangles are, doesn't use @'s.
-```point(1, 'Cd', pt);
+```
+point(1, 'Cd', pt);
 @P = point(1, 'P', @ptnum);
 @P = @opinput1_P;
 ```
