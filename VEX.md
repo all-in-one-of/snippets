@@ -1,4 +1,4 @@
-[FUNCTIONS]
+## Functions
 ```cpp
 
 float randValue(float seed; int pointNum) {
@@ -17,7 +17,7 @@ int test(int a, b; string c) {
 
 
 ```
-[CONDITIONING]:
+## Conditioning
 ```glsl
 if(b < a) {
     s@out = "true";
@@ -48,7 +48,7 @@ if (v@P.y < 0 && v@P.x > 0) v@P -= v@N * .3;
 if (v@Cd == {0,0,1} || v@Cd == {1,0,0}) v@P += v@N * .4;   
 
 ```
-[FOR LOOP]
+## For Loop
 ```cpp
 // VEX uses C-like syntax for for-loops
 int valA = 2;
@@ -61,7 +61,7 @@ i@valA = valA;
 for(int i = 0; i < npoints(0); i++) { }; // for na wszystkich punktach:
 for (int i=0; i<@numpt; i++) { }; // for na wszystkich punktach:
 ```
-[FOREACH LOOP] arrys
+## ForEach Loop (arrys)
 ```cpp
 int vertices[] = pointvertices(0, 10);
 foreach (int num; vertices) {
@@ -107,7 +107,7 @@ P_avg_upper /= count;
 v@P = P_avg_upper;
 ```
 
-[ARRYS]
+## Arrays
 ```cpp
 int MyArray[] = {}; // declare var
 i[]@MyArray = {-1,0,1}; // declare attrib
