@@ -88,5 +88,6 @@ def childrenOfNode(node):
 ```
 Call defined fn by calling var: n with (node):
 ```python
-childrenOfNode(n)
+childrenOfNode(n) 
+childrenOfNode(hou.node('/obj/adress'))
 ```
