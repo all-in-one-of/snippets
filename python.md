@@ -1,5 +1,6 @@
 
 
+# Python:
 object in class hou
 ```
 hou.node('/path')
@@ -18,7 +19,6 @@ Access local variables:
 ```
 xBoundSize=lvar('SIZEX')
 ```
-
 
 ### Groups:
 Create group:
@@ -58,7 +58,7 @@ for i in boundingGrp.prims():
 geo.deletePrims(deleteList)
 ```
 
-### import operator
+### Import operator
 ```
 weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
 sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
