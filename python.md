@@ -1,4 +1,28 @@
 
+
+object in class hou
+```
+hou.node('/path')
+```
+assign objecto to var:
+```
+n = hou.node('/path')
+n.name // return name of object.
+n.children() // return children nodes 
+```
+```
+t = n.children() // tablica dzieci noda
+t[0]
+t[1]
+....
+```
+
+```
+for c in n.children():
+     print.name()
+```
+
+
 If you find yourself editing a lot of python code, you might like the joy of Sublime or vi(m) to edit your files. Place your python code in $HOME/houdiniXX.X/scripts/python, for example as "test.py", then inside Houdini, drop a python node and do as follows:
 ```import test
 reload(test)
