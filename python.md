@@ -12,7 +12,7 @@ param = hou.ch("param")
 Assign objecto to var: n
 ```python
 n = hou.node('/path')
-n.name // return name of object.
+n.name #return name of object.
 ```
 
 Access local variables:
