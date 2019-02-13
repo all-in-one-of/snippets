@@ -9,7 +9,7 @@ Read node parameter:
 ```
 param = hou.ch("param")
 ```
-assign objecto to var: n
+Assign objecto to var: n
 ```
 n = hou.node('/path')
 n.name // return name of object.
@@ -42,8 +42,8 @@ Delete group, leaving contents intact:
 group.destroy()
 ```
 ### Attributes:
+Set attribute:
 ```
-Set attribute
 points[index].setAttribValue("Cd",(1.0,1.0,1.0))
 ```
 Get attribute:
