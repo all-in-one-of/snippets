@@ -1,4 +1,10 @@
 
+hou.frame()/4 | frame()/4 | $F/4 | # mozna opuscic hou w expressions
+hou.time() |  $T
+hou.lvar("nameoflocalVAr")
+lvar("PT") - $PT
+
+see what params is passing kwargs (pthos dict to see what is avalable)
 
 ### Python Shell
 ```
