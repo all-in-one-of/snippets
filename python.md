@@ -1,5 +1,22 @@
 
 
+### Python Shell
+```
+Live code
+```
+### Python Source Editor // you can save  code and function
+``` python
+hou.session.myDefinedFunction()
+```
+## New Tool
+```
+create as new shelf tool 
+scrpit section to write code
+Execute after shelf click
+from here create node acces scene ect...
+```
+
+
 # Python:
 object in class hou
 ```python
