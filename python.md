@@ -75,3 +75,13 @@ t[1]
 for c in n.children():
      print.name()
 ```
+
+### Function:
+```python
+def childrenOfNode(node):
+	reylt = []
+	for c in node.children():
+		result.appnd(c)
+		result += childrenOfNode(c)
+	return result 
+```
