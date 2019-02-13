@@ -80,7 +80,7 @@ for c in n.children():
 Create function (define)
 ```python
 def childrenOfNode(node):
-	reylt = []
+	result = []
 	for c in node.children():
 		result.appnd(c)
 		result += childrenOfNode(c)
