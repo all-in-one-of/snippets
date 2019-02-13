@@ -108,3 +108,21 @@ Call defined fn by calling var: n with (node):
 childrenOfNode(n) 
 childrenOfNode(hou.node('/obj/adress'))
 ```
+
+### UI
+
+
+```
+hou.ui.displayMessage("hello") #display popup 
+```
+print location of click in the node editor  network 
+```
+print p.selectPosition()
+```
+create new node with box on the position under mouse 
+```
+p = hou.ui.paneTabOfType (hou.paneTabType.NetworkEditor)
+position = p.selectPosition() #position clicked
+new_node = p.pwd().createNode("box") #posWorkDir
+new_node.setPosition(position) 
+```
