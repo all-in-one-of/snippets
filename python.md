@@ -8,7 +8,7 @@ Live code
 ``` python
 hou.session.myDefinedFunction()
 ```
-## New Tool
+### New Tool
 ```
 create as new shelf tool 
 scrpit section to write code
