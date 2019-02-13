@@ -1,6 +1,6 @@
-string_var = "stringi"
-bool_var = True
-float_var = 3.1415
+string_var = "stringi"  
+bool_var = True  
+float_var = 3.1415  
 
 ### IMPORT LIB
 from math import *
