@@ -1,7 +1,7 @@
 
-hou. is houdini python class. We can drop it in **expressions**:
-`frame()/4` | `frame()/4` | $F/4 | # mozna opuscic hou w expressions   
-`time()` |  $T  
+hou. is houdini python class. We can drop it in **expressions**:  
+`frame()/4` - $F/4    
+`time()` - $T  
 `lvar("nameoflocalVAr")`  
 `lvar("PT")` - $PT  
 
