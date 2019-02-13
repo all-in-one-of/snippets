@@ -65,7 +65,7 @@ sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
 ```
 ### Arrays
 ```python
-t = n.children() // tablica dzieci noda
+t = n.children() # tablica dzieci noda
 t[0]
 t[1]
 ....
@@ -77,6 +77,7 @@ for c in n.children():
 ```
 
 ### Function:
+Create function (define)
 ```python
 def childrenOfNode(node):
 	reylt = []
@@ -84,4 +85,8 @@ def childrenOfNode(node):
 		result.appnd(c)
 		result += childrenOfNode(c)
 	return result 
+```
+Call defined fn by calling var: n with (node):
+```python
+childrenOfNode(n)
 ```
