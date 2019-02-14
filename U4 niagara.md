@@ -52,23 +52,20 @@ https://unrealingens.wordpress.com/2018/06/11/exploring-niagara-pre-release-part
 
 
 # HOUDINNI ARRAY INTERFACE:
-```cpp
-@id //per particle 
-@time // of pop-up 
-@type // group
-[emiter update]: spawn form array playback 
-[particle spawn]: hanldle spawn particles / by type ```
-H EVENTS:```
-```
-[particle update]:  generate location event  // FOR LEADER  writing to struct pos and we can listen it
-[Event handler]: is listening for event. //FOR FOLLOWER```
+`@id`  per particle 
+`@time` of pop-up 
+`@type` group
+*[emiter update]* spawn form array playback 
+*[particle spawn]* hanldle spawn particles / by type
+### H EVENTS:
+*[particle update]* generate location event  // FOR LEADER  writing to struct pos and we can listen it  
+*[Event handler]* is listening for event. //FOR FOLLOWER```  
 
-POINT ANIM:
-```cpp
-@id // same for one particle 
-@life // Life set for first point
-@time // arrival time // just normalize time before ezport!  check length from a to b and set time
-[emiter update]: spawn form array playback 
-[particle spawn]: hanldle spawn particles 
-[particle update]: update pos from Harray
-```
+### POINT ANIM:
+
+`@id` same for one particle 
+`@life` Life set for first point
+`@time` arrival time // just normalize time before ezport!  check length from a to b and set time
+*[emiter update]* spawn form array playback 
+*[particle spawn]* hanldle spawn particles 
+*[particle update]* update pos from Harray
