@@ -43,17 +43,9 @@
 `Shift`+`C` - Circle
 `Shift`+`X` - Collapse
 
- 
-#### SLICE `Shift`+`2` 
-
-edge: slice / collapse by edge 
-
-#### SPLIT `Shift`+`3`
-
-`Shift` - loop 
-
+#### SLICE `Shift`+`2`  
+#### SPLIT `Shift`+`3`  
 #### BRUSH `Shift`+`4`  
-
 #### SMOOTH `Shift`+`5`  
 
 ## EDIT MODE
