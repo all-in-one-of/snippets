@@ -56,26 +56,22 @@ edge: slice / collapse by edge
 
 #### SMOOTH `Shift`+`5`  
 
+## EDIT MODE
+
+`Y` Edit  
+`L` Slide on Surface   
+`H` Peak  
+`B` Sculpt  
+`Shift`+`T` Tweek mode   (no handles )
 
 
-EDIT MODE:
-```md
-
-Edit < Y >
-Slide on Surface  < L >
-Peak < H >
-Sculpt < B >
-Tweek mode <Shift + T > (no handles )
-```
+`M` World Coordinates  
+`;` `:` Align  
+`'` `"` Move pivot  
+`?` `/` Align Grid  
 
 
-`M` World Coordinates
-`;` `:` Align
-`'` `"` Move pivot
-`?` `/` Align Grid
+## CUSTOM
 
-
-
-```md
 < \ >  - manual update
-< | >  - auto update```
+< | >  - auto update
