@@ -1,3 +1,24 @@
+
+## EDIT MODE
+
+`Y` -  Edit  
+`L` - Slide on Surface   
+`H` - Peak  
+`B` - Sculpt  
+`Shift`+`T`- Tweek mode   (no handles )
+
+
+`M` World Coordinates  
+`;` `:` - Align   
+`'` `"` - Move pivot  
+`?` `/` - Align Grid   
+
+
+## CUSTOM
+
+`\` - manual update  
+`|` - auto update  
+
 ## SHORTS  
 `9` - select by group
 
@@ -48,22 +69,3 @@
 #### BRUSH `Shift`+`4`  
 #### SMOOTH `Shift`+`5`  
 
-## EDIT MODE
-
-`Y` -  Edit  
-`L` - Slide on Surface   
-`H` - Peak  
-`B` - Sculpt  
-`Shift`+`T`- Tweek mode   (no handles )
-
-
-`M` World Coordinates  
-`;` `:` - Align   
-`'` `"` - Move pivot  
-`?` `/` - Align Grid   
-
-
-## CUSTOM
-
-`\` - manual update  
-`|` - auto update  
