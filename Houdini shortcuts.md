@@ -1,26 +1,26 @@
 
-
-`[Alt]` + `[Space]`  wieport
-` Shift` + `V ` backmasking 
-`1Shift` + `C` contained
 ----------- select by group 9999
-
-`F1` `F2` `F3` `F4` - selection types 
-
-`H`  hide `H` + `ctrl`/`shift`
-`N` select all
-`Shift` + `N` select none
-`Shift` + `B` bounds 
-`Shift` + `Ctrl` + `E` - poli age boundary
-`Shift` + `G` + selection
-`Shift` + `S` - selection
-- nsides select nie ma skroto 
-` A ` _+ `ctrl`/`shift``[MMB]` - full selection `[RMB]` - partial selection 
-
-### POLYDRAW SHORTS
+`[Alt]` + `[Space]`  wieport  
+` Shift` + `V ` backmasking   
+`1Shift` + `C` contained  
 
 
-<Shift + 1>- BUILD
+`F1` `F2` `F3` `F4` - selection types   
+
+`H`  hide `H` + `ctrl`/`shift`  
+`N` select all  
+`Shift` + `N` select none  
+`Shift` + `B` bounds   
+`Shift` + `Ctrl` + `E` - poli age boundary  
+`Shift` + `G` + selection  
+`Shift` + `S` - selection  
+- nsides select nie ma skroto   
+` A ` _+ `ctrl`/`shift``[MMB]` - full selection `[RMB]` - partial selection   
+
+### POLYDRAW SHORTS  
+
+
+#### `Shift` + `1`
 ------------
 points:
 
