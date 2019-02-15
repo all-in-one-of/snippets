@@ -73,5 +73,5 @@ edge: slice / collapse by edge
 
 ## CUSTOM
 
-`\` - manual update
-`|` - auto update
+`\` - manual update  
+`|` - auto update  
