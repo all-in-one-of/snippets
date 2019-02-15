@@ -1,4 +1,4 @@
-
+## SHORTS  
 `9` - select by group
 
 `[Alt]` + `[Space]`  wieport  
@@ -18,7 +18,7 @@
 - nsides select nie ma skroto   
 ` A ` _+ `ctrl`/`shift``[MMB]` - full selection `[RMB]` - partial selection   
 
-### POLYDRAW SHORTS  
+## POLYDRAW SHORTS  
 
 
 #### `Shift` + `1`
@@ -44,20 +44,19 @@
 `Shift` + `X` Collapse
 
  
-#### `Shift`+`2` SLICE 
-------------
+#### SLICE `Shift`+`2` 
+
 edge: slice / collapse by edge 
 
-#### <Shift + 3> - SPLIT
-------------
+#### SPLIT `Shift`+`3`
+
 
 <Shift> -loop 
 
-#### <Shift + 4> - BRUSH
-------------
-#### <Shift + 5> - SMOOTH
-------------
-```
+#### BRUSH `Shift`+`4`  
+
+#### SMOOTH `Shift` + `5`  
+
 
 
 
