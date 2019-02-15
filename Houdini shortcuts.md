@@ -1,5 +1,6 @@
 
------------ select by group 9999
+`9` - select by group
+
 `[Alt]` + `[Space]`  wieport  
 ` Shift` + `V ` backmasking   
 `1Shift` + `C` contained  
@@ -21,8 +22,8 @@
 
 
 #### `Shift` + `1`
-------------
-points:
+
+**points:**
 
 [LMB] - create / selsct
 <Shift> [LMB] - select
@@ -37,24 +38,24 @@ points:
 <Shift + S > STRAIGHT
 <Shift + E > Evenly space
 
-prims:
+**prims:**
 
-<Shift + C > - Circle
-<Shift + X > - Collapse
+`Shift` + `C` Circle
+`Shift` + `X` Collapse
 
  
-<Shift + 2> - SLICE 
+#### `Shift`+`2` SLICE 
 ------------
 edge: slice / collapse by edge 
 
-<Shift + 3> - SPLIT
+#### <Shift + 3> - SPLIT
 ------------
 
 <Shift> -loop 
 
-<Shift + 4> - BRUSH
+#### <Shift + 4> - BRUSH
 ------------
-<Shift + 5> - SMOOTH
+#### <Shift + 5> - SMOOTH
 ------------
 ```
 
