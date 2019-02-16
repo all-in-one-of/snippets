@@ -37,7 +37,7 @@
 `Shift`+`G` - selection  
 `Shift`+`S` - selection  
 
-`A`+`ctrl`/`shift``[MMB]` - full selection `[RMB]` - partial selection   
+`A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection   
 
 ## POLYDRAW SHORTS  
 
