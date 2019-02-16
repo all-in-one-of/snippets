@@ -84,3 +84,8 @@
 `X` - wizualizer  
 
 `F` `G` / `H` - zoomy 
+
+WIEVPORT WTF:
+` ' ` - RESELECT FOR CURENT TOOL
+` ~ ` - SECURE SELECTION
+
