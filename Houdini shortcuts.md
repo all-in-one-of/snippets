@@ -22,9 +22,9 @@
 ## SHORTS  
 `9` - select by group
 
-`[Alt]`+`[Space]` -  wieport  
-` Shift`+`V` - backmasking   
-`1Shift`+`C` - contained  
+`Alt`+`Space` -  wieport  
+`Shift`+`V` - backmasking   
+`Shift`+`C` - contained  
 
 
 `F1` `F2` `F3` `F4` - selection types   
