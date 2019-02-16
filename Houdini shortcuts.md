@@ -69,3 +69,18 @@
 #### BRUSH `Shift`+`4`  
 #### SMOOTH `Shift`+`5`  
 
+## GRAPH
+
+`U` - Up
+`I` - Dive
+`PageUp`/`PageDowna` - move throu nodes `Shift`  
+` ` ` - last view
+`L` - layaut `Shift`+`L` - layout Selected
+
+`Shift`+`S` - style
+
+`Z` - shape
+`C` - color
+`X` - wizualizer
+
+`F``G` / `H` - zoomy 
