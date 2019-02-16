@@ -70,17 +70,17 @@
 #### SMOOTH `Shift`+`5`  
 
 ## GRAPH
+  
+`U` - Up  
+`I` - Dive  
+`PageUp`/`PageDowna` - move throu nodes `Shift`    
+` ` ` - last view  
+`L` - layaut `Shift`+`L` - layout Selected  
 
-`U` - Up
-`I` - Dive
-`PageUp`/`PageDowna` - move throu nodes `Shift`  
-` ` ` - last view
-`L` - layaut `Shift`+`L` - layout Selected
+`Shift`+`S` - style  
 
-`Shift`+`S` - style
-
-`Z` - shape
-`C` - color
-`X` - wizualizer
+`Z` - shape  
+`C` - color  
+`X` - wizualizer  
 
 `F``G` / `H` - zoomy 
