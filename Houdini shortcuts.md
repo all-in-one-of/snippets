@@ -55,9 +55,9 @@
 `Shift`+`K`/`K` -  dziwnby bridge / BRIDGE  
 `Shift`+`del` - remove unused points  
 
-`Shift`+`C` - CIRCLE
-`Shift`+`S` - STRAIGHT
-`Shift`+`E` - Evenly space
+`Shift`+`C` - Circle
+`Shift`+`S` - Straighten
+`Shift`+`E` - Evenly space  
 
 **prims:**
 
