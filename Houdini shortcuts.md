@@ -61,8 +61,8 @@
 
 **prims:**
 
-`Shift`+`C` - Circle
-`Shift`+`X` - Collapse
+`Shift`+`C` - Circle  
+`Shift`+`X` - Collapse 
 
 #### SLICE `Shift`+`2`  
 #### SPLIT `Shift`+`3`  
