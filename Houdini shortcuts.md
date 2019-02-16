@@ -74,7 +74,7 @@
 `U` - Up  
 `I` - Dive  
 `PageUp`/`PageDowna` - move throu nodes `Shift`    
-` ` ` - last view  
+` ' ` - last view  
 `L` - layaut `Shift`+`L` - layout Selected  
 
 `Shift`+`S` - style  
@@ -83,4 +83,4 @@
 `C` - color  
 `X` - wizualizer  
 
-`F``G` / `H` - zoomy 
+`F` `G` / `H` - zoomy 
