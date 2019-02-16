@@ -51,9 +51,9 @@
 `Ctrl` - angels  
 `Alt` - wiewport  
 
-`F` FILL
-`Shift`+`K`/`K` -  dziwnby bridge / BRIDGE
-`Shift`+`del` - remove unused points
+`F` FILL  
+`Shift`+`K`/`K` -  dziwnby bridge / BRIDGE  
+`Shift`+`del` - remove unused points  
 
 `Shift`+`C` - CIRCLE
 `Shift`+`S` - STRAIGHT
