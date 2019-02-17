@@ -11,7 +11,7 @@
 `separation` / `droplet` / `vorticity`   
 
 **[VOLUME MOTION]**  
-`Surface Tension` - will create the surfacepressure field. fighting against gravity trying to put particles in drop.  / `Crown Splash` / `suction` / `avoidance`  
+`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. `Crown Splash`,`Suction`,`Avoidance`  
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
 `Viscosity` - lepkość (lava) (    - slip colision to 1 completly slide fluid on collider  (stick to colision) // jest tesz w collision stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision))  
