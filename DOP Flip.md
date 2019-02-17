@@ -8,13 +8,14 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - VOLUME VELOCITY
 - SOURCE 
 ```
-## OBJECT
-### Flip Object
-Standard object
--  **Particle Separation** // overal scale 
-- **grid scale** // higher for sharper // fat crona >> thinner splash
-
-## FLIP Solver 
+### OBJECT  
+#### Flip Object  
+Standard object  
+-  **Particle Separation** // overal scale   
+- **grid scale** // higher for sharper // fat crona >> thinner splash  
+### PARTICLE VELOCITY  
+Pop solver  
+## FLIP Solver   
 
 **Particle Motion:**  
 `separation` / `droplet` / `vorticity`   
