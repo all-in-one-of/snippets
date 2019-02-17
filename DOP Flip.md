@@ -8,7 +8,10 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - VOLUME VELOCITY
 - SOURCE 
 ```
+## FLIP Object
 
+-  
+- 
 ## FLIP Solver 
 
 **[PARTICLE MOTION]**  
@@ -16,8 +19,8 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 
 **[VOLUME MOTION]**  
 [volume limits]
-- waterline (semi open boundaries)(above opne, belowe close) it should be on water level. 
-- use boundary layer - (adv waterline) 
+- **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
+- **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options
 
 `Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. Crown Splash, Suction, Avoidance  
 `Density`  
