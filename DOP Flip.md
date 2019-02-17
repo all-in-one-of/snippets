@@ -78,7 +78,8 @@ make dvb collision
 ```
 Flip tank with bounadary layer 
 
-Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. (Houdini 16 Masterclass) and keep vorticity better
+Flip solver: Velocity transfer Splashy >> Swirly  
+// not as noisy and turb. (Houdini 16 Masterclass) and keep vorticity better
 Enable surface tenssion 48 // high value less motion for 
 FLIP object: - particle separation 0.03
 grid scale // fat /thin 1.5
