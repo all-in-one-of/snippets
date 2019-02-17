@@ -36,8 +36,8 @@ Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`V
 - substep = dodaj stepy w framie  
 
 ### [Particle Motion]:
-`separation` / `droplet` /  
 
+#### Separation:  
 #### Droplets:  
 #### Vorticity: 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
