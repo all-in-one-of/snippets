@@ -40,12 +40,17 @@ Crown Splash
 ```
 Flip tank with bounadary layer 
 
-Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. 
-Enable surface tenssion
-FLIP object: - particle separation 
-grid scale // fat /thin
+Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. (Houdini 16 Masterclass)
+Enable surface tenssion 48 // high value less motion for 
+FLIP object: - particle separation 0.03
+grid scale // fat /thin 1.5
+in self they reduce gravity 
+substeps up!!
 ```
-
+droplet 
+```
+surface tenssion 48000
+```
 RDB floating on FLIP:   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
 merge: rigidbody solver + flip solver 
