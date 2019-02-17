@@ -10,8 +10,9 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 ```
 ## FLIP Object
 
--  
+-  **Particle Separation** // overal scale 
 - 
+- **grid scale** // higher for sharper // fat crona >> thinner splash
 ## FLIP Solver 
 
 **Particle Motion:**  
@@ -20,9 +21,9 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 **Volume Motion:**  
 volume limits
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
-- **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options
+- **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)
 
-`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. Crown Splash, Suction, Avoidance  
+`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass)
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
 `Viscosity` - lepkość (lava) (    - slip colision to 1 completly slide fluid on collider  (stick to colision) // jest tesz w collision stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision)) (0 plynne - 7000 guma) 
@@ -35,7 +36,15 @@ volume limits
 ## Collisions
 
 ## Setups
+Crown Splash 
+```
+Flip tank with bounadary layer 
 
+Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. 
+Enable surface tenssion
+FLIP object: - particle separation 
+grid scale // fat /thin
+```
 
 RDB floating on FLIP:   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
