@@ -15,7 +15,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 Standard object  
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
-
+Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
 ### PARTICLE VELOCITY Input  
 Pop Solver   
 Pop Curve force (Illume Jeff I ) // input curve 
@@ -59,6 +59,7 @@ collisions:
 vorticity:
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion. 
 
+**NarrowBand:**  
 
 **Distribution:**  
 - for net renders
