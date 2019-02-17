@@ -36,7 +36,7 @@ volume limits
 ## Collisions
 
 ## Setups
-Crown Splash 
+**Crown Splash **
 ```
 Flip tank with bounadary layer 
 
@@ -47,11 +47,11 @@ grid scale // fat /thin 1.5
 in self they reduce gravity 
 substeps up!!
 ```
-droplet 
+**Droplet **
 ```
 surface tenssion 48000
 ```
-RDB floating on FLIP:   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
+**RDB floating on FLIP:**   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
 merge: rigidbody solver + flip solver 
 check density of object (mass)  
