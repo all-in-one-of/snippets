@@ -11,11 +11,8 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 
 ### OBJECT Input
 
-#### Flip Object  
-Standard object  
-- **Particle Separation** // overal scale   
-- **grid scale** // higher for sharper // fat crona >> thinner splash  
-Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
+Flip Object
+
 ### PARTICLE VELOCITY Input  
 Pop Solver   
 Pop Curve force (Illume Jeff I ) // input curve 
@@ -30,6 +27,11 @@ gas temp update
 heatvoluem  // can spread temperatue   // lave cool rate 
 pop color 
 
+# Flip Object  
+Standard object  
+- **Particle Separation** // overal scale   
+- **grid scale** // higher for sharper // fat crona >> thinner splash  
+Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
 # FLIP Solver   
 **Substeps**
 - timestep = podziel czas na czesci   
