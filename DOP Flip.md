@@ -26,7 +26,7 @@ heatvoluem  // can spread temperatue   // lave cool rate
 pop color 
 
 # Flip Object  
-Standard object  
+### Standard object  
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
