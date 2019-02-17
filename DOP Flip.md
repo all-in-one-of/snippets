@@ -71,7 +71,7 @@ for net renders
 
 ## Collisions  
 make dvb collision  
-
+Dop static object with volume collision. 
 
 ## Setups  
 **Crown Splash**
