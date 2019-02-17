@@ -17,6 +17,8 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 **[VOLUME MOTION]**  
 [volume limits]
 - waterline (semi open boundaries)(above opne, belowe close) it should be on water level. 
+- use boundary layer - (adv waterline) 
+
 `Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. Crown Splash, Suction, Avoidance  
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
