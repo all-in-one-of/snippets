@@ -13,7 +13,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 `separation` / `droplet` / `vorticity`   
 
 **[VOLUME MOTION]**  
-`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. `Crown Splash`,`Suction`,`Avoidance`  
+`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. Crown Splash, Suction, Avoidance  
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
 `Viscosity` - lepkość (lava) (    - slip colision to 1 completly slide fluid on collider  (stick to colision) // jest tesz w collision stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision)) (0 plynne - 7000 guma) 
