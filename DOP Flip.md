@@ -10,20 +10,20 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 ```
 
 #### OBJECT Input
-Flip Object
+- Flip Object
 
 #### PARTICLE VELOCITY Input  
-Pop Solver   
-Pop Curve force (Illume Jeff I ) // input curve 
+- Pop Solver   
+- Pop Curve force (Illume Jeff I ) // input curve 
 
 #### PARTICLE VELOCITY Input  
 
 #### VOLUME VELOCITY Input  
  
 #### SOURCE Input  
-gas temp update    
-heatvoluem  // can spread temperatue   // lave cool rate 
-pop color 
+- gas temp update    
+- heatvoluem  // can spread temperatue   // lave cool rate 
+- pop color 
 
 # Flip Object  
 ### Standard object  
