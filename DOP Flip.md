@@ -7,15 +7,15 @@
 - SOURCE 
 ```
 
-[PARTICLE MOTION]
+**[PARTICLE MOTION]**  
 `separation` / `droplet` / `vorticity`   
 
-[VOLUME MOTION]
+**[VOLUME MOTION]**  
 `Surface Tension` - will create the surfacepressure field. fighting against gravity trying to put particles in drop.  / `Crown Splash` / `suction` / `avoidance`  
 `Density`  
-`Divergence - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.
-`Viscosity - lepkość (lava) (    - slip colision to 1 completly slide fluid on collider  (stick to colision) // jest tesz w collision stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision))
-`Air Incompressibility - Enforce ! By default, the air volume is not simulated and is treated entirely as a void. 
+`Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
+`Viscosity` - lepkość (lava) (    - slip colision to 1 completly slide fluid on collider  (stick to colision) // jest tesz w collision stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision))  
+`Air Incompressibility - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
 
 
 
