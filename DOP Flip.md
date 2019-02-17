@@ -31,33 +31,38 @@ Standard object
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
 # FLIP Solver   
-**Substeps**
+### Substeps:
 - timestep = podziel czas na czesci   
-- substep - dodaj stepy w framie  
+- substep = dodaj stepy w framie  
 
-**Particle Motion:**  
-`separation` / `droplet` / `vorticity`   
+### Particle Motion:
+`separation` / `droplet` /  
 
-**Volume Motion:**  
+#### Droplets:  
+#### Vorticity: 
+- preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
 
-volume limits:
-- **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
-- **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)
+### Volume Motion:  
 
-collisions:
+#### Volume Limits:  
+- **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level.   
+- **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)  
+
+#### Collisions:  
 - stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) //??(0 plynne - 7000 guma)  
-
-`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
-
-`Viscosity` - (lava)   
+  
+#### Viscosity: - (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 
-`Density`  
-`Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
-`Air Incompressibility` - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
+#### Density 
 
-vorticity:
-- preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion. 
+#### Air
+ Enforce ! By default, the air volume is not simulated and is treated entirely as a void.
+#### Divergence
+- However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces. 
+#### Surface Tension 
+- createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
+
 
 **NarrowBand:**  
 
