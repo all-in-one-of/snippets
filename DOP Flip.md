@@ -55,11 +55,11 @@ Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`V
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 
 #### Density 
-
+By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
 #### Air
- Enforce ! By default, the air volume is not simulated and is treated entirely as a void.
+
 #### Divergence
-- However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces. 
+Positive values cause particles to spread out, and negative values cause them to clump together.
 #### Surface Tension 
 - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
@@ -99,5 +99,5 @@ check Particle Separation changed to 0.1
 
 ## ###
 
-You can stop the particles in a flip sim with i@stopped
-http://www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html
+You can stop the particles in a flip sim with i@stopped  
+http://www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
