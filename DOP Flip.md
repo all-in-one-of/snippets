@@ -54,13 +54,13 @@ Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`V
 #### Viscosity: - (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 
-#### Density 
+#### Density:   
 By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
-#### Air
+#### Air:  
 
-#### Divergence
+#### Divergence:  
 Positive values cause particles to spread out, and negative values cause them to clump together.
-#### Surface Tension 
+#### Surface Tension:   
 - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
 
