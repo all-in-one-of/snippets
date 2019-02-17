@@ -5,7 +5,7 @@ POPs: Vex based solver
 # Properties
 ```md
 - OBJECT 
-- PRE-SOLVE ??
+- PRE-SOLVE
 - SOURCE 
 ```
 
@@ -24,7 +24,7 @@ POPs: Vex based solver
 - popcurveforce // podpinasz krzywa i leci  
 - popcolision (stick/ bounce)  
 - popgroup  
-- popforce // jakies noizy CHUJOWE NIE UZYWAC   
+- popforce // jakies noizy Old thing   
 
 ## POP FLUIDS:  
 popfluid PBD fluid make intersection in pops (node from white water) (h17 core of new water solver in future maby with vellum). 
