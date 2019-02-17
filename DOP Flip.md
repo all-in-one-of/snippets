@@ -19,23 +19,24 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 `separation` / `droplet` / `vorticity`   
 
 **Volume Motion:**  
-volume limits
+volume limits:
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)
 
-collision
-- stick on collision (free sleep condition  in viscosity opposite: control no sleep colliision)) 
+collisions:
+- stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) 
 
-`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!* 
-`Viscosity` - (lava)  (0 plynne - 7000 guma) 
-- **slip colision** 0 to take velo from collision / 1 to completly slide fluid on collider (fluid velo = no impact of collider tangential velocity). ITs oposie to: stick to colision.
+`Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
+
+`Viscosity` - (lava)   
+- **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision].
 
 
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
 `Air Incompressibility - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
 
-
+(0 plynne - 7000 guma)  
 -timestep = podziel czas na czesci   
 - substep - dodaj stepy w framie  
 
