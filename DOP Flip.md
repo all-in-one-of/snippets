@@ -61,13 +61,13 @@ By default, the fluid has uniform density as set on the Physical tab of the FLIP
 #### Divergence:  
 Positive values cause particles to spread out, and negative values cause them to clump together.
 #### Surface Tension:   
-- createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
+createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
 
 ### [NarrowBand]:   
 
 ### [Distribution]:    
-- for net renders
+for net renders
 
 ## Collisions  
 make dvb collision  
