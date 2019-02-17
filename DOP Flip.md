@@ -1,32 +1,45 @@
 
-Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum
+Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid
 
-## Properties
+# Properties
 ```md
 - OBJECT 
 - PARTICLE VELOCITY
 - VOLUME VELOCITY
 - SOURCE 
 ```
-### OBJECT  
+## OBJECT Input
 #### Flip Object  
 Standard object  
--  **Particle Separation** // overal scale   
+- **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
-### PARTICLE VELOCITY  
-Pop solver  
-## FLIP Solver   
+## PARTICLE VELOCITY Input  
+Pop solver   
+
+## PARTICLE VELOCITY Input  
+
+## VOLUME VELOCITY Input  
+ 
+## SOURCE Input  
+gas temp update    
+heatvoluem  // can spread temperatue   // lave cool rate 
+
+# FLIP Solver   
+**Substeps**
+- timestep = podziel czas na czesci   
+- substep - dodaj stepy w framie  
 
 **Particle Motion:**  
 `separation` / `droplet` / `vorticity`   
 
 **Volume Motion:**  
+
 volume limits:
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)
 
 collisions:
-- stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) 
+- stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) //??(0 plynne - 7000 guma)  
 
 `Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
@@ -36,11 +49,14 @@ collisions:
 
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
-`Air Incompressibility - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
+`Air Incompressibility` - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
 
-(0 plynne - 7000 guma)  
--timestep = podziel czas na czesci   
-- substep - dodaj stepy w framie  
+vorticity:
+- preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion. 
+
+
+**Distribution:**  
+- for net renders
 
 ## Collisions
 
@@ -49,7 +65,7 @@ collisions:
 ```
 Flip tank with bounadary layer 
 
-Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. (Houdini 16 Masterclass)
+Flip solver: Velocity transfer Splashy >> Swirly  // not as noisy and turb. (Houdini 16 Masterclass) and keep vorticity better
 Enable surface tenssion 48 // high value less motion for 
 FLIP object: - particle separation 0.03
 grid scale // fat /thin 1.5
