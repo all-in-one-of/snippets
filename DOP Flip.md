@@ -14,11 +14,11 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - 
 ## FLIP Solver 
 
-**[PARTICLE MOTION]**  
+**Particle Motion**  
 `separation` / `droplet` / `vorticity`   
 
-**[VOLUME MOTION]**  
-[volume limits]
+**Volume Motion**  
+volume limits
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level. 
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options
 
