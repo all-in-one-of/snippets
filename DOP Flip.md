@@ -31,18 +31,18 @@ Standard object
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
 # FLIP Solver   
-### Substeps:
+### [Substeps]:
 - timestep = podziel czas na czesci   
 - substep = dodaj stepy w framie  
 
-### Particle Motion:
+### [Particle Motion]:
 `separation` / `droplet` /  
 
 #### Droplets:  
 #### Vorticity: 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
 
-### Volume Motion:  
+### [Volume Motion]:  
 
 #### Volume Limits:  
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level.   
@@ -64,16 +64,16 @@ Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`V
 - createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
 
-**NarrowBand:**  
+### [NarrowBand]:   
 
-**Distribution:**  
+### [Distribution]:    
 - for net renders
 
-## Collisions
-make dvb collision
+## Collisions  
+make dvb collision  
 
 
-## Setups
+## Setups  
 **Crown Splash**
 ```
 Flip tank with bounadary layer 
