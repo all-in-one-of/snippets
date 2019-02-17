@@ -8,13 +8,18 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - VOLUME VELOCITY
 - SOURCE 
 ```
+
 ### OBJECT Input
+
 #### Flip Object  
 Standard object  
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
+
 ### PARTICLE VELOCITY Input  
-Pop solver   
+Pop Solver   
+Pop Curve force (Illume Jeff I ) // input curve 
+
 
 ### PARTICLE VELOCITY Input  
 
@@ -23,6 +28,7 @@ Pop solver
 ### SOURCE Input  
 gas temp update    
 heatvoluem  // can spread temperatue   // lave cool rate 
+pop color 
 
 # FLIP Solver   
 **Substeps**
@@ -46,7 +52,6 @@ collisions:
 `Viscosity` - (lava)   
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 
-
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
 `Air Incompressibility` - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
@@ -59,6 +64,8 @@ vorticity:
 - for net renders
 
 ## Collisions
+make dvb collision
+
 
 ## Setups
 **Crown Splash**
