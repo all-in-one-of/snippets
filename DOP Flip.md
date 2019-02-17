@@ -1,4 +1,4 @@
-# FLIP SOLVER:
+
 Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum
 
 ## Properties
@@ -9,10 +9,14 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - SOURCE 
 ```
 
+## FLIP Solver 
+
 **[PARTICLE MOTION]**  
 `separation` / `droplet` / `vorticity`   
 
 **[VOLUME MOTION]**  
+[volume limits]
+- waterline (semi open boundaries)(above opne, belowe close) it should be on water level. 
 `Surface Tension` - createing the surfacepressure field. fight against gravity trying to put particles in drop. Crown Splash, Suction, Avoidance  
 `Density`  
 `Divergence` - However, you may want to adjust the particle spacing. Doing this with forces is difficult because the volume projection will undo your forces.  
@@ -20,7 +24,6 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 `Air Incompressibility - Enforce ! By default, the air volume is not simulated and is treated entirely as a void.   
 
 
-## Solver 
 -timestep = podziel czas na czesci   
 - substep - dodaj stepy w framie  
 
