@@ -8,19 +8,19 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - VOLUME VELOCITY
 - SOURCE 
 ```
-## OBJECT Input
+### OBJECT Input
 #### Flip Object  
 Standard object  
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
-## PARTICLE VELOCITY Input  
+### PARTICLE VELOCITY Input  
 Pop solver   
 
-## PARTICLE VELOCITY Input  
+### PARTICLE VELOCITY Input  
 
-## VOLUME VELOCITY Input  
+### VOLUME VELOCITY Input  
  
-## SOURCE Input  
+### SOURCE Input  
 gas temp update    
 heatvoluem  // can spread temperatue   // lave cool rate 
 
