@@ -1,5 +1,5 @@
 
-Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid
+Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid but mostly working on volumes.
 
 # Properties
 ```md
@@ -10,21 +10,21 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 ```
 
 #### OBJECT Input
-- Flip Object
+- `Flip Object`
 
 #### PARTICLE VELOCITY Input  
-- Pop Solver   
-- Pop Curve force (Illume Jeff I ) // input curve 
+- `Pop Solver`   
+- `Pop Curve force` (Illume Jeff I ) // input curve 
 
 #### PARTICLE VELOCITY Input  
 
 #### VOLUME VELOCITY Input  
-
+- gas field vop // taki volume from sim  (Illume Jeff II )
 #### SOURCE Input  
-- gas temp update    
-- heatvoluem  // can spread temperatue   // lave cool rate 
-- pop color 
-- source volume
+- `gas temp update`    
+- `heatvoluem`  // can spread temperatue   // lave cool rate 
+- `pop color` 
+- `source volume` ( initialize source flip) with SOP link to: `fluid source SOP`
  
 # Flip Object  
 ### Standard object  
@@ -74,6 +74,13 @@ for net renders
 make dvb collision  
 Dop static object with volume collision. 
 
+# Sourceing
+
+## IN SOPS:
+- **fluid source SOP**  to the geometry  // 
+in container settings: Source FLIP
+in velocity volumes: you can add initial velo and noise (Add Velocity)
+
 ## Setups  
 **Crown Splash**
 ```
@@ -98,6 +105,8 @@ check density of object (mass)
 Substeps -  Max Substeps change from 2 to 1.  
 check Particle Separation changed to 0.1  
 ```
+**Pyro > Fluid***  
+https://vimeo.com/157944287  
 
 ## ###
 
