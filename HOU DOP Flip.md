@@ -19,7 +19,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 #### PARTICLE VELOCITY Input  
 
 #### VOLUME VELOCITY Input  
-- gas field vop // taki volume from sim  (Illume Jeff II )
+- `gas field vop` // taki volume from sim  (Illume Jeff II )
 #### SOURCE Input  
 - `gas temp update`    
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
@@ -71,13 +71,12 @@ createing the surfacepressure field. fight against gravity trying to put particl
 for net renders
 
 ## Collisions  
-- IN SOPS: **collision source** 
-input this with vdb 
-- IN DOPS Dop static object with volume collision. 
+- IN SOPS: `collision source` - input this with vdb.  
+- IN DOPS Dop `static object` with volume collision.   
 
 # Sourceing
 
--  IN SOPS: **fluid source SOP**  to the geometry  // 
+-  IN SOPS: `fluid source` SOP  to the geometry  // 
 in container settings: Source FLIP
 in velocity volumes: you can add initial velo and noise (Add Velocity)
 
