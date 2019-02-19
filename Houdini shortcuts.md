@@ -19,6 +19,10 @@
 `\` - manual update  
 `|` - auto update  
 
+## Hell-Shortuct to remove:
+`Alt` + `W` - close window
+`Ctrl` + `1`,`2` .... - change 
+
 ## SHORTS  
 `9` - select by group
 
