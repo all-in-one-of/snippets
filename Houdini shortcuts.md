@@ -1,6 +1,6 @@
 
 ## EDIT MODE
-
+`F2`-`F5` - Selection types box/lasso/paint/laser  
 `Y` -  Edit  
 `L` - Slide on Surface   
 `H` - Peak  
@@ -22,6 +22,9 @@
 ## Hell-Shortuct to remove:
 `Alt` + `W` - close window
 `Ctrl` + `1`,`2` .... - change 
+
+**edit:**
+F5 - to selection ??? from9 ?
 
 **nodenet:**
 `C` is visualize should be: comment
