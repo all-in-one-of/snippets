@@ -22,10 +22,10 @@
 
 ```cpp
 int npt = npoints(0); 
-vector all_pos[];
-resize(all_pos, npt);
 
+vector TableOfPts[];
+resize(TableOfPts, npt);
 for(int i = 0; i < npt; i++) {
-    all_pos[i] = point(0, "P", i);
-} 
+    TableOfPts[i] = point(0, "P", i);
+    } 
 ```
