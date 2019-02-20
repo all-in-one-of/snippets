@@ -6,6 +6,16 @@
 @ramponcurve = chramp('ColorRamp', gradient);  // map it to ramp
 ```
 
+### Carve Curve
+```cpp
+//by @mr5iveThou5and:
+float max = chf("max"); // like carve u parm
+float min = chf("min"); // like carve v parm
+vector uv;     
+int primnum = @primnum;
+float d = xyzdist(0, @P, primnum, uv);
+@P = primuv(0, "P", primnum, set(fit01(uv.x,min,max), 0.0, 0.0));
+```
 ### Delete last point
 ```cpp
 @ptnum == `npoints(0)-1` //group the last point on curve
@@ -23,7 +33,6 @@
 ### Remove overlaped prims
 
 ```
-
 int prim_points[] = primpoints( geoself(), @primnum );
 vector pos_accum = 0;
 
