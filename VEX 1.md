@@ -17,3 +17,15 @@
 - Delete By Expression: $PT==$NPT-1
 - Delete By Range: change Start to: $N*/
 ```
+
+## [detial]  Arraty from points.
+
+```cpp
+int npt = npoints(0); 
+vector all_pos[];
+resize(all_pos, npt);
+
+for(int i = 0; i < npt; i++) {
+    all_pos[i] = point(0, "P", i);
+} 
+```
