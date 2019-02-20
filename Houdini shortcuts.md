@@ -23,6 +23,9 @@
 `Alt` + `W` - close window
 `Ctrl` + `1`,`2` .... - change 
 
+**nodenet:**
+`C` is visualize should be: comment
+
 ## SHORTS  
 `9` - select by group
 
