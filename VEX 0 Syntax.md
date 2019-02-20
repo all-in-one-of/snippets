@@ -119,8 +119,8 @@ i@MyArray[1] = @primnum; // Set primnum in array[1]
 removevalue(i[]@MyArray, ValueToRemove); 
 i[]@connected_pts = neighbours(0, @ptnum);
 ```
-
-[point wrangle] Import `detailarray` as a local point array.
+### Detail > Points
+**[point wrangle]** Import `detailarray` as a local point array.
 (If any array element modulo of 2  is equal to zero, 
 point with the same number is colored.)
 ```cpp
@@ -133,7 +133,8 @@ foreach(int i; importarray)
       }
    }
 ```
-[detail wrangle] Import array of point positios to detail wrangler   
+### Points > Detail
+**[detail wrangle]** Import array of point positios to detail wrangler   
 iterates over the geometry points, reads their positions  and puts each value into 
 a detail array   
 ```cpp
