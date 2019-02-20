@@ -43,4 +43,4 @@ if ( xyz_prim > @primnum && xyz_dist < 0.001 )
     removeprim(geoself(), @primnum, 1);
 else if ( xyz_prim < @primnum && xyz_dist < 0.001 )
     removeprim(geoself(), xyz_prim, 1);
-    ```
+```
