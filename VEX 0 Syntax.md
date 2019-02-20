@@ -154,3 +154,10 @@ for(int i = 0; i < npt; i++) {
     importarray[i] = point(0, "P", i);
     } 
 ```
+
+**[point wrangle]**  
+Export every point to one detail array
+```cpp
+int point[] = array(@ptnum);
+setdetailattrib(0, "points", point, "append");
+```
