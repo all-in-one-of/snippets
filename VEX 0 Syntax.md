@@ -19,6 +19,11 @@ int test(int a, b; string c) {
 ```
 ## Conditioning
 ```glsl
+if (@ptnum < 1) {@orient = chv("rot2");}
+else { @orient = chv("rot"); }
+```
+
+```glsl
 if(b < a) {
     s@out = "true";
 }
