@@ -98,12 +98,15 @@ substeps up!!
 ```
 surface tenssion 48000
 ```
-**RDB floating on FLIP:**   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
+**floating RDB:**   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
 merge: rigidbody solver + flip solver 
 check density of object (mass)  
 Substeps -  Max Substeps change from 2 to 1.  
 check Particle Separation changed to 0.1  
+```
+```
+bullet solver with rdb object is working as well
 ```
 **Pyro > Fluid**  
 https://vimeo.com/157944287 
