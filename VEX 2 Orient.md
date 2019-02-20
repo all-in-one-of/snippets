@@ -51,11 +51,10 @@ vector myVectorArray[] = v[]@myVectorArray;
 // load array attributes into local var
 
 matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
-vector axis = chv("axies"); 
-// to this matrixa around given axies 
+vector axis = chv("axies"); // to this matrixa around given axies 
 float angle = radians(ch('amount')); // rot to radians 
-rotate(m, angle, axis); 
-// multi each point by new matrix piv need to be @ orig to rot this in place
+rotate(m, angle, axis); // multi each point by new matrix 
+(pivot need to be @ orig to rot this in place)
 @P *= m; // apply rotation
 ```
 
@@ -63,13 +62,10 @@ rotate(m, angle, axis);
 The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
 ```cpp
 v@up = chv("up_vec");
-matrix3 m = maketransform(@N, v@up);
-// create a 3x3 otrien amtrix using N and up as ther principal axies 
+matrix3 m = maketransform(@N, v@up); //3x3 otrien amtrix using N and up as ther principal axies 
 vector axis = @N;
-float angle = radians(ch("angle"));
-// now rot thji matrix round N axix at over time
-rotate(m, angle, axis);
-//make the orient quaternion from this matrix
+float angle = radians(ch("angle")); // now rot thji matrix round N axix at over time
+rotate(m, angle, axis); //make the orient quaternion from this matrix
 p@orient = quaternion(m);
 ```
 
