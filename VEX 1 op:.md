@@ -24,5 +24,5 @@ opname(".")  // operatorstring $OS  @OpInput1
 @P = point(1, 'P', @ptnum);
 @P = @opinput1_P;
 ```
-npoints should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).
+`npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).
 
