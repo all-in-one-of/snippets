@@ -1,16 +1,16 @@
 POINT CLOUDS:
-```cpp
+
 /*Point Clouds architecture in VEX is based on data structure called kd-trees. They are created in memory from Houdini geometry and kept in cache for a period of VEX execution. Handle is like a reference of this structure inside a single VEX instance . If you create two point clouds, they will probably have handles 0 and 1 pc functions require that handle to find the point cloud to both read and write in to the separate memory.
 It's basically an integer which lets you tell to other pc* functions which point cloud you're interested in (among many possibly created)
 
 when you do a pcopen() in vex, the points are ordered from closest to farthest. also, if you simply restrict your pcopen() to a single point, it will be the one that's closest to your search point.*/
 
-int handle = pcopen("test.pc", "P", P, "N", N, 1e6, 100, "ndot", 0.8); // This will only return points where dot(N, Npoint) > 0.8 Returns a handle to a point cloud file.
-pcfilter() //Filters points found by pcopen using a simple reconstruction filter.
-pcfind() // Returns a list of closest points from a file.
-pcfind_radius //Returns a list of closest points from a file taking into account their radii.
-pcfarthest() // Returns the distance to the farthest point found in the search performed by pcopen.
-```
+`int handle = pcopen("test.pc", "P", P, "N", N, 1e6, 100, "ndot", 0.8);` // This will only return points where dot(N, Npoint) > 0.8 Returns a handle to a point cloud file.
+`pcfilter()` Filters points found by pcopen using a simple reconstruction filter.
+`pcfind()` Returns a list of closest points from a file.
+`pcfind_radius` Returns a list of closest points from a file taking into account their radii.
+`pcfarthest()` Returns the distance to the farthest point found in the search performed by pcopen.
+
 
 
 POINT CLOUDS
@@ -25,7 +25,7 @@ accum = 0;
 
 int handle = pcopen(@OpInput1, "P", @P, 1000, pc_points);
 
-while(pciterate(handle)) { //jeśli nadal istnieje punkt w arry punktu zbliżeniowego, zwraca on 1 i wchodzi do pętle while. Jeśli nie ma żadnego punktu, zwraca 0 i nie wchodzi w pętlę
+while(pciterate(handle)) { //untill there are points
 
     pcimport(handle, "point.number", pc_ptnum);
 
