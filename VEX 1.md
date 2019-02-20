@@ -18,14 +18,3 @@
 - Delete By Range: change Start to: $N*/
 ```
 
-## [detial]  Arraty from points.
-
-```cpp
-int npt = npoints(0); 
-
-vector TableOfPts[];
-resize(TableOfPts, npt);
-for(int i = 0; i < npt; i++) {
-    TableOfPts[i] = point(0, "P", i);
-    } 
-```
