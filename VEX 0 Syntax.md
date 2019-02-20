@@ -82,7 +82,7 @@ foreach(int nb_ptnum; nbs) {
 P_avg /= len(nbs);
 v@P = P_avg;
 ```
-"break" keyword - can stop the loop at any point
+`break` keyword - can stop the loop at any point
 ```cpp
 int valB = 5;
 for (int i=0; i<13; i++) {
@@ -91,7 +91,7 @@ for (int i=0; i<13; i++) {
 }
 i@valB = valB;
 ```
-"continue" keyword to jump to the next loop iteration. in this example we average point position with positions of neighbours which are above it in world space (their Y coordinate is larger)
+`continue` keyword to jump to the next loop iteration. in this example we average point position with positions of neighbours which are above it in world space (their Y coordinate is larger)
 ```cpp
 int pts[] = neighbours(0, @ptnum);
 vector P_avg_upper = {0};
@@ -107,6 +107,7 @@ foreach(int nb_ptnum; pts) {
 P_avg_upper /= count;
 v@P = P_avg_upper;
 ```
+`while(pciterate(handle))` //return one until point is valid 
 
 ## Arrays
 ```cpp
