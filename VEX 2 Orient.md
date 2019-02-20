@@ -33,18 +33,8 @@ v@P //  Translation of the copy  //   Instance Position
  if it's 1, you can use the scale() vex function(edited)like: scale(3@transform, vector(@pscale));
  
 
-roatate matrix
-```cpp
-//quaternion rotation
-int numbers[] = array(1,2,3,4);
-vector myVectorArray[] = v[]@myVectorArray; // load array attributes into local var
-matrix3 m = ident(); // create a matrix
-vector axis = {0,0,1}; // rot axis
-float angle = radians(ch('amount')); // rot to radians 
-rotate(m, angle, axis); // rotate the matrix
-@P *= m; // apply rotation
-```
-rotate packed geo:
+
+**rotate packed geo:**
 ```cpp
 // run over poinwrangle with packed geo input:
 matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
@@ -53,3 +43,33 @@ float angle = radians(chf("angle"));
 rotate(x, angle, axis);
 setprimintrinsic(0, "transform", @primnum, x, "set");
 ```
+
+**roatate matrix:**
+```cpp
+int numbers[] = array(1,2,3,4);
+vector myVectorArray[] = v[]@myVectorArray; 
+// load array attributes into local var
+
+matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
+vector axis = chv("axies"); 
+// to this matrixa around given axies 
+float angle = radians(ch('amount')); // rot to radians 
+rotate(m, angle, axis); 
+// multi each point by new matrix piv need to be @ orig to rot this in place
+@P *= m; // apply rotation
+```
+
+**rotate matrix to quaternions:**
+The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
+```cpp
+v@up = chv("up_vec");
+matrix3 m = maketransform(@N, v@up);
+// create a 3x3 otrien amtrix using N and up as ther principal axies 
+vector axis = @N;
+float angle = radians(ch("angle"));
+// now rot thji matrix round N axix at over time
+rotate(m, angle, axis);
+//make the orient quaternion from this matrix
+p@orient = quaternion(m);
+```
+
