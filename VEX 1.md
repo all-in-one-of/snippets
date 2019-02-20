@@ -1,9 +1,9 @@
 
 
 ### Gradient on Curve
-
+```
 @gradient = @ptnum/(@numpt-1.0); 
-
+```
 
 ### Delete last point
 ```cpp
