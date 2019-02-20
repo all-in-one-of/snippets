@@ -1,9 +1,8 @@
 # Point Clouds
 
-Point Clouds architecture in VEX is based on data structure called kd-trees. They are created in memory from Houdini geometry and kept in cache for a period of VEX execution. Handle is like a reference of this structure inside a single VEX instance . If you create two point clouds, they will probably have handles 0 and 1 pc functions require that handle to find the point cloud to both read and write in to the separate memory.
-It's basically an integer which lets you tell to other pc* functions which point cloud you're interested in (among many possibly created)
+Point Clouds architecture in VEX is based on data structure called kd-trees. They are created in memory from Houdini geometry and kept in cache for a period of VEX execution. Handle is like a reference of this structure inside a single VEX instance . If you create two point clouds, they will probably have handles 0 and 1 pc functions require that handle to find the point cloud to both read and write in to the separate memory. It's basically an integer which lets you tell to other pc* functions which point cloud you're interested in (among many possibly created)
 
-when you do a pcopen() in vex, the points are ordered from closest to farthest. also, if you simply restrict your pcopen() to a single point, it will be the one that's closest to your search point.  
+`pcopen()` - the points are ordered from closest to farthest. also, if you simply restrict your pcopen() to a single point, it will be the one that's closest to your search point.  
 
 `int handle = pcopen("test.pc", "P", P, "N", N, 1e6, 100, "ndot", 0.8);` // This will only return points where dot(N, Npoint) > 0.8 Returns a handle to a point cloud file.  
 `pcfilter()` Filters points found by pcopen using a simple reconstruction filter.  
@@ -11,6 +10,8 @@ when you do a pcopen() in vex, the points are ordered from closest to farthest. 
 `pcfind_radius` Returns a list of closest points from a file taking into account their radii.  
 `pcfarthest()` Returns the distance to the farthest point found in the search performed by pcopen.  
  
+`pcclose(handle)` Na koniec zamykamy uchwyt, aby uzyskać dostęp do bazy danych punktu 
+
 
 ```cpp
 int pc_ptnum, pc_points;
@@ -37,7 +38,7 @@ while(pciterate(handle)) { //untill there are points
 pcclose(handle);
 f@Alpha = accum / pc_points;
 ```
-Performing a proximity query
+Performing a proximity query  
 
 ```cpp
 int handle = pcopen(texturename, "P", P, maxdistance, maxpoints);
@@ -51,13 +52,19 @@ while (pcunshaded(handle, "irradiance"))
 pcfilter(handle, radius, "irradiance", ir);
 ```
 
-GEOMETRY PROXIMITY 
-neighbour()  /  neighboucount() / neighbours()
-```cpp
-neighbour() //point number of the next point connected to a given point
-neighboucount() // number of points that are connected to the specified point.
-neighbours() //  array of the point numbers of the neighbours of a point.
 
+### GEOMETRY PROXIMITY  
+`neighbour()` point number of the next point connected to a given point   
+`neighboucount()` number of points that are connected to the specified point.    
+`neighbours()`  array of the point numbers of the neighbours of a point.   
+`nearpoint()` - closest point in a geometry  
+`nearpoints()` - all the closest point in a geometry.  
+`minpos()` - closest position on the surface of a geometry  
+`surfacedist()` - distance of a point to a group of points along the surface of a geometry  
+`xyzdist()` - distance of a point to a geometry.   
+
+
+```cpp
 int []
 neighbours(int opinput, int ptnum)
 {
@@ -67,22 +74,17 @@ neighbours(int opinput, int ptnum)
     resize(result, n);
     for (i = 0; i < n; i++)
         result[i] = neighbour(input, ptnum, i);
-}```
+}
+```
+
 ```cpp
 int nearpt = nearpoints(0, @P, 1e34, 2)[1:][0]; // find a nearest point which is not self
 int neighbourcount(0, @ptnum); // count of neighbours `neighbourcount` / `neighbours` Connected Points:
-i[]@connected_pts = neighbours(0, @ptnum); // get matrix with all neighbours```
-
-nearpoint() / nearpoints() / minpos() / xyzdist() / surfacedist()
-```cpp
-nearpoint() // closest point in a geometry
-nearpoints() //  all the closest point in a geometry.
-minpos() // closest position on the surface of a geometry
-surfacedist() // distance of a point to a group of points along the surface of a geometry
-xyzdist() //  distance of a point to a geometry.
+i[]@connected_pts = neighbours(0, @ptnum); // get matrix with all neighbours
 ```
-```cpp
 
-int [] nearpoints(<geometry>geometry, vector pt, float maxdist, int maxpts) ```
+```cpp
+int [] nearpoints(<geometry>geometry, vector pt, float maxdist, int maxpts) 
+```
 
 
