@@ -8,7 +8,6 @@
 
 ### Carve Curve
 ```cpp
-//by @mr5iveThou5and:
 float max = chf("max"); // like carve u parm
 float min = chf("min"); // like carve v parm
 vector uv;     
@@ -16,6 +15,29 @@ int primnum = @primnum;
 float d = xyzdist(0, @P, primnum, uv);
 @P = primuv(0, "P", primnum, set(fit01(uv.x,min,max), 0.0, 0.0));
 ```
+```cpp
+float animDur       = f@perimeter * 400.0;
+
+float n             = fit( noise( v@P * 22.0 ), 0.2, 0.8, 0.0, 1.0 );
+float offset        = fit01( lerp( n, rand( @primnum ), 0.35 ), 0.0, 15.0 );
+float animPer       = fit( @Time - offset, 0.0, animDur, 0.0, 1.0 );
+
+int primPts[]       = primpoints( 0, @primnum );
+foreach( int pt; primPts )
+{
+    float u         = point( 0, "curveu", pt );
+    if( u > animPer ){
+        removepoint( 0, pt );
+    }
+}
+
+if( animPer > 0.0 ){
+    vector pos      = primuv( 0, "P", @primnum, set( animPer, 0.0, 0.0 ) );
+    int newPt       = addpoint( 0, pos );
+    addvertex( 0, @primnum, newPt );
+}
+```
+
 ### Delete last point
 ```cpp
 @ptnum == `npoints(0)-1` //group the last point on curve
