@@ -2,7 +2,8 @@
 
 ### Gradient on Curve
 ```
-@gradient = @ptnum/(@numpt-1.0); 
+@gradient = @ptnum/(@numpt-1.0);
+@ramponcurve = chramp('ColorRamp', gradient);  // map it to ramp
 ```
 
 ### Delete last point
