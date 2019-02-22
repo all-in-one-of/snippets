@@ -77,7 +77,7 @@ Sanitary Silicon | 5M - 10M
 ### [NarrowBand]:   
 
 ### [Distribution]:    
-for net renders
+- for net renders
 
 
 
@@ -88,23 +88,18 @@ for net renders
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 - bounds
 ### [Initial Data]
-Input type:
-- Surface sop
-- particle field // *sop path*just input points. (particle from volume are good - good distribution)
-- Narrow Band  // from oceane source (particles(points)+volume for: *sop path* and *surface volume*) 
+Input type: *Surface sop, particle field, Narrow Band*  
 ### [Physical]
 Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if viscosity by attribute in solver is checked and there is point attribute at sop viscosity will be multiplayed)
 
 
-
-
 # Sourcing
 IN SOPS: 
-- `fluid source` SOP  to the geometry
+- `fluid source` SOP  (for source volume) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
 in container settings: Source FLIP
 in velocity volumes: you can add initial velo and noise (Add Velocity)
-- `pointes from volume` SOP // source from points (change [Input type] to *particle field*)
-
+- `pointes from volume` SOP (for source volume) // source from points (change[Initial Data] input to *particle field*)
+- `oceane source` SOP (for flip object) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
 
 # Collisions  
 - IN SOPS: `collision source` - input this with vdb.  
