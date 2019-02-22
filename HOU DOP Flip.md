@@ -58,6 +58,8 @@ Substance | CentiPoise
 Water | 1
 Honey | 3000 
 Mustard | 50 000 
+Peanut Butter | 150 000 
+Sanitary Silicon | 5M - 10M
 
 
 
