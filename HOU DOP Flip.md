@@ -9,28 +9,37 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - SOURCE 
 ```
 
-#### OBJECT Input
+#### *OBJECT Input*
 - `Flip Object`
 
-#### PARTICLE VELOCITY Input  
+#### *PARTICLE VELOCITY Input* 
 - `Pop Solver`   
 - `Pop Curve force` (Illume Jeff I ) // input curve 
 
-#### PARTICLE VELOCITY Input  
+#### *PARTICLE VELOCITY Input*  
 
-#### VOLUME VELOCITY Input  
+#### *VOLUME VELOCITY Input*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
-#### SOURCE Input  
+#### *SOURCE Input*  
 - `gas temp update`    
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `pop color` 
 - `source volume` ( initialize source flip) with SOP link to: `fluid source SOP`
  
-# Flip Object  
-### Standard object  
+# NODES:
+## Flip Object
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
-Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity`  
+- bounds
+### [Initial Data]
+Input type:
+- Surface sop
+- particle field // *sop path*just input points. (particle from volume are good - good distribution)
+- Narrow Band  // from oceane source (particles(points)+volume for: *sop path* and *surface volume*) 
+### [Physical]
+Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` 
+
+
 # FLIP Solver   
 ### [Substeps]:
 - timestep = podziel czas na czesci   
@@ -52,11 +61,15 @@ Collision detection // move outside is faster than particle
 #### Collisions:  
 - stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) //??(0 plynne - 7000 guma)  
   
-#### Viscosity: - (lava)     
+#### Viscosity: (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
+Measured in: (centi)Poise / water: 1 / Honey 3000 / mustard 50k / peanut butt 150k / sanitary silicon 5-10M / 
+
+
 
 #### Density:   
 By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
+
 #### Air:  
 
 #### Divergence:  
