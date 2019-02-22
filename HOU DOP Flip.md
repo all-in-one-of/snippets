@@ -32,7 +32,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - timestep = podziel czas na czesci  /  substep = dodaj stepy w framie  
 
 ### [Particle Motion]:
-Collision detection // move outside is faster than particle 
+- Collision detection // move outside is faster than particle 
 #### Separation:  
 #### Droplets:  
 #### Vorticity: 
