@@ -91,21 +91,22 @@ Input type: *Surface sop, particle field, Narrow Band*
 Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if viscosity by attribute in solver is checked and there is point attribute at sop viscosity will be multiplayed)
 
 
-# Sourcing
-IN SOPS: 
-- `fluid source` SOP  (for source volume) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
-in container settings: Source FLIP
-in velocity volumes: you can add initial velo and noise (Add Velocity)
-- `pointes from volume` SOP (for source volume) // source from points (change[Initial Data] input to *particle field*)
-- `oceane source` SOP (for flip object) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
 
 # Collisions  
-- IN SOPS: 
-- `collision source` - handles interpolating the geometry and creating VDB
-- IN DOPS Dop `static object` with volume collision.   
+`static object` with volume collision.   
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 - Accurate velocities for moving collision objects are extremely important.
 - {Deforming Object} shelf tool to set up deforming geometry as a FLIP collision object.
+
+- SOP `Collision Source` SOP -  interpolate deforming geometry, calculate point velocities, and create VDB. Usually used in conjunction with a Static Object DOP.
+
+
+# Sourcing
+- SOP `fluid source` SOP  (for source volume) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
+in container settings: Source FLIP
+in velocity volumes: you can add initial velo and noise (Add Velocity)
+- SOP `pointes from volume` SOP (for source volume) // source from points (change[Initial Data] input to *particle field*)
+- SOP `Oceane Source` (for flip object) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
 
 # Setups  
 **Crown Splash**
