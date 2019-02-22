@@ -9,18 +9,18 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - SOURCE 
 ```
 
-#### *OBJECT Input*
+#### *Input OBJECT*
 - `Flip Object`
 
-#### *PARTICLE VELOCITY Input* 
+#### *Input PARTICLE VELOCITY* 
 - `Pop Solver`   
 - `Pop Curve force` (Illume Jeff I ) // input curve 
 
-#### *PARTICLE VELOCITY Input*  
+#### *Input PARTICLE VELOCITY*  
 
-#### *VOLUME VELOCITY Input*  
+#### *Input VOLUME VELOCITY*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
-#### *SOURCE Input*  
+#### *Input SOURCE*  
 - `gas temp update`    
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `pop color` 
