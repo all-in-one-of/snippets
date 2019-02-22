@@ -55,14 +55,14 @@ Measured in: (centi)Poise / water: 1 / Honey 3000 / mustard 50k / peanut butt 15
 
 
 #### Density:   
-By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
+- By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
 
 #### Air:  
 
 #### Divergence:  
-Positive values cause particles to spread out, and negative values cause them to clump together.
+- Positive values cause particles to spread out, and negative values cause them to clump together.
 #### Surface Tension:   
-createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
+- Createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
 
 
 ### [NarrowBand]:   
