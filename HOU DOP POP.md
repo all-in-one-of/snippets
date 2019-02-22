@@ -16,6 +16,7 @@ POPs: Vex based solver
 - pop vop  
 
 #### SOURCE Input    
+(birth/birth from attribute)
 - fireworks  
 - popattract (to point or geometry)  
 - popdrag  
@@ -25,6 +26,12 @@ POPs: Vex based solver
 - popcolision (stick/ bounce)  
 - popgroup  
 - popforce // jakies noizy Old thing   
+
+## POP SOLVER:  
+(behavior on collisions)
+
+## Multi Solver
+multisolver is for pops (and rigid body)
 
 ## POP FLUIDS:  
 popfluid PBD fluid make intersection in pops (node from white water) (h17 core of new water solver in future maby with vellum). 
