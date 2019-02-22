@@ -100,9 +100,12 @@ in velocity volumes: you can add initial velo and noise (Add Velocity)
 - `oceane source` SOP (for flip object) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
 
 # Collisions  
-- IN SOPS: `collision source` - input this with vdb.  
+- IN SOPS: 
+- `collision source` - handles interpolating the geometry and creating VDB
 - IN DOPS Dop `static object` with volume collision.   
-Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
+- Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
+- Accurate velocities for moving collision objects are extremely important.
+- {Deforming Object} shelf tool to set up deforming geometry as a FLIP collision object.
 
 # Setups  
 **Crown Splash**
