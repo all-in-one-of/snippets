@@ -37,14 +37,14 @@ Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`V
 - substep = dodaj stepy w framie  
 
 ### [Particle Motion]:
-
+Collision detection // move outside is faster than particle 
 #### Separation:  
 #### Droplets:  
 #### Vorticity: 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
 
 ### [Volume Motion]:  
-
+- smoothing 
 #### Volume Limits:  
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level.   
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)  
