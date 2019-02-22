@@ -32,25 +32,23 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - timestep = (divide 1 frame to few)  
 - substep = (add steps in 1 framie) Fluid dont need it exxeption are: fast moving fluid that collides with other objects and Surface tension. 
 
+
 ### [Particle Motion]:
 - `Collision detection` Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions. the Particle method only works when a collision is represented by an actual DOP object.  
-
 - `default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
-
 #### Separation:  
 #### Droplets:  
 #### Vorticity: 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
+
 
 ### [Volume Motion]:  
 - smoothing 
 #### Volume Limits:  
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level.   
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)  
-
 #### Collisions:  
 - stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse)   
-  
 #### Viscosity: (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 Measured in: (centi)Poise.
@@ -65,9 +63,8 @@ Sanitary Silicon | 5M - 10M
 
 #### Density:   
 - By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
-
 #### Air:  
-
+- Enforce Air Incompressibility on the FLIP Solver. This feature prevents air pockets from collapsing
 #### Divergence:  
 - Positive values cause particles to spread out, and negative values cause them to clump together.
 #### Surface Tension:   
