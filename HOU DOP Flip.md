@@ -46,12 +46,15 @@ Collision detection // move outside is faster than particle
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)  
 
 #### Collisions:  
-- stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse) //??(0 plynne - 7000 guma)  
+- stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse)   
   
 #### Viscosity: (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 Measured in: (centi)Poise / water: 1 / Honey 3000 / mustard 50k / peanut butt 150k / sanitary silicon 5-10M / 
-
+Substance | CentiPoise
+---|---
+Water | 1
+Honey | 3000 
 
 
 #### Density:   
