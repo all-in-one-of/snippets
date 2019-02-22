@@ -26,20 +26,6 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - `pop color` 
 - `source volume` ( initialize source flip) with SOP link to: `fluid source SOP`
  
-# NODES:
-## Flip Object
-- **Particle Separation** // overal scale   
-- **grid scale** // higher for sharper // fat crona >> thinner splash  
-- bounds
-### [Initial Data]
-Input type:
-- Surface sop
-- particle field // *sop path*just input points. (particle from volume are good - good distribution)
-- Narrow Band  // from oceane source (particles(points)+volume for: *sop path* and *surface volume*) 
-### [Physical]
-Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` 
-
-
 # FLIP Solver   
 ### [Substeps]:
 - timestep = podziel czas na czesci   
@@ -83,18 +69,38 @@ createing the surfacepressure field. fight against gravity trying to put particl
 ### [Distribution]:    
 for net renders
 
-## Collisions  
-- IN SOPS: `collision source` - input this with vdb.  
-- IN DOPS Dop `static object` with volume collision.   
 
-# Sourceing
+
+
+# NODES:
+## Flip Object
+- **Particle Separation** // overal scale   
+- **grid scale** // higher for sharper // fat crona >> thinner splash  
+- bounds
+### [Initial Data]
+Input type:
+- Surface sop
+- particle field // *sop path*just input points. (particle from volume are good - good distribution)
+- Narrow Band  // from oceane source (particles(points)+volume for: *sop path* and *surface volume*) 
+### [Physical]
+Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` 
+
+
+
+
+# Sourcing
 
 -  IN SOPS: `fluid source` SOP  to the geometry  // 
 in container settings: Source FLIP
 in velocity volumes: you can add initial velo and noise (Add Velocity)
 
 
-## Setups  
+# Collisions  
+- IN SOPS: `collision source` - input this with vdb.  
+- IN DOPS Dop `static object` with volume collision.   
+
+
+# Setups  
 **Crown Splash**
 ```
 Flip tank with bounadary layer 
