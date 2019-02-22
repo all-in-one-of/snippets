@@ -68,8 +68,7 @@ Sanitary Silicon | 5M - 10M
 #### Divergence:  
 - Positive values cause particles to spread out, and negative values cause them to clump together.
 #### Surface Tension:   
-- Createing the surfacepressure field. fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable !!*   
-
+- Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
 
 ### [NarrowBand]:   
 
