@@ -29,8 +29,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
  
 # FLIP Solver   
 ### [Substeps]:
-- timestep = podziel czas na czesci   
-- substep = dodaj stepy w framie  
+- timestep = podziel czas na czesci  /  substep = dodaj stepy w framie  
 
 ### [Particle Motion]:
 Collision detection // move outside is faster than particle 
