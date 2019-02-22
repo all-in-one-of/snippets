@@ -29,10 +29,14 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
  
 # FLIP Solver   
 ### [Substeps]:
-- timestep = podziel czas na czesci  /  substep = dodaj stepy w framie  
+- timestep = (divide 1 frame to few)  
+- substep = (add steps in 1 framie) Fluid dont need it exxeption are: fast moving fluid that collides with other objects and Surface tension. 
 
 ### [Particle Motion]:
-- Collision detection // move outside is faster than particle 
+- `Collision detection` Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions. the Particle method only works when a collision is represented by an actual DOP object.  
+
+- `default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
+
 #### Separation:  
 #### Droplets:  
 #### Vorticity: 
@@ -59,10 +63,6 @@ Mustard | 50 000
 Peanut Butter | 150 000 
 Sanitary Silicon | 5M - 10M
 
-
-
-
-
 #### Density:   
 - By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
 
@@ -78,8 +78,6 @@ Sanitary Silicon | 5M - 10M
 
 ### [Distribution]:    
 - for net renders
-
-
 
 
 # NODES:
@@ -104,7 +102,7 @@ in velocity volumes: you can add initial velo and noise (Add Velocity)
 # Collisions  
 - IN SOPS: `collision source` - input this with vdb.  
 - IN DOPS Dop `static object` with volume collision.   
-
+Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 
 # Setups  
 **Crown Splash**
