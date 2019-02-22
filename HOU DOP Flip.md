@@ -102,11 +102,12 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 
 # Sourcing
-- SOP `fluid source` SOP  (for source volume) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
+- SOP `fluid source` SOP  (for source volume  DOP) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
 in container settings: Source FLIP
 in velocity volumes: you can add initial velo and noise (Add Velocity)
-- SOP `pointes from volume` SOP (for source volume) // source from points (change[Initial Data] input to *particle field*)
-- SOP `Oceane Source` (for flip object) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
+- SOP `pointes from volume` SOP (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
+- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
+- SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation. 
 
 # Setups  
 **Crown Splash**
