@@ -15,6 +15,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 #### *Input PARTICLE VELOCITY* 
 - `Pop Solver`   
 - `Pop Curve force` (Illume Jeff I ) // input curve 
+- `Sop Solver` // acces any sop (cmi) 
 
 #### *Input PARTICLE VELOCITY*  
 
@@ -24,7 +25,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - `gas temp update`    
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `pop color` 
-- `source volume` ( initialize source flip) with SOP link to: `fluid source SOP`
+- `source volume` (initialize source flip) with SOP link to: `fluid source SOP`
  
 # FLIP Solver   
 ### [Substeps]:
@@ -83,7 +84,7 @@ Input type:
 - particle field // *sop path*just input points. (particle from volume are good - good distribution)
 - Narrow Band  // from oceane source (particles(points)+volume for: *sop path* and *surface volume*) 
 ### [Physical]
-Here we can adjust physical beh.: `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` 
+Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if viscosity by attribute in solver is checked and there is point attribute at sop viscosity will be multiplayed)
 
 
 
