@@ -100,10 +100,11 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 
 # Sourcing
-
--  IN SOPS: `fluid source` SOP  to the geometry  // 
+IN SOPS: 
+- `fluid source` SOP  to the geometry  // 
 in container settings: Source FLIP
 in velocity volumes: you can add initial velo and noise (Add Velocity)
+- source from points (best to make `pointes from volume`)
 
 
 # Collisions  
