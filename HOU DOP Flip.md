@@ -50,8 +50,7 @@ Collision detection // move outside is faster than particle
   
 #### Viscosity: (lava)     
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
-Measured in: (centi)Poise / water: 1 / Honey 3000 / mustard 50k / peanut butt 150k / sanitary silicon 5-10M / 
-
+Measured in: (centi)Poise.
 
 Substance | CentiPoise
 --- | --- 
