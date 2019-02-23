@@ -50,6 +50,17 @@ if( animPer > 0.0 ){
 - Delete By Pattern: $N
 - Delete By Expression: $PT==$NPT-1
 - Delete By Range: change Start to: $N*/
+
+
+// Scale 10 times first and last points
+if ((@ptnum == 0) || (@ptnum == (@numpt-1))) f@pscale = 10; 
+else f@pscale = 1;
+// Scale 10 times first and last points, short form    
+f@pscale = (@ptnum == 0) || @ptnum ==(@numpt-1) ? 10 : 1;
+
+# create Groupexpreesion SOP
+neighbourcount(0, @ptnum) == 2
+
 ```
 
 ### Remove overlaped prims
