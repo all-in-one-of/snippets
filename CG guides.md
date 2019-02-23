@@ -3,6 +3,7 @@ OBJ TO FBX: Rotate 90
 # EXPORT H>UE4 resolutions
 4k = 16 777 216 pix  
 Vertex anim   
+2k - 200 frames -        - 20k poly  
 4k - 150 frames - 4 sek - 111,8k poly  
 4k - 300 frames - 8 sek - 55,9k poly  
 4k - 360 frames - 10-15 sek - 46,6k poly  
