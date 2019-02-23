@@ -94,7 +94,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 - Accurate velocities for moving collision objects are extremely important.
 - {Deforming Object} shelf tool to set up deforming geometry as a FLIP collision object.
-- SOP `Collision Source` SOP -  interpolate deforming geometry, calculate point velocities, and create VDB. Usually used in conjunction with a Static Object DOP.
+- SOP `Collision Source` -  interpolate deforming geometry, calculate point velocities, and create VDB. Usually used in conjunction with a Static Object DOP.
 
 
 # Sourcing
