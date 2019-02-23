@@ -69,7 +69,7 @@ rotate(m, angle, axis); //make the orient quaternion from this matrix
 p@orient = quaternion(m);
 ```
 
-Move an object to the origin and return back
+**Move an object to the origin and return back**
 Create wrangle to move object to the origin
 ```
 // Get center of the oject bounding box (centroid)
