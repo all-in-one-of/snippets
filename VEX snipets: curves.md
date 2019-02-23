@@ -30,3 +30,18 @@ unitlen > len  |       8  | dl! // 33
 len > real   |        9  |  0.06
 len > unit    |        10  |  0.07
 len > unitlen |      11  |  0.033
+
+
+Shape Polywire with ramp for combined curves
+```
+// Create Primitive Wrangle before polywire, use @width as Wire Radius
+// Get array of points in each curve (primitive)
+i[]@primPts = primpoints(0, @primnum);
+
+// For each point in current curve
+foreach (int i; int currentPoint; @primPts){
+    float ramp_index = fit(i, 0, len(@primPts)-1, 0,1);
+    f@widthPrim = chramp("shape", ramp_index)/20;
+    setpointattrib(0, "width", currentPoint, @widthPrim, "set"); 
+    }
+ ```
