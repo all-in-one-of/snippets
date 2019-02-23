@@ -17,12 +17,15 @@ Flip books
 - Scan > Reducer > 
 
 # BAKE:
-`painter` Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html  
-`designer`  
-`H`  
-`Xn`  
-(multiple parts toone texture with id and explode)   
-  
+### Painter 
+- Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html  
+### Designer
+- vert color   
+- material Color   
+- mesh id / polygroups  
+- File id ??  
+### Xn
+
 # FORMATS:   
 ### Mesh  
 `obj` - no vertex color  
