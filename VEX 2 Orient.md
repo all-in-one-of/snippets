@@ -69,3 +69,26 @@ rotate(m, angle, axis); //make the orient quaternion from this matrix
 p@orient = quaternion(m);
 ```
 
+Move an object to the origin and return back
+Create wrangle to move object to the origin
+```
+// Get center of the oject bounding box (centroid)
+vector min = {0, 0, 0};
+vector max = {0, 0, 0};
+getpointbbox(0, min, max);
+vector centroid = (max + min)/2.0;
+
+// Build and apply transformation matrix
+vector translate = centroid;
+vector rotate = {0,0,0};
+vector scale = {1,1,1};
+matrix xform = invert(maketransform(0, 0, translate, rotate, scale));
+@P *= xform;
+
+// Store transformation matrix in attribute
+4@xform_matrix = xform;
+```
+Create the second wrangle to return it to the original position
+```
+@P *= invert(4@xform_matrix);
+```
