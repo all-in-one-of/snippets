@@ -25,7 +25,7 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - `gas temp update`    
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `pop color` 
-- `source volume` (initialize source flip) with SOP link to: `fluid source SOP`
+- `source volume` (initialize source flip) with SOP link to: `fluid source SOP` NEW ONE 
  
 # FLIP Solver   
 ### [Substeps]:
@@ -89,21 +89,22 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 
 # Collisions  
+
 `static object` with volume collision.   
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 - Accurate velocities for moving collision objects are extremely important.
 - {Deforming Object} shelf tool to set up deforming geometry as a FLIP collision object.
-
 - SOP `Collision Source` SOP -  interpolate deforming geometry, calculate point velocities, and create VDB. Usually used in conjunction with a Static Object DOP.
 
 
 # Sourcing
-- SOP `fluid source` SOP  (for source volume  DOP) // attach this sop to geometry (change  [Initial Data] input to *Surface sop*)
-in container settings: Source FLIP
-in velocity volumes: you can add initial velo and noise (Add Velocity)
-- SOP `pointes from volume` SOP (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
-- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
+
 - SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation. 
+- SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
+- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
+
+
+
 
 # Setups  
 **Crown Splash**
