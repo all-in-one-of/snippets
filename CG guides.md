@@ -25,7 +25,7 @@ Flip books
 - mesh id / polygroups  
 - File id ??  
 ### Xn
-
+- only fbx support cage files
 # FORMATS:   
 ### Mesh  
 `obj` - no vertex color  
