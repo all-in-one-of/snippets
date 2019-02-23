@@ -1,0 +1,55 @@
+OBJ TO FBX: Rotate 90
+
+# EXPORT H>UE4 resolutions
+4k = 16 777 216 pix  
+Vertex anim   
+4k - 150 frames - 4 sek - 111,8k poly  
+4k - 300 frames - 8 sek - 55,9k poly  
+4k - 360 frames - 10-15 sek - 46,6k poly  
+4k - 500 frames - 16,6-20,8 sek - 33,5k poly  
+Flip books  
+4k tex = 256 frames x 256 pix  
+4k tex =  64 frames x 512 pix  
+
+# MODELING
+
+- Low with map > Hi > Ray Trace to conform 
+- Low > High > retopo with base lo
+- Scan > Reducer > 
+
+# BAKE:
+
+`painter` Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html
+`designer`
+`H`
+`Xn`
+(multiple parts toone texture with id and explode)
+
+# FORMATS: 
+mesh
+```
+obj - no VC
+fbx - 
+gltf - 
+```
+img:
+```
+bits per channel 8 << (16/32 high ress)(edited)
+TIFF (adobe reach format) - save image fom photoshop
+TGA - only for UE```
+img compression:
+```
+LDR - 8F
+HDR low precission 16F 
+HDR high precision 32F```
+video
+```
+H.264 -
+ffmpg -
+```
+
+# OPTIMISATION
+
+https://software.intel.com/en-us/gpa/graphics-frame-analyzer\  
+Enable in U4: ToggleDrawEvents  
+https://developer.nvidia.com/gameworksdownload  
