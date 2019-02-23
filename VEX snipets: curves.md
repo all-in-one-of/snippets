@@ -32,7 +32,7 @@ len > unit    |        10  |  0.07
 len > unitlen |      11  |  0.033
 
 
-Shape Polywire with ramp for combined curves
+**Shape Polywire with ramp for combined curves**
 ```
 // Create Primitive Wrangle before polywire, use @width as Wire Radius
 // Get array of points in each curve (primitive)
@@ -45,3 +45,22 @@ foreach (int i; int currentPoint; @primPts){
     setpointattrib(0, "width", currentPoint, @widthPrim, "set"); 
     }
  ```
+
+**Fade noise on curves with ramp**
+```
+// Requires uvtexture SOP in "Pts and Columns" mode before this wrangle
+
+// Define UI controls
+float remap_uv = chramp('remap_uv', @uv.x);
+float power = chf('Noise_Power');
+float freq = chf('Noise_Frequency');
+
+// Create noise
+vector noiseXYZ = noise(@P*freq);
+// Modify noise values
+vector displace = fit(noiseXYZ, 0,1, -1, 1)*power*remap_uv;
+// Apply modified noise to a points position
+@P += displace;
+// Visualize fade ramp on curve
+@Cd = remap_uv;
+```
