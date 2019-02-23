@@ -12,41 +12,36 @@ Flip books
 4k tex =  64 frames x 512 pix  
 
 # MODELING
-
 - Low with map > Hi > Ray Trace to conform 
 - Low > High > retopo with base lo
 - Scan > Reducer > 
 
 # BAKE:
+`painter` Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html  
+`designer`  
+`H`  
+`Xn`  
+(multiple parts toone texture with id and explode)   
+  
+# FORMATS:   
+### Mesh  
+`obj` - no vertex color  
+`fbx` -  
+`gltf`-   
+`bgeo.sc` - cache  
+  
+### Images   
+`tiff` (adobe reach format) - save image fom photoshop  
+`tga` - only for UE  
 
-`painter` Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html
-`designer`
-`H`
-`Xn`
-(multiple parts toone texture with id and explode)
+bits per channel 8 << (16/32 high ress)(edited)  
+LDR - 8F  
+HDR low precission 16F   
+HDR high precision 32F  
 
-# FORMATS: 
-mesh
-```
-obj - no VC
-fbx - 
-gltf - 
-```
-img:
-```
-bits per channel 8 << (16/32 high ress)(edited)
-TIFF (adobe reach format) - save image fom photoshop
-TGA - only for UE```
-img compression:
-```
-LDR - 8F
-HDR low precission 16F 
-HDR high precision 32F```
-video
-```
-H.264 -
-ffmpg -
-```
+### video
+H.264 -  
+ffmpg -  
 
 # OPTIMISATION
 
