@@ -80,3 +80,42 @@ vector offset =  xnoise(v@P + set(p,p,p)) - {.5,.5,.5};
 v@P += offset;
 ```
 
+```
+
+// Visualise nose as Black and White values
+// Delete black and white points separatly
+
+// Default non zero values for 10X10 grid:
+// Noise_size = 1
+// Noise_threshold = 0.5
+
+// Make geometry white
+@Cd = {1, 1, 1};
+
+// Setup noise
+float noseValues = noise(@P*(1/chf('Noise_Size')) + chf('Noise_Offset'));
+
+// Paint-delete points with noise
+if(noseValues > chf('Noise_Threshold')){
+    @Cd = 0;
+    if(rand(@ptnum) < ch('delete_black')){
+        if(chi('del') == 0){
+            @Cd = {1,0,0};
+            }
+        else{
+            removepoint(0,@ptnum);
+            }
+        }
+    }
+
+if(noseValues < chf('Noise_Threshold')){
+    if ( rand(@ptnum) < ch('delete_white') ) {       
+        if(chi('del') == 0){
+            @Cd = {1,0,0};
+            }
+        else{
+            removepoint(0,@ptnum);
+            }
+        }
+    }
+```
