@@ -15,7 +15,7 @@ Flip books
 # MODELING
 - Low with map > Hi > Ray Trace to conform 
 - Low > High > retopo with base lo
-- Scan > Reducer > 
+- Scan > Reducer > // Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv
 
 # BAKE:
 ### Painter 
