@@ -27,14 +27,21 @@ Flip books
 - only fbx support cage files
 # FORMATS:   
 ### Mesh  
-`obj` - no vertex color  
-`fbx` -  
-`gltf`-   
-`bgeo.sc` - cache  
-  
+`*.obj` - no vertex color  
+`*.fbx` -  
+`*.gltf`-   
+`*.bgeo.sc` - cache  
+
+`*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).
+`*.zpr` - `Ctrl+S` Saving a Project will save multiple ZTools at once. 
 ### Images   
-`tiff` (adobe reach format) - save image fom photoshop  
-`tga` - only for UE  
+`*.tiff` (adobe reach format) - save image fom photoshop  
+`*.tga` - only for UE  
+
+`*.sbs` - Substance Designer Document
+`*.sbsar` - Substance Archive
+
+
 
 bits per channel 8 << (16/32 high ress)(edited)  
 LDR - 8F  
