@@ -27,7 +27,7 @@ Flip books
 - only fbx support cage files
 # FORMATS:   
 ### Mesh  
-`*.obj` - no vertex color  
+`*.obj` - no vertex color and 2-uvs standarised
 `*.fbx` -  
 `*.gltf`-   
 `*.bgeo.sc` - cache  
