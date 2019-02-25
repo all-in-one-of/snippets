@@ -43,8 +43,8 @@ Flip books
 
 
 
-bits per channel 8 << (16/32 high ress)(edited)  
-LDR - 8F  
+
+LDR - 8F  bits per channel
 HDR low precission 16F   
 HDR high precision 32F  
 
