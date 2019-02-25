@@ -32,8 +32,8 @@ Flip books
 `*.gltf`-   
 `*.bgeo.sc` - cache  
 
-`*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).
-`*.zpr` - `Ctrl+S` Saving a Project will save multiple ZTools at once. 
+`*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).  
+`*.zpr` - `Ctrl+S` Saving a Project will save multiple ZTools at once.  
 ### Images   
 `*.tiff` (adobe reach format) - save image fom photoshop  
 `*.tga` - only for UE  
