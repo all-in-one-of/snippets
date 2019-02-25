@@ -38,8 +38,8 @@ Flip books
 `*.tiff` (adobe reach format) - save image fom photoshop  
 `*.tga` - only for UE  
 
-`*.sbs` - Substance Designer Document
-`*.sbsar` - Substance Archive
+`*.sbs` - Substance Designer Document  
+`*.sbsar` - Substance Archive  
 
 
 
