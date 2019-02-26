@@ -27,6 +27,10 @@ opname(".")  // operatorstring $OS  @OpInput1
 `npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).
 
 
+
+`ch("Multi")`
+`chramp()`
+
 ```glsl
 int rampkeys = chramp("ramp");
 
