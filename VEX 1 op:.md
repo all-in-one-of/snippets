@@ -37,7 +37,5 @@ int rampkeys = chramp("ramp");
 for( int i=i; i<=rampkeys; i++){
     float pos = ch(sprintf("ramp%gpos", i));
     float val = ch(sprintf("ramp%gvalue", i));
-    
-    // Do stuff
 }
 ```
