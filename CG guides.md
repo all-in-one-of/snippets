@@ -73,6 +73,18 @@ Stereo	384 kbps
 # OPTIMISATION
 
 ## UE4
+
+The only way to group meshes into one draw call is by using instanced meshes. Meshes using the same material/instance will still take one draw call each. However, they are drawn in an order that is grouped by material/instance, to reduce the number of render state changes, kinda like this:
+
+3 meshes using the same material:
+set shader, draw mesh #1, draw mesh #2, draw mesh #3
+
+3 meshes using a different material each:
+set shader #1, draw mesh #1, set shader #2, draw mesh #2, set shader #3, draw mesh #3
+
+
+
+
 From Eric Ketchum https://answers.unrealengine.com/questions/127435/using-instanced-meshes-doesnt-reduce-draw-calls.html:
 
 Instanced meshes will reduce the draw call overhead on the CPU but will not reduce the GPU cost. In fact the GPU time can increase when using instancing. Allow me to get a little technical for a moment:
