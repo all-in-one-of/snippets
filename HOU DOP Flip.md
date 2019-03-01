@@ -70,18 +70,15 @@ Sanitary Silicon | 5M - 10M
 #### Air:  
 - Enforce Air Incompressibility on the FLIP Solver. This feature prevents air pockets from collapsing
 #### Divergence:  
-Divergence is measure of imbalance. `Scale` component is using pressure field
+Divergence is measure of imbalance. `Scale` component is using pressure field  
 Incompresive fluid - have not "scale factor" still have : swirl , shear and translate factors
 
 Value | .
 --- | --- 
-- | cause them to clump together.
-0 | for Incompresive fluid
-+ | cause particles to spread out
+`-` | cause them to clump together.
+`0` | for Incompresive fluid
+`+` | cause particles to spread out
 
-- Negative values cause them to clump together.
-- 0 for Incompresive fluid - have not "scale factor" still have : swirl , shear and translate factors
-- Positive values cause particles to spread out
 #### Surface Tension:   
 - Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
 
