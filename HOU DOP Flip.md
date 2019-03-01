@@ -75,9 +75,9 @@ Incompresive fluid - have not "scale factor" still have : swirl , shear and tran
 
 Value | .
 --- | --- 
-Negative | cause them to clump together.
+- | cause them to clump together.
 0 | for Incompresive fluid
-Positive | cause particles to spread out
++ | cause particles to spread out
 
 - Negative values cause them to clump together.
 - 0 for Incompresive fluid - have not "scale factor" still have : swirl , shear and translate factors
