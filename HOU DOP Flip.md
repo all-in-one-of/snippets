@@ -38,8 +38,11 @@ Particle-Based Fluids are implemented in OpenCL and therefore also calculated on
 - `default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
 #### Separation:  
 #### Droplets:  
+- tend to clamp toghether when partic drop below certain density turn dto droplets more like . After blend back to fluid: Merge/kill
 #### Vorticity: 
+Chaos and for for white water. 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
+
 
 
 ### [Volume Motion]:  
