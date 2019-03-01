@@ -70,7 +70,7 @@ Sanitary Silicon | 5M - 10M
 #### Air:  
 - Enforce Air Incompressibility on the FLIP Solver. This feature prevents air pockets from collapsing
 #### Divergence:  
-Divergence is measure of imbalance. 
+Divergence is measure of imbalance. `Scale` component is using pressure field
 - Negative values cause them to clump together.
 - 0 for Incompresive fluid - have not "scale factor" still have : swirl , shear and translate factors
 - Positive values cause particles to spread out
