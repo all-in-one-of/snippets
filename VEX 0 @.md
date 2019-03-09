@@ -14,7 +14,9 @@ i@ // int
 s@myString = "abc";
 ```
 
+# Vex reserved:
 
+break, bsdf, char, color, const, continue, do, else, export, false, float, for, forpoints, foreach, gather, hpoint, if, illuminance, import, int, integer, matrix, matrix2, matrix3, normal, point, return, string, struct, true, typedef, union, vector, vector2, vector4, void, while
 
 # ATTRIBUTES: 
 Material:
