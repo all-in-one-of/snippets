@@ -19,9 +19,9 @@
 `\` - manual update  
 `|` - auto update  
 
-## Hell-Shortuct to remove:
-~~`Alt` + `W`~~ - close window
-~~`Ctrl` + `1`,`2`~~ .... - change 
+## Hell-Shortuct to remove:  
+~~`Alt` + `W`~~ - close window  
+~~`Ctrl` + `1`,`2`~~ .... - change   
 
 **edit:**
 F5 - to selection ??? from9 ?
