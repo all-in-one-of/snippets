@@ -20,8 +20,8 @@
 `|` - auto update  
 
 ## Hell-Shortuct to remove:
-`Alt` + `W` - close window
-`Ctrl` + `1`,`2` .... - change 
+~~`Alt` + `W`~~ - close window
+~~`Ctrl` + `1`,`2`~~ .... - change 
 
 **edit:**
 F5 - to selection ??? from9 ?
@@ -80,7 +80,8 @@ F5 - to selection ??? from9 ?
 #### SMOOTH `Shift`+`5`  
 
 ## GRAPH
-  
+`Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
+
 `U` - Up  
 `I` - Dive  
 `PageUp`/`PageDowna` - move throu nodes `Shift`    
