@@ -1,7 +1,29 @@
 
 # OPTIMISATION
 
-## UE4
+`stat fps`  
+`statSceneRendering`  
+`stat GPU`  
+`ShowFlag.VisualizeHDR 1`   
+
+`r.SetRes 1920x1080f`    
+`stat fps`  
+`stat unit`  
+`stat unitgraph` - jak skacze czerwony i inne to szukac w game
+`stat scenerendering`  
+`profilegpu`   
+`show MotionBlur`  
+`r.defaultfeature.antialiasing 0`  
+`r.screenPercentage`  
+`show bounds`  
+
+`show motionblur`  
+`show fog`  
+`show landscape`  
+`freezrendering`  
+
+------  
+`r.ProfileGPU.ShowUI`  
 
 The only way to group meshes into one draw call is by using instanced meshes. Meshes using the same material/instance will still take one draw call each. However, they are drawn in an order that is grouped by material/instance, to reduce the number of render state changes, kinda like this:
 
