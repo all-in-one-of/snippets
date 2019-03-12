@@ -1,30 +1,23 @@
 
 # OPTIMISATION
 
+### CVars:
+http://www.kosmokleaner.de/ownsoft/UE4CVarBrowser.html // list 
+
 `stat fps`  
 `statSceneRendering`  
 `stat GPU`  
-`ShowFlag.VisualizeHDR 1`   
-
-`r.SetRes 1920x1080f`    
-`stat fps`  
+`r.ProfileGPU.ShowUI`  
 `stat unit`  
 `stat unitgraph` - jak skacze czerwony i inne to szukac w game
-`stat scenerendering`  
-`profilegpu`   
-`show MotionBlur`  
-`r.defaultfeature.antialiasing 0`  
-`r.screenPercentage`  
-`show bounds`  
 
-`show motionblur`  
-`show fog`  
-`show landscape`  
-`freezrendering`  
+`ShowFlag.VisualizeHDR 1`   
+
+Show flags: `show motionblur`  `show MotionBlur`  `show fog`  `show landscape`  `freezrendering`   `show bounds`
+Screen: `r.screenPercentage`   `r.SetRes 1920x1080f`  `r.defaultfeature.antialiasing 0`  
+
 
 ------  
-`r.ProfileGPU.ShowUI`  
-
 The only way to group meshes into one draw call is by using instanced meshes. Meshes using the same material/instance will still take one draw call each. However, they are drawn in an order that is grouped by material/instance, to reduce the number of render state changes, kinda like this:
 
 3 meshes using the same material:
@@ -32,9 +25,6 @@ set shader, draw mesh #1, draw mesh #2, draw mesh #3
 
 3 meshes using a different material each:
 set shader #1, draw mesh #1, set shader #2, draw mesh #2, set shader #3, draw mesh #3
-
-
-
 
 From Eric Ketchum https://answers.unrealengine.com/questions/127435/using-instanced-meshes-doesnt-reduce-draw-calls.html:
 
