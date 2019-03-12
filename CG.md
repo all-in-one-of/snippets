@@ -25,6 +25,8 @@ Flip books
 - `vert color` `material Color`  `mesh id` `polygroups`-(Primitive Groups) `File id`  
 ### Xn
 - only fbx support cage files
+### Zbrush
+- ...
 # FORMATS:   
 ### Mesh  
 `*.obj` - no vertex color and 2-uvs standarised  
