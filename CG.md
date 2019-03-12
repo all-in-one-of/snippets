@@ -44,8 +44,6 @@ Flip books
 `*.sbsar` - Substance Archive  
 
 
-
-
 LDR - 8F  bits per channel
 HDR low precission 16F   
 HDR high precision 32F  
@@ -70,3 +68,10 @@ Type	Audio Bitrate
 Stereo	384 kbps  
 5.1	512 kbps  
 
+# PROJECT  
+File_001.hip  
+/source  
+/material  
+/geometry - cache for middle
+/bake  
+/backup  
