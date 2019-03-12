@@ -16,7 +16,12 @@ http://www.kosmokleaner.de/ownsoft/UE4CVarBrowser.html // list
 Show flags: `show motionblur`  `show MotionBlur`  `show fog`  `show landscape`  `freezrendering`   `show bounds`   
 Screen: `r.screenPercentage`   `r.SetRes 1920x1080f`  `r.defaultfeature.antialiasing 0`  
 
+### Software
+https://software.intel.com/en-us/gpa/graphics-frame-analyzer\  
+Enable in U4: ToggleDrawEvents  
+https://developer.nvidia.com/gameworksdownload  
 
+### Notes:
 ------  
 The only way to group meshes into one draw call is by using instanced meshes. Meshes using the same material/instance will still take one draw call each. However, they are drawn in an order that is grouped by material/instance, to reduce the number of render state changes, kinda like this:
 
@@ -42,6 +47,3 @@ Compare that situation to another scene where you have the same mesh instanced 1
 
 To really see the performance boost in using Instances bring up the Stat UNIT and watch the DRAW versus GPU (CPU vGPU) and notice when you instance a mesh the CPU time remains fairly consistent depending on the additional information you are wanting to pass to each instance, while the GPU will increase. All of these numbers are still dependent on the size of your mesh and the type of material setup and the ultimate limitations of your CPU and GPU.
 
-https://software.intel.com/en-us/gpa/graphics-frame-analyzer\  
-Enable in U4: ToggleDrawEvents  
-https://developer.nvidia.com/gameworksdownload  
