@@ -26,7 +26,7 @@ Flip books
 ### Xn
 - only fbx support cage files
 ### Zbrush
-- ...
+- ... `polygroups`-(Primitive Groups)
 # FORMATS:   
 ### Mesh  
 `*.obj` - no vertex color and 2-uvs standarised  
