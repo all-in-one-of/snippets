@@ -21,8 +21,8 @@ Flip books
 ### Painter 
 - Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html  
 ### Designer
-- Lo obj/fbx  Hi: obj
-- vert color / material Color /  mesh id / polygroups  / File id ??  
+- low obj/fbx  high: obj
+- `vert color` `material Color`  `mesh id` `polygroups`-(Primitive Groups) `File id`  
 ### Xn
 - only fbx support cage files
 # FORMATS:   
