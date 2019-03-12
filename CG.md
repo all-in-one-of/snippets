@@ -22,7 +22,7 @@ Flip books
 - Bake by name // https://support.allegorithmic.com/documentation/spdoc/matching-by-name-127074308.html  
 ### Designer
 - low obj/fbx  high: obj
-- `vert color` `material Color`  `mesh id` `polygroups`-(Primitive Groups) `File id`  
+- `vert color` `material Color` `File id`   (`mesh id` `polygroups`-(Primitive Groups)) 
 ### Xn
 - only fbx support cage files
 ### Zbrush
@@ -75,3 +75,10 @@ File_001.hip
 /geometry - cache for middle
 /bake  
 /backup  
+
+# H  
+Attributes:  
+VERTEX @N  
+POINT: v@rest v@Cd i@id @P  
+PRIM: s@name = nazwa label   // PRIMS  
+@shop_materialpath  ??????  
