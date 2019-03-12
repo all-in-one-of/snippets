@@ -1,24 +1,29 @@
 
-# OPTIMISATION
+# OPTIMISATION  
 
-### CVars:
-http://www.kosmokleaner.de/ownsoft/UE4CVarBrowser.html // list 
 
-`stat fps`  
-`statSceneRendering`  
-`stat GPU`  
-`r.ProfileGPU.ShowUI`  
-`stat unit`  
-`stat unitgraph` - jak skacze czerwony i inne to szukac w game
+`ctrl`+`shift`+`,` -  Rendering stats windows    
+ 
+### CVars:  
+http://www.kosmokleaner.de/ownsoft/UE4CVarBrowser.html // list   
+
+`stat fps`  - FPS (ms)  
+`stat unit`  - Frame, Game, Draw, GPU, RHIT, DynRes (ms)  
+`stat unitgraph` - Graphs with same color signatures as stat units  
+
+`statSceneUpdate`  
+`statSceneRendering`   
+`stat GPU`   
+
 
 `ShowFlag.VisualizeHDR 1`   
 
 Show flags: `show motionblur`  `show MotionBlur`  `show fog`  `show landscape`  `freezrendering`   `show bounds`   
 Screen: `r.screenPercentage`   `r.SetRes 1920x1080f`  `r.defaultfeature.antialiasing 0`  
 
-### Software
+### Software  
 https://software.intel.com/en-us/gpa/graphics-frame-analyzer\  
-Enable in U4: ToggleDrawEvents  
+Enable in U4: `ToggleDrawEvents` 
 https://developer.nvidia.com/gameworksdownload  
 
 ### Notes:
