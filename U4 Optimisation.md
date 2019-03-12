@@ -13,7 +13,7 @@ http://www.kosmokleaner.de/ownsoft/UE4CVarBrowser.html // list
 
 `ShowFlag.VisualizeHDR 1`   
 
-Show flags: `show motionblur`  `show MotionBlur`  `show fog`  `show landscape`  `freezrendering`   `show bounds`
+Show flags: `show motionblur`  `show MotionBlur`  `show fog`  `show landscape`  `freezrendering`   `show bounds`   
 Screen: `r.screenPercentage`   `r.SetRes 1920x1080f`  `r.defaultfeature.antialiasing 0`  
 
 
