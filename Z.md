@@ -1,6 +1,6 @@
 - Dont forget aboud mid freq.  
 - Make contrast with details placement.  
-- Try to sculpt across the form.  
+- Try to sculpt across the form (not with the flow).  
 
 # Topo:  
 ### Sculptris mode:     
