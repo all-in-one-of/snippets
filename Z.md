@@ -19,12 +19,14 @@
 
 # Brushes:
 
+`Clay Brush` - with Alpha 06 - default 
 
-- `Planar`  
-- `Polish`  
-- `Trim Dynamic`  
-- `Trim Adaptive`   
+
+`Planar`  
+`Polish`  
+`Trim Dynamic`  
+`Trim Adaptive`   
   
-- `Dam Standard`  - get valleys  
-- `Inflat` - Bubble  
-- `Smooth` - more opttions and brushes on smooth   
+`Dam Standard`  - get valleys   
+`Inflat` - Bubble   
+`Smooth` - more opttions and brushes on smooth   // but try to not use it to much because you are loosing sculpt details try to 'refine' insted of smooth.  
