@@ -154,11 +154,11 @@ Flip Object > change sop path to points
 link resolution of flip with point separation 
 ```
 
-** Fluid Follow Curve **  
+**Fluid Follow Curve**  
 https://forums.odforce.net/topic/31596-fluid-follow-curve/  
 
 
-** Fluid with Pops**  
+**Fluid with Pops**  
 
 ## ###  
 You can stop the particles in a flip sim with i@stopped  
