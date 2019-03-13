@@ -4,10 +4,13 @@
 
 # Topo:  
 ### Sculptris mode:     
+
 ### Dynamesh:   
 - size important (up to 4096 grid)  
-- make creasing to subdivide   
+- prepear special low with creasing to subdivide   
+
 ### ZRemesher Tools>Geometry  
+
 ### Decimation Master:  
 
 # Mesh management:
