@@ -41,6 +41,7 @@ Constrain Stiffness - 100 (stay toghether )
 Viscosity - higher value to sticky durfaces 
 Tensile Strengh - keep distance between particles 0.01 - larger make
 ```
+Entagma https://vimeo.com/323269227
 
 ## SOURCE
 (source obj) debricesource // for RBD ingeret vel
