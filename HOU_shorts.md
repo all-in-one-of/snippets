@@ -33,8 +33,6 @@ F5 - to selection ??? from9 ?
 `9` - select by group
 
 `Alt`+`Space` -  wieport  
-`Shift`+`V` - backmasking   
-`Shift`+`C` - contained  
 
 
 `F1` `F2` `F3` `F4` - selection types   
@@ -43,12 +41,21 @@ F5 - to selection ??? from9 ?
 `N` - select all  
 `Shift`+`N` - select none  
 `Shift`+`B` - bounds   
-`Shift`+`Ctrl`+`E` - poli age boundary  
-`Shift`+`G` - selection  
-`Shift`+`S` - selection  
+
+#### Change selection:  
+
+`Shift`+`V` - backmasking    
+`Shift`+`C` - contained  
+
+
+ `Shift`+`Ctrl`+`E` (on edges)- pgrowth oli age boundary  
+`Shift`+`G` - Growth selection  
+`Shift`+`S` - Shrink selection  
+
 
 `A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection   
-
+`Shift` + `P` - Set sellection pattern
+`Shift` + `2`🠹 🠸 🠻 `🠺 ` d `🡰` 🡲 🡱 🡳
 ## POLYDRAW SHORTS  
 
 
