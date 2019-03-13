@@ -1,3 +1,4 @@
+Dont forget aboud mid freq details 
 # Topo:  
 ### Sculptris mode:     
 ### Dynamesh:   
