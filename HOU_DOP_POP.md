@@ -40,7 +40,8 @@ POPs: Vex based solver
 
 **Condensation** - Shelf tool 
 - `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
-- `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force).   
+- `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force).    
+
 **Setup**  
 (h17 core of new water solver in future maby with vellum).  
 ```
