@@ -1,4 +1,4 @@
-# RDB Solvers:   
+# Solvers:   
 
 ```
 - OBJECT
@@ -10,6 +10,9 @@
 
 ### rigid solver 
 - bullet vs rdb   
+
+### Multi Solver  
+- multisolver is for pops (and rigid body)  
 
 # RDB Objects:  
 
@@ -27,5 +30,4 @@ Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349
 ### rdb packed object  
 
 
-# Multi Solver  
-multisolver is for pops (and rigid body)  
+
