@@ -31,7 +31,7 @@ POPs: Vex based solver
 (behavior on collisions)
 
 
-## POP FLUIDS:  
+## POP Fluids:  
 `popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) (h17 core of new water solver in future maby with vellum).  Can make cohesion and basic surface tension.
 
 **Condensation** - Shelf tool 
