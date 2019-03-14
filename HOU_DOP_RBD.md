@@ -6,9 +6,9 @@
 - POST-SOLVE
 ```
 
-### static solver . 
+### Static solver . 
 
-### rigid solver 
+### Rigid solver 
 - bullet vs rdb   
 
 ### Multi Solver  
