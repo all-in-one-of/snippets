@@ -31,6 +31,10 @@ POPs: Vex based solver
 (behavior on collisions)
 
 
+## SOURCE  
+(source obj) `debricesource` // for RBD ingeret vel  
+(source obj) `fluidfource` // volume source from point  
+
 ## POP Fluids:  
 `popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) (h17 core of new water solver in future maby with vellum).  Can make cohesion and basic surface tension.
 
@@ -48,6 +52,3 @@ https://vimeo.com/323269227 (Entagma)
 
 ## POP Grains:
 
-## SOURCE
-(source obj) debricesource // for RBD ingeret vel
-(source obj) fluidfource // volume source from point
