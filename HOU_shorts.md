@@ -56,8 +56,8 @@ F5 - to selection ??? from9 ?
 `A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection    
 `Shift` + `P` - Set sellection pattern  
 `Shift` + `🡰` `🡲` `🡱` `🡳` - Growth pattern  
-`Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end   
-'K' - Growth till paint under mouse  
+`Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end  
+`K` - Growth till paint under mouse  
 
 ## POLYDRAW SHORTS  
 
