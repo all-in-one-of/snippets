@@ -34,14 +34,21 @@ POPs: Vex based solver
 multisolver is for pops (and rigid body)
 
 ## POP FLUIDS:  
-popfluid PBD fluid make intersection in pops (node from white water) (h17 core of new water solver in future maby with vellum). 
+`popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) (h17 core of new water solver in future maby with vellum).  Can make cohesion and basic surface tension.
+
+**Condensation** - Shelf tool 
+- `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
+- `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force). 
+
 ```
 Constrain Iteration -  20 
 Constrain Stiffness - 100 (stay toghether )
 Viscosity - higher value to sticky durfaces 
 Tensile Strengh - keep distance between particles 0.01 - larger make
 ```
-Entagma https://vimeo.com/323269227
+https://vimeo.com/323269227 (Entagma)
+
+## POP Grains:
 
 ## SOURCE
 (source obj) debricesource // for RBD ingeret vel
