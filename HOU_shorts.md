@@ -48,14 +48,17 @@ F5 - to selection ??? from9 ?
 `Shift`+`C` - contained  
 
 
- `Shift`+`Ctrl`+`E` (on edges)- pgrowth oli age boundary  
+`Shift`+`Ctrl`+`E` (on edges)- pgrowth oli age boundary  
 `Shift`+`G` - Growth selection  
 `Shift`+`S` - Shrink selection  
 
 
-`A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection   
-`Shift` + `P` - Set sellection pattern
-`Shift` + `2`🠹 🠸 🠻 `🠺 ` d `🡰` 🡲 🡱 🡳
+`A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection    
+`Shift` + `P` - Set sellection pattern  
+`Shift` + `🡰` `🡲` `🡱` `🡳` - Growth pattern  
+`Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end   
+'K' - Growth till paint under mouse  
+
 ## POLYDRAW SHORTS  
 
 
