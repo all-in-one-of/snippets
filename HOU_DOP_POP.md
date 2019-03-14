@@ -36,12 +36,13 @@ POPs: Vex based solver
 (source obj) `fluidfource` // volume source from point  
 
 ## POP Fluids:  
-`popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) (h17 core of new water solver in future maby with vellum).  Can make cohesion and basic surface tension.
+`popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) Can make cohesion and basic surface tension.
 
 **Condensation** - Shelf tool 
 - `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
 - `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force). 
-
+**Setup**  
+(h17 core of new water solver in future maby with vellum).  
 ```
 Constrain Iteration -  20 
 Constrain Stiffness - 100 (stay toghether )
