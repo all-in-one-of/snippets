@@ -1,0 +1,5 @@
+# SOP Solver
+Sop solver is kinda of loop operating on timeframes.
+Dependency on previous frame. 
+
+Prev_Frame  
