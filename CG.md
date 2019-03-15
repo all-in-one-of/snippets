@@ -81,7 +81,8 @@ name index frame state id
 $PDG_DIR >> is lookin to working dir in processor  
 `@wedgeindex` // wedge individual index  
 `@pdg_name` // PDG var  
-`@pdg_output` // PDG var with sop path  
+`@pdg_output` // PDG var with sop path 
+`@pdg_intput` // finals ?
 Hda processor // create inputs ?   
 
 # HIP
