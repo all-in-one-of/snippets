@@ -76,7 +76,15 @@ File_001.hip
 /bake  
 /backup  
 
-# H  
+# PDG
+name index frame state id   
+$PDG_DIR >> is lookin to working dir in processor  
+`@wedgeindex` // wedge individual index  
+`@pdg_name` // PDG var  
+`@pdg_output` // PDG var with sop path  
+Hda processor // create inputs ?   
+
+# HIP
 Attributes:  
 VERTEX @N  
 POINT: v@rest v@Cd i@id @P  
