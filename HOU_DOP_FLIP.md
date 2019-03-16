@@ -114,8 +114,8 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 - SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation. 
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
-- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*)
-- SOP `Fluid Tank` ?   
+- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?    
+ 
 
 
 
