@@ -10,12 +10,13 @@ POPs: Vex based solver
 ```
 
 #### OBJECT Input  
-- popobject  
+- `popobject`   - base pop object
 
 #### PRE-SOLVE Input    
 - pop vop  
 
 #### SOURCE Input    
+- `pop source` !!! mandatory
 (birth/birth from attribute)
 - fireworks  
 - popattract (to point or geometry)  
