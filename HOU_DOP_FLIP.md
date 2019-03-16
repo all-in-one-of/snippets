@@ -102,7 +102,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 # Collisions  
 
-`static object` with volume collision.   
+`static object` with collision mode to: volume sample {DeformingGeo shelf}   
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 - Accurate velocities for moving collision objects are extremely important.
 - {Deforming Object} shelf tool to set up deforming geometry as a FLIP collision object.
