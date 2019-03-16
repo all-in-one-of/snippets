@@ -1,7 +1,7 @@
 
 Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid but mostly working on volumes.
-Improve filps with animaiton: add velocity wchih is change between frames. you can make it with trail sop: compute Velo.
-
+Improve filps with animaiton: add velocity wchih is change between frames. you can make it with trail sop: compute Velo.  
+Size sensitive, use units as meters. 
 # Properties
 ```md
 - OBJECT 
