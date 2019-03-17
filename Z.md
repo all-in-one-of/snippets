@@ -21,7 +21,8 @@
 - subtools  
 
 # Tools:
--
+- Export one subtool to obj: Tools>Export  
+- Export all subtools to obj: Zpluginds>PrintHub>ExportAll ¯\_(ツ)_/¯   
 
 
 # Brushes:
