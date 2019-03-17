@@ -5,12 +5,7 @@
 ### ZBrush
 Export Zplugins
 - obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
-- fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)  
-
-
-subtools > names 
-1) WTF1: After save as zBrush renames 1 subb tool 
-2) WTF2: watch cause zBrush rename `_`to `-` so keep `Alt`+`Shift`+`_` to make `_`
+- fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
 
 ### Houdini
 prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups  
