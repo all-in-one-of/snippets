@@ -60,7 +60,7 @@ only fbx support cage files
 
 # FORMATS:   
 ### Mesh  
-`*.obj` - no vertex color and 2-uvs standarised  
+`*.obj` - no vertex color and 2-uvs standarised, no attribs
 `*.fbx` -  
 `*.gltf`-   
 `*.bgeo.sc` - cache  
