@@ -1,28 +1,26 @@
-OBJ TO FBX: Rotate 90
-
 
 
 # BAKE:
 
 ### ZBrush
-Export All subtools to obj: Zpluginds>PrintHub>ExportAll // polygroups > (H: Prim Groups)  
-Export Fbx: Zplugins>FBX // Export poligroups as material > (H: shop_materialpath)  
+Export Zplugins
+- Obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
+- Fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)  
 
 ### Houdini
 prim: `s@shop_materialpath` - to split mesh in paiter  
-prim: `s@name` = nazwa label  
+prim: `s@name` - label  
 vert: `@N`    
-point: v@rest v@Cd i@id @P    
+point: `v@rest`, `v@Cd`, `i@id`, `@P`    
 
 low: fbx
 
 ### PAINTER/DESIGNER  
 low fbx, high: obj   
-(mesh id polygroups-(Primitive Groups))    
+   
 **bake by name:**    
 name attribute of mesh  to name of .obj    
-name high and low parts    
-(Painter Match by mesh names (mesh ID))    
+name high(mesh/parts) and low (parts) 
 ```
 a_high_doesnotmatter  
 a_high_whatisafter   
@@ -30,8 +28,8 @@ b_high_suffix
 a_low  
 b_low 
 ``` 
-
-
+(Painter Match by mesh names (mesh ID)) 
+(mesh id polygroups-(Primitive Groups))
 
 ### Xn
 only fbx support cage files 
@@ -74,6 +72,10 @@ real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
 `*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).  
 `*.zpr` - Project `Ctrl+S` will save multiple ZTools at once.  
+
+### transforms:
+OBJ TO FBX: Rotate 90
+
 ### Images   
 `*.tiff` (adobe reach format) - save image fom photoshop  
 `*.tga` - only for UE  16/24/32 bits per pixel (24?)  
