@@ -31,10 +31,17 @@ a_low
 b_low 
 ``` 
 
-### Xn
-only fbx support cage files  
 
-# Source:  
+
+### Xn
+only fbx support cage files 
+
+(DirectX vs OpenGl normal)    
+(relation high to low baking)  
+(baked object have other orientation)   
+
+
+## Source:  
   
 ### 3dScan   
 Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
@@ -48,9 +55,14 @@ Generate from Imported or Procediural data.
 ### Zbrush High  
 - Use Dynamesh  
 - Retopo by hand  
+reordering subtools in ZBrush will also reorder them when exporting the FBX,
 
+## Scale   
+real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
-## Scale  
+## Collision  
+
+## LOD's  
 
 
 # FORMATS:   
