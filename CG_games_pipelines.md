@@ -4,8 +4,10 @@
 
 ### ZBrush
 Export Zplugins
-- Obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
-- Fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)  
+- obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
+- fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)  
+
+
 subtools > names 
 1) WTF1: After save as zBrush renames 1 subb tool 
 2) WTF2: watch cause zBrush rename `_`to `-` so keep `Alt`+`Shift`+`_` to make `_`
@@ -16,14 +18,17 @@ prim: `s@name` - label
 vert: `@N`    
 point: `v@rest`, `v@Cd`, `i@id`, `@P`    
 
-low: fbx
+
+
 
 ### PAINTER/DESIGNER  
-low fbx, high: obj   
-   
 **bake by name:**    
-name attribute of mesh  to name of .obj    
-name high(mesh/parts) and low (parts) 
+low: fbx from H    
+- to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)  
+high: obj  from Z  (for evey subtool with name Name_high)  
+- obj, one sub tool for substance: uncheck `Grp` before export  
+ 
+
 ```
 a_high_doesnotmatter  
 a_high_whatisafter   
@@ -32,13 +37,12 @@ a_low
 b_low 
 ``` 
 (Painter Match by mesh names (mesh ID)) 
-(mesh id polygroups-(Primitive Groups))
+(mesh id polygroups-(Primitive Groups))  
 
 ### Xn
 only fbx support cage files 
 
 (DirectX vs OpenGl normal)    
-(relation high to low baking)  
 (baked object have other orientation)   
 
 
