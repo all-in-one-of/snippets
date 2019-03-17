@@ -21,8 +21,12 @@
 - subtools  
 
 # Tools:
-- Export one subtool to obj: Tools>Export  
-- Export all subtools to obj: Zpluginds>PrintHub>ExportAll ¯\_(ツ)_/¯   
+- Save with project (ZPR) `File` > `Save As`  
+- Save Only 3d File: (ZPT) > `Tool`> `Save As`  
+- Export one subtool to obj: `Tool`>`Export`   
+- Export all subtools to obj: `Zpluginds`>`PrintHub`>`ExportAll`  
+- Export Fbx: `Zplugins`>`FBX`  
+¯\_(ツ)_/¯   
 
 
 # Brushes:
