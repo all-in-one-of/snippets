@@ -1,17 +1,38 @@
 OBJ TO FBX: Rotate 90
 
-# EXPORT H>UE4 resolutions
-**Pix to Verts**  
-4k = 16 777 216 pix  
-**Vertex anim**   
-2k - 200 frames -        - 20k poly  
-4k - 150 frames - 4 sek - 111,8k poly  
-4k - 300 frames - 8 sek - 55,9k poly  
-4k - 360 frames - 10-15 sek - 46,6k poly  
-4k - 500 frames - 16,6-20,8 sek - 33,5k poly  
-**Flip books**  
-4k tex = 256 frames x 256 pix  
-4k tex =  64 frames x 512 pix  
+
+
+# BAKE:
+
+### ZBrush
+Export All subtools to obj: Zpluginds>PrintHub>ExportAll // polygroups > (H: Prim Groups)  
+Export Fbx: Zplugins>FBX // Export poligroups as material > (H: shop_materialpath)  
+
+### Houdini
+prim: `s@shop_materialpath` - to split mesh in paiter  
+prim: `s@name` = nazwa label  
+vert: `@N`    
+point: v@rest v@Cd i@id @P    
+
+low: fbx
+
+### PAINTER/DESIGNER  
+low fbx, high: obj   
+(mesh id polygroups-(Primitive Groups))    
+**bake by name:**    
+name attribute of mesh  to name of .obj    
+name high and low parts    
+(Painter Match by mesh names (mesh ID))    
+```
+a_high_doesnotmatter  
+a_high_whatisafter   
+b_high_suffix 
+a_low  
+b_low 
+``` 
+
+### Xn
+only fbx support cage files  
 
 # Source:  
   
@@ -28,34 +49,8 @@ Generate from Imported or Procediural data.
 - Use Dynamesh  
 - Retopo by hand  
 
-# BAKE:
 
-### ZBrush
-Export All subtools to obj: Zpluginds>PrintHub>ExportAll // polygroups > (H: Prim Groups)  
-Export Fbx: Zplugins>FBX // Export poligroups as material > (H: shop_materialpath)  
-
-### Houdini
-prim: `s@shop_materialpath` - to split mesh in paiter  
-prim: `s@name` = nazwa label  
-vert: `@N`    
-point: v@rest v@Cd i@id @P    
-
-### PAINTER/DESIGNER  
-low fbx, high: obj   
-(mesh id polygroups-(Primitive Groups))    
-**bake by name:**    
-name attribute of mesh  to name of .obj    
-name high and low parts    
-(Painter Match by mesh names (mesh ID))    
-```a_high_doesnotmatter  
-a_high_whatisafter   
-b_high_suffix 
-a_low  
-b_low 
-``` 
-
-### Xn
-only fbx support cage files
+## Scale  
 
 
 # FORMATS:   
