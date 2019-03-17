@@ -63,6 +63,16 @@ real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 ## LOD's  
 
 
+# PDG
+name index frame state id   
+$PDG_DIR >> is lookin to working dir in processor  
+`@wedgeindex` // wedge individual index  
+`@pdg_name` // PDG var  
+`@pdg_output` // PDG var with sop path 
+`@pdg_intput` // finals ?
+Hda processor // create inputs ?   
+
+
 # FORMATS:   
 ### Mesh  
 `*.obj` - no vertex color and 2-uvs standarised, no attribs
@@ -98,12 +108,3 @@ Recommended video bitrates for HDR uploads:
 Type	Audio Bitrate  
 - Stereo	384 kbps  
 - 5.1	512 kbps  
-
-# PDG
-name index frame state id   
-$PDG_DIR >> is lookin to working dir in processor  
-`@wedgeindex` // wedge individual index  
-`@pdg_name` // PDG var  
-`@pdg_output` // PDG var with sop path 
-`@pdg_intput` // finals ?
-Hda processor // create inputs ?   
