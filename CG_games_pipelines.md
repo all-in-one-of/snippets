@@ -11,7 +11,7 @@ subtools > names
 2) WTF2: watch cause zBrush rename `_`to `-` so keep `Alt`+`Shift`+`_` to make `_`
 
 ### Houdini
-prim: `s@shop_materialpath` - to split mesh in paiter  
+prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups  
 prim: `s@name` - label  
 vert: `@N`    
 point: `v@rest`, `v@Cd`, `i@id`, `@P`    
