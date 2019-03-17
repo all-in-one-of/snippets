@@ -24,8 +24,8 @@
 - Save with project (ZPR) `File` > `Save As`  
 - Save Only 3d File: (ZPT) > `Tool`> `Save As`  
 - Export one subtool to obj: `Tool`>`Export`   
-- Export all subtools to obj: `Zpluginds`>`PrintHub`>`ExportAll`  
-- Export Fbx: `Zplugins`>`FBX`  
+- Export all subtools to obj: `Zpluginds`>`PrintHub`>`ExportAll`   // polygroups > H Groups  
+- Export Fbx: `Zplugins`>`FBX`  // Export poligroups as material > shop_materialpath  
 ¯\_(ツ)_/¯   
 
 
