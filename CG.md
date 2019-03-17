@@ -16,11 +16,11 @@ OBJ TO FBX: Rotate 90
 # Source:  
   
 ### scan geo   
-(cannot move high) (not quads) (bridged geo with other probrms than unfoald) ) (duplicated geo) (other typ of data) (inverted few faces) (swaped trix connection)
-- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv
+Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
+- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv  
   
 ### H low with uv's.   
-(Generate from Imported or Procediural data.)  
+Generate from Imported or Procediural data.  
 - Make Mid -  creesed copy to get high  
 - Conform with ray to match Hi.  
  
@@ -31,22 +31,22 @@ OBJ TO FBX: Rotate 90
 # BAKE:
 
 ### ZBrush
-Export All subtools to obj: Zpluginds>PrintHub>ExportAll // polygroups > (H: Prim Groups)
-Export Fbx: Zplugins>FBX // Export poligroups as material > (H: shop_materialpath)
+Export All subtools to obj: Zpluginds>PrintHub>ExportAll // polygroups > (H: Prim Groups)  
+Export Fbx: Zplugins>FBX // Export poligroups as material > (H: shop_materialpath)  
 
 ### Houdini
-prim: `s@shop_materialpath` - to split mesh in paiter
-prim: `s@name` = nazwa label
-vert: `@N`  
-point: v@rest v@Cd i@id @P  
+prim: `s@shop_materialpath` - to split mesh in paiter  
+prim: `s@name` = nazwa label  
+vert: `@N`    
+point: v@rest v@Cd i@id @P    
 
-### PAINTER/DESIGNER
-low fbx, high: obj
-(mesh id polygroups-(Primitive Groups))  
-**bake by name:**  
-name attribute of mesh  to name of .obj  
->> name high and low parts  
-(Painter Match by mesh names (mesh ID))  
+### PAINTER/DESIGNER  
+low fbx, high: obj   
+(mesh id polygroups-(Primitive Groups))    
+**bake by name:**    
+name attribute of mesh  to name of .obj    
+name high and low parts    
+(Painter Match by mesh names (mesh ID))    
 ```a_high_doesnotmatter  
 a_high_whatisafter   
 b_high_suffix 
