@@ -103,7 +103,8 @@ ffmpg -
 
 ### Youtube: 
 Progressive scan (no interlacing) / High Profile / 2 consecutive B frames /  Closed GOP. GOP of half the frame rate. / CABAC  /  Variable bitrate. No bitrate limit required, though we offer recommended bit rates below for reference /  Chroma subsampling: 4:2:0 \ Recommended video bitrates for HDR uploads:
-- 2160p (4k)	44-56 Mbps (24-30k)	66-85 Mbps (60k)   
+- 2160p (4k)	44-56 Mbps (24-30k)	66-85 Mbps (60k)  
+
 Type	Audio Bitrate  
 - Stereo	384 kbps  
 - 5.1	512 kbps  
