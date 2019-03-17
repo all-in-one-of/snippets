@@ -19,12 +19,12 @@ OBJ TO FBX: Rotate 90
 Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
 - Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv  
   
-### H low with uv's.   
+### Houdini low with uv's.   
 Generate from Imported or Procediural data.  
 - Make Mid -  creesed copy to get high  
 - Conform with ray to match Hi.  
  
-### Clean Zbrush High  
+### Zbrush High  
 - Use Dynamesh  
 - Retopo by hand  
 
