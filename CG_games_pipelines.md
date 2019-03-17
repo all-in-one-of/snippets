@@ -7,8 +7,8 @@ Export Zplugins
 - Obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
 - Fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)  
 subtools > names 
-1) After save as zBrush renames 1 subb tool 
-2) `_` came as `-` so but watch cause zBrush rename it `Alt`+`Shift`+`_`
+1) WTF1: After save as zBrush renames 1 subb tool 
+2) WTF2: watch cause zBrush rename `_`to `-` so keep `Alt`+`Shift`+`_` to make `_`
 
 ### Houdini
 prim: `s@shop_materialpath` - to split mesh in paiter  
