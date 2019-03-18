@@ -104,7 +104,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
 - SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?    
 
-# Collisions  
+# Collision 
 
 `static object` with collision mode to: volume sample {DeformingGeo shelf}   
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
