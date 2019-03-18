@@ -1,22 +1,19 @@
 
 POPs: Vex based solver
 
-
-# Properties
 ```md
 - OBJECT 
 - PRE-SOLVE
 - SOURCE 
 ```
 
-#### OBJECT Input  
+#### *Input OBJECT*
 - `popobject` - mandatory pop object
 
-#### PRE-SOLVE Input    
+#### *Input PRE-SOLVE*  
 - pop vop  
 
-#### SOURCE Input    
-
+#### *Input SOURCE*  
 - `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
 - `fireworks`
 - `popattract` - (to point or geometry)  
@@ -27,16 +24,17 @@ POPs: Vex based solver
 - `popgroup`  
 - `popforce` - jakies noizy Old thing   
 
-## POP SOLVER:  
-(behavior on collisions)
+# POP Solver 
+(behavior on collisions)  
 
-
-## SOURCE  
+# Sourcing 
 (source obj) `debricesource` // for RBD ingeret vel  
 (source obj) `fluidfource` // volume source from point  
 
-## POP Fluids:  
+
+# POP Fluids
 `popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) Can make cohesion and basic surface tension (https://vimeo.com/295491505 Lewis Orton).   
+
 - `Constrrain iteration` 20+  (50?)
 - `Constrain stifnes` // up do sich particles. 
 - `Viscosity` // up even to 1
@@ -56,5 +54,5 @@ Tensile Strengh - keep distance between particles 0.01 - larger make
 ```
 https://vimeo.com/323269227 (Entagma)
 
-## POP Grains:
+## POP Grains
 
