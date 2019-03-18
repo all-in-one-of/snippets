@@ -2,10 +2,6 @@
 - objects is grey plug
 - data is green plug
 
-RigidBodySolver vs RBD vs staticSolver  
-
-- This solver is a union of two different rigid body engines, the RBD engine and the Bullet engine. The RBD engine uses volumes and is useful for complicated, deforming, stacked, geometry. The Bullet engine offers simpler collision shapes and is suitable for fast, large-scale simulations.
-- RBD Solver is unable to enforce glue constraints between RBD Objects and Static Objects. You can work around this limitation by using constrained RBD Objects (perhaps with some RBD Pin Constraint DOPs) instead of a Static Object.
 ```
 substeps: 
 - to wiev subframes: - in global anim options  (global subs?) And Time is float turn off
@@ -24,9 +20,10 @@ apply pop forces in RBD in dop: plug pop forces into middle input
 ### Static solver  
 
 ### Rigid solver 
-use rigidbodysolver not bullet solver
+The RBD engine uses volumes and is useful for complicated, deforming, stacked, geometry. The Bullet engine offers simpler collision shapes and is suitable for fast, large-scale simulations.
+(RBD Solver is unable to enforce glue constraints between RBD Objects and Static Objects. You can work around this limitation by using constrained RBD Objects (perhaps with some RBD Pin Constraint DOPs) instead of a Static Object)
 #### rdb   
-
+better  
 #### bullet
 bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and boost gravity proportionally  
 
