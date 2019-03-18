@@ -9,7 +9,10 @@
 ### Static solver  
 
 ### Rigid solver 
-- bullet vs rdb   
+#### rdb   
+
+#### bullet
+bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and boost gravity proportionally  
 
 ### Multi Solver  
 - multisolver is for pops (and rigid body)  
