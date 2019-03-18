@@ -10,26 +10,22 @@ POPs: Vex based solver
 ```
 
 #### OBJECT Input  
-- `popobject`   - base pop object
+- `popobject` - mandatory pop object
 
 #### PRE-SOLVE Input    
 - pop vop  
 
 #### SOURCE Input    
-- `Pop Solver`   
-- `Pop Curve force` (Illume Jeff I ) // input curve 
-- `Sop Solver` // acces any sop (cmi) 
 
-- `pop source` !!! mandatory (birth/birth from attribute)
-- fireworks
-- popattract (to point or geometry)  
-- popdrag  
-- popvop // sam mozesz zrobic force, np ( vel +=  noise)  
-  
-- popcurveforce // podpinasz krzywa i leci  
-- popcolision (stick/ bounce)  
-- popgroup  
-- popforce // jakies noizy Old thing   
+- `pop source` - !!! mandatory (birth/birth from attribute)
+- `fireworks`
+- `popattract` - (to point or geometry)  
+- `popdrag`  
+- `popvop` - sam mozesz zrobic force, np ( vel +=  noise)  
+- `popcurveforce` - podpinasz krzywa i leci  
+- `popcolision` - (stick/ bounce)  
+- `popgroup`  
+- `popforce` - jakies noizy Old thing   
 
 ## POP SOLVER:  
 (behavior on collisions)
