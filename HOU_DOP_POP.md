@@ -1,5 +1,6 @@
 
-POPs: Vex based solver
+# POP
+POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 
 ```md
 - OBJECT 
@@ -25,7 +26,8 @@ POPs: Vex based solver
 - `popforce` - jakies noizy Old thing   
 
 # POP Solver 
-(behavior on collisions)  
+### [Collision]:
+### [Sleeping]:
 
 # Sourcing 
 (source obj) `debricesource` // for RBD ingeret vel  
