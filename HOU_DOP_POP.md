@@ -16,6 +16,9 @@ POPs: Vex based solver
 - pop vop  
 
 #### SOURCE Input    
+- `Pop Solver`   
+- `Pop Curve force` (Illume Jeff I ) // input curve 
+- `Sop Solver` // acces any sop (cmi) 
 
 - `pop source` !!! mandatory (birth/birth from attribute)
 - fireworks
