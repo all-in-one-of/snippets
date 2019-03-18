@@ -16,9 +16,9 @@ POPs: Vex based solver
 - pop vop  
 
 #### SOURCE Input    
-- `pop source` !!! mandatory
-(birth/birth from attribute)
-- fireworks  
+
+- `pop source` !!! mandatory (birth/birth from attribute)
+- fireworks
 - popattract (to point or geometry)  
 - popdrag  
 - popvop // sam mozesz zrobic force, np ( vel +=  noise)  
