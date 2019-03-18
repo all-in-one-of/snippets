@@ -17,7 +17,7 @@ POPs: Vex based solver
 
 #### SOURCE Input    
 
-- `pop source` - !!! mandatory (birth/birth from attribute)
+- `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
 - `fireworks`
 - `popattract` - (to point or geometry)  
 - `popdrag`  
