@@ -23,9 +23,8 @@ Size sensitive, use units as meters.
 #### *Input VOLUME VELOCITY*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
 #### *Input SOURCE*  
-- `source volume` (initialize source flip) with SOP link to: `fluid source SOP` NEW ONE 
+- `source volume` (initialize source flip) with SOP link to: `fluid source SOP` NEW ONE
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
-
 - `gas temp update` 
 - `pop color` 
 
