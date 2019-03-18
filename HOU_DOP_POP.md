@@ -12,7 +12,7 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 - `popobject` - mandatory pop object
 
 #### *Input PRE-SOLVE*  
-- pop vop  
+- `pop vop`  
 
 #### *Input SOURCE*  
 - `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
