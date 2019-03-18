@@ -1,3 +1,5 @@
+- spheres collision over convex !!!!!!
+
 # Solvers:   
 
 ```
