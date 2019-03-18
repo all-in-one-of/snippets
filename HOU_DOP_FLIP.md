@@ -88,8 +88,7 @@ Value | .
 - for net renders
 
 
-# NODES:
-## Flip Object
+# Flip Object
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 - bounds
