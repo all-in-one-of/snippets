@@ -1,7 +1,7 @@
 - Dont forget aboud mid freq.  
 - Make contrast with details placement.  
 - Try to sculpt across the form (not with the flow).  
-# Ninja Combos:
+# Ninja Combos basics:
   
 `Space` - Brush   
 `Alt` - Alternative brush / `Shift` Smooth Brush  
