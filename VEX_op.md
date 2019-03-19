@@ -6,7 +6,7 @@
 `point(1, 'P', @ptnum)` ?????????    
 `opname(".")` // $OS ??  
 `opinput(".", 0)` //   
-$HIP/``opinput(".", -1)``.``$F-1``.bgeo.sc // in from 1 geo   
+`$HIP/'opinput(".", -1)'.'$F-1'.bgeo.sc` // in from 1 geo   
 `opinputpath(".", 0)`  // path of the node connected to the first input.  
 `opinputpath("../",0)` // path of geo (level up)  
 op:``opinputpath("../", 1)`` // Second context geometry  
