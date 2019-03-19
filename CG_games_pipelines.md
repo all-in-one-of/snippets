@@ -22,7 +22,6 @@ low: fbx from H
 - to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)  
 high: obj  from Z  (for evey subtool with name Name_high)  
 - obj, one sub tool for substance: uncheck `Grp` before export  
- 
 
 ```
 a_high_doesnotmatter  
@@ -45,7 +44,8 @@ only fbx support cage files
   
 ### 3dScan   
 Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
-- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv  
+- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
+- Make mid res with reduced details and errors. Dynamesh it. 
   
 ### Houdini low with uv's.   
 Generate from Imported or Procediural data.  
