@@ -3,7 +3,7 @@
 `v@P` // fetch point position from first imput  
 `v@opinput1_P` // fetch attribute from second input  
 `point(1, @P, ptnum)` // normal from 1st input (counting from 0)  
-@P = point(1, 'P', @ptnum); ?????????    
+`point(1, 'P', @ptnum)` ?????????    
 `opname(".")` // $OS ??  
 `opinput(".", 0)` //   
 $HIP/``opinput(".", -1)``.``$F-1``.bgeo.sc // in from 1 geo   
