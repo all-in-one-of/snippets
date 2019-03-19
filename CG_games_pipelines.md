@@ -46,7 +46,8 @@ only fbx support cage files
 Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
 - Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
 - Make mid res with reduced details and errors. Dynamesh it. 
-  
+- (back and forh for frip edges)
+
 ### Houdini low with uv's.   
 Generate from Imported or Procediural data.  
 - Make Mid -  creesed copy to get high  
