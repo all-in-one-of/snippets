@@ -2,4 +2,4 @@
 Sop solver is kinda of loop operating on timeframes.
 Dependency on previous frame. 
 
-Prev_Frame  
+Prev_Frame  prev_frame isn't really the previous frame. A more accurate name would be output_of_solver_from_previous_frame,
