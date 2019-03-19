@@ -1,6 +1,23 @@
 - Dont forget aboud mid freq.  
 - Make contrast with details placement.  
 - Try to sculpt across the form (not with the flow).  
+# Ninja Combos:
+  
+`Space` - Brush   
+`Alt` - Alternative brush / `Shift` Smooth Brush  
+`Alt` - Outside  - Viewport  
+`Ctrl`  `Drag outside` UnMask, Dynamesh `Click outside` Invert  
+`Ctrl` + `Alt` - Mask   -  `Drag outside`  Mask All, `Click outside` Invert  
+`Ctrl` + `Shift` - Hide not Selected  
+`Ctrl` + `Shift`- change select  
+`Ctrl` + `Shift` + `Alt` - Hide Selected  
+`Ctrl` + `Shift` + `S` - Hiden  Shrink   
+`Ctrl` + `Shift` + `x` - Hide Xpand  
+`S` - brush Size   
+`F` - zoom  
+`B` - brush  
+`X` - symetry    
+
 
 # Topo:  
 ### Sculptris mode:     
