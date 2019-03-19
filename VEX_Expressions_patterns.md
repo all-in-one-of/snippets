@@ -1,22 +1,22 @@
 
 ### HScript
-```bash
-$OS - Operator String. Contains the current OP’s name.
-$CH - Current channel name.
 
-$F - The current frame, (as set with the Playbar controls). This is a very useful variable, especially for rendered picture filename numbering.
-$HFS - The directory where Houdini is installed.
-$HH - $HFS/houdini.
-$HIP - The directory containing the current scene file.
-$HIPFILE - The full path of the current scene file, including the file extension.
-$HIPNAME - The name of the current scene file without the extension. You can use this to build filenames with different extensions based on the scene name.
-$PDG_DIR 
-$PDG_SHARED_ROOT
-$HOME - Your home directory.
-$JOB - The project directory.
-$NFRAMES (the number of frames in the animation) = $FEND - $FSTART + 1.
-$ACTIVETAKE - Contains the name of the current take.
-```
+`$OS` - Operator String. Contains the current OP’s name.  
+`$CH` - Current channel name.  
+ 
+`$F` - The current frame, (as set with the Playbar controls). This is a very useful variable, especially for rendered picture filename numbering.  
+`$HFS` - The directory where Houdini is installed.  
+`$HH` - $HFS/houdini. 
+`$HIP` - The directory containing the current scene file.  
+`$HIPFILE` - The full path of the current scene file, including the file extension.  
+`$HIPNAME` - The name of the current scene file without the extension. You can use this to build filenames with different extensions based on the scene name.  
+`$PDG_DIR`   
+`$PDG_SHARED_ROOT`  
+`$HOME` - Your home directory.  
+`$JOB` - The project directory.  
+`$NFRAMES` (the number of frames in the animation) = $FEND - $FSTART + 1.  
+`$ACTIVETAKE` - Contains the name of the current take.   
+
 
 ### Arithmetic 
 ```cpp
