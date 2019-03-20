@@ -20,9 +20,13 @@ Size sensitive, use units as meters.
 - `Sop Solver` // acces any sop (cmi) 
 
 #### *Input PARTICLE VELOCITY*  
-
+- `popwrangle` - @viscosity= 
+- `popforce` (can be merged)
 #### *Input VOLUME VELOCITY*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
+- `source volume` -  fluid source as velocity field 
+  
+
 #### *Input SOURCE*  
 - `source volume` (initialize source flip) with SOP link to: `fluid source SOP` NEW ONE
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
@@ -101,7 +105,11 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 # Sourcing
 
-- SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation. 
+- SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
+[volume operations] set behaviour (add/overide velo)      
+[velocity volumes] source attributes - we can sample it from N or sth. 
+[container settings] - velocity
+       
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
 - SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?    
 
