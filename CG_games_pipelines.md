@@ -49,7 +49,7 @@ Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoal
 - (back and forh for frip edges)
 
 ### Houdini low with uv's.   
-Generate from Imported or Procediural data.  
+Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
 - Make Mid -  creesed copy to get high  
 - Conform with ray to match Hi.  
  
@@ -61,10 +61,9 @@ reordering subtools in ZBrush will also reorder them when exporting the FBX,
 ## Scale   
 real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
+
 ## Collision  
-
 ## LOD's  
-
 
 # PDG
 name index frame state id   
