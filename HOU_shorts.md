@@ -1,5 +1,40 @@
+# CUSTOM
+`\` - manual update  
+`|` - auto update  
+## Hell-Shortuct to remove:  
+~~`Alt` + `W`~~ - close window  
+~~`Ctrl` + `1`,`2`~~ .... - change   
+~~`C` is visualize ~~should be: comment
+**edit:**
+F5 - to selection ??? from9 ?
 
-## EDIT MODE
+# Wievport
+`F2` `F3` `F4` - selection types   
+`Alt`+`Space` -  wieport  
+`B` - show uv layout !!!!!
+`9` - select by group
+`H` -  hide `H`+`ctrl`/`shift`   ??
+
+#### selection:  
+`Shift`+`V` - backmasking    
+`Shift`+`C` - contained  
+
+#### Change selection:  
+`N` - select all  
+`Shift`+`N` - select none  
+`Shift`+`B` - bounds   
+`Shift`+`Ctrl`+`E` (on edges)- pgrowth oli age boundary  
+`Shift`+`G` - Growth selection  
+`Shift`+`S` - Shrink selection  
+
+`A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection    
+`Shift` + `P` - Set sellection pattern  
+`Shift` + `🡰` `🡲` `🡱` `🡳` - Growth pattern  
+`Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end  
+`K` - Growth till paint under mouse  
+
+
+# EDIT Geometry MODE
 `F2`-`F5` - Selection types box/lasso/paint/laser  
 `Y` -  Edit  
 `L` - Slide on Surface   
@@ -13,53 +48,7 @@
 `'` `"` - Move pivot  
 `?` `/` - Align Grid   
 
-
-## CUSTOM
-
-`\` - manual update  
-`|` - auto update  
-
-## Hell-Shortuct to remove:  
-~~`Alt` + `W`~~ - close window  
-~~`Ctrl` + `1`,`2`~~ .... - change   
-
-**edit:**
-F5 - to selection ??? from9 ?
-
-**nodenet:**
-`C` is visualize should be: comment
-
-## SHORTS  
-`9` - select by group
-
-`Alt`+`Space` -  wieport  
-
-
-`F1` `F2` `F3` `F4` - selection types   
-
-`H` -  hide `H`+`ctrl`/`shift`  
-`N` - select all  
-`Shift`+`N` - select none  
-`Shift`+`B` - bounds   
-
-#### Change selection:  
-
-`Shift`+`V` - backmasking    
-`Shift`+`C` - contained  
-
-
-`Shift`+`Ctrl`+`E` (on edges)- pgrowth oli age boundary  
-`Shift`+`G` - Growth selection  
-`Shift`+`S` - Shrink selection  
-
-
-`A`+`ctrl`/`shift`+`[MMB]`/`[RMB]` - full selection / partial selection    
-`Shift` + `P` - Set sellection pattern  
-`Shift` + `🡰` `🡲` `🡱` `🡳` - Growth pattern  
-`Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end  
-`K` - Growth till paint under mouse  
-
-## POLYDRAW SHORTS  
+# POLYDRAW SHORTS  
 
 
 #### BUILD `Shift`+`1`
