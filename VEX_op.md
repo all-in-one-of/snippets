@@ -13,7 +13,11 @@ used in Adress, read $OS from node refered in spare param:
 ```
 $HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc
 ```
-
+### LOOP
+```
+detail(-1,"iteration", 0)
+detail("../repeat_begin1_metadata1/","iteration", 0)
+```
 
 `npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).  
 
