@@ -87,4 +87,14 @@ i[]@connected_pts = neighbours(0, @ptnum); // get matrix with all neighbours
 int [] nearpoints(<geometry>geometry, vector pt, float maxdist, int maxpts) 
 ```
 
+ ****if a point is inside, or below a surface based on normals.****
+ ```
+f@radius = 100000;
+i@maxPoints = 10;
+i@handle = pcopen(@OpInput2, “P”, @P, @radius,@maxPoints);
+@N = pcfilter(@handle,“N”);
+v@groundP = pcfilter(@handle,“P”);
+v@up = normalize(@P - @groundP);
+@Cd = dot(@up,@N);
+```
 
