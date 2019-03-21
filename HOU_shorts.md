@@ -95,8 +95,8 @@ F5 - to selection ??? from9 ?
 
 `F` `G` / `H` - zoomy 
 
-`Shift` + `A` + `🡰` `🡲` - (on selected nodes) - align horizontaly
-`Shift` + `A` +`🡱` `🡳`  - (on selected nodes) - align verticaly
+`Shift` + `A` + `🡰` `🡲` - (on selected nodes) - align horizontaly  
+`Shift` + `A` +`🡱` `🡳`  - (on selected nodes) - align verticaly  
 `Shift` + `S` - Change link type 
 
 WIEVPORT WTF:  
