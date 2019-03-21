@@ -50,7 +50,7 @@ Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoal
 
 ### Houdini low with uv's.   
 Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
-- Make Mid -  creesed copy to get high  
+- Make Mid -  using crease! 
 - Conform with ray to match Hi.  
  
 ### Zbrush High  
