@@ -17,8 +17,8 @@ s@myString = "abc";
 # Read Attribs
 `v@P` // fetch point position from first imput  
 `v@opinput1_P` // fetch attribute from second input  
-`point(1, @P, ptnum)` // normal from 1st input (counting from 0)  
-`point(1, 'P', @ptnum)` ?????????    
+
+`point(1, "Cd", @ptnum)`; // normal from 1st input (counting from 0)  
 `point(1, 'Cd', pt);` Why 'Cd' not '@Cd': The @ syntax is specific to wrangles, if you look in vops you see they don't use that prefix. Internally attributes are just plain names, the @ is a shorthand so wrangles know when you're referring to attributes vs referring to local variables. As such, the point() function, which is much older than wrangles are, doesn't use @'s. @Matt  
 
 
