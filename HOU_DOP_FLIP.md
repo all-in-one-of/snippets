@@ -122,8 +122,8 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 - SOP `Collision Source` -  interpolate deforming geometry, calculate point velocities, and create VDB. Usually used in conjunction with a Static Object DOP.
 
 
- 
-
+ # Dop import
+ -`Particle Fluid Surface` - limit refinment if unstable.
 
 
 # Setups  
