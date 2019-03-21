@@ -92,3 +92,17 @@ Create the second wrangle to return it to the original position
 ```
 @P *= invert(4@xform_matrix);
 ```
+
+****Orient piece of geometry by 4 points:**** {@vux}
+1. src_pt - source point 1
+2. dst_pt - destination point 1
+3. src_opt - source point 2
+4. dst_opt - destination point 2
+```
+int src_pt = 10 ;
+int dst_pt = 2 ;
+int src_opt = 11 ;
+int dst_opt = 3 ;
+vector4 q = dihedral( point(geoself(), “P”, src_pt)-point(geoself(), “P”, src_opt), point(geoself(), “P”, dst_pt)-point(geoself(), “P”, dst_opt) );
+@P = qrotate(q, @P)+point(geoself(), “P”, dst_pt)-qrotate(q, point(geoself(), “P”, src_pt));
+```
