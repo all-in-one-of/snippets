@@ -1,6 +1,7 @@
 
-### Inputs:
+`npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).  
 
+### Inputs:
 
 `opname(".")` // $OS ??  
 `opinput(".", 0)` //   
@@ -8,18 +9,16 @@
 `opinputpath(".", 0)`  // path of the node connected to the first input.  
 `opinputpath("../",0)` // path of geo (level up)   
 `geoself()`  Returns a handle to the current geometry.  
-
 used in Adress, read $OS from node refered in spare param:
 ```
 $HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc
 ```
+
 ### LOOP
 ```
 detail(-1,"iteration", 0)
 detail("../repeat_begin1_metadata1/","iteration", 0)
 ```
-
-`npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).  
 
 `ch("Multi")`  
 `chramp()`  
