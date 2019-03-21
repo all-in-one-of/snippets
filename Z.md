@@ -50,7 +50,7 @@
 `Standard` - preserv detil undernith (more generic and repetitve)   
 `Dam Standard`  - get valleys   Mid details  (more agressive)     
 `Clay Brush` - with Alpha 06 - default   
-`Clay Bildup` - build volume  (with no alpha work also great)  
+`Clay Bildup` - build volume  (with no alpha work also great)  ! modeling shapes!
 
 `Polish`  
  
