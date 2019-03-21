@@ -79,26 +79,30 @@ F5 - to selection ??? from9 ?
 #### SMOOTH `Shift`+`5`  
 
 ## GRAPH
-`Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
+
 
 `U` - Up  
 `I` - Dive  
 `PageUp`/`PageDowna` - move throu nodes `Shift`    
 ` ' ` - last view  
-`L` - layaut `Shift`+`L` - layout Selected  
-
-`Shift`+`S` - style  
 
 `Z` - shape  
-`C` - color  
 `X` - wizualizer  
+`C` - color  
 
 `F` `G` / `H` - zoomy 
 
+#### layaut 
+`L` - layaut 
+`Shift`+`L` - layout Selected  
 `Shift` + `A` + `🡰` `🡲` - (on selected nodes) - align horizontaly  
 `Shift` + `A` +`🡱` `🡳`  - (on selected nodes) - align verticaly  
 `Shift` + `S` - Change link type 
 
+
+`Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
+
+------------
 WIEVPORT WTF:  
 ` ' ` - RESELECT FOR CURENT TOOL  
 ` ~ ` - SECURE SELECTION  
