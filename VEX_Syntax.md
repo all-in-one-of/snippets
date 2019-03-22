@@ -117,10 +117,10 @@ v@P = P_avg_upper;
 ## Arrays
 ```cpp
 int MyArray[] = {}; // declare var
+int numbers[] = array(1,2,3,4); 
 i[]@MyArray = {-1,0,1}; // declare attrib
 i@MyArray[1] = @primnum; // Set primnum in array[1]
-
-
+vector myVectorArray[] = v[]@myVectorArray;  // load array attributes into local var
 removevalue(i[]@MyArray, ValueToRemove); 
 i[]@connected_pts = neighbours(0, @ptnum);
 ```
