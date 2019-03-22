@@ -1,9 +1,14 @@
 
 
 ### LOOP
+Iterations:
 ```
 detail(-1,"iteration", 0)
 detail("../repeat_begin1_metadata1/","iteration", 0)
+```
+Get name of node from spare input: -1
+```
+$HIP/cache/Clouds.`opinput(".", -1)`.`$F-1`.bgeo.sc
 ```
 
 `npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).  
