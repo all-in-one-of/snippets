@@ -12,8 +12,6 @@ If **[pscale]** exists, use it to scale the to scale the copy/instance (multipli
 If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
 If **[trans]** exists, use it and P to move the copy/instance.  
 
-
-
 ```cpp
 
 v@pivot // Local pivot point for the copy
@@ -32,29 +30,20 @@ v@P //  Translation of the copy  //   Instance Position
 
  if it's 1, you can use the scale() vex function(edited)like: scale(3@transform, vector(@pscale));
  
-
-
-**rotate packed geo:**
-```cpp
-// run over poinwrangle with packed geo input:
-matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
-vector axis = normalize(chv("axis"));
-float angle = radians(chf("angle"));
-rotate(x, angle, axis);
-setprimintrinsic(0, "transform", @primnum, x, "set");
-```
-
 **roatate matrix:**
+rotate normals along tangent. Add polyframe with tangent before
+```
+matrix rot = ident();
+float angle = radians(ch("angle"));
+rotate(rot, angle, @tangent);
+@N= @N*rot;
+```
+transform position
 ```cpp
-int numbers[] = array(1,2,3,4);
-vector myVectorArray[] = v[]@myVectorArray; 
-// load array attributes into local var
-
 matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
 vector axis = chv("axies"); // to this matrixa around given axies 
 float angle = radians(ch('amount')); // rot to radians 
-rotate(m, angle, axis); // multi each point by new matrix 
-(pivot need to be @ orig to rot this in place)
+rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot this in place)
 @P *= m; // apply rotation
 ```
 
@@ -68,6 +57,17 @@ float angle = radians(ch("angle")); // now rot thji matrix round N axix at over 
 rotate(m, angle, axis); //make the orient quaternion from this matrix
 p@orient = quaternion(m);
 ```
+
+**rotate packed geo:**
+```cpp
+// run over poinwrangle with packed geo input:
+matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
+vector axis = normalize(chv("axis"));
+float angle = radians(chf("angle"));
+rotate(x, angle, axis);
+setprimintrinsic(0, "transform", @primnum, x, "set");
+```
+
 
 **Move an object to the origin and return back**
 Create wrangle to move object to the origin
