@@ -1,6 +1,7 @@
+`ident()` - empty matrix in centroid with no transforms  
+
 ### Arrays
 
-`ident()` - empty matrix in centroid with no transforms  
 `resize()` - Sets the length of the array. If the array is enlarged, intermediate values will be 0 or "".    
 `len()` - -length of an array.    
 `pop(i[]@MyArray, IndexToRemove)` - -last item from the array (decreasing the size of the array by 1) and returns it.    
