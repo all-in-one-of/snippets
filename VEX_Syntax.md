@@ -115,15 +115,15 @@ v@P = P_avg_upper;
 `while(pciterate(handle))` //return one until point is valid 
 
 ## Arrays
-```cpp
-int MyArray[] = {}; // declare var
-int numbers[] = array(1,2,3,4); 
-i[]@MyArray = {-1,0,1}; // declare attrib
-i@MyArray[1] = @primnum; // Set primnum in array[1]
-vector myVectorArray[] = v[]@myVectorArray;  // load array attributes into local var
-removevalue(i[]@MyArray, ValueToRemove); 
-i[]@connected_pts = neighbours(0, @ptnum);
-```
+
+`int MyArray[] = {};` // declare var  
+`int numbers[] = array(1,2,3,4); `  
+`i[]@MyArray = {-1,0,1};` // declare attrib  
+`i@MyArray[1] = @primnum;` // Set primnum in array[1]  
+`vector myVectorArray[] = v[]@myVectorArray; ` // load array attributes into local var  
+`removevalue(i[]@MyArray, ValueToRemove); `  
+`i[]@connected_pts = neighbours(0, @ptnum);`  
+
 ### Detail > Points
 **[point wrangle]** Import `detailarray` as a local point array.
 (If any array element modulo of 2  is equal to zero, 
