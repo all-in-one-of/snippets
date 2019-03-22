@@ -84,7 +84,7 @@ Hda processor // create inputs ?
 
 `*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).  
 `*.zpr` - Project `Ctrl+S` will save multiple ZTools at once.  
-
+`*.hda` - Houdini Digital Asse. Old ones: .otl
 ### transforms:
 OBJ TO FBX: Rotate 90
 
