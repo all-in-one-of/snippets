@@ -71,6 +71,7 @@ for(int i = 0; i < npoints(0); i++) { }; // for na wszystkich punktach:
 for (int i=0; i<@numpt; i++) { }; // for na wszystkich punktach:
 ```
 ## ForEach Loop (arrays)
+`pnt` - var for curently perocesed point   
 ```cpp
 int vertices[] = pointvertices(0, 10);
 foreach (int num; vertices) {
