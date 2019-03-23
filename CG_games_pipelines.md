@@ -101,14 +101,20 @@ HDR low precission 16F
 HDR high precision 32F  
 ### Compression game:
 
+DXT1 works on RGB data. DXT3 & DXT5 also provide an alpha channel (only 4 bits), however DXT5 is considered the better of the two. Technically DXT1 supports 1 bit of alpha,
 
-Value | .
+Unreal | Compression | ---  | --- 
 --- | ---  | ---  | --- 
-`-` | cause them to clump together. | ---  | ---  | --- 
-`0` | for Incompresive fluid | ---  | --- 
-`+` | cause particles to spread out | ---  | --- 
-
-
+Default  | DXT1/5 BC1/3 (DX11)| ---  | ---  | --- 
+NormalMap | DXT5 BC5 | ---  | --- 
+--- | BC7 | ---  | --- 
+Grayscale | --- | (R8 RGB8 sRGB) | --- 
+Displacement | --- |(8/16bit)  | --- 
+Vector Displacement  | --- | (RGBA8) | (Standard 8bits RGBA format.)
+Mask | --- | ---  | Linear Color
+Alpha | BC4 (DX11)| ---  | Linear Color
+HDR | RGB | ---  | Linear Color
+HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
 ### video
 H.264 -  
