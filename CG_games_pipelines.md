@@ -95,9 +95,20 @@ OBJ TO FBX: Rotate 90
 `*.sbs` - Substance Designer Document  
 `*.sbsar` - Substance Archive  
 
+### Compression
 LDR - 8F  bits per channel
 HDR low precission 16F   
 HDR high precision 32F  
+### Compression game:
+
+
+Value | .
+--- | ---  | ---  | --- 
+`-` | cause them to clump together. | ---  | ---  | --- 
+`0` | for Incompresive fluid | ---  | --- 
+`+` | cause particles to spread out | ---  | --- 
+
+
 
 ### video
 H.264 -  
