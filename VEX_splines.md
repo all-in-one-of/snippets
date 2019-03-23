@@ -9,30 +9,11 @@ Curve on Ramp:
 float gradient = @ptnum/(@numpt-1.0); 
 @Cd.y = chramp('colorRamp', gradient);  
 ```
-measure:
-```cpp
-vector2 uv4 = set(f@curveu, 0);
-uv4 = primuvconvert("op:../curve1", uv4, 0, chi("mode"));
-f@curveu = uv4.x;
-```
-
- convert | arg; | value
---- | --- | ---
-real > unit |          0  |  0.11..   
-real > unitlen |       1  |  0.9..
-real > len |          2 |  15..
-unit > real  |         3  |  9
-unit > unitlen  |      4  | 0-1
-unit > len    |        5  | dl! // 33 
-unitlen > real  |      6  |  9
-unitlen > unit  |       7  | 0-1
-unitlen > len  |       8  | dl! // 33
-len > real   |        9  |  0.06
-len > unit    |        10  |  0.07
-len > unitlen |      11  |  0.033
 
 
-**Shape Polywire with ramp for combined curves**
+
+
+### Shape Polywire with ramp for combined curves 
 ```
 // Create Primitive Wrangle before polywire, use @width as Wire Radius
 // Get array of points in each curve (primitive)
@@ -46,7 +27,7 @@ foreach (int i; int currentPoint; @primPts){
     }
  ```
 
-**Fade noise on curves with ramp**
+### Fade noise on curves with ramp 
 ```
 // Requires uvtexture SOP in "Pts and Columns" mode before this wrangle
 
@@ -127,3 +108,37 @@ f@pscale = (@ptnum == 0) || @ptnum ==(@numpt-1) ? 10 : 1;
 neighbourcount(0, @ptnum) == 2
 
 ```
+
+
+ convert | arg; 
+--- | --- 
+"poly" |  Closed polygon. Can use 0 or more points. 
+"polyline"  |  Open polygon. Can use 0 or more points.      
+"tet" | Tetrahedron primitive. Requires exactly 4 points. You cannot add vertices to this primitive.
+"sphere", "circle", "tube", "metaball", "metasquad" |   Require exactly 1 point. You cannot add vertices to these primitives.
+"AlembicRef", "PackedDisk" | Packed Alembic or packed disk primitive. Require exactly 1 point. You cannot add vertices to these primitives. 
+
+### Measure
+```cpp
+vector2 uv4 = set(f@curveu, 0);
+uv4 = primuvconvert("op:../curve1", uv4, 0, chi("mode"));
+f@curveu = uv4.x;
+```
+
+ convert | arg; | value
+--- | --- | ---
+real > unit |          0  |  0.11..   
+real > unitlen |       1  |  0.9..
+real > len |          2 |  15..
+unit > real  |         3  |  9
+unit > unitlen  |      4  | 0-1
+unit > len    |        5  | dl! // 33 
+unitlen > real  |      6  |  9
+unitlen > unit  |       7  | 0-1
+unitlen > len  |       8  | dl! // 33
+len > real   |        9  |  0.06
+len > unit    |        10  |  0.07
+len > unitlen |      11  |  0.033
+
+
+
