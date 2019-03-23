@@ -19,7 +19,6 @@ Size sensitive, use units as meters.
 - `Pop Curve force` (Illume Jeff I ) // input curve 
 - `Sop Solver` // acces any sop (cmi) 
 
-#### *Input PARTICLE VELOCITY*  
 - `popwrangle` - @viscosity= 
 - `popforce` (can be merged)
 #### *Input VOLUME VELOCITY*  
