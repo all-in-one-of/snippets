@@ -59,7 +59,7 @@ b_low
 
 ### Xn
 only fbx support cage files 
-
+Heightmap export plugins > image exporters > tiff > 16bits per chan
 (DirectX vs OpenGl normal)    
 (baked object have other orientation)   
 
