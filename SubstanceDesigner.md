@@ -1,10 +1,10 @@
-designer reference to real world 
+ reference to real world feel subtle
 
 - surfaceing (bump nm height)
 - rough metalness
 - masking
 - paint
-feal sattle 
+
 
 dna 
 age 
