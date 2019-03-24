@@ -1,5 +1,31 @@
 
 
+# Source:  
+  
+### 3dScan   
+Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
+- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
+- Make mid res with reduced details and errors. Dynamesh it. 
+- (back and forh for frip edges)
+
+### Houdini low with uv's.   
+Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
+- Make Mid -  using crease! 
+- Conform with ray to match Hi.  
+- scale *100
+ 
+### Zbrush High  
+- Use Dynamesh  
+- Retopo by hand  
+reordering subtools in ZBrush will also reorder them when exporting the FBX,
+
+## Scale   
+real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
+
+### Designer
+- part by materials in one mesh. (Id's)
+
+
 # BAKE:
 
 ### ZBrush
@@ -12,8 +38,6 @@ prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Gr
 prim: `s@name` - label  
 vert: `@N`    
 point: `v@rest`, `v@Cd`, `i@id`, `@P`    
-
-
 
 
 ### PAINTER/DESIGNER  
@@ -39,27 +63,6 @@ only fbx support cage files
 (DirectX vs OpenGl normal)    
 (baked object have other orientation)   
 
-
-## Source:  
-  
-### 3dScan   
-Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
-- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
-- Make mid res with reduced details and errors. Dynamesh it. 
-- (back and forh for frip edges)
-
-### Houdini low with uv's.   
-Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
-- Make Mid -  using crease! 
-- Conform with ray to match Hi.  
- 
-### Zbrush High  
-- Use Dynamesh  
-- Retopo by hand  
-reordering subtools in ZBrush will also reorder them when exporting the FBX,
-
-## Scale   
-real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
 
 ## Collision  
