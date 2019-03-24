@@ -122,7 +122,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 
  # Dop import
- -`Particle Fluid Surface` - limit refinment if unstable.
+ -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
 
 
 # Setups  
