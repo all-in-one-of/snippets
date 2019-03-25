@@ -105,4 +105,20 @@ v@Ce // Emissive Color
 f@rough // Roughness
 f@fresnel // Fresnel coefficient
 f@shadow // Shadow intensity
-f@sbias // Shadow bias```
+f@sbias // Shadow bias
+```
+
+# VEX
+Accumulate
+```
+f@accusum = 0;
+
+for(int i=0; i<@numpt; i++){
+    @accusum = @accusum + point(0, 'mattemp', i);
+    @testloopcount += 1;
+    }
+    
+for(int j=0; j<@numpt; j++){
+    setpointattrib(0, 'accu', j, @accusum);
+    }
+```
