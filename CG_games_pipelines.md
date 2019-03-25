@@ -150,6 +150,6 @@ full HD 1080p image is only a 1920x1080
 
 
 
-HDTV format (16:9) ...
-WideScreen format (1.85:1) ...
-CinemaScope (2.35:1.00) ...
+HDTV format (16:9) 1.7778
+WideScreen format (1.85:1)  
+CinemaScope (2.35:1.00) 
