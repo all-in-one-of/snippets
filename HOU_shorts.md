@@ -78,8 +78,14 @@ F5 - to selection ??? from9 ?
 #### BRUSH `Shift`+`4`  
 #### SMOOTH `Shift`+`5`  
 
-## GRAPH
 
+## TOPs
+- Generate nodes  
+`Shift` + `G` - cook uncooked  
+`Shift` + `D` - Dirty node   
+`Shift` + `V` - Dirty node and cook all  
+
+## GRAPH
 
 `U` - Up  
 `I` - Dive  
