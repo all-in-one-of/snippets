@@ -112,6 +112,10 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
 - SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?    
 
+## Velocity
+v@v => vel
+youcan cereate `velocity field` > `source volume`
+
 # Collision 
 
 `static object` with collision mode to: volume sample {DeformingGeo shelf}   
