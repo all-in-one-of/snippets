@@ -57,7 +57,8 @@ Chaos and for for white water.
 - **use boundary layer** - (adv waterline) (velocity volume - at volume boundaries) (surface volume control geo in boundary padding) if both not connected it will use warterline options. (Houdini 16 Masterclass)  
 #### Collisions:  
 - stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse)   
-#### Viscosity: (lava)     
+#### Viscosity:    
+Adhesive force which resist motion (lava).  
 - **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
 Measured in: (centi)Poise.
 
@@ -84,8 +85,11 @@ Value | .
 `+` | cause particles to spread out
 
 #### Surface Tension:   
-- Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
+- Propoerty of warte molecules that are attracted to eachother (cohesion). it is on surface, where molecules have space to stronger their bonds forming a tension that is absent in rest  
 
+Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
+
+Adhesion parameter - its creating force with collision geo. (meniscus {wklęsły i wypuły :]})
 ### [NarrowBand]:   
 
 ### [Distribution]:    
