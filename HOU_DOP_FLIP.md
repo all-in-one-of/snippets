@@ -40,15 +40,14 @@ Size sensitive, use units as meters.
 
 
 ### [Particle Motion]:
-- `Collision detection` Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions. the Particle method only works when a collision is represented by an actual DOP object.  
-- `default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
+`Collision detection` Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions. the Particle method only works when a collision is represented by an actual DOP object.  
+`Default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
 #### Separation:  
 #### Droplets:  
-- tend to clamp toghether when partic drop below certain density turn dto droplets more like . After blend back to fluid: Merge/kill
+Tend to clamp toghether when partic drop below certain density turn dto droplets more like . After blend back to fluid: Merge/kill
 #### Vorticity: 
 Chaos and for for white water. 
 - preservation rate (how much vorticity should rename of end of second) (decay value) retain sworling motion.  
-
 
 
 ### [Volume Motion]:  
@@ -59,9 +58,7 @@ Chaos and for for white water.
 #### Collisions:  
 - stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse)   
 #### Viscosity:    
-Adhesive force which resist motion (lava).  
-- **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
-Measured in: (centi)Poise.
+Adhesive force which resist motion (lava).  Measured in: (centi)Poise.
 
 Substance | CentiPoise
 --- | --- 
@@ -71,10 +68,13 @@ Mustard | 50 000
 Peanut Butter | 150 000 
 Sanitary Silicon | 5M - 10M
 
+- **slip on colision** 0 to take velo from collision (Can't slip) Sticky / 1 to completly slide fluid on collider Slipy (can slip (tangentialy)) (fluid velo = no impact of collider tangential velocity). [Its oposie to: stick to colision]. (Houdini 16 Masterclass)
+
+
 #### Density:   
-- By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
+By default, the fluid has uniform density as set on the Physical tab of the FLIP Object. 
 #### Air:  
-- Enforce Air Incompressibility on the FLIP Solver. This feature prevents air pockets from collapsing
+Enforce Air Incompressibility on the FLIP Solver. This feature prevents air pockets from collapsing
 #### Divergence:  
 Divergence is measure of imbalance. `Scale` component is using pressure field  
 Incompresive fluid - have not "scale factor" still have : swirl , shear and translate factors
@@ -86,7 +86,7 @@ Value | .
 `+` | cause particles to spread out
 
 #### Surface Tension:   
-- Propoerty of warte molecules that are attracted to eachother (cohesion). it is on surface, where molecules have space to stronger their bonds forming a tension that is absent in rest  
+- Propoerty of warte molecules that are attracted to eachother (cohesion). it is on surface, where molecules have space to stronger their bonds forming a tension that is absent in rest  Measured in: Pa*s.
 
 Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
 
