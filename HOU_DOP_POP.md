@@ -45,6 +45,8 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 **Condensation** - Shelf tool 
 - `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
 - `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force).    
+- Limit Refinment iteration  at  (particle fluid surface)  
+
 
 **Setup**  
 (h17 core of new water solver in future maby with vellum).  
