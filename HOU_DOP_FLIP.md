@@ -90,7 +90,6 @@ Value | .
 
 Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
 
-Adhesion parameter - its creating force with collision geo. (meniscus {wklęsły i wypuły :]})
 ### [NarrowBand]:   
 
 ### [Distribution]:    
@@ -115,8 +114,9 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 [container settings] - velocity
        
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
-- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?    
+- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
+- `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)   
 ## Velocity
 v@v => vel
 youcan cereate `velocity field` > `source volume`
