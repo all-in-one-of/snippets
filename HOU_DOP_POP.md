@@ -47,6 +47,7 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 - `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force).    
 - Limit Refinment iteration  at  (particle fluid surface)  
 
+Adhesion parameter - its creating force with collision geo. (meniscus {wklęsły i wypuły :]})  
 
 **Setup**  
 (h17 core of new water solver in future maby with vellum).  
