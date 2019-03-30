@@ -84,6 +84,7 @@ Hda processor // create inputs ?
 `*.fbx` -  
 `*.gltf`-   
 `*.bgeo.sc` - cache  
+`*.sim` - more expensive H cache (eg in output node in dop)  
 
 `*.ztl` - Tool>SaveAs. selected 3D object (including all its subtools, subdivisions, settings, 3D layers, etc.).  
 `*.zpr` - Project `Ctrl+S` will save multiple ZTools at once.  
