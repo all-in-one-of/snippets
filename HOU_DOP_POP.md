@@ -1,7 +1,7 @@
 
 # POP
-POPs: Vex based solver.  green inputs have wired into them POP microsolvers
-
+POPs: Vex based solver.  green inputs have wired into them POP microsolvers  
+***Velocitty*** - go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces
 ```md
 - OBJECT 
 - PRE-SOLVE
