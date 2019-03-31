@@ -27,7 +27,7 @@ In addition, the following functions work with arrays:
 `getbbox(min, max)`  
 `getbbox_center()` relative bbox  
 `centroid("../in",D_X)` relative bbox  
-`relbbox()` relative bbox  
+`@Cd = relbbox(0, @P);` Color from bbox  
 
 ```cpp
 vector min, max;
