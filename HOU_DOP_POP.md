@@ -34,7 +34,7 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 
 # POP Object 
 Bucket for particles 
-
+Physical parameters: `Bounce`, `Friction`, `Temperature`
 # POP Source  
 impulse count (fer frame) / constant birth (for time) / life  
 attribtes > velocity > inherent (default!) from param: v@v  
