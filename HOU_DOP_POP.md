@@ -1,7 +1,10 @@
 
-# POP
-POPs: Vex based solver.  green inputs have wired into them POP microsolvers  
-***Velocitty*** - go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces
+# POP  
+POPs: Vex based solver.  green inputs have wired into them POP microsolvers    
+***Velocitty*** - go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces  
+***id*** - new in sim never have the same id  
+***age***  
+
 ```md
 - OBJECT 
 - PRE-SOLVE
