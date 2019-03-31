@@ -4,7 +4,8 @@
 `$OS` - Operator String. Contains the current OP’s name.  
 `$CH` - Current channel name.  
  
-`$F` - The current frame, (as set with the Playbar controls). This is a very useful variable, especially for rendered picture filename numbering.  
+`$F` - The current frame, (as set with the Playbar controls). 
+`$SF`- Sim,ulation frame (must be checked in dop object? )
 `$HFS` - The directory where Houdini is installed.  
 `$HH` - $HFS/houdini. 
 `$HIP` - The directory containing the current scene file.  
