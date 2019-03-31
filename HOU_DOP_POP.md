@@ -42,14 +42,21 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 - `Viscosity` // up even to 1
 - `Tensile Str.` // up to 0.01 even more to not break so easly.
 
-**Condensation** - Shelf tool 
-- `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
+#### Condensation - Shelf tool 
+ 
+***Adhesion parameter*** is creating force with collision geo. (meniscus {wklęsły i wypuły :]}) 
 - `Strength Multiplier` parameter on the Geometry Wrangle (adhesion_force).    
+- `Friction` parameter on the POP Object Control how slowly the liquid flows over the object make the liquid drip off the object quicker
+- pop fluids parameters to set fluid.
+--
 - Limit Refinment iteration  at  (particle fluid surface)  
+Source:  
+- `add emision scale` - max value zmniejsz zeby zmniejszyc ilesc klatek w ktorych jest emisja ()  
+- `fade` - how long emiting from one spot. (less, smaller ) (Wywill kernel - for not conecting so much) (ew. distance treshold) 
+- `scatter` - po lewej wiekszy daje ci strumien, po prawej wiecje ptk daj droplety 
+ (https://www.youtube.com/watch?v=yQoWgVuLXo8)    
 
-Adhesion parameter - its creating force with collision geo. (meniscus {wklęsły i wypuły :]})  
-
-**Setup**  
+### Setup  
 (h17 core of new water solver in future maby with vellum).  
 ```
 Constrain Iteration -  20 
