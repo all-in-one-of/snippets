@@ -1,10 +1,12 @@
 
 # FLIP
-Based on Navier–Stokes equations, Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid but mostly working on volumes.  
+Based on Navier–Stokes equations, Particle-Based Fluids are implemented in OpenCL (can combine with vellum) hybrid solver.
+All fluid data is stored in the particles (with pscale) and only particles need to persist frame to frame, However, the pressure projection step is done on a volume. 
 www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
-Improve filps with animaiton: add velocity wchih is change between frames. you can make it with trail sop: compute Velo.   
+ 
 Size sensitive, use units as meters. 
-
+ v, targetv, or force 
+ Increasing the Particle Separation will lower the resolution, which will make your simulation faster to process
 ```md
 - OBJECT 
 - PARTICLE VELOCITY
@@ -17,7 +19,7 @@ Size sensitive, use units as meters.
 
 #### *Input PARTICLE VELOCITY* 
 - `Pop Solver`   
-- `Pop Curve force` (Illume Jeff I ) // input curve 
+- `Pop Curve force` (Illume Jeff I ) // input curve  
 - `Sop Solver` // acces any sop (cmi) 
 
 - `popwrangle` - @viscosity= 
@@ -42,6 +44,8 @@ Size sensitive, use units as meters.
 ### [Particle Motion]:
 `Collision detection` Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions. the Particle method only works when a collision is represented by an actual DOP object.  
 `Default velocity scale` for Volume Source is 1.5, which will cause larger splashes by default, but for moving containers this should be set to 1.
+#### Reseed:
+you’ll get an uneven distribution due to numerical error, especially with Reseed Particles turned off.  
 #### Separation:  
 #### Droplets:  
 Tend to clamp toghether when partic drop below certain density turn dto droplets more like . After blend back to fluid: Merge/kill
@@ -122,7 +126,11 @@ v@v => vel
 youcan cereate `velocity field` > `source volume`
 
 # Collision 
-
+ Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
+ 
+ If using Volume Source based collisions, you must use the Move Outside Collision method for particle collisions, because the Particle method only works when a collision is represented by an actual DOP object.   
+ Move Outside Collision is the fastest collision handling method and provides the smoothest splashes, however it is not as accurate with fast-moving collision geometry. It is also the only collision method that works with Volume Source based collisions.  
+  
 `static object` with collision mode to: volume sample {DeformingGeo shelf}   
 - Enabling Collision Separation on the FLIP Object and setting this value to the Particle Separation or smaller will create a higher-resolution collision field 
 - Accurate velocities for moving collision objects are extremely important.
@@ -132,7 +140,7 @@ youcan cereate `velocity field` > `source volume`
 
  # Dop import
  -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
-
+For emitting large numbers of particles, the Volume Source DOP can be much faster than the Particle Fluid Emitter DOP.
 # Vex
 `i@stopped`   - You can stop the particles in a flip sim with 
 
