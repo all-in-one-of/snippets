@@ -1,9 +1,8 @@
 
 # POP  
 POPs: Vex based solver.  green inputs have wired into them POP microsolvers    
-***Velocitty*** -  go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces  or inheret
-v@v - create from motion by trail sop! 
-
+***Velocitty*** -  go this far every second in units. (by default distance is divide per 24 frames).   
+Apply it by forces or inheret v@v - create from motion by trail sop!   
 ***id*** - new in sim never have the same id  
 ***age***  
 
@@ -58,6 +57,8 @@ Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
 @dead = 1; // kill (pop solver > update > reap particles)
 
 
+# Setup  
+
 #### Condensation - Shelf tool 
  
 ***Adhesion parameter*** is creating force with collision geo. (meniscus {wklęsły i wypuły :]}) 
@@ -72,7 +73,8 @@ Source:
 - `scatter` - po lewej wiekszy daje ci strumien, po prawej wiecje ptk daj droplety 
  (https://www.youtube.com/watch?v=yQoWgVuLXo8)    
 
-### Setup  
+#### White Water
+
 (h17 core of new water solver in future maby with vellum).  
 ```
 Constrain Iteration -  20 
