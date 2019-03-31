@@ -3,8 +3,7 @@
 POPs: Vex based solver.  green inputs have wired into them POP microsolvers    
 ***Velocitty*** -  go this far every second in units. (by default distance is divide per 24 frames).   
 Apply it by forces or inheret v@v - create from motion by trail sop!   
-***id*** - new in sim never have the same id  
-***age***  
+
 
 ```md
 - OBJECT 
@@ -53,6 +52,8 @@ Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
 - `Viscosity` // up even to 1
 - `Tensile Str.` // up to 0.01 even more to not break so easly.
 
+# POP Grains
+
 # POP Wrangler
 @dead = 1; // kill (pop solver > update > reap particles)
 
@@ -84,5 +85,4 @@ Tensile Strengh - keep distance between particles 0.01 - larger make
 ```
 https://vimeo.com/323269227 (Entagma)
 
-# POP Grains
 
