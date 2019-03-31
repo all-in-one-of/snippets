@@ -1,7 +1,7 @@
 
 # FLIP
 Based on Navier–Stokes equations, Particle-Based Fluids are implemented in OpenCL and therefore also calculated on the graphics card. The Particle-Based Fluids Node can also be used outside the Ocean and Water tools for simpler fluids and can be combined with Vellum. Solver is hybrid and transfer a lot of data from particle to background grid but mostly working on volumes.  
-
+www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
 Improve filps with animaiton: add velocity wchih is change between frames. you can make it with trail sop: compute Velo.   
 Size sensitive, use units as meters. 
 
@@ -133,6 +133,8 @@ youcan cereate `velocity field` > `source volume`
  # Dop import
  -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
 
+# Vex
+`i@stopped`   - You can stop the particles in a flip sim with 
 
 # Setups  
 **Crown Splash**
@@ -173,7 +175,5 @@ link resolution of flip with point separation
 **Fluid Follow Curve**  
 https://forums.odforce.net/topic/31596-fluid-follow-curve/  
 
-
-## ###  
-You can stop the particles in a flip sim with i@stopped  
-http://www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
+**Mix Colors**
+https://youtu.be/DWxcfZMsZW8
