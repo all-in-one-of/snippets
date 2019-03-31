@@ -180,6 +180,10 @@ Flip Object > change sop path to points
 link resolution of flip with point separation 
 ```
 
+**Pyro > Fluid**
+https://vimeo.com/296410457
+
+
 **Fluid Follow Curve**  
 https://forums.odforce.net/topic/31596-fluid-follow-curve/  
 
