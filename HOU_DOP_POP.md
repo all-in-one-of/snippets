@@ -1,7 +1,9 @@
 
 # POP  
 POPs: Vex based solver.  green inputs have wired into them POP microsolvers    
-***Velocitty*** - go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces  
+***Velocitty*** -  go this far every second in units. (by default distance is divide per 24 frames). Apply it by forces  or inheret
+v@v - create from motion by trail sop! 
+
 ***id*** - new in sim never have the same id  
 ***age***  
 
@@ -32,10 +34,17 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 ### [Collision]:
 ### [Sleeping]:
 
-# Sourcing 
-(source obj) `debricesource` // for RBD ingeret vel  
-(source obj) `fluidfource` // volume source from point  
+# POP Object 
+Bucket for particles 
 
+# POP Source  
+impulse count (fer frame) / constant birth (for time) / life  
+attribtes > velocity > inherent (default!) from param: v@v  
+attribtes > velocity > for the first frame 
+Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
+# Sourcing 
+(source obj) `debricesource` // for RBD ingeret vel   
+(source obj) `fluidfource` // volume source from point   
 
 # POP Fluids
 `popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) Can make cohesion and basic surface tension (https://vimeo.com/295491505 Lewis Orton).   
@@ -44,6 +53,10 @@ POPs: Vex based solver.  green inputs have wired into them POP microsolvers
 - `Constrain stifnes` // up do sich particles. 
 - `Viscosity` // up even to 1
 - `Tensile Str.` // up to 0.01 even more to not break so easly.
+
+# POP Wrangler
+@dead = 1; // kill (pop solver > update > reap particles)
+
 
 #### Condensation - Shelf tool 
  
