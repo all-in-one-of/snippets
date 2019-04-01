@@ -1,9 +1,7 @@
 
-### HScript
-
+### in File Names
 `$OS` - Operator String. Contains the current OP’s name.  
 `$CH` - Current channel name.  
- 
 `$F` - The current frame, (as set with the Playbar controls). 
 `$SF`- Sim,ulation frame (must be checked in dop object? )
 `$HFS` - The directory where Houdini is installed.  
@@ -18,6 +16,8 @@
 `$NFRAMES` (the number of frames in the animation) = $FEND - $FSTART + 1.  
 `$ACTIVETAKE` - Contains the name of the current take.   
 
+MyImage`$F+12`.pic
+Pics${W}x${H}/$F.pic.
 
 ### Arithmetic 
 ```cpp
