@@ -93,7 +93,7 @@ Value | .
 - Propoerty of warte molecules that are attracted to eachother (cohesion). it is on surface, where molecules have space to stronger their bonds forming a tension that is absent in rest  Measured in: Pa*s.
 
 Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
-
+- Bigger value, liquid tend to min. surface area
 ### [NarrowBand]:   
 
 ### [Distribution]:    
