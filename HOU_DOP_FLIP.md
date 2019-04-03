@@ -37,6 +37,7 @@ Size sensitive, use units as meters.
 
 # FLIP Solver   
 ### [Substeps]:
+Time Scale !  
 - timestep = (divide 1 frame to few)  
 - substep = (add steps in 1 framie) Fluid dont need it exxeption are: fast moving fluid that collides with other objects and Surface tension. 
 
