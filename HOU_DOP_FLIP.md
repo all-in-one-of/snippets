@@ -56,6 +56,7 @@ Chaos and for for white water.
 
 
 ### [Volume Motion]:  
+ Velocity transfer Splashy >> Swirly  is not as noisy and turb. (Houdini 16 Masterclass) and keep vorticity better
 - smoothing 
 #### Volume Limits:  
 - **waterline** (semi open boundaries)(above opne, belowe close) it should be on water level.   
@@ -149,44 +150,35 @@ For emitting large numbers of particles, the Volume Source DOP can be much faste
 **Crown Splash**
 ```
 Flip tank with bounadary layer 
-
-Flip solver: Velocity transfer Splashy >> Swirly  
-// not as noisy and turb. (Houdini 16 Masterclass) and keep vorticity better
-Enable surface tenssion 48 // high value less motion for 
-FLIP object: - particle separation 0.03
-grid scale // fat /thin 1.5
-in self they reduce gravity 
-substeps up!!
+Velocity transfer Splashy >> Swirly  
+Surface tenssion 48 // high value less motion for 
+Grid scale // fat /thin 1.5
+In self they reduce gravity 
+Substeps up!!
 ```
 **Droplet**
 ```
-surface tenssion 48000
+Surface tenssion 48000
 ```
 **floating RDB:**   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
-merge: rigidbody solver + flip solver 
-check density of object (mass)  
-Substeps -  Max Substeps change from 2 to 1.  
-check Particle Separation changed to 0.1  
-```
-```
-bullet solver with rdb object is working as well
+Merge: rigidbody solver + flip solver 
+Check density of object (mass)    
+Bullet solver with rdb object is working as well
 ```
 **Pyro > Fluid**  
-https://vimeo.com/157944287 
+https://vimeo.com/157944287  
 ```
 Sim Pyro > Import > Points from volume 
 Flip Object > change sop path to points 
-// cration frame spec sim frame check
-link resolution of flip with point separation 
+Cration frame spec sim frame check
 ```
 
 **Pyro > Fluid**
-https://vimeo.com/296410457
-
+https://vimeo.com/296410457  
 
 **Fluid Follow Curve**  
-https://forums.odforce.net/topic/31596-fluid-follow-curve/  
+https://forums.odforce.net/topic/31596-fluid-follow-curve/   
 
 **Mix Colors**
-https://youtu.be/DWxcfZMsZW8
+https://youtu.be/DWxcfZMsZW8  
