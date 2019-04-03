@@ -96,7 +96,7 @@ Value | .
 Createing the surfacepressure field. Fight against gravity trying to put particles in to drop (bostly in places where curvature of shape is bigest). Crown Splash, Suction, Avoidance (Houdini 16 Masterclass). *In small scale it can be unstable*   
 - Bigger value, liquid tend to min. surface area. Bluring shape. Create oposeing forces on large changind curvature. 
 ### [NarrowBand]:   
-
+- work only with reseed  
 ### [Distribution]:    
 - for net renders
 
