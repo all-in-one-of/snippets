@@ -1,12 +1,10 @@
 # CUSTOM
-`\` - manual update  
-`|` - auto update  
-## Hell-Shortuct to remove:  
+
 ~~`Alt` + `W`~~ - close window  
 ~~`Ctrl` + `1`,`2`~~ .... - change   
 ~~`C` is visualize ~~should be: comment
-**edit:**
-F5 - to selection ??? from9 ?
++ selection from `9`  
++ `\` - manual update   `|` - auto update   
 
 # Wievport
 `F2` `F3` `F4` - selection types   
