@@ -114,6 +114,9 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 # [FLIP Wrangler]
 `i@stopped`   - You can stop the particles in a flip sim with 
 `v@v` => vel
+ 
+## Velocity
+youcan cereate `velocity field` > `source volume`
 
 # Sourcing
 
@@ -125,11 +128,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 - SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
 - SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
-- `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)   
-## Velocity
-v@v => vel
-youcan cereate `velocity field` > `source volume`
-
+- `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
 
 # Collision 
  Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
