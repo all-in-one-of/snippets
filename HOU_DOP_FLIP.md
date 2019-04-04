@@ -127,6 +127,9 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 v@v => vel
 youcan cereate `velocity field` > `source volume`
 
+# [FLIP Wrangler]
+`i@stopped`   - You can stop the particles in a flip sim with 
+
 # Collision 
  Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
  
@@ -143,8 +146,6 @@ youcan cereate `velocity field` > `source volume`
  # Dop import
  -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
 For emitting large numbers of particles, the Volume Source DOP can be much faster than the Particle Fluid Emitter DOP.
-# Vex
-`i@stopped`   - You can stop the particles in a flip sim with 
 
 # Setups  
 **Crown Splash**
