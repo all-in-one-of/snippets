@@ -111,6 +111,9 @@ Input type: *Surface sop, particle field, Narrow Band*
 ### [Physical]
 Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if viscosity by attribute in solver is checked and there is point attribute at sop viscosity will be multiplayed)
 
+# [FLIP Wrangler]
+`i@stopped`   - You can stop the particles in a flip sim with 
+`v@v` => vel
 
 # Sourcing
 
@@ -127,8 +130,6 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 v@v => vel
 youcan cereate `velocity field` > `source volume`
 
-# [FLIP Wrangler]
-`i@stopped`   - You can stop the particles in a flip sim with 
 
 # Collision 
  Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
