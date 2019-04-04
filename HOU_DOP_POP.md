@@ -53,12 +53,28 @@ Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
 - `Tensile Str.` // up to 0.01 even more to not break so easly.
 
 # POP Grains
+Are just proper collisions for pops   
+`POP Grains` - set next after source   
+- particle sep should be same as grain source  
+- for test you can lower constrain itters  
+Friction:  
+- static treshold  
+- scale kinetics (accelerate friction and stop to scatter on collision)  
+Clumping: make stick particle toghether  
+Break constraint treshold:  
 
+#### Source ####
+`Grain Source` [SOP] - export points with pscale  >> 
+`POP Source` (DOP) emit from all points (if you are using constrains from geometry)
+#### POP Solver ####
+- itterations 10 
+- max speed - can change speed scale to decrees forces  
+https://vimeo.com/132847114  
 # POP Wrangler
 @dead = 1; // kill (pop solver > update > reap particles)
 
 
-# Setup  
+# Setups  
 
 #### Condensation - Shelf tool 
  
