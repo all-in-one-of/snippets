@@ -35,7 +35,7 @@ Size sensitive, use units as meters.
 - `gas temp update` 
 - `pop color` 
 
-# FLIP Solver   
+# [FLIP Solver]   
 ### [Substeps]:
 Time Scale !  
 - timestep = (divide 1 frame to few)  
@@ -102,7 +102,7 @@ Createing the surfacepressure field. Fight against gravity trying to put particl
 - for net renders
 
 
-# Flip Object
+# [Flip Object]
 - **Particle Separation** // overal scale   
 - **grid scale** // higher for sharper // fat crona >> thinner splash  
 - Bounds
