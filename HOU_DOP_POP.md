@@ -70,7 +70,7 @@ Break constraint treshold:
 - itterations 10 
 - max speed - can change speed scale to decrees forces  
 https://vimeo.com/132847114  
-# POP Wrangler
+# [POP Wrangler]
 @dead = 1; // kill (pop solver > update > reap particles)
 
 
