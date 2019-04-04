@@ -28,14 +28,14 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 - `popgroup`  
 - `popforce` - jakies noizy Old thing   
 
-# POP Solver 
+# [POP Solver] 
 ### [Collision]:
 ### [Sleeping]:
 
-# POP Object 
+# [POP Object] 
 Bucket for particles 
 Physical parameters: `Bounce`, `Friction`, `Temperature`
-# POP Source  
+# [POP Source]  
 impulse count (fer frame) / constant birth (for time) / life  
 attribtes > velocity > inherent (default!) from param: v@v  
 attribtes > velocity > for the first frame 
@@ -44,7 +44,7 @@ Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
 (source obj) `debricesource` // for RBD ingeret vel   
 (source obj) `fluidfource` // volume source from point   
 
-# POP Fluids
+# [POP Fluids]
 `popfluid` PBD fluid make intersection - maintain Particle Separation (node from white water) Can make cohesion and basic surface tension (https://vimeo.com/295491505 Lewis Orton).   
 
 - `Constrrain iteration` 20+  (50?)
@@ -52,7 +52,7 @@ Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
 - `Viscosity` // up even to 1
 - `Tensile Str.` // up to 0.01 even more to not break so easly.
 
-# POP Grains
+# [POP Grains]
 Are just proper collisions for pops   
 `POP Grains` - set next after source   
 - particle sep should be same as grain source  
