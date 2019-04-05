@@ -103,6 +103,7 @@ OBJ TO FBX: Rotate 90
 LDR - 8F  bits per channel
 HDR low precission 16F   
 HDR high precision 32F  
+
 ### Compression game:
 
 DXT1 works on RGB data. DXT3 & DXT5 also provide an alpha channel (only 4 bits), however DXT5 is considered the better of the two. Technically DXT1 supports 1 bit of alpha,
@@ -130,6 +131,10 @@ Mask | --- | ---  | Linear Color
 Alpha | BC4 (DX11)| ---  | Linear Color
 HDR | RGB | ---  | Linear Color
 HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
+
+# P4
+`Accept Source` Replaces the copy of the file in your workspace with the version that is in the depot, discarding your changes.  
+`Accept Target` Accepts the file that is in your workspace, overwriting the version that is in the depot when you submit the file.  
 
 ### video
 H.264 -  
