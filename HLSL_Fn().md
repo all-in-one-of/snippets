@@ -25,6 +25,8 @@ http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
 
 
 
+`break;` Exit the surrounding loop (do, for, while).
+
 ### Math
 ```hlsl
 sin(Emitter.Age)*56
@@ -49,13 +51,6 @@ rand(1.5f) + 2.2f
 rand(11.1f) + 2.5f
 length(Particles.Position - Emitter.InitialPosition)
 
-```
-### If
-```hlsl
-Particles.NormalizedAge < 0.333 ? float4(1,0.1,0.1,1) : Particles.NormalizedAge < 0.575 ? float4(0.1,1,0.1,1) : float4(0.1,0.1,1,1)
-```
-```hlsl
-Particles.Position.z > Emitter.InitialPosition.z - Emitter.ZOffset ? Particles.Position : float3(Particles.Position.x, Particles.Position.y, Emitter.InitialPosition.z -Emitter.ZOffset)
 ```
 
 
