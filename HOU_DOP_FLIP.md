@@ -5,6 +5,8 @@ All fluid data is stored in the particles (with pscale) and only particles need 
 www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
  
 Size sensitive, use units as meters. 
+Time sensitive !! I don't know how and why  
+
  v, targetv, or force 
  Increasing the Particle Separation will lower the resolution, which will make your simulation faster to process
 ```md
