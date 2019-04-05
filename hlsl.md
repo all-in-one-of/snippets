@@ -1,13 +1,23 @@
-data types  
-``` Use This Intrinsic Type    To Define This Shader Variable
-Buffer    Buffer, which contains one or more scalars
-Scalar    One-component scalar
-Vector, Matrix    Multiple-component vector or matrix
-Sampler, Shader, Texture    Sampler, shader, or texture object
-Struct, User Defined    Custom structure or typedef
-```
-
-
+# Data types  
+Use This Intrinsic Type    To Define This Shader Variable   
+`Buffer`    Buffer, which contains one or more scalars  
+`Scalar`    One-component scalar  
+`Vector`, `Matrix`    Multiple-component vector or matrix  
+`Sampler`, `Shader`, `Texture `   Sampler, shader, or texture object  
+`Struct`, `User Defined`    Custom structure or typedef  
+ 
+bool true or false  
+int 32-bit integer  
+half 16bit integer  
+float 32bit float  
+double 64bit double  
+float3 vectorTest  
+float vectorTest[3]  
+vector vectorTest  
+float2 vectorTest    
+bool3 vectorTest    
+float3x3: a 3×3 matrix, type float  
+float2x2: a 2×2 matrix, type float  
 
 
 
@@ -30,7 +40,10 @@ cross(Particles.RandomVector, float3(0,8,0)) *
     (float3(0.0f, 0.0f, Emitter.ZOffset) *0.2f) + 
     (-1.0f * normalize(Emitter.InitialPosition - Particles.Position)*20)
 ```
+
 ### Fn
+intrinsic functions list: 
+https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions
 ```hlsl
 rand(1.5f) + 2.2f
 rand(11.1f) + 2.5f
