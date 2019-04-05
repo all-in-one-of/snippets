@@ -133,8 +133,8 @@ HDR | RGB | ---  | Linear Color
 HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
 # P4
-`Accept Source` Replaces the copy of the file in your workspace with the version that is in the depot, discarding your changes.  
-`Accept Target` Accepts the file that is in your workspace, overwriting the version that is in the depot when you submit the file.  
+`Accept Source` GEt clean file from repo, discarding your changes.  
+`Accept Target` Accepts the file local, overwriting repo.  
 
 ### video
 H.264 -  
