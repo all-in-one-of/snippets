@@ -79,8 +79,7 @@
 
 ## TOPs
 - Generate nodes  
-`Shift` + `G` - cook uncooked  
-`Shift` + `D` - Dirty node   
+`Shift` + `G` - revert cooked to graph and cook uncooked    // do it before delete from disc  
 `Shift` + `V` - Dirty node and cook all  
 
 ## GRAPH
