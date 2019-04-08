@@ -1,5 +1,5 @@
 # CUSTOM
-`Shift` + `W` - In all windows wireframe mode.
+`Shift` + `W` - In all windows wireframe mode   
 ~~`Alt` + `W`~~ - close window  
 ~~`Ctrl` + `1`,`2`~~ .... - change   
 ~~`C` is visualize ~~should be: comment
