@@ -1,4 +1,5 @@
-
+4k piz = 16 777 216 points  
+vertex anim: 33 550 points; 500frames (~16sek) = 4k tex   
 
 # Source:  
   
@@ -136,7 +137,7 @@ HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 `Accept Source` GEt clean file from repo, discarding your changes.  
 `Accept Target` Accepts the file local, overwriting repo.  
 
-### video
+# video
 H.264 -  
 ffmpg -  
 https://github.com/Aeoll/FFmpegify  
