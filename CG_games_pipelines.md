@@ -139,6 +139,7 @@ HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 ### video
 H.264 -  
 ffmpg -  
+https://github.com/Aeoll/FFmpegify  
 
 ### Youtube: 
 Progressive scan (no interlacing) / High Profile / 2 consecutive B frames /  Closed GOP. GOP of half the frame rate. / CABAC  /  Variable bitrate. No bitrate limit required, though we offer recommended bit rates below for reference /  Chroma subsampling: 4:2:0 \ Recommended video bitrates for HDR uploads:
