@@ -7,7 +7,7 @@ Use This Intrinsic Type    To Define Shader Variable
 `Sampler`, `Shader`, `Texture `   Sampler, shader, or texture object  
 `Struct`, `User Defined`    Custom structure or typedef  
 
-http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
+http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
 `bool` true or false  
 `int` 32-bi integer  
 `half` 16bit integer  
