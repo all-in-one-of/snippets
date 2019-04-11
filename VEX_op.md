@@ -39,3 +39,12 @@ for( int i=i; i<=rampkeys; i++){
     float val = ch(sprintf("ramp%gvalue", i));
 }
 ```
+
+ you can interact with ramp keys just like a multiparm block. The ramp parameter itself has the value of how many keys there are:
+
+```
+c int rampkeys = chramp(“ramp”);
+for( int i=i; i<=rampkeys; i++){ float pos = ch(sprintf("ramp%gpos", i)); 
+float val = ch(sprintf("ramp%gvalue", i)); // Do stuff }
+```
+@flight404 (I normally don’t condone 1-based loop indices but the keys do start at 1 and not 0. I supposed you could switch to doing `i+1` in the `sprintf` calls though if you wanted)  
