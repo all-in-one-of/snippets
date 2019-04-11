@@ -6,6 +6,7 @@
 - Stop executing the current loop (do, for, while)  
 - update the loop conditions  
 - begin executing from the top of the loop  
+
 `discard;` 
 - Do not output the result of the current pixel   
 
