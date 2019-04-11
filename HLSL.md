@@ -1,4 +1,4 @@
-# Data types  
+### Data types  
 
 Use This Intrinsic Type    To Define Shader Variable   
 `Buffer`    Buffer, which contains one or more scalars  
