@@ -1,15 +1,4 @@
 
-
-
-`return [value];`  
-`continue;`  
-- Stop executing the current loop (do, for, while)  
-- update the loop conditions  
-- begin executing from the top of the loop  
-
-`discard;` 
-- Do not output the result of the current pixel   
-
 ## Loop  
 `[Attribute] do { Statement Block; } while( Conditional );` 
 - Execute a series of statements continuously until the conditional expression fails. For statement.  Iteratively executes a series of statements, based on the evaluation of the conditional expression.    
