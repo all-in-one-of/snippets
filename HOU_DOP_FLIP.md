@@ -105,8 +105,9 @@ Createing the surfacepressure field. Fight against gravity trying to put particl
 
 
 # [Flip Object]
-- **Particle Separation** // overal scale   
-- **grid scale** // higher for sharper // fat crona >> thinner splash  
+- **particle separation** Point separation (seed density)  
+- **particle radious scale**  - actual radious of every particle  
+- **grid scale** // higher for sharper // fat crona >> thinner splash   
 - Bounds
 ### [Initial Data]
 Input type: *Surface sop, particle field, Narrow Band*  
