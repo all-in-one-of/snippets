@@ -39,6 +39,19 @@ http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
 
 
 ### UE4 example  
+
+
+```
+float3 foo = InputName;
+returen foo; 
+```
+```
+scalar = exp;
+float3 CdVal = InputName;
+float3 foo = float3(pow(CdVal,exp));
+returen foo; 
+```
+
 ```hlsl 
 
 float3 blur = Texture2DSample(Tex, TexSampler, UV);
