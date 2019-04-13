@@ -10,11 +10,7 @@ float gradient = @ptnum/(@numpt-1.0);
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
-### Delete last point  
-/*to delete last point  
-- Delete By Pattern: $N   
-- Delete By Expression: $PT==$NPT-1   
-- Delete By Range: change Start to: $N*/     
+### Delete last point    
 @ptnum == `@numpt-1` // group the last point on curve  
 @ptnum == `npoints(0)-1` //group the last point on curve (using fn)  
 @ptnum%(@numpt-1)==0  // first&last = 0 rest @ptnum   
