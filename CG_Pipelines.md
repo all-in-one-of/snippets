@@ -12,10 +12,7 @@
 `$HIP/${HIPNAME}/cache_sim/.$OS.$F.bgeo.sc` - cache sim  
 ```../SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG / TOP  
 
-### VAT
 
-4k pix = 16 777 216 points  
-vertex anim: 33 550 points; 500frames (~16sek) = 4k tex   
 
 # Source:  
   
