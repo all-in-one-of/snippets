@@ -11,9 +11,9 @@ float gradient = @ptnum/(@numpt-1.0);
 ```
 
 ### Delete last point    
-@ptnum == `@numpt-1` // group the last point on curve  
-@ptnum == `npoints(0)-1` //group the last point on curve (using fn)  
-@ptnum%(@numpt-1)==0  // first&last = 0 rest @ptnum   
+`@ptnum == @numpt-1` // group the last point on curve  
+`@ptnum == npoints(0)-1` //group the last point on curve (using fn)  
+`@ptnum%(@numpt-1)==0`  // first&last = 0 rest @ptnum   
 
 0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //  
 0 `npoints(0)-1` // select first and last point  
