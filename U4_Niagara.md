@@ -4,14 +4,12 @@ Emiter Spawn
 - Particle ID  -   CPU ? - more persistent
 - Execution Index - GPU ?
 - ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)
-
-options:
 - interpolated spawning 
-- require ID
+- require persistent ID
 ```
 Emiter Update
 ```cpp
- - Age:  Emiter Looped Age - tyle żyją ile loop
+- Age:  Emiter Looped Age - tyle żyją ile loop
 - Generate location Event  // ADD TO LEADER
 ```
 Particle Spawn
