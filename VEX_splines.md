@@ -4,23 +4,24 @@ Gradient along curve:
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-Curve on Ramp:
+Gradient along curve Ramp:
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); 
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
 ### Delete last point  
-@ptnum == `npoints(0)-1` //group the last point on curve  
-@ptnum == @numpt-1 // group the last point on curve  
-@ptnum%(@numpt-1)==0  //1st AND last point at the same time  
+/*to delete last point  
+- Delete By Pattern: $N   
+- Delete By Expression: $PT==$NPT-1   
+- Delete By Range: change Start to: $N*/     
+@ptnum == `@numpt-1` // group the last point on curve  
+@ptnum == `npoints(0)-1` //group the last point on curve (using fn)  
+@ptnum%(@numpt-1)==0  // first&last = 0 rest @ptnum   
 
 0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //  
 0 `npoints(0)-1` // select first and last point  
-/*to delete last point  
-- Delete By Pattern: $N  
-- Delete By Expression: $PT==$NPT-1  
-- Delete By Range: change Start to: $N*/  
+
 
 ### create Groupexpreesion SOP  
 neighbourcount(0, @ptnum) == 2  
