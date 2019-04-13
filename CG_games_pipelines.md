@@ -1,6 +1,6 @@
 ### Project
 
-`$HIP/source/`  
+`$HIP/source/` - sources (read only)   
 `$HIP/${HIPNAME}/$OS.fbx` - Export file   
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
 `$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
@@ -9,8 +9,8 @@
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake  
 `$HIP/${HIPNAME}/export/$OS.csv`   
 `$HIP/${HIPNAME}/cache_geo/$OS.obj` - cache static  
-`$HIP/${HIPNAME}/cache_sim/$OS.bgeo.sc` - cache sim  
-```../SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG / TOP
+`$HIP/${HIPNAME}/cache_sim/.$OS.$F.bgeo.sc` - cache sim  
+```../SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG / TOP  
 
 ### VAT
 
