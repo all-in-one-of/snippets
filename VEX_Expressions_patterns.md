@@ -8,7 +8,7 @@
 `$HH` - $HFS/houdini.   
 `$HIP` - The directory containing the current scene file.   
 `$HIPFILE` - The full path of the current scene file, including the file extension.   
-`$HIPNAME` - The name of the current scene file without the extension. You can use this to build filenames with different extensions based on the scene name.  
+`$HIPNAME` - The name of the current scene file without the extension. 
 `$PDG_DIR`   
 `$PDG_SHARED_ROOT`  
 `$HOME` - Your home directory.  
