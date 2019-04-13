@@ -1,13 +1,13 @@
 
 ### in File Names
-`$OS` - Operator String. Contains the current OP’s name.  
-`$CH` - Current channel name.  
-`$F` - The current frame, (as set with the Playbar controls). 
-`$SF`- Sim,ulation frame (must be checked in dop object? )
-`$HFS` - The directory where Houdini is installed.  
-`$HH` - $HFS/houdini. 
-`$HIP` - The directory containing the current scene file.  
-`$HIPFILE` - The full path of the current scene file, including the file extension.  
+`$OS` - Operator String. Contains the current OP’s name.   
+`$CH` - Current channel name.   
+`$F` - The current frame, (as set with the Playbar controls).  
+`$SF`- Sim,ulation frame (must be checked in dop object? )   
+`$HFS` - The directory where Houdini is installed.    
+`$HH` - $HFS/houdini.   
+`$HIP` - The directory containing the current scene file.   
+`$HIPFILE` - The full path of the current scene file, including the file extension.   
 `$HIPNAME` - The name of the current scene file without the extension. You can use this to build filenames with different extensions based on the scene name.  
 `$PDG_DIR`   
 `$PDG_SHARED_ROOT`  
