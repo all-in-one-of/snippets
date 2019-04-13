@@ -61,3 +61,9 @@ n-m:step // from n to m (inclusive) skipping every step.
 n-m:keep,step // from n to m (inclusive). 
 //Use the first keep numbers and then skip every step after that.
 ```
+
+
+### Delete node
+`$N` - Delete By Patte  
+`$PT==$NPT-1` - Delete By Expression    
+`$N*` - Delete By Range: change Start to  
