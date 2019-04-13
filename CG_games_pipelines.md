@@ -1,3 +1,18 @@
+### Project
+
+`$HIP/source/`  
+`$HIP/${HIPNAME}/$OS.fbx` - Export file   
+`$HIP/${HIPNAME}/material/..`  - Substance&Material   
+`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - texture bake      
+`$HIP/${HIPNAME}/export/vat_$OS/$OS.` - Export Vertex Anim      
+`$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
+`$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake  
+`$HIP/${HIPNAME}/export/$OS.csv`   
+`$HIP/${HIPNAME}/cache_geo/$OS.obj` - cache static  
+`$HIP/${HIPNAME}/cache_sim/$OS.bgeo.sc` - cache sim  
+
+### VAT
+
 4k pix = 16 777 216 points  
 vertex anim: 33 550 points; 500frames (~16sek) = 4k tex   
 
