@@ -1,5 +1,5 @@
 
-### in File Names
+## File Names
 `$OS` - Operator String. Contains the current OP’s name.   
 `$CH` - Current channel name.   
 `$F` - The current frame, (as set with the Playbar controls).  
@@ -16,15 +16,16 @@
 `$NFRAMES` (the number of frames in the animation) = $FEND - $FSTART + 1.  
 `$ACTIVETAKE` - Contains the name of the current take.   
 
+```MyImage'$F+12'.pic```   
+```Pics${W}x${H}/$F.pic.  ```   
+```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
+```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
+
 ### Arithmetic 
 `=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`, `++` - add one , `%` - modulus  
 
 ### Conditionals:
-`!` - Logic negation,
-`==` - equal,
-`!=` - is not equal,
-`||`- Logic OR,
-`&&` - Logic AND
+`!` - Logic negation, `==` - equal, `!=` - is not equal, `||`- Logic OR, `&&` - Logic AND
 ### Patterns:
 Pattern may be a numeric pattern, attribute pattern, or group name pattern.
 `?` -  Match any character  
@@ -49,8 +50,3 @@ Pattern may be a numeric pattern, attribute pattern, or group name pattern.
 `$PT==$NPT-1` - Delete By Expression    
 `$N*` - Delete By Range: change Start to  
 
-### File Save  
-```MyImage'$F+12'.pic```   
-```Pics${W}x${H}/$F.pic.  ```   
-```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
-```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
