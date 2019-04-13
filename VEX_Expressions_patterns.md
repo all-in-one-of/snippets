@@ -27,19 +27,16 @@
 `&&` - Logic AND
 ### Patterns:
 Pattern may be a numeric pattern, attribute pattern, or group name pattern.
-
-`?` -  Match any character
-`*` - Match any substring
-`^` - Exclude from match
-`[list]` - Match any of the characters specified in the list.
-`!*` - ????????????
-`a*`,^aardvark` - Match any string beginning with a except for aardvark.
-`[abc]*z` - Match any string beginning with a, b or c and ending with z.
-`g*`,`^geo*` - Match any string beginning with g, but not any string beginning with geo.
-`^pattern` - Remove points/primitives matching  
-//For example, 0-100:2 ^10-20 every other number 1 to 100 except the 10 to 20.
-`!pattern` - Every point/primitive except the ones matching the pattern. 
-//For example, !1-10 means every point/prim except the numbers 1 to 10. 
+`?` -  Match any character  
+`*` - Match any substring  
+`^` - Exclude from match  
+`[list]` - Match any of the characters specified in the list.  
+`!*` - ????????????  
+`a*`,^aardvark` - Match any string beginning with a except for aardvark.    
+`[abc]*z` - Match any string beginning with a, b or c and ending with z.    
+`g*`,`^geo*` - Match any string beginning with g, but not any string beginning with geo.    
+`^pattern` - Remove points/primitives matching, 0-100:2 ^10-20 every other number 1 to 100 except the 10 to 20.  
+`!pattern` - Every point/primitive except the ones matching the pattern. !1-10 means every point/prim except the numbers 1 to 10.   
 
 ### Points/primitives numbered:
 n` - number n.  
