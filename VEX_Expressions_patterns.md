@@ -61,6 +61,7 @@ n-m:keep,step // from n to m (inclusive).
 `$N*` - Delete By Range: change Start to  
 
 ### File Save  
-```MyImage'$F+12'.pic```
-``` Pics${W}x${H}/$F.pic.  ```
-
+```MyImage'$F+12'.pic```   
+```Pics${W}x${H}/$F.pic.  ```   
+```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
+```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
