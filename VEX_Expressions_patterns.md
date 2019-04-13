@@ -17,15 +17,13 @@
 `$ACTIVETAKE` - Contains the name of the current take.   
 
 ### Arithmetic 
-`=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`   
-`++` - add one   
-`%` - modulus  
+`=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`, `++` - add one , `%` - modulus  
 
 ### Conditionals:
-`!` - Logic negation
-`==` - equal
-`!=` - is not equal
-`||`- Logic OR
+`!` - Logic negation,
+`==` - equal,
+`!=` - is not equal,
+`||`- Logic OR,
 `&&` - Logic AND
 ### Patterns:
 Pattern may be a numeric pattern, attribute pattern, or group name pattern.
