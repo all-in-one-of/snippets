@@ -16,16 +16,11 @@
 `$NFRAMES` (the number of frames in the animation) = $FEND - $FSTART + 1.  
 `$ACTIVETAKE` - Contains the name of the current take.   
 
-MyImage`$F+12`.pic
-Pics${W}x${H}/$F.pic.
-
 ### Arithmetic 
-```cpp
-=, == (same as), !=, >, <, >=,  <=
-+=  
-++ - add one
-% - modulus
-```
+`=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`   
+`++` - add one   
+`%` - modulus  
+
 ### Conditionals:
 ``` coffeescript
 ! - Logic negation
@@ -35,10 +30,8 @@ Pics${W}x${H}/$F.pic.
 && - Logic AND
 ```
 ### Patterns:
-```cpp
-
 //Pattern may be a numeric pattern, attribute pattern, or group name pattern.
-
+```cpp
 ? // Match any character
 * // Match any substring
 ^ // Exclude from match
@@ -62,8 +55,12 @@ n-m:keep,step // from n to m (inclusive).
 //Use the first keep numbers and then skip every step after that.
 ```
 
-
 ### Delete node
 `$N` - Delete By Patte  
 `$PT==$NPT-1` - Delete By Expression    
 `$N*` - Delete By Range: change Start to  
+
+### File Save  
+```MyImage'$F+12'.pic```
+``` Pics${W}x${H}/$F.pic.  ```
+
