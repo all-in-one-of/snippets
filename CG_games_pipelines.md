@@ -10,6 +10,7 @@
 `$HIP/${HIPNAME}/export/$OS.csv`   
 `$HIP/${HIPNAME}/cache_geo/$OS.obj` - cache static  
 `$HIP/${HIPNAME}/cache_sim/$OS.bgeo.sc` - cache sim  
+```../SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG / TOP
 
 ### VAT
 
