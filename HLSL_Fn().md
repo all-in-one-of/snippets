@@ -23,6 +23,7 @@ https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-i
 rand(1.5f) + 2.2f
 rand(11.1f) + 2.5f
 length(Particles.Position - Emitter.InitialPosition)
+saturate (use as clamp 0-1 cause is fast!!)  
 
 ```
 
