@@ -11,7 +11,7 @@
 `$HIP/${HIPNAME}/cache_geo/$OS.obj` - cache static  
 `$HIP/${HIPNAME}/cache_sim/$OS.$F.bgeo.sc` - cache sim  
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
-```../SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
+```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
 
 
