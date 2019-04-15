@@ -122,3 +122,10 @@ for(int j=0; j<@numpt; j++){
     setpointattrib(0, 'accu', j, @accusum);
     }
 ```
+
+Collect in detail attrib:
+```
+vector p[];
+p[0] = v@P;
+setdetailattrib(0, "pArray", p, "append");
+```
