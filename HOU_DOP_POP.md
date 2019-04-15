@@ -1,6 +1,7 @@
 
 # POP  
-POPs: Vex based solver.  green inputs have wired into them POP microsolvers    
+POPs: Vex based solver.  green inputs have wired into them POP microsolvers.
+Multisolver is for POP and rigids.
 ***Velocitty*** -  go this far every second in units. (by default distance is divide per 24 frames).   
 Apply it by forces or inheret v@v - create from motion by trail sop!   
 
