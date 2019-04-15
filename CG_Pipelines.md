@@ -89,7 +89,7 @@ name index frame state id
 `@wedgeindex` - wedge individual index   
 `@pdg_name` - PDG var   
 `@pdg_output` - PDG var with sop path  
-`@pdg_intput` - see ropgeometry TOP  
+`@pdg_input` - see ropgeometry TOP  
 `@pdg_input.1` - to access 1item in partitions  
 `@pdg_input.2` - to access 2item in partitions  
 Hda processor // create inputs ?   
