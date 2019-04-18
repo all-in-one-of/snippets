@@ -2,8 +2,9 @@
 # FLIP
 Based on Navier–Stokes equations, Particle-Based Fluids are implemented in OpenCL (can combine with vellum) hybrid solver.
 All fluid data is stored in the particles (with pscale) and only particles need to persist frame to frame, However, the pressure projection step is done on a volume. 
-www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html  
- 
+www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html   
+http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf  
+
 Size sensitive, use units as meters. 
 Time sensitive !! I don't know how and why  
 
