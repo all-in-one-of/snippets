@@ -17,7 +17,7 @@
 `F` - zoom  
 `B` - brush  
 `X` - symetry    
-
+`Ctrl` + `W` > make one poly group   
 
 # Topo:  
 ### Sculptris mode:     
@@ -63,3 +63,6 @@
   
 `Inflat` - Bubble   
 `Smooth` - more opttions and brushes on smooth   // but try to not use it to much because you are loosing sculpt details try to 'refine' insted of smooth.  
+`Pinch` - 
+
+`slash2` - 
