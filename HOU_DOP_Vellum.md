@@ -9,8 +9,6 @@ Visualise evetyrhing by postprocess
 # [Vellum Solver] 
 
 
-i@layer = layer shock on solver 
-
 # [Vellum Solver drape]
 
 welding frame - where it start to fuse  (maby work on frame 1 ?)  
@@ -37,6 +35,9 @@ disiatance & bend constran
   - `rate` and  `hardening` higher - make hardne over time of banding    
  
 # Workflows  
+## VEX
+
+i@layer = layer shock on solver  
 
 ## Cloth 
 `planar patch from curve` - from curves  
