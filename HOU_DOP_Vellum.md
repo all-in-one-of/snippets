@@ -27,7 +27,7 @@ disiatance & bend constran
 `Strech`   
 - `Stiffnes` - default infinite (never be strachy) 
 - `Damping Ratio` - lit more energy from sim  if too lively  (dont change) too much destory  
-- `compression stiffnes` -(how much one point can shrink to other )  with low res help to remove jagginess zig zag  more detail higher ! oO    
+- `compression stiffnes` -(how much one point can shrink to other )  (decresse more smooth look ! dont enforce wrincles ) with low res help to remove jagginess lower param  
 - `plsticity` - not use rather  
 
 `Bend`
