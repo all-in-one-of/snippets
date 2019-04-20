@@ -1,18 +1,24 @@
 # VELLUM
 
 # Vellum Solver 
+```
+- geometry 
+- constrain 
+- collision
+```
 
+i@layer = layer shock on solver 
 
+# Vellum Cloth setup
+disiatance & bend constran  
+thicknsee on drape see resoult in postprocess spheres could by to big  depend on `scale`  
 
-
-
-# DRAPE
+# DRAPE Vellum Solver 
 `planar patch from curve` - from curves  
 `planar patch` - only simple shapes  
 `planar pleat` - make patterns  
 
-thicknsee on drape see resoult in postprocess spheres could by to big 
-i@layer = layer shock on solver 
+
 
 ### mirroring cloth: 
 
