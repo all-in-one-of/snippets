@@ -26,13 +26,14 @@ disiatance & bend constran
 - `Stiffnes` - default infinite (never be strachy) 
 - `Damping Ratio` - lit more energy from sim  if too lively  (dont change) too much destory  
 - `compression stiffnes` -(how much one point can shrink to other )  with low res help to remove jagginess zig zag  more detail higher ! oO    
-- `plsticity` - will update rest pos.   
-  - `treshold` - low so will enter new config eay and quick   
-  - ... make softer over time of banding  
- 
+- `plsticity` - not use rather  
+
 `Bend`
 - `Stiffnes` - is soft if you want rigit make higher  / decrese to make softer  and bend more  
-
+- `plsticity` - will update rest pos.   
+  - `treshold` - low so will enter new config eay and quick     
+  - ... make softer over time of banding    
+ 
 # Workflows  
 
 ## Cloth 
