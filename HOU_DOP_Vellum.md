@@ -18,7 +18,7 @@ forces - increse velocity damping and air drag if cloth move to much
 Most of behaviour    
 Paintem mozemy zmieniac lokalnie restlen np.  
 # [Vellum Cloth setup]
-disiatance & bend constran  
+**disiatance** & **bend** constrants    
 `Mass` -   
 `Thicknes` - on drape see resoult in postprocess spheres could by to big  depend on `scale`     
 `Drag` -    
