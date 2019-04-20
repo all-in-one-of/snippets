@@ -26,7 +26,7 @@ disiatance & bend constran
 - `Stiffnes` - default infinite (never be strachy) 
 - `Damping Ratio` - lit more energy from sim  if too lively  (dont change) too much destory  
 - `compression stiffnes` -(how much one point can shrink to other )  with low res help to remove jagginess zig zag  more detail higher ! oO    
-- [x] `plsticity` - will update rest pos.   
+- `plsticity` - will update rest pos.   
  - `treshold` - low so will enter new config eay and quick   
  - ... make softer over time of banding  
 `Bend`
