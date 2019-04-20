@@ -9,7 +9,7 @@
 
 i@layer = layer shock on solver 
 
-# Vellum Solver DRAPE
+# Vellum Solver drape  
 `planar patch from curve` - from curves  
 `planar patch` - only simple shapes  
 `planar pleat` - make patterns  
