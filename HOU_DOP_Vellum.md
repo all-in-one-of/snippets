@@ -32,7 +32,7 @@ disiatance & bend constran
 - `Stiffnes` - is soft if you want rigit make higher  / decrese to make softer  and bend more  
 - `plsticity` - will update rest pos.   
   - `treshold` - low so will enter new config eay and quick     
-  - ... make softer over time of banding    
+  - `rate` and  `hardening` higher - make hardne over time of banding    
  
 # Workflows  
 
