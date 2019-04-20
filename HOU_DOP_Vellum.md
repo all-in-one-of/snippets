@@ -16,7 +16,7 @@ forces - increse velocity damping and air drag if cloth move to much
 
 # Constraints
 Most of behaviour    
-
+Paintem mozemy zmieniac lokalnie restlen np.  
 # [Vellum Cloth setup]
 disiatance & bend constran  
 `Mass` -   
