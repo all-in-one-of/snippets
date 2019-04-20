@@ -10,9 +10,7 @@
 i@layer = layer shock on solver 
 
 # [Vellum Solver drape]
-`planar patch from curve` - from curves  
-`planar patch` - only simple shapes  
-`planar pleat` - make patterns  
+
 welding frame - where it start to fuse  (maby work on frame 1 ?)  
 forces - increse velocity damping and air drag if cloth move to much 
 
@@ -33,7 +31,14 @@ disiatance & bend constran
 - `Stiffnes` - is soft if you want rigit make higher  / decrese to make softer  and bend more  
 
 # Workflows  
-### mirroring cloth: 
+
+## Cloth 
+`planar patch from curve` - from curves  
+`planar patch` - only simple shapes  
+`planar pleat` - make patterns  
+
+
+#### Mirroring cloth: 
 
 `*_L*`  
 `*_R*`  
