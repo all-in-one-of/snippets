@@ -17,7 +17,7 @@ welding frame - where it start to fuse  (maby work on frame 1 ?)
 forces - increse velocity damping and air drag if cloth move to much 
 
 # Constraints
-Most of behaviour here:  
+Most of behaviour    
 
 # [Vellum Cloth setup]
 disiatance & bend constran  
