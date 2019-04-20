@@ -25,15 +25,15 @@ Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoal
 - bake broken parts into 
 
 ### Houdini low with uv's.   
-Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
+Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??) not verry usefull with sculpts  
 - Make Mid -  using crease! 
 - Conform with ray to match Hi.  
-- scale *100
+- scale *100  
  
 ### Zbrush High  
 - Use Dynamesh  
 - Retopo by hand  
-reordering subtools in ZBrush will also reorder them when exporting the FBX,
+reordering subtools in ZBrush will also reorder them when exporting the FBX,  
 
 ## Scale   
 real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
@@ -43,6 +43,14 @@ real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
 
 # BAKE:
+
+
+- consistant texel   
+- separate parts with alphas to second texture  
+- orient uv - usefull for brushing in substance + directional mask   
+- mirroring ?  
+- rebake and rotate ?  
+
 
 ### ZBrush
 Export Zplugins
