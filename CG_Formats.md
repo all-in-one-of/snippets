@@ -19,6 +19,10 @@ vertex anim: 33 550 points; 500frames (~16sek) = 4k tex
 ### transforms:
 OBJ TO FBX: Rotate 90
 
+### Substance 
+`*.sbs` - Substance packsge edited within Substance Designer. 
+`*.sbsar` - compiled/portable version that you can use in other software like Substance Painter.
+
 ### Images   
 `*.tiff` (adobe reach format) - save image fom photoshop  
 `*.tga` - only for UE  16/24/32 bits per pixel (24?)  
