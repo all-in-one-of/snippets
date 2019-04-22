@@ -63,6 +63,10 @@ Alpha | BC4 (DX11)| ---  | Linear Color
 HDR | RGB | ---  | Linear Color
 HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
+
+http://www.reedbeta.com/blog/understanding-bcn-texture-compression-formats/
+
+
 # P4
 `Accept Source` GEt clean file from repo, discarding your changes.  
 `Accept Target` Accepts the file local, overwriting repo.  
