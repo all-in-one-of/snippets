@@ -31,9 +31,9 @@ OBJ TO FBX: Rotate 90
 `*.sbsar` - Substance Archive  
 
 ### Compression
-LDR - 8F  bits per channel
-HDR low precission 16F   
-HDR high precision 32F  
+`LDR` - 8F  bits per channel    
+`HDR` - low precission 16F      
+`HDR` - high precision 32F    
 
 ### Compression game:
 
