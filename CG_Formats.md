@@ -60,7 +60,7 @@ BC2 | RGB + A(4bit)| 4  |
 BC3 | RGBA | 4 + 8A | BC1 for the RGB part and BC4 for A col+Hmap
 BC4 | R | 8 | height maps
 BC5 | RG | 8  | 2xBC4
-BC6 | RGBA(Float) | 8-16 | can natively store HDR
+BC6 | RGBA(Float) | 8-16 | can natively store HDR D3D11-more complex 
 BC7 | RGB / RGBA | 4-16 | xtremely well on the gradient D3D11-more complex 
 
 #### DirectX Compression: ####
