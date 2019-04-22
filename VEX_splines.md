@@ -6,11 +6,11 @@ can run in forloop with fedback.
 
 # Curve/Spline
 
-Gradient along curve:
+###  Gradient along curve:
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-Gradient along curve Ramp:
+###  Gradient along curve Ramp:
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); 
 @Cd.y = chramp('colorRamp', gradient);  
