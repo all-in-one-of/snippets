@@ -1,13 +1,15 @@
 # VELLUM
 Vellum is expansion of grain PBD - pos base dynamic. Ppoints + constraints   
 Visualise evetyrhing by postprocess   
+Paintem mozemy zmieniac lokalnie restlen np.  
+
 ```
 - geometry 
 - constrain 
 - collision
 ```
 # [Vellum Solver] 
-
+COnstraint iteration + suubstep  
 
 # [Vellum Solver drape]
 
@@ -15,8 +17,27 @@ welding frame - where it start to fuse  (maby work on frame 1 ?)
 forces - increse velocity damping and air drag if cloth move to much 
 
 # Constraints
-Most of behaviour    
-Paintem mozemy zmieniac lokalnie restlen np.  
+`Distance Along Edges` - Keep Stifnes and Damping `Distance` (like spring)     
+`Bend Across Trix` - Keep angle  `Rotation` (rotation spring)    
+`Cloth` -   
+`Hair` - Bend, Length,Twist   
+`String`- Bend, - Length  
+`Pin to Target` - Help    
+`Attach to Geo` - Help   
+`Stich` - Help (no łaczenie clohow)   
+`Pressure` - filled with compresable (Air) `Volume` - Constraint  
+`Tetrahedral Volume` - filled with uncompresable fluid (water) fwm   
+`Weld Points` -    
+`Glue`  -    
+`Struts` - internal struts that conect opose sides, so sstretch body    
+
+# [baloon]
+= cloth + pressure   
+# [soft body]
+= cloth + struts    
+# [grain]
+
+
 # [Vellum Cloth setup]
 **disiatance** & **bend** constrants    
 `Mass` -   
