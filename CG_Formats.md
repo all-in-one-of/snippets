@@ -42,12 +42,12 @@ Unreal | Compression | ---  | ---
 Default  | DXT1/5 BC1/3 (DX11)| ---  | ---  | --- 
 NormalMap | DXT5 BC5 | ---  | --- 
 --- | BC7 | ---  | --- 
-Grayscale | --- | (R8 RGB8 sRGB) | --- 
-Displacement | --- |(8/16bit)  | --- 
-Vector Displacement  | --- | (RGBA8) | (Standard 8bits RGBA format.)
-Mask | --- | ---  | Linear Color
+Grayscale | R8 | (R8 RGB8 sRGB) | --- 
+Displacement | R8 |(8/16bit)  | --- 
+Vector Displacement  | BGRA8| (RGBA8) | (Standard 8bits RGBA format.)
+Mask | DXT1 | ---  | Linear Color
 Alpha | BC4 (DX11)| ---  | Linear Color
-HDR | RGB | ---  | Linear Color
+HDR | RGB | RGBA Float | Linear Color
 HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
 
