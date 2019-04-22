@@ -63,7 +63,20 @@ Alpha | BC4 (DX11)| ---  | Linear Color
 HDR | RGB | ---  | Linear Color
 HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
- 
+
+BC - Block Compressions:
+
+--- | Data | A | Palette | Description 
+--- | ---  | ---  | ---  | --- 
+BC1 | RGB(A)| 1bit  | 4  | --- 
+BC2 | RGB + A | 4bit  | --- 
+BC3 | RGBA | ---  | --- 
+BC4 | R | --- | --- 
+BC5 | RG | ---  | --- 
+BC7 | RGBA | Floating Point | (Standard 8bits RGBA format.)
+BC7 | RGB / RGBA | ---  | Linear Color
+
+
 http://www.reedbeta.com/blog/understanding-bcn-texture-compression-formats  
 https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained  
 
