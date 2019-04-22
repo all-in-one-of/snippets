@@ -1,3 +1,9 @@
+# [Detangle]
+can run in forloop with fedback.  
+- rest position as previous position 
+- pscale 
+- 
+
 # Curve/Spline
 
 Gradient along curve:
