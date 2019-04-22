@@ -36,16 +36,6 @@ HDR low precission 16F
 HDR high precision 32F  
 
 ### Compression game:
- 
-- DXT1 works on RGB data. Technically DXT1 supports 1 bit of alphaDXT1 compresses color information into 4 bits per pixel, and has a maximum color resolution of 16 bits (as old VGA adapters.)   
-- DXT3 & DXT5 also provide an alpha channel (only 4 bits), however DXT5 is considered the better of the two.    
-- DXT5 uses DXT1 for the color part, but adds another 4 bits per pixel of alpha. This gives you better transparency. 
-
-BPTC is a 3:1 compression format, RGB, 8BPP  
-DXT1 is a 6:1 compression format, RGB, 4BPP  
-DXT5 is a 4:1 compression format, RGBA, 8BPP  
-RGTC1 is a 2:1 compression format, 1 channel only, 4BPP  
-
 
 Unreal | Compression | ---  | --- 
 --- | ---  | ---  | --- 
@@ -73,9 +63,13 @@ BC5 | RG | 8  | 2xBC4
 BC6 | RGBA(Float) | 8-16 | can natively store HDR
 BC7 | RGB / RGBA | 4-16 | xtremely well on the gradient D3D11-more complex 
 
+#### DirectX Compression: ####
 
-http://www.reedbeta.com/blog/understanding-bcn-texture-compression-formats  
-https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained  
+--- | --- | --- 
+--- | ---   | ---    
+DXT1 | RGB + A(1bit)| 4BPP bits per pixel, and has a maximum color resolution of 16 bits (as old VGA adapters.)  6:1 
+DXT3 | RGBA | Better use 5 alpha channel (only 4 bits)
+DXT5 | RGBA | 8BPP  4:1 uses DXT1 for the color part, but adds another 4 bits per pixel of alpha. This gives you better transparency. 
 
 # P4
 `Accept Source` GEt clean file from repo, discarding your changes.  
