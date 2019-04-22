@@ -19,9 +19,9 @@ forces - increse velocity damping and air drag if cloth move to much
 # Constraints
 `Distance Along Edges` - Keep Stifnes and Damping `Distance` (like spring)     
 `Bend Across Trix` - Keep angle  `Rotation` (rotation spring)    
-`Cloth` -   
-`Hair` - Bend, Length,Twist   
-`String`- Bend, - Length  
+`Cloth` - Bend, Length
+`Hair` - Bend, Length, Twist   
+`String` - Bend, Length  
 `Pin to Target` - Help    
 `Attach to Geo` - Help   
 `Stich` - Help (no łaczenie clohow)   
@@ -32,8 +32,8 @@ forces - increse velocity damping and air drag if cloth move to much
 `Struts` - internal struts that conect opose sides, so sstretch body    
 
 
-# [Vellum Cloth setup]
-**disiatance** & **bend** constrants    
+# [Configure Cloth]
+ For Drape 
 `Mass` -   
 `Thicknes` - on drape see resoult in postprocess spheres could by to big  depend on `scale`     
 `Drag` -    
@@ -50,11 +50,11 @@ forces - increse velocity damping and air drag if cloth move to much
   - `rate` and  `hardening` higher - make hardne over time of banding    
  
  
-# [baloon]
+# [Configure baloon]
 = cloth + pressure   
-# [soft body]
+# [Configure soft body]
 = cloth + struts    
-# [grain]
+# [Configure grain]
 
 
 # Workflows  
@@ -62,11 +62,12 @@ forces - increse velocity damping and air drag if cloth move to much
 
 i@layer = layer shock on solver  
 
-## Cloth 
-`planar patch from curve` - from curves  
-`planar patch` - only simple shapes  
-`planar pleat` - make patterns  
+## Drape
 
+`Weld Points` - create constraint, glue drapes by points.  (breaking treshold)  
+`planar patch from curve` - from curves   
+`planar patch` - only simple shapes   
+`planar pleat` - make patterns   
 
 #### Mirroring cloth: 
 
