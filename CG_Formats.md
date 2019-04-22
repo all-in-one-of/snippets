@@ -66,15 +66,15 @@ HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
 BC - Block Compressions:
 
---- | Data | A | Palette | Description 
+--- | Data | Pal | Palette | Description 
 --- | ---  | ---  | ---  | --- 
-BC1 | RGB(A)| 1bit  | 4  | --- 
-BC2 | RGB + A | 4bit  | --- 
-BC3 | RGBA | ---  | --- 
-BC4 | R | --- | --- 
-BC5 | RG | ---  | --- 
-BC7 | RGBA | Floating Point | (Standard 8bits RGBA format.)
-BC7 | RGB / RGBA | ---  | Linear Color
+BC1 | RGB + A(1bit)| 4  |   | --- 
+BC2 | RGB + A(4bit)| 4  | --- 
+BC3 | RGBA | 4 + 8A | BC1 for the RGB part and BC4 for A col+Hmap
+BC4 | R | 8 | height maps
+BC5 | RG | 8  | 2xBC4
+BC6 | RGBA(Float) | 8-16 | can natively store HDR
+BC7 | RGB / RGBA | 4-16 | xtremely well on the gradient D3D11-more complex 
 
 
 http://www.reedbeta.com/blog/understanding-bcn-texture-compression-formats  
