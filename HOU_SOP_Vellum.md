@@ -19,7 +19,7 @@ To create drape from patches.
 `Tetrahedral Volume` - filled with uncompresable fluid (water) fwm   
 `Weld Points` -    
 `Glue`  -    
-`Struts` - internal struts that conect opose sides, so sstretch body    
+`Struts` - internal struts that conect opose sides, so sstretch body    stiff default 10 not stiff as much  100 stiffer 
 
 
 # [Configure Cloth]
@@ -34,7 +34,7 @@ To create drape from patches.
 - `plsticity` - not use rather  
 
 `Bend`
-- `Stiffnes` - is soft if you want rigit make higher  / decrese to make softer  and bend more  
+- `Stiffnes` - is soft if you want rigit make higher  / decrese to make softer  and bend more  (0.0001 to super soft)
 - `plsticity` - will update rest pos.   
   - `treshold` - low so will enter new config eay and quick     
   - `rate` and  `hardening` higher - make hardne over time of banding    
