@@ -9,7 +9,7 @@ Paintem mozemy zmieniac lokalnie restlen np.
 - collision
 ```
 # [Vellum Solver] 
-COnstraint iteration + suubstep  
+Constraint iteration + substeps  
 
 # [Vellum Solver drape]
 
@@ -31,12 +31,6 @@ forces - increse velocity damping and air drag if cloth move to much
 `Glue`  -    
 `Struts` - internal struts that conect opose sides, so sstretch body    
 
-# [baloon]
-= cloth + pressure   
-# [soft body]
-= cloth + struts    
-# [grain]
-
 
 # [Vellum Cloth setup]
 **disiatance** & **bend** constrants    
@@ -55,6 +49,14 @@ forces - increse velocity damping and air drag if cloth move to much
   - `treshold` - low so will enter new config eay and quick     
   - `rate` and  `hardening` higher - make hardne over time of banding    
  
+ 
+# [baloon]
+= cloth + pressure   
+# [soft body]
+= cloth + struts    
+# [grain]
+
+
 # Workflows  
 ## VEX
 
