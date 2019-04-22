@@ -2,9 +2,9 @@
 # [Vellum Solver]
 
 # [Vellum Solver drape]
-
-welding frame - where it start to fuse  (maby work on frame 1 ?)  
-forces - increse velocity damping and air drag if cloth move to much 
+To create drape from patches.  
+`welding frame` - where it start to fuse  (maby work on frame 1 ?)   
+`forces` - increse velocity damping and air drag if cloth move to much  
 
 # Constraints
 `Distance Along Edges` - Keep Stifnes and Damping `Distance` (like spring)     
