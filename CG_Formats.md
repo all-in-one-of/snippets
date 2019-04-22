@@ -32,8 +32,8 @@ OBJ TO FBX: Rotate 90
 
 ### Compression
 `LDR` - 8F  bits per channel    
-`HDR` - low precission 16F      
-`HDR` - high precision 32F    
+`HDR` - 16F low precission     
+`HDR` - 32F high precision   
 
 ### Compression game:
 
