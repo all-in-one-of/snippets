@@ -66,10 +66,10 @@ HDR Compressed | RGB BC6H (DX11) | ---  | Linear Color
 
 BC - Block Compressions:
 
---- | Data | Pal | Palette | Description 
---- | ---  | ---  | ---  | --- 
-BC1 | RGB + A(1bit)| 4  |   | --- 
-BC2 | RGB + A(4bit)| 4  | --- 
+--- | Data | Pal | Palette 
+--- | ---  | ---  | ---  
+BC1 | RGB + A(1bit)| 4  |   
+BC2 | RGB + A(4bit)| 4  | 
 BC3 | RGBA | 4 + 8A | BC1 for the RGB part and BC4 for A col+Hmap
 BC4 | R | 8 | height maps
 BC5 | RG | 8  | 2xBC4
