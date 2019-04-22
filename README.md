@@ -9,6 +9,12 @@ https://github.com/toadstorm/MOPS
 http://www.tokeru.com/cgwiki/?title=Houdini  
 
 
+
+https://spyrogif.tumblr.com/
+http://richardlord.tumblr.com/
+http://beesandbombs.tumblr.com/
+http://the12principles.tumblr.com/
+
 ----------
 
 
