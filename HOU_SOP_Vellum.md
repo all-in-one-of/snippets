@@ -23,7 +23,7 @@ To create drape from patches.
 
 
 # [Configure Cloth]
- For Drape 
+ For Drape   
 `Mass` -   
 `Thicknes` - on drape see resoult in postprocess spheres could by to big  depend on `scale`     
 `Drag` -    
