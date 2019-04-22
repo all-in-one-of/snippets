@@ -1,6 +1,6 @@
 # VELLUM
-
-Visualise evetyrhing by postprocess 
+Vellum is expansion of grain PBD - pos base dynamic. Ppoints + constraints   
+Visualise evetyrhing by postprocess   
 ```
 - geometry 
 - constrain 
