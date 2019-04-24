@@ -4,9 +4,10 @@
 
 
 ### nodes
-slope blur 
-warp
-tile generator 
+`slope blur` 
+`warp`
+`tile generator` 
 
 
-tile random 
+`tile random` - 
+  - random constraint to keep random on string.  
