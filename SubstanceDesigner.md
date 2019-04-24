@@ -1,7 +1,7 @@
 
-
-
-
+`blend` - basic node
+`transform 2d` - limited to ^2
+`make tile photo` - 
 
 ### nodes
 `slope blur` -   
