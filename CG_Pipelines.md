@@ -101,3 +101,12 @@ name index frame state id
 `@pdg_input.1` - to access 1item in partitions  
 `@pdg_input.2` - to access 2item in partitions  
 Hda processor // create inputs ?   
+
+
+# #
+- References is king! read it with human scale and relations (bigest to smallest details), read paterns.   
+- Dont forget aboud mid freq.  
+- Make contrast with details placement.  
+- Try to sculpt across the form (not with the flow).  
+- work in HSV, Keep Valor in check.  
+
