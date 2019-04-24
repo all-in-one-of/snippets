@@ -103,10 +103,10 @@ name index frame state id
 Hda processor // create inputs ?   
 
 
-# #
+# REF
 - References is king! read it with human scale and relations (bigest to smallest details), read paterns.   
 - Dont forget aboud mid freq.  
-- Make contrast with details placement.  
+- Make contrast comp with details placement.  
 - Try to sculpt across the form (not with the flow).  
 - work in HSV, Keep Valor in check.  
 
