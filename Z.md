@@ -2,7 +2,7 @@
 - Dont forget aboud mid freq.  
 - Make contrast with details placement.  
 - Try to sculpt across the form (not with the flow).  
-- Keep Valor in check   
+- work in HSV, Keep Valor in check.  
 
 # Ninja Combos basics:
 
