@@ -4,9 +4,9 @@
 
 
 ### nodes
-`slope blur` 
-`warp`
-`tile generator` 
+`slope blur` -   
+`warp` -  
+`tile generator` -  
 
 
 `tile random` - 
