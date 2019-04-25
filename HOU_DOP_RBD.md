@@ -1,13 +1,10 @@
 - spheres collision over convex !!!!!!
-- objects is grey plug
-- data is green plug
 
-```
 substeps: 
 - to wiev subframes: - in global anim options  (global subs?) And Time is float turn off
 - solver substeps (expensive when stacking obj)
 - constrain substeps
-```
+
 
 # Solvers:   
 
@@ -17,22 +14,18 @@ substeps:
 - POST-SOLVE
 ```
 apply pop forces in RBD in dop: plug pop forces into middle input  
-### Static solver  
+### [Static solver]  
 
-### Rigid solver 
+### [Rigid solver] 
 The RBD engine uses volumes and is useful for complicated, deforming, stacked, geometry. The Bullet engine offers simpler collision shapes and is suitable for fast, large-scale simulations.
 (RBD Solver is unable to enforce glue constraints between RBD Objects and Static Objects. You can work around this limitation by using constrained RBD Objects (perhaps with some RBD Pin Constraint DOPs) instead of a Static Object)
-#### rdb   
+### [rdb]   
 better  
-#### bullet
+### [bullet]
 bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and boost gravity proportionally  
 
-### Multi Solver  
+### [Multi Solver]  
 - multisolver is for pops (and rigid body)  
-
-
-
-
 
 
 ## Physical parms
@@ -44,19 +37,19 @@ bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and
 
 # RDB Objects:  
 
-### static object 
+### [static object] 
 moze byc jako kolizyjna ruchoma geometria w dopach (Simulating a Splashdown in Houdini - Escape Studios Free Tutorial)  
 if its plane turn off volume based collision
 **Vdb collision source:**
 - mode: collision intersect to volume source 
 - proxy volume: vdb path
 
-### rdb object  
+### [rdb object]  
 Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349)
 - increes density 
 
 
-### rdb packed object  
+### [rdb packed object]  
 - rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !
 
 # Constrains:
@@ -67,8 +60,27 @@ Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349
 - Primwrangle:
 s@constraint_name="YoName";
 s@constraint_type="position";
-
 ```
+
+### [Soft Constrain] 
+Use it a lot (ony bad case is lot of oscilation with small dumping witch require lot of substeps) not enough subs can cause unexpected damping  
+`stiffness`  (mass indep.) 1 > 100 stiffer > to infi. (will bend anyway, oyu can increase substeps)
+`damping ration`  (mass indep.) 0 - bedzie oscylowac zanim wroci, 1 soft return to standard pos, >> can incresse even more  
+
+### [Spring Constrain] 
+strenth  // string constant (mass dep.)
+damping   // damping coeficient (mass dep.)
+
+### [Hard Constrain] 
+
+
+### [Glue Constrain] 
+halftime - remove impact pwer 
+
+
+
+
+
 # Collision
 
 COLLISION:
