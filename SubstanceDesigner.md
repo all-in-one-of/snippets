@@ -7,6 +7,9 @@ change bit depth 8 > 16 !
 `transform 2d` - limited to ^2  
 `make tile photo` -   
 
+### Channels:
+`gradient` - Gray to color
+`split RGBA` - 
 ### Organic:
 
 `slope blur` -   
