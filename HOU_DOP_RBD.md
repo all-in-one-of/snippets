@@ -35,40 +35,42 @@ bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and
 
 # RDB Objects:  
 
-### [static object] 
+### [Static object] 
 moze byc jako kolizyjna ruchoma geometria w dopach (Simulating a Splashdown in Houdini - Escape Studios Free Tutorial)  
 if its plane turn off volume based collision
 **Vdb collision source:**
 - mode: collision intersect to volume source 
 - proxy volume: vdb path
 
-### [rdb object]  
+### [Rdb object]  
 Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349)
 - increes density 
 
 
-### [rdb packed object]  
-rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !
+### [Rdb packed object]  
+rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !  
 
 # Constrains:
-
+`s@constraint_name` (prim)    
+`s@constraint_type` (prim)  
+`broken` (prim}group will be ignored by solvers on subsequent frames.   
 
 ### [Soft Constrain] 
 Use it a lot (ony bad case is lot of oscilation with small dumping witch require lot of substeps) not enough subs can cause unexpected damping  
-`stiffness` - (mass indep.) 1 > 100 stiffer > to infi. (will bend anyway, oyu can increase substeps)
-`damping ration` - (mass indep.) 0 - bedzie oscylowac zanim wroci, 1 soft return to standard pos, >> can incresse even more  
+`stiffness` - (mass indep.) frq (nr of iter per sec) 1 > 100 stiffer > to infi. (will bend anyway, oyu can increase substeps)   
+`damping ration` - (mass indep.) 0 - bedzie oscylowac zanim wroci, 1 soft return to standard pos. Over >1 can incresse even more      
 
 ### [Spring Constrain] 
-`strenth` - string constant (mass dep.)
-`damping ` - damping coeficient (mass dep.)
+`strenth` - string constant (mass dep.)   
+`damping ` - damping coeficient (mass dep.)    
 
 ### [Hard Constrain] 
 
 
 ### [Glue Constrain] 
-halftime - remove impact pwer (decay over time)
-propagation rate - 1  - will spread evn to naaighb. 
-propagate iteration (same as solver iteration ovveride on other consrains) `-1 `< use default value /`1` propagate. Override it in SOP as prim attrib `propagationiterations` 
+halftime - remove impact pwer (decay over time)  
+propagation rate - 1  - will spread evn to naaighb.   
+propagate iteration (same as solver iteration ovveride on other consrains) `-1 `< use default value /`1` propagate. Override it in SOP as prim attrib `propagationiterations`   
 ```cpp
 - Unpack
 - Adjectconnectedpieces 
