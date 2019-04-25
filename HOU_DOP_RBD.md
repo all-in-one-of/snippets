@@ -17,12 +17,12 @@ apply pop forces in RBD in dop: plug pop forces into middle input
 ### [Rigid solver] 
 The RBD engine uses volumes and is useful for complicated, deforming, stacked, geometry. The Bullet engine offers simpler collision shapes and is suitable for fast, large-scale simulations.
 (RBD Solver is unable to enforce glue constraints between RBD Objects and Static Objects. You can work around this limitation by using constrained RBD Objects (perhaps with some RBD Pin Constraint DOPs) instead of a Static Object)
-### [rdb]   
+### [Rdb solver]   
 better  
-### [bullet]
+### [Bullet solver]
 bullet likes pieces between 0.1 and 100 if you need smaller pieces, scale up and boost gravity proportionally  
 
-### [Multi Solver]  
+### [Multi solver]  
 - multisolver is for pops (and rigid body)  
 
 
