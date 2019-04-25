@@ -1,9 +1,5 @@
 - spheres collision over convex !!!!!!
 
-substeps: 
-- to wiev subframes: - in global anim options  (global subs?) And Time is float turn off
-- solver substeps (expensive when stacking obj)
-- constrain substeps
 
 
 # Solvers:   
@@ -14,6 +10,8 @@ substeps:
 - POST-SOLVE
 ```
 apply pop forces in RBD in dop: plug pop forces into middle input  
+- to wiev subframes: in global anim options  (global subs?) And Time is float turn off /  solver substeps (expensive when stacking obj)  / constrain substeps
+
 ### [Static solver]  
 
 ### [Rigid solver] 
@@ -50,10 +48,27 @@ Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349
 
 
 ### [rdb packed object]  
-- rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !
+rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !
 
 # Constrains:
 
+
+### [Soft Constrain] 
+Use it a lot (ony bad case is lot of oscilation with small dumping witch require lot of substeps) not enough subs can cause unexpected damping  
+`stiffness` - (mass indep.) 1 > 100 stiffer > to infi. (will bend anyway, oyu can increase substeps)
+`damping ration` - (mass indep.) 0 - bedzie oscylowac zanim wroci, 1 soft return to standard pos, >> can incresse even more  
+
+### [Spring Constrain] 
+`strenth` - string constant (mass dep.)
+`damping ` - damping coeficient (mass dep.)
+
+### [Hard Constrain] 
+
+
+### [Glue Constrain] 
+halftime - remove impact pwer (decay over time)
+propagation rate - 1  - will spread evn to naaighb. 
+propagate iteration (same as solver iteration ovveride on other consrains) `-1 `< use default value /`1` propagate. Override it in SOP as prim attrib `propagationiterations` 
 ```cpp
 - Unpack
 - Adjectconnectedpieces 
@@ -61,24 +76,6 @@ Also use for collision in flips  flips  (FLIP Fluids https://vimeo.com/116176349
 s@constraint_name="YoName";
 s@constraint_type="position";
 ```
-
-### [Soft Constrain] 
-Use it a lot (ony bad case is lot of oscilation with small dumping witch require lot of substeps) not enough subs can cause unexpected damping  
-`stiffness`  (mass indep.) 1 > 100 stiffer > to infi. (will bend anyway, oyu can increase substeps)
-`damping ration`  (mass indep.) 0 - bedzie oscylowac zanim wroci, 1 soft return to standard pos, >> can incresse even more  
-
-### [Spring Constrain] 
-strenth  // string constant (mass dep.)
-damping   // damping coeficient (mass dep.)
-
-### [Hard Constrain] 
-
-
-### [Glue Constrain] 
-halftime - remove impact pwer 
-
-
-
 
 
 # Collision
