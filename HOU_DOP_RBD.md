@@ -1,6 +1,7 @@
 - spheres collision over convex !!!!!!
 
-
+`name` - name pieces 
+`v` - velocvity 
 
 # Solvers:   
 
@@ -54,6 +55,9 @@ rotation for packed RDB :  dop angular momentum ? ??? or use POP torque !
 `s@constraint_name` (prim)    
 `s@constraint_type` (prim)  
 `broken` (prim}group will be ignored by solvers on subsequent frames.   
+`next_constraint_name`  
+`next_constraint_type`   
+`i@propagate_iteration`	Detail   
 
 ### [Soft Constrain] 
 Use it a lot (ony bad case is lot of oscilation with small dumping witch require lot of substeps) not enough subs can cause unexpected damping  
@@ -65,7 +69,6 @@ Use it a lot (ony bad case is lot of oscilation with small dumping witch require
 `damping ` - damping coeficient (mass dep.)    
 
 ### [Hard Constrain] 
-
 
 ### [Glue Constrain] 
 halftime - remove impact pwer (decay over time)  
