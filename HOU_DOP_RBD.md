@@ -1,7 +1,7 @@
 - spheres collision over convex !!!!!!
 
-`name` - name pieces 
-`v` - velocvity 
+`@name` - name pieces   
+`@v` - velocvity   
 
 # Solvers:   
 
@@ -10,8 +10,8 @@
 - PRE-SOLVE
 - POST-SOLVE
 ```
-apply pop forces in RBD in dop: plug pop forces into middle input  
-- to wiev subframes: in global anim options  (global subs?) And Time is float turn off /  solver substeps (expensive when stacking obj)  / constrain substeps
+apply pop forces in RBD in dop: plug pop forces into middle input    
+to wiev subframes: in global anim options  (global subs?) And Time is float turn off /  solver substeps (expensive when stacking obj)  / constrain substeps  
 
 ### [Static solver]  
 
