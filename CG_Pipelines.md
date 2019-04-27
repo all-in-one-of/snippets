@@ -58,10 +58,11 @@ Export Zplugins
 - fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
 
 ### Houdini
-prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups  
-prim: `s@name` - label  
-vert: `@N`    
-point: `v@rest`, `v@Cd`, `i@id`, `@P`    
+prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups   
+prim: `s@name` - label   
+prin: `i@class` -  
+vert: `v@N`    
+point: `v@rest`, `v@Cd`, `i@id`, `@P`     
 
 
 ### PAINTER/DESIGNER  
