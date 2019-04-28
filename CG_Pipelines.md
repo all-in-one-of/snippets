@@ -36,7 +36,7 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Conform with ray to match Hi.  
 - scale *100  
  
-### Zbrush High  
+### Sculpt  
 - Quick mid with creases to subd with smooth    
 - Use Dynamesh on already smooth geo    (scale!)
 - Retopo by hand  
