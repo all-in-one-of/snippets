@@ -24,6 +24,10 @@ OBJ TO FBX: Rotate 90
 `*.sbsar` - compiled/portable version that you can use in other software like Substance Painter.
 
 ### Images   
+
+`linear space` - RGB   
+`gamma space` - sRGB - 2.2 Gamma  (1/2.2=0.4545)     
+
 `*.tiff` (adobe reach format) - save image fom photoshop  
 `*.tga` - only for UE  16/24/32 bits per pixel (24?)  
 
