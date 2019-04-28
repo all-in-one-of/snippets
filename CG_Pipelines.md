@@ -79,7 +79,8 @@ Cage - only fbx
 
 ### Unreal
 Default Normal DirectX (-Y)
-
+ RGB - linear  
+ sRGB - 2.2 Gamma  (1/2.2=0.4545)  
 # PDG
 name index frame state id   
 `@wedgeindex` - wedge individual index   
