@@ -19,7 +19,7 @@ prin: `i@class` -
 vert: `v@N`    
 point: `v@rest`, `v@Cd`, `i@id`, `@P`   
 
-(Houdini 1 U = 1m) (Zbrush ?)
+(Houdini 1 U = 1m) (Zbrush ?) - scale *100  
 
 # Source:  
   
@@ -34,29 +34,24 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Build geo from curves and points.  
 - Make Mid -  using crease! 
 - Conform with ray to match Hi.  
-- scale *100  
- 
+
 ### Sculpt  
 - Quick mid with creases to subd with smooth    
-- Use Dynamesh on already smooth geo    (scale!)
+- Use Dynamesh on already smooth geo    (scale!)  
 - Retopo by hand  
 
-
 # Export:
-
 - consistant texel   
 - separate parts with alphas to second texture  
 - orient uv - usefull for brushing in substance + directional mask   
 - mirroring ?  
 - rebake and rotate ?  
 
-
 ### ZBrush
 Export Zplugins
 - obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
 - fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
 - (reordering subtools in ZBrush will also reorder them when exporting the FBX)     
-
 
 ### Substance Designer  
 - part by materials in one mesh. (Id's)  
