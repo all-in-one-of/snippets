@@ -41,9 +41,6 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Use Dynamesh on already smooth geo    (scale!)
 - Retopo by hand  
 
-### Designer
-- part by materials in one mesh. (Id's)
-
 
 # Export:
 
@@ -62,11 +59,13 @@ Export Zplugins
 
 
 ### Substance Designer  
+- part by materials in one mesh. (Id's)  
 **bake by name:**    
 `low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)   
-`high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export   
-- a_high_doesnotmatter, a_high_whatisafter, b_high_suffix 
-- a_low, b_low 
+`high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export     
+- `a_high_doesnotmatter`, `a_high_whatisafter`, `b_high_suffix`    
+- `a_low`, `b_low`     
+
 
 ### Painter
 (Painter Match by mesh names (mesh ID))  
