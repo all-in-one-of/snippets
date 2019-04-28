@@ -72,9 +72,10 @@ Cage - only fbx
 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
 
 ### Unreal
-Default Normal DirectX (-Y)
- RGB - linear  
- sRGB - 2.2 Gamma  (1/2.2=0.4545)  
+Default Normal DirectX (-Y)  
+RGB - linear   
+sRGB - 2.2 Gamma  (1/2.2=0.4545)   
+
 # PDG
 name index frame state id   
 `@wedgeindex` - wedge individual index   
