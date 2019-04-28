@@ -25,8 +25,8 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
   
 ### 3dScan   
 - Supper highPoly make unable to move/scale geo.   
-- Make from mid res with reduced details, get rid of bridges, unfolds, duplicate/inverted faces, Dynamesh it.   
-- AutoRetopo is not shape aware and less efficient(30%), hard to uv (fliped edges connections) and select edges.        
+- Reduce from mid res with reduced details, get rid of bridges, unfolds, duplicate/inverted faces, Dynamesh it.   
+- AutoReduce is not shape aware and less efficient(30%), hard to uv (fliped edges connections) and select edges.        
 - Bake into mid res >> transfer geo    
 
 ### Procedural   
