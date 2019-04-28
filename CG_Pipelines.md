@@ -24,30 +24,28 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 # Source:  
   
 ### 3dScan   
-Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection / hard to scale
-- Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
-- Make mid res with reduced details and errors. Dynamesh it. 
-- (back and forh for frip edges)
-- bake broken parts into 
+- Supper highPoly make unable to move/scale geo.   
+- Make from mid res with reduced details, get rid of bridges, unfolds, duplicate/inverted faces, Dynamesh it.   
+- AutoRetopo is not shape aware and less efficient(30%), hard to uv (fliped edges connections) and select edges.        
+- Bake into mid res >> transfer geo    
 
-### Houdini low with uv's.   
-Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??) not verry usefull with sculpts  
+### Procedural   
+- Imported blueprints have different formats.
+- Build geo from curves and points.  
 - Make Mid -  using crease! 
 - Conform with ray to match Hi.  
 - scale *100  
  
 ### Zbrush High  
-- Use Dynamesh  
+- Quick mid with creases to subd with smooth    
+- Use Dynamesh on already smooth geo    (scale!)
 - Retopo by hand  
-(reordering subtools in ZBrush will also reorder them when exporting the FBX)    
-scale  ?/   
-
 
 ### Designer
 - part by materials in one mesh. (Id's)
 
 
-# BAKE:
+# Export:
 
 - consistant texel   
 - separate parts with alphas to second texture  
@@ -60,20 +58,20 @@ scale  ?/
 Export Zplugins
 - obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
 - fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
+- (reordering subtools in ZBrush will also reorder them when exporting the FBX)     
 
-  
 
-
-### DESIGNER  
+### Substance Designer  
 **bake by name:**    
 `low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)   
 `high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export   
 - a_high_doesnotmatter, a_high_whatisafter, b_high_suffix 
 - a_low, b_low 
 
-### PAINTER  
+### Painter
 (Painter Match by mesh names (mesh ID))  
 (mesh id polygroups-(Primitive Groups))   
+(dont bake displacements)
 
 ### Xn
 Default Normal OpenGl (+Y)   (G-invert in unreal) ( Designer use `innvert` )   
