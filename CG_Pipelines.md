@@ -41,11 +41,6 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Retopo by hand  
 
 # Export
-- consistant texel   
-- separate parts with alphas to second texture  
-- orient uv - usefull for brushing in substance + directional mask   
-- mirroring ?  
-- rebake and rotate ?  
 
 ### ZBrush
 Export Zplugins
@@ -55,23 +50,27 @@ Export Zplugins
 
 # Bake
 
+- consistant texel    
+- orient uv - for brushing, directional mask   
+- separate parts with alphas  
+- mirroring ? rebake and rotate ?  
+
 ### Substance Designer  
-- part by materials in one mesh. (Id's)  
+- part by materials in one mesh. (mesh ID)      
 - **bake by name:**    
 `low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes `a_low`, `b_low`  
 `high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export `a_high_doesnotmatter`, `a_high_whatisafter`, `b_high_suffix`    
 
 ### Painter
-Match by mesh names (mesh ID)  
-(mesh id polygroups-(Primitive Groups))   
+`mesh id polygroups`= Houdini `Primitive Groups`     
 
 ### Xn
-Default Normal OpenGl (+Y)   (G-invert in unreal) ( Designer use `innvert` )   
-Cage - only fbx      
+Default Normal OpenGl (+Y)     
 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
+Cage - only fbx     
 
 ### Unreal
-Default Normal DirectX (-Y)  
+Default Normal DirectX (-Y)   
 
 # PDG
 name index frame state id   
