@@ -40,7 +40,7 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Use Dynamesh on already smooth geo    (scale!)  
 - Retopo by hand  
 
-# Export:
+# Export
 - consistant texel   
 - separate parts with alphas to second texture  
 - orient uv - usefull for brushing in substance + directional mask   
@@ -53,18 +53,17 @@ Export Zplugins
 - fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
 - (reordering subtools in ZBrush will also reorder them when exporting the FBX)     
 
+# Bake
+
 ### Substance Designer  
 - part by materials in one mesh. (Id's)  
 - **bake by name:**    
 `low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes `a_low`, `b_low`  
 `high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export `a_high_doesnotmatter`, `a_high_whatisafter`, `b_high_suffix`    
-     
-
 
 ### Painter
-(Painter Match by mesh names (mesh ID))  
+Match by mesh names (mesh ID)  
 (mesh id polygroups-(Primitive Groups))   
-(dont bake displacements)
 
 ### Xn
 Default Normal OpenGl (+Y)   (G-invert in unreal) ( Designer use `innvert` )   
@@ -73,8 +72,6 @@ Cage - only fbx
 
 ### Unreal
 Default Normal DirectX (-Y)  
-RGB - linear   
-sRGB - 2.2 Gamma  (1/2.2=0.4545)   
 
 # PDG
 name index frame state id   
