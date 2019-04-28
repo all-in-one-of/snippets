@@ -41,7 +41,7 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 # Export
 
 (Houdini 1 U = 1m) (Zbrush ?) - scale *100    
-
+obj rotation ?  
 
 ### ZBrush
 Export Zplugins
