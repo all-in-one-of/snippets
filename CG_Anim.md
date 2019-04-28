@@ -3,8 +3,10 @@
 `4096` pix - 33 550 points - 500frames (~16sek)    
 `8192`    
 
-
+Unreal:  
+- [x] precise uvs on mesh  
+- [x] world space nm on material  
 ### PivotPainter
  
 Unreal:  
-- [ ] connvert scene    
+- [ ] connvert scene      
