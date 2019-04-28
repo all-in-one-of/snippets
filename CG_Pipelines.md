@@ -19,8 +19,6 @@ prin: `i@class` -
 vert: `v@N`    
 point: `v@rest`, `v@Cd`, `i@id`, `@P`   
 
-(Houdini 1 U = 1m) (Zbrush ?) - scale *100  
-
 # Source:  
   
 ### 3dScan   
@@ -41,6 +39,9 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 - Retopo by hand  
 
 # Export
+
+(Houdini 1 U = 1m) (Zbrush ?) - scale *100    
+
 
 ### ZBrush
 Export Zplugins
