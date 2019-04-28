@@ -44,10 +44,9 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 obj rotation ?  
 
 ### ZBrush
-Export Zplugins
-- obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
-- fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
-- (reordering subtools in ZBrush will also reorder them when exporting the FBX)     
+- obj (All subtools): Zplugins > PrintHub // polygroups > (H: Prim Groups)   
+- fbx: > FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try)   
+- (reordering subtools in ZBrush will also reorder them when exporting the FBX)      
 
 # Bake
 
