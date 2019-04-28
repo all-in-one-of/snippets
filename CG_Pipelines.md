@@ -13,12 +13,18 @@
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
+prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups   
+prim: `s@name` - label   
+prin: `i@class` -  
+vert: `v@N`    
+point: `v@rest`, `v@Cd`, `i@id`, `@P`   
 
+(Houdini 1 U = 1m) (Zbrush ?)
 
 # Source:  
   
 ### 3dScan   
-Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection.   
+Flaws: Cannot move high / not quads / bridged geo with other probrms than unfoald / duplicated geo / other typ of data / inverted few faces / swaped trix connection / hard to scale
 - Retopo Geometry is bloby on corner trix, could be fliped and is 30-100% less efficient in polycount hard to uv and select. 
 - Make mid res with reduced details and errors. Dynamesh it. 
 - (back and forh for frip edges)
@@ -33,17 +39,15 @@ Generate from Imported or Procediural data.  / Curve toolset (loft with uv's ??)
 ### Zbrush High  
 - Use Dynamesh  
 - Retopo by hand  
-reordering subtools in ZBrush will also reorder them when exporting the FBX,  
+(reordering subtools in ZBrush will also reorder them when exporting the FBX)    
+scale  ?/   
 
-## Scale   
-real world scale if possible  (Houdini 1 U = 1m) (Zbrush ?)
 
 ### Designer
 - part by materials in one mesh. (Id's)
 
 
 # BAKE:
-
 
 - consistant texel   
 - separate parts with alphas to second texture  
@@ -57,43 +61,27 @@ Export Zplugins
 - obj (All subtools): >PrintHub // polygroups > (H: Prim Groups)  
 - fbx: >FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try) 
 
-### Houdini
-prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups   
-prim: `s@name` - label   
-prin: `i@class` -  
-vert: `v@N`    
-point: `v@rest`, `v@Cd`, `i@id`, `@P`     
+  
 
 
-### PAINTER/DESIGNER  
-**bake by name:** 
-Normals from xN use `innvert`  
+### DESIGNER  
 **bake by name:**    
-low: fbx from H    
-- to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)  
-high: obj  from Z  (for evey subtool with name Name_high)  
-- obj, one sub tool for substance: uncheck `Grp` before export  
+`low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)   
+`high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export   
+- a_high_doesnotmatter, a_high_whatisafter, b_high_suffix 
+- a_low, b_low 
 
-```
-a_high_doesnotmatter  
-a_high_whatisafter   
-b_high_suffix 
-a_low  
-b_low 
-``` 
-(Painter Match by mesh names (mesh ID)) 
-(mesh id polygroups-(Primitive Groups))  
+### PAINTER  
+(Painter Match by mesh names (mesh ID))  
+(mesh id polygroups-(Primitive Groups))   
 
 ### Xn
-only fbx support cage files   
-Heightmap export plugins > image exporters > tiff > 16bits per chan  
-(DirectX vs OpenGl normal)    
-(baked object have other orientation)   
+Default Normal OpenGl (+Y)   (G-invert in unreal) ( Designer use `innvert` )   
+Cage - only fbx      
+16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
 
-
-
-## Collision  
-## LOD's  
+### Unreal
+Default Normal DirectX (-Y)
 
 # PDG
 name index frame state id   
