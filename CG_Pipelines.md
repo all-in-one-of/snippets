@@ -66,6 +66,8 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 
 
 ### PAINTER/DESIGNER  
+**bake by name:** 
+Normals from xN use `innvert`  
 **bake by name:**    
 low: fbx from H    
 - to get Substance groups files need to be in separate 'geometry' nodes named (Name_low)  
@@ -83,8 +85,8 @@ b_low
 (mesh id polygroups-(Primitive Groups))  
 
 ### Xn
-only fbx support cage files 
-Heightmap export plugins > image exporters > tiff > 16bits per chan
+only fbx support cage files   
+Heightmap export plugins > image exporters > tiff > 16bits per chan  
 (DirectX vs OpenGl normal)    
 (baked object have other orientation)   
 
