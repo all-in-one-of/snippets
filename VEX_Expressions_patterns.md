@@ -20,6 +20,8 @@
 ```Pics${W}x${H}/$F.pic.  ```   
 ```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
 ```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
+```$HIP/${HIPNAME}/`detail(0,"AtribToGrabName", 0)`.fbx```   
+
 
 ### Arithmetic 
 `=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`, `++` - add one , `%` - modulus  
