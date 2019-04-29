@@ -1,4 +1,8 @@
 
+presets:
+
+- Zstartup/BrushPresets - to permament save brush   
+- Zdata/BrushPresets - 
 # Ninja Combos basics:
 
   
@@ -20,10 +24,11 @@
 
 # Topo:  
 ### Sculptris mode:     
+- tesimate  
 
 ### Dynamesh:   
 - size important (up to 4096 grid)  
-- prepear special low with creasing to subdivide   
+- prepear special low with creasing to subdivide 
 
 ### ZRemesher Tools>Geometry  
 
