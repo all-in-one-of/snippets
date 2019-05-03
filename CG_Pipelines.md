@@ -23,7 +23,7 @@ point: `v@rest`, `v@Cd`, `i@id`, `@P`
 # Source:  
   
 ### 3dScan   
-- Supper highPoly make unable to move/scale geo.   
+- Massive source make unable to move/scale geo.    
 - Reduce from mid res with reduced details, get rid of bridges, unfolds, duplicate/inverted faces, Dynamesh it.   
 - AutoReduce is not shape aware and less efficient(30%), hard to uv (fliped edges connections) and select edges.        
 - Bake into mid res >> transfer geo    
