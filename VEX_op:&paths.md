@@ -1,13 +1,5 @@
 
-### OpInputs:
-`opname(".")` // $OS ??  
-`opinput(".", 0)` //   
 
-`opfullpath(".")` - The full path of the current node being evaluated
-`opfullpath("..")` - The full path of the current node’s parent
-`opinputpath(".", 0)`  // path of the node connected to the first input.  
-`opinputpath("../",0)` // path of geo (level up)    
-`geoself()`  Returns a handle to the current geometry.   
 
 
 ```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
@@ -19,6 +11,17 @@
 
 ```MyImage'$F+12'.pic```   
 ```Pics${W}x${H}/$F.pic.  ```   
+
+
+### OpInputs:
+`opname(".")` // node name ($OS)
+`opname("..")` // name of geometry container
+`opinput(".", 0)` //   
+`opfullpath(".")` - The full path of the current node being evaluated
+`opfullpath("..")` - The full path of the current node’s parent
+`opinputpath(".", 0)`  // path of the node connected to the first input.  
+`opinputpath("../",0)` // path of geo (level up)    
+`geoself()`  Returns a handle to the current geometry.  
 
 
 ### LOOP
@@ -53,22 +56,3 @@ for( int i=i; i<=rampkeys; i++){ float pos = ch(sprintf("ramp%gpos", i));
 float val = ch(sprintf("ramp%gvalue", i)); // Do stuff }
 ```
 @flight404 (I normally don’t condone 1-based loop indices but the keys do start at 1 and not 0. I supposed you could switch to doing `i+1` in the `sprintf` calls though if you wanted)  
-
-
-
-## H Script file names
-`$OS` - Operator String. Contains the current OP’s name.   
-`$CH` - Current channel name.   
-`$F` - The current frame, (as set with the Playbar controls).  
-`$SF`- Sim,ulation frame (must be checked in dop object?).  
-`$HFS` - The directory where Houdini is installed.    
-`$HH` - $HFS/houdini.   
-`$HIP` - The directory containing the current scene file.   
-`$HIPFILE` - The full path of the current scene file, including the file extension.   
-`$HIPNAME` - The name of the current scene file without the extension. 
-`$PDG_DIR`   
-`$PDG_SHARED_ROOT`  
-`$HOME` - Your home directory.  
-`$JOB` - The project directory.  
-`$NFRAMES` (the number of frames in the animation) = `$FEND - $FSTART + 1`.  
-`$ACTIVETAKE` - Contains the name of the current take.   
