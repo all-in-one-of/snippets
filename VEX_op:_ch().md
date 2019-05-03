@@ -17,13 +17,13 @@ $HIP/cache/Clouds.`opinput(".", -1)`.`$F-1`.bgeo.sc
 `opname(".")` // $OS ??  
 `opinput(".", 0)` //   
 
+`opfullpath(".")` - The full path of the current node being evaluated
+`opfullpath("..")` - The full path of the current node’s parent
 `opinputpath(".", 0)`  // path of the node connected to the first input.  
-`opinputpath("../",0)` // path of geo (level up)   
-`geoself()`  Returns a handle to the current geometry.  
-used in Adress, read $OS from node refered in spare param:
-```
-$HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc
-```
+`opinputpath("../",0)` // path of geo (level up)    
+`geoself()`  Returns a handle to the current geometry.   
+```$HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc``` - used in Adress, read $OS from node refered in spare param  
+
 
 ### channels:
 `ch("Multi")`  
