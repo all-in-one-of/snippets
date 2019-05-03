@@ -1,27 +1,14 @@
 
-## File Names
-`$OS` - Operator String. Contains the current OP’s name.   
-`$CH` - Current channel name.   
-`$F` - The current frame, (as set with the Playbar controls).  
-`$SF`- Sim,ulation frame (must be checked in dop object?).  
-`$HFS` - The directory where Houdini is installed.    
-`$HH` - $HFS/houdini.   
-`$HIP` - The directory containing the current scene file.   
-`$HIPFILE` - The full path of the current scene file, including the file extension.   
-`$HIPNAME` - The name of the current scene file without the extension. 
-`$PDG_DIR`   
-`$PDG_SHARED_ROOT`  
-`$HOME` - Your home directory.  
-`$JOB` - The project directory.  
-`$NFRAMES` (the number of frames in the animation) = `$FEND - $FSTART + 1`.  
-`$ACTIVETAKE` - Contains the name of the current take.   
 
-```MyImage'$F+12'.pic```   
-```Pics${W}x${H}/$F.pic.  ```   
 ```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
 ```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
 ```$HIP/${HIPNAME}/`detail(0,"AtribToGrabName", 0)`.fbx```   
+```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - path with name of containter object  
+```$HIP/`details("../", "filename")`.fbx``` - from detail attrib  
+```$HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc``` - used in Adress, read $OS from node refered in spare param    
 
+```MyImage'$F+12'.pic```   
+```Pics${W}x${H}/$F.pic.  ```   
 
 ### Arithmetic 
 `=`, `==` (same as), `!=`, `>`,` <`, `>=`, `<=` , `+=`, `++` - add one , `%` - modulus  
@@ -52,3 +39,20 @@ Pattern may be a numeric pattern, attribute pattern, or group name pattern.
 `$PT==$NPT-1` - Delete By Expression    
 `$N*` - Delete By Range: change Start to  
 
+
+## H Script file names
+`$OS` - Operator String. Contains the current OP’s name.   
+`$CH` - Current channel name.   
+`$F` - The current frame, (as set with the Playbar controls).  
+`$SF`- Sim,ulation frame (must be checked in dop object?).  
+`$HFS` - The directory where Houdini is installed.    
+`$HH` - $HFS/houdini.   
+`$HIP` - The directory containing the current scene file.   
+`$HIPFILE` - The full path of the current scene file, including the file extension.   
+`$HIPNAME` - The name of the current scene file without the extension. 
+`$PDG_DIR`   
+`$PDG_SHARED_ROOT`  
+`$HOME` - Your home directory.  
+`$JOB` - The project directory.  
+`$NFRAMES` (the number of frames in the animation) = `$FEND - $FSTART + 1`.  
+`$ACTIVETAKE` - Contains the name of the current take.   
