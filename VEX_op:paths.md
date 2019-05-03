@@ -14,15 +14,15 @@
 
 
 ### OpInputs:
-`opname(".")` // node name ($OS)
-`opname("..")` // name of geometry container
-`opinput(".", 0)` //   
-`opfullpath(".")` - The full path of the current node being evaluated
-`opfullpath("..")` - The full path of the current node’s parent
-`opinputpath(".", 0)`  // path of the node connected to the first input.  
-`opinputpath("../",0)` // path of geo (level up)    
-`geoself()`  Returns a handle to the current geometry.  
-
+`opname(".")` // node name ($OS)  
+`opname("..")` // name of geometry container  
+`opinput(".", 0)` //     
+`opfullpath(".")` - The full path of the current node being evaluated  
+`opfullpath("..")` - The full path of the current node’s parent  
+`opinputpath(".", 0)`  // path of the node connected to the first input.    
+`opinputpath("../",0)` // path of geo (level up)      
+`geoself()`  Returns a handle to the current geometry.    
+  
 
 ### LOOP
 Iterations:
