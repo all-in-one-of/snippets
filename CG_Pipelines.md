@@ -3,7 +3,7 @@
 `$HIP/source/` - sources (read only)   
 `$HIP/${HIPNAME}/$OS.fbx` - Export file   
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
-`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
+`$HIP/${HIPNAME}/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
 `$HIP/${HIPNAME}/export/vat_$OS/$OS.` - Export Vertex Anim      
 `$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake  
