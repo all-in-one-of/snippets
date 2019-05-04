@@ -8,6 +8,6 @@ Unreal:
 - [x] world space nm on material  
 ### PivotPainter
 Houdini:
-`s@name`,`v@N` - on points and parts  
+- `s@name`,`v@N` - on points and parts  
 Unreal:  
 - [ ] connvert scene      
