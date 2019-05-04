@@ -1,32 +1,27 @@
 ### GROUP AS ATTRIBUTE
-```cpp
-i@group_mygroup=1; // in groups
-group_name //In other than GroupSOP, specify a named group (created with the GroupSOP)
-(*, ?, and [ ])  /* You can use pattern matching in the group name. 
-For example, arm* includes all point/primitive groups whose names start with arm. 
-^ can be used in the pattern by enclosing the pattern in { }. For example */ 
-{arm* ^arm3*}  /* includes all groups whose names start with arm, but not arm3. */
 
+`i@group_mygroup=1;` - in groups
+`group_name` - In other than GroupSOP, specify a named group (created with the GroupSOP)
+`{arm* ^arm3*}`  - in the pattern. includes all groups whose names start with arm, but not arm3. 
+```
 @gorup_myGroup // READ FROM GROUP !!!!
 @Cd.x = (@group_myGroup==1) ? 1:0;  // 1 albo 0 w zaleznoci czy nalezy do myGroup czy nie 
-
-//2
+```
+```
 int in_group = (@group_myGroup==1) ? 1:0;
 @Cd = set(in_group, 0 , 0);
-
-//3
+```
+```
 @Cd = {0,0,0};
 @Cd.x = (@group_myGroup == 1) ? 1:0;
-
-//4 
+```
+```
 if (@group_mygroup ==1)  {
 @Cd = {1,1,0};
 }
 else {
     @Cd = {0,0,1};
 }
-
-
 ```
 ### ATTRIBUTE AS GROUP
 ```cpp
