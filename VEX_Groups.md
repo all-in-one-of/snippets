@@ -54,5 +54,5 @@ expression:
 `chramp(ramp_path, position, component_index)`   
 `ch("../A/sx")/2`   
 
-// `What’s more is, you can execute script in those fields by putting it in back-ticks.`
+What’s more is, you can execute script in those fields by putting it in back-ticks - `
 ```
