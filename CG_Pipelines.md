@@ -98,7 +98,10 @@ References
    - Read it with human scale and relations (bigest to smallest details), read paterns.     
    - Dna   
    - Age   
-   
+
+Draw 
+   - Flip  
+
 Sculpt  
    - Siluette  
    - Dont forget aboud mid freq.    
