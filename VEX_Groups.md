@@ -5,7 +5,7 @@
 
 expression:  
 `{arm* ^arm3*}`  - in the pattern. includes all groups whose names start with arm, but not arm3.   
-`@Cd.x = (@group_myGroup==1) ? 1:0;` - 1 albo 0 w zaleznoci czy nalezy do myGroup czy nie @gorup_myGroup // READ   
+`@Cd.x = (@group_myGroup==1) ? 1:0;` - 1 albo 0 w zaleznoci czy nalezy do myGroup czy nie @gorup_myGroup - read    
 
 ```
 int in_group = (@group_myGroup==1) ? 1:0;
