@@ -1,29 +1,25 @@
-
-
 ### Filenames:
 
-```$HIP/geo/$HIPNAME.$OS.$F.bgeo.sc```   
-```$HIP/render/${HIPNAME}_$(CHANNEL).png```  
-```$HIP/${HIPNAME}/`detail(0,"AtribToGrabName", 0)`.fbx```   
-```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - path with name of containter object  
+```$HIP/${HIPNAME}/$HIPNAME.$OS.`$F-1`.bgeo.sc```   
+```$HIP/cache_`opname("..")`/$OS.obj``` - path with name of containter object  
 ```$HIP/`details("../", "filename")`.fbx``` - from detail attrib  
-```$HIP/`opinput(".", -1)`.`$F-1`.bgeo.sc``` - used in Adress, read $OS from node refered in spare param    
+```$HIP/`opinput(".", -1)`.bgeo.sc``` - used in Adress, read $OS from node refered in spare param   
 
-```MyImage'$F+12'.pic```   
-```Pics${W}x${H}/$F.pic.  ```   
+```${HIPNAME}_$(CHANNEL).png``` - image     
+```Pics${W}x${H}/'$F+12'.pic.  ```    
 
+### OpInputs: 
+`opname(".")` // node name ($OS)   
+`opname("..")` // name of container   
+`opinput(".", 0)` //  
+`opinputpath(".", 0)`  // path of the node connected to the first input.          
+`opfullpath(".")` - The full path of the current node being evaluated.  
+`oprelativepath()`  
 
-### OpInputs:
-`opname(".")` // node name ($OS)  
-`opname("..")` // name of geometry container  
-`opinput(".", 0)` //     
-`opfullpath(".")` - The full path of the current node being evaluated  
-`opfullpath("..")` - The full path of the current node’s parent  
-`opinputpath(".", 0)`  // path of the node connected to the first input.    
-`opinputpath("../",0)` // path of geo (level up)      
-`geoself()`  Returns a handle to the current geometry.    
+`geoself()`  Returns a handle to the current geometry.      
   
-
+`details(0, attribute)` - Returns the string value of a detail attribute.  
+`detail(0, attrib_name, attrib_index)` - Returns the value of a detail attribute.  
 ### LOOP
 Iterations:
 ```
@@ -31,7 +27,6 @@ detail(-1,"iteration", 0)
 detail("../repeat_begin1_metadata1/","iteration", 0)
 ```
 `npoints()` - fn similar to @ptnum should use whenever you want number of points from the other inputs of wrangle node (second, third an so on).  
-
 
 
 ### channels:
