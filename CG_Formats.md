@@ -1,10 +1,5 @@
 
 # FORMATS:  
-
-### VAT
-
-4k pix = 16 777 216 points  
-vertex anim: 33 550 points; 500frames (~16sek) = 4k tex   
  
 ### Mesh  
 `*.obj` - no vertex color and 2-uvs standarised, no attribs
