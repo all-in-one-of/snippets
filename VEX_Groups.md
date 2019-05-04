@@ -27,11 +27,12 @@ else {
 Attributes as groups, or groups with @ syntax
 
 expression:  
-`0-5000:2 ^ 40-200`  
+`0-5000:2 ^ 40-200`  - range with wxceptions
 `!50-200`   
-`@P.y>0` - group of all points whose Y component is greater than `0*/ $BBY>.9999`     
+`@P.y>0` - all points whose Y component is greater than   
+`0*/ $BBY>.9999`     
 `@id=5-10`  
-`@id="5 8 10 15"` - You can also use the attribute syntax //space separated list of integer values, need to enclose the list in quotes. 
+`@id="5 8 10 15"` - the attribute syntax //space separated list of integer values, need to enclose the list in quotes. 
 `@myattr="foo bar"` - quotation marks if it contains spaces   
 `=`, `==`, and `!=`  - on string attr  
 `(* and ?)` -  wildcards value when using   
