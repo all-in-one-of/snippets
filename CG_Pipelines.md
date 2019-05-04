@@ -1,5 +1,5 @@
 # Project
-
+`File.hip`  
 `$HIP/source/` - sources (read only)   
 `$HIP/${HIPNAME}/$OS.fbx` - Export file   
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
