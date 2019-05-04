@@ -2,11 +2,9 @@
 
 `i@group_mygroup=1;` - in groups   
 `group_name` - In other than GroupSOP, specify a named group (created with the GroupSOP)  
-`{arm* ^arm3*}`  - in the pattern. includes all groups whose names start with arm, but not arm3.  
-```
-@gorup_myGroup // READ FROM GROUP !!!!
-@Cd.x = (@group_myGroup==1) ? 1:0;  // 1 albo 0 w zaleznoci czy nalezy do myGroup czy nie 
-```
+`{arm* ^arm3*}`  - in the pattern. includes all groups whose names start with arm, but not arm3.   
+`@Cd.x = (@group_myGroup==1) ? 1:0;`  // 1 albo 0 w zaleznoci czy nalezy do myGroup czy nie @gorup_myGroup // READ FROM GROUP !!!!  
+
 ```
 int in_group = (@group_myGroup==1) ? 1:0;
 @Cd = set(in_group, 0 , 0);
