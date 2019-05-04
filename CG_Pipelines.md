@@ -45,9 +45,9 @@ PDG:
 
 # Export
 ### Houdini   
-(Houdini 1 U = 1m) (Zbrush ?) - scale *100     
-obj rotation ?   
-`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups   
+(Houdini 1 U = 1m) (Zbrush ?) - scale *100  obj rotation ?    
+
+`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups    
 `s@name` (prim) - label    
 `i@class` (prim) -    
 `v@N` (vert) -   
