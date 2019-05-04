@@ -96,7 +96,7 @@ Hda processor // create inputs ?
 # REF
 References   
    - Read it with human scale and relations (bigest to smallest details), read paterns.     
-   - Dna   
+   - Dna (culture, time period, function)  
    - Age   
 
 Draw 
