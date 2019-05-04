@@ -7,17 +7,18 @@
 ```$HIP/Pics${W}x${H}/${HIPNAME}_$(CHANNEL).pic.  ```  - image    
 
 ### OpInputs: 
-`opname(".")` // node name ($OS)   
-`opname("..")` // name of container   
-`opinput(".", 0)` //  
-`opinputpath(".", 0)`  // path of the node connected to the first input.          
-`opfullpath(".")` - The full path of the current node being evaluated.  
-`oprelativepath()`  
+`opname(".")` - node name ($OS)   
+`opname("..")` - name of container   
+`opinput(".", 0)` -    
+`opinputpath(".", 0)` - path of the node connected to the first input.          
+`opfullpath(".")` - The full path of the current node being evaluated.   
+`oprelativepath()` -    
 
-`geoself()`  Returns a handle to the current geometry.      
+`geoself()` - Returns a handle to the current geometry.      
   
 `details(0, attribute)` - Returns the string value of a detail attribute.  
 `detail(0, attrib_name, attrib_index)` - Returns the value of a detail attribute.  
+
 ### LOOP
 Iterations:
 ```
