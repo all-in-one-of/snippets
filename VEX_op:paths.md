@@ -4,7 +4,7 @@
 ```$HIP/cache_`opname("..")`/$OS.obj``` - path with name of containter object  
 ```$HIP/`details("../", "filename")`.fbx``` - from detail attrib  
 ```$HIP/`opinput(".", -1)`.bgeo.sc``` - used in Adress, read $OS from node refered in spare param   
-```$HIP/Pics${W}x${H}/${HIPNAME}_$(CHANNEL).pic.  ```  - image    
+```$HIP/Pics${W}x${H}/${HIPNAME}_$(CHANNEL).pic```  - image    
 
 ### OpInputs: 
 `opname(".")` - node name ($OS)   
