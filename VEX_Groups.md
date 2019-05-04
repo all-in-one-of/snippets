@@ -38,21 +38,21 @@ expression:
 
 
 
-`@objname=myObject`  // what about using Blast SOP and put this in Group field:  
-`@objname=my*` // or you can even use patterns  
-`$OBJ+1` // numer obiektu + 1 bo numeracja od zera  
+`@objname=myObject` - what about using Blast SOP and put this in Group field:   
+`@objname=my*` - or you can even use patterns   
+`$OBJ+1` - numer obiektu + 1 bo numeracja od zera   
 
 `if (f@burned>0)`  
-`if ($F%10==0, $FF,0)` - evert 10th frame create obj and floating frame 
-`if (@Cd.r < 0.1) {  i@group_mygroup=1;  }`  
-`if ( rand(@ptnum) > ch('threshold') ) {   removepoint(0,@ptnum);  }`    
+`if ($F%10==0, $FF,0)` - evert 10th frame create obj and floating frame   
+`if (@Cd.r < 0.1) {  i@group_mygroup=1;  }`   
+`if ( rand(@ptnum) > ch('threshold') ) {   removepoint(0,@ptnum);  }`     
 
-`fit01(rand($OBj),-1,1)* 10` - rand negative -10 do 10
-`point("../" + opinput(".", 0), $PT, "neighbour", 0) <= 3`  
-`rand($OBJ)`  
-`strcmp($OBJNAME,“myObject”)` - Compares two strings.
-`chramp(ramp_path, position, component_index)`  
-`ch("../A/sx")/2`  
+`fit01(rand($OBj),-1,1)* 10` - rand negative -10 do 10  
+`point("../" + opinput(".", 0), $PT, "neighbour", 0) <= 3`    
+`rand($OBJ)`   
+`strcmp($OBJNAME,“myObject”)` - Compares two strings.  
+`chramp(ramp_path, position, component_index)`   
+`ch("../A/sx")/2`   
 
 // `What’s more is, you can execute script in those fields by putting it in back-ticks.`
 ```
