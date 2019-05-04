@@ -55,4 +55,3 @@ expression:
 `ch("../A/sx")/2`   
 
 What’s more is, you can execute script in those fields by putting it in back-ticks - `
-```
