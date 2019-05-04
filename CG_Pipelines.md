@@ -14,11 +14,6 @@
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
-`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups   
-`s@name` (prim) - label    
-`i@class` (prim) -    
-`v@N` (vert) -   
-`v@rest`, `v@Cd`, `i@id`, `@P` (point) -  
 
 # Source:  
   
@@ -40,9 +35,14 @@
 - Retopo by hand  
 
 # Export
-
-(Houdini 1 U = 1m) (Zbrush ?) - scale *100    
-obj rotation ?  
+### Houdini   
+(Houdini 1 U = 1m) (Zbrush ?) - scale *100     
+obj rotation ?   
+`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups   
+`s@name` (prim) - label    
+`i@class` (prim) -    
+`v@N` (vert) -   
+`v@rest`, `v@Cd`, `i@id`, `@P` (point) -  
 
 ### ZBrush
 - obj (All subtools): Zplugins > PrintHub // polygroups > (H: Prim Groups)   
