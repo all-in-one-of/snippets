@@ -14,11 +14,11 @@
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
-prim: `s@shop_materialpath` - to split mesh in partes / or do it by primitive Groups   
-prim: `s@name` - label   
-prin: `i@class` -  
-vert: `v@N`    
-point: `v@rest`, `v@Cd`, `i@id`, `@P`   
+`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups   
+`s@name` (prim) - label    
+`i@class` (prim) -    
+`v@N` (vert) -   
+`v@rest`, `v@Cd`, `i@id`, `@P` (point) -  
 
 # Source:  
   
