@@ -1,21 +1,26 @@
 # Project
+
 Project&Export:  
 `File.hip`  
 `$HIP/source/` - sources (read only)   
-`$HIP/${HIPNAME}/$OS.fbx` - Export file   
+`$HIP/${HIPNAME}/$OS.fbx` - Export file  
+
 Materials:  
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
 `$HIP/${HIPNAME}/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake    
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake 
 `$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
+
 Anim&data:  
 `$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
 `$HIP/${HIPNAME}/export/$OS.csv`   
-cache:   
+
+Cache:   
 ```$HIP/${HIPNAME}/cache_geo/$OS.obj``` - cache static  
 ```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - cache static  
 ```$HIP/${HIPNAME}/cache_sim/$OS.$F.bgeo.sc``` - cache sim  
-pdg:  
+
+PDG:  
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
