@@ -74,13 +74,11 @@ PDG:
 ### Painter
 `mesh id polygroups`= Houdini `Primitive Groups`     
 
-### Xn
-Default Normal OpenGl (+Y)     
+### Xn (OpenGl +Y)     
 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
 Cage - only fbx     
 
-### Unreal
-Default Normal DirectX (-Y)   
+### Unreal (DirectX -Y) 
 
 # PDG
 name index frame state id   
