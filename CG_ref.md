@@ -26,7 +26,9 @@ References
    - Age   
 
 Draw 
-   - Flip  
+   - Flip  for perspective correction  
+   - Thumbs for detail correction  
+   - B&W for valor correction  
 
 Sculpt  
    - Siluette  
