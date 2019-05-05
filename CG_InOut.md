@@ -12,3 +12,7 @@ Houdini:
 
 Unreal:  
 - [ ] connvert scene      
+
+### Collision 
+UCX_  
+from houdini need to be in separated containers   
