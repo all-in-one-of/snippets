@@ -41,10 +41,7 @@
 
 ### Unreal
 Collision:  
-UCX_    
-from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts      
-
-
+- `UCX_*` - from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts    
 
 ### VAT  
 `4096` pix = `16 777 216` points  
@@ -76,11 +73,11 @@ Unreal:
 `high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export `a_high_doesnotmatter`, `a_high_whatisafter`, `b_high_suffix`    
 
 ### Painter
-`mesh id polygroups`= Houdini `Primitive Groups`     
+- `mesh id polygroups`= Houdini `Primitive Groups`     
 
 ### Xn (OpenGl +Y)     
-16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
-Cage - only fbx     
+- 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
+- Cage - only fbx     
 
 ### Unreal (DirectX -Y) 
 
