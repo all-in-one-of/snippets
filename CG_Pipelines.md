@@ -37,7 +37,30 @@ PDG:
 ### ZBrush
 - obj (All subtools): Zplugins > PrintHub // polygroups > (H: Prim Groups)   
 - fbx: > FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try)   
-- (reordering subtools in ZBrush will also reorder them when exporting the FBX)      
+- (reordering subtools in ZBrush will also reorder them when exporting the FBX)       
+
+### Unreal
+Collision:  
+UCX_    
+from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts      
+
+
+
+### VAT  
+`4096` pix = `16 777 216` points  
+`4096` pix - 33 550 points - 500frames (~16sek)    
+`8192`    
+
+Unreal:  
+- [x] precise uvs on mesh  
+- [x] world space nm on material  
+### PivotPainter
+Houdini:
+- `s@name`,`v@N` - on points and parts  
+
+Unreal:  
+- [ ] connvert scene      
+
 
 # Bake
 
@@ -60,25 +83,7 @@ PDG:
 Cage - only fbx     
 
 ### Unreal (DirectX -Y) 
-### Collision 
-UCX_  
-from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts    
 
-# Motion  
-### VAT  
-`4096` pix = `16 777 216` points  
-`4096` pix - 33 550 points - 500frames (~16sek)    
-`8192`    
-
-Unreal:  
-- [x] precise uvs on mesh  
-- [x] world space nm on material  
-### PivotPainter
-Houdini:
-- `s@name`,`v@N` - on points and parts  
-
-Unreal:  
-- [ ] connvert scene      
 
 
 
