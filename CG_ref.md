@@ -19,7 +19,7 @@
 - Retopo by hand  
 
 
-# Ref
+# Ref:
 References   
    - Read it with human scale and relations (bigest to smallest details), read paterns.     
    - Dna (culture, time period, function)   
