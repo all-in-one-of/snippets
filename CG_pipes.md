@@ -24,7 +24,9 @@
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
-# Export
+# Pipes
+
+
 ### Houdini   
 (Houdini 1 U = 1m) (Zbrush ?) - scale *100  obj rotation ?    
 
@@ -33,6 +35,22 @@
 `i@class` (prim) -    
 `v@N` (vert) -   
 `v@rest`, `v@Cd`, `i@id`, `@P` (point) -  
+
+
+### VAT    
+`4096` pix = `16 777 216` points   
+`4096` pix - 33 550 points - 500frames (~16sek)     
+`8192`    
+
+Unreal:   
+- [x] precise uvs on mesh   
+- [x] world space nm on material   
+### PivotPainter  
+Houdini:  
+- `s@name`(pts), `v@N`(pts) -  
+
+Unreal:  
+- [ ] connvert scene      
 
 ### ZBrush
 - obj (All subtools): Zplugins > PrintHub // polygroups > (H: Prim Groups)   
@@ -43,20 +61,6 @@
 Collision:  
 - `UCX_*` - from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts    
 
-### VAT  
-`4096` pix = `16 777 216` points  
-`4096` pix - 33 550 points - 500frames (~16sek)    
-`8192`    
-
-Unreal:  
-- [x] precise uvs on mesh  
-- [x] world space nm on material  
-### PivotPainter
-Houdini:
-- `s@name`(pts), `v@N`(pts) -  
-
-Unreal:  
-- [ ] connvert scene      
 
 
 # Bake
