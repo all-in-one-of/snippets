@@ -58,7 +58,7 @@ Unreal:
 - (reordering subtools in ZBrush will also reorder them when exporting the FBX)       
 
 ### Unreal
-Collision:  
+ 
 - `UCX_*` - from houdini need to be in separated containers  named UCX_nameOfGeoContainer. If you have more parts need to separate to convex shapes and create empty containers with next _nameOfGeoContainer_x ... according to the count of colision parts    
 - landscape: dont use smooth brush it can make weight < 1  
 
