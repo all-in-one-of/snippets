@@ -23,16 +23,20 @@
 
 # Ref:
 - Dont make excuses.  
+
 References   
    - Read it with human scale and relations (bigest to smallest details), read paterns.     
-   - Dna (culture, time period, function)   
+   - Dna (culture, time period, function)    
    - Age (wear, tear, erosion, dirt)  
-Draw   
+   
+Draw    
    - draw (proportion, shape recog)  
-Paint  
+   
+Paint   
    - Flip  for perspective correction     
    - Thumbs for detail correction    
    - B&W for valor correction     
+   
 Sculpt  
    - Siluette  
    - Dont forget aboud mid freq.    
