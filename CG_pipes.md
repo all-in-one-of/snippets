@@ -48,7 +48,7 @@ Unreal:
 ### PivotPainter  
 Houdini:  
 - `s@name`(pts), `v@N`(pts) -  
-
+- normals must b ubdated by: customUv (4,5)  
 Unreal:  
 - [ ] connvert scene      
 
