@@ -25,7 +25,7 @@
 - Dont make excuses.  
 
 References   
-   - Read it with human scale and relations  
+   - ref to human scale and relations  
    - Paterns      
    - Dna (culture, time period, function)     
    - Material (substance, stiffness)  
