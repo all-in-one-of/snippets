@@ -25,13 +25,15 @@
 - Dont make excuses.  
 
 References   
-   - Read it with human scale and relations (bigest to smallest details), read paterns.     
-   - Dna (culture, time period, function)    
-   - Material  
-   - Age (wear, tear, erosion, dirt)  
+   - Read it with human scale and relations  
+   - read paterns      
+   - Dna (culture, time period, function)     
+   - Material (substance, stiffness)  
+   - Age (wear, tear, erosion, dirt)   
    
 Draw    
    - draw (proportion, shape recog)  
+   - (bigest to smallest details)   
    
 Paint   
    - Flip  for perspective correction     
