@@ -18,10 +18,11 @@
 - Use Dynamesh on already smooth geo    (scale!)  
 - Retopo by hand  
 
-dont make excuses 
+
 
 
 # Ref:
+- Dont make excuses.  
 References   
    - Read it with human scale and relations (bigest to smallest details), read paterns.     
    - Dna (culture, time period, function)   
