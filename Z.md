@@ -58,7 +58,7 @@ presets:
 
 `Polish`  
  
-`Planar` - Hard planes   
+`Planar` - Hard planes  (+alt łatanie dziur)   
 `Trim Adaptive` - Hard Edges, dont change angle   
 `Trim Front` - Trim to view angle   
 `Trim SmoothBorder` - !!!!!! use it  
