@@ -18,6 +18,8 @@
 - Use Dynamesh on already smooth geo    (scale!)  
 - Retopo by hand  
 
+dont make excuses 
+
 
 # Ref:
 References   
@@ -25,11 +27,14 @@ References
    - Dna (culture, time period, function)   
    - Age (wear, tear, erosion, dirt)  
 
-Draw 
-   - Flip  for perspective correction   
-   - Thumbs for detail correction   
-   - B&W for valor correction   
-
+Draw   
+   - draw (proportion, shape recog)  
+   
+Paint  
+   - Flip  for perspective correction     
+   - Thumbs for detail correction    
+   - B&W for valor correction     
+   
 Sculpt  
    - Siluette  
    - Dont forget aboud mid freq.    
