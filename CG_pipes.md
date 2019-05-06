@@ -53,9 +53,10 @@ Unreal:
 - [ ] connvert scene      
 
 ### ZBrush
-- obj (All subtools): Zplugins > PrintHub // polygroups > (H: Prim Groups)   
-- fbx: > FBX // Export poligroups as material > (H: `s@shop_materialpath`)   // subtools names should corespond in Substance (but didnt try)   
-- (reordering subtools in ZBrush will also reorder them when exporting the FBX)       
+- obj: polygroups > (Houdini: Prim Groups)  Zplugins > PrintHub (AllSubtools)  
+- fbx: poligroups > (Houdini: `s@shop_materialpath`) > FBX plugin  
+               // subtools names should corespond in Substance (but didnt try)     
+- (reordering subtools in ZBrush will also reorder them when exporting the FBX)        
 
 ### Unreal
  
