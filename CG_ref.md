@@ -32,13 +32,14 @@ References
    - Age (wear, tear, erosion, dirt)   
    
 Draw    
-   - draw (proportion, shape recog)  
+   - (proportion, shape recog)  
    - (bigest to smallest details)   
-   
-Paint   
    - Flip  for perspective correction     
    - Thumbs for detail correction    
-   - B&W for valor correction     
+   - B&W for valor correction    
+   
+Paint    
+   - Complementary colors  
    
 Sculpt  
    - Siluette  
