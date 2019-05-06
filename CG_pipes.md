@@ -47,7 +47,7 @@ Unreal:
 - [x] world space nm on material   
 ### PivotPainter  
 Houdini:  
-- `s@name`(pts), `v@N`(pts) -  
+- `s@name`(pts), `v@N`(pts) -  required  
 - normals must b ubdated by: customUv (4,5)  
 Unreal:  
 - [ ] connvert scene      
