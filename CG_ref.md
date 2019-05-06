@@ -26,7 +26,7 @@
 
 References   
    - Read it with human scale and relations  
-   - read paterns      
+   - Paterns      
    - Dna (culture, time period, function)     
    - Material (substance, stiffness)  
    - Age (wear, tear, erosion, dirt)   
