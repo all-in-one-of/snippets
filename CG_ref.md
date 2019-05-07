@@ -3,7 +3,7 @@
   
 ### 3dScan   
 - Massive source make unable to move/scale geo.    
-- Reduce from mid res with reduced details, get rid of bridges, unfolds, duplicate/inverted faces, Dynamesh it.   
+- Reduce from mid res with reduced details, get rid of bridges, valleys, noise, unfolds, duplinverted faces, Dynamesh.   
 - AutoReduce is not shape aware and less efficient(30%), hard to uv (fliped edges connections) and select edges.        
 - Bake into mid res >> transfer geo    
 
