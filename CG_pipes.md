@@ -66,6 +66,7 @@ Unreal:
 
 # Bake
 
+lo:
 - consistant texel    
 - orient uv - for brushing, directional mask   
 - separate parts with alphas  
@@ -81,8 +82,9 @@ Unreal:
 - `mesh id polygroups`= Houdini `Primitive Groups`     
 
 ### Xn (OpenGl +Y)     
-- 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan  
-- Cage - only fbx     
+- 16bits - Heightmap export plugins > image exporters > tiff > 16bits per chan    
+- Cage - only fbx      
+- separate scan by material (for xn: rename atrib  `s@shop_materialpath`(prim) > `name`)   
 
 ### Unreal (DirectX -Y) 
 
