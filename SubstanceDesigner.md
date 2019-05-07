@@ -24,3 +24,6 @@ change bit depth 8 > 16 !
   ### noise:
 'perlin noise zoom' -   
 `fract sum base` - dots   
+
+
+pixel processor  !   
