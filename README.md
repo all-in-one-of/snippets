@@ -1,11 +1,11 @@
 # snippets
+sources u should use:  
 
-less haotic sources:  
+http://immersivemath.com/ila/index.html  
+http://www.tokeru.com/cgwiki/?title=Houdini    
 
-http://www.tokeru.com/cgwiki/?title=Houdini  
-
-https://github.com/wirginiaromanowska/Notes_On_Things   
-https://github.com/jhorikawa/HoudiniHowtos  
+https://github.com/wirginiaromanowska/Notes_On_Things    
+https://github.com/jhorikawa/HoudiniHowtos   
 https://github.com/jtomori  
 https://github.com/toadstorm/MOPS    
 https://github.com/kiryha/Houdini  
