@@ -29,7 +29,7 @@
 ### Houdini   
 (Houdini 1 U = 1m) (Zbrush ?) - scale *100  obj rotation ?    
 
-`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups    
+`s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups: Attr copy to `name`  
 `s@name` (prim) - label    
 `i@class` (prim) -    
 `v@N` (vert) -   
