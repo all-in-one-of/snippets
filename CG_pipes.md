@@ -1,4 +1,4 @@
-# Project
+# Project setup
 
 **Project&Export:**  
 `File.hip`  
@@ -24,8 +24,7 @@
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
 ```F:/SIM/${HIPNAME}/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG for cache disc   
 
-# Pipes
-
+# Data Pipes
 
 ### Houdini   
 (Houdini 1 U = 1m) (Zbrush ?) - scale *100  obj rotation ?    
@@ -45,12 +44,15 @@
 Unreal:   
 - [x] precise uvs on mesh   
 - [x] world space nm on material   
+
 ### PivotPainter  
 Houdini:  
 - `s@name`(pts), `v@N`(pts) -  required  
 - normals must b ubdated by: customUv (4,5)  
 Unreal:  
 - [ ] connvert scene      
+
+# Data transfer
 
 ### ZBrush
 - obj: polygroups > (Houdini: Prim Groups)  Zplugins > PrintHub (AllSubtools)  
