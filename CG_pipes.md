@@ -11,7 +11,7 @@
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake 
 `$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
 
-**Anim&data:**  
+**Exports:**  
 `$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
 `$HIP/${HIPNAME}/export/$OS.csv`   
 
