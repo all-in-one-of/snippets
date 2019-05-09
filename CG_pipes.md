@@ -54,8 +54,7 @@ Unreal:
 
 ### ZBrush
 - obj: polygroups > (Houdini: Prim Groups)  Zplugins > PrintHub (AllSubtools)  
-- fbx: poligroups > (Houdini: `s@shop_materialpath`) > FBX plugin  
-               // subtools names should corespond in Substance (but didnt try)     
+- fbx: poligroups > (Houdini: `s@shop_materialpath`) > FBX plugin | subtools names matching in Substance // didnt check       
 - (reordering subtools in ZBrush will also reorder them when exporting the FBX)        
 
 ### Unreal
