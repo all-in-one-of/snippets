@@ -41,6 +41,9 @@ presets:
 - split to parts  
 - subtools  
 
+
+create thickness: tools StoreMT (morph target) >> inflate >> create differnt mesh  
+
 # Tools:
 - Save with project (ZPR) `File` > `Save As`  
 - Save Only 3d File: (ZPT) > `Tool`> `Save As`  
