@@ -33,7 +33,7 @@
 `s@name` (prim) - label    
 `i@class` (prim) -    
 `v@N` (vert) -   
-`v@rest`, `v@Cd`, `i@id`, `@P` (point) -  
+`@P`, `v@rest`, `v@Cd`, `i@id`, `@Alpha` (point) -  
 
 
 ### VAT    
