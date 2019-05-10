@@ -33,13 +33,15 @@
 
 
 # EDIT Geometry MODE
-`F2`-`F5` - Selection types box/lasso/paint/laser  
-`Y` -  Edit  
+
 `L` - Slide on Surface   
 `H` - Peak  
 `B` - Sculpt  
+
+`Y` -  Edit  
 `Shift`+`T`- Tweek mode   (no handles )
 
+`F2`-`F5` - Selection types box/lasso/paint/laser  
 
 `M` World Coordinates  
 `;` `:` - Align   
