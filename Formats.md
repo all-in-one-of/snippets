@@ -1,10 +1,23 @@
 
 # FORMATS:  
- 
+
+### res:
+
+4K (4K UHD) (2160p) 3840 x 2160   
+4K (DCI) movie ind. 4096 × 2160 
+full HD 1080p image is only a 1920x1080 
+
+
+
+HDTV format (16:9) 1.7778
+WideScreen format (1.85:1)  
+CinemaScope (2.35:1.00) 
+
+
 ### Mesh  
 `*.obj` - no vertex color and 2-uvs standarised, no attribs
-`*.fbx` -  
-`*.gltf`-   
+`*.fbx` - 
+`*.gltf`-    Create unwanted catalog in UE4, no Vert Color?  
 `*.bgeo.sc` - cache  
 `*.sim` - more expensive H cache (eg in output node in dop)  
 
@@ -86,14 +99,3 @@ Type	Audio Bitrate
 - Stereo	384 kbps  
 - 5.1	512 kbps  
 
-### res:
-
-4K (4K UHD) (2160p) 3840 x 2160   
-4K (DCI) movie ind. 4096 × 2160 
-full HD 1080p image is only a 1920x1080 
-
-
-
-HDTV format (16:9) 1.7778
-WideScreen format (1.85:1)  
-CinemaScope (2.35:1.00) 
