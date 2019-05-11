@@ -1,1 +1,8 @@
 
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+
+
+
+https://support.allegorithmic.com/documentation/sddoc/files/159450675/159452276/1/1499712115815/bnw_spots_3+-+ex.gif
