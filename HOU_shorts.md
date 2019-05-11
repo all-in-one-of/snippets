@@ -3,9 +3,9 @@
 ~~`Alt` + `W`~~ - close window  
 ~~`Ctrl` + `1`,`2`~~ .... - change   
 ~~`C` is visualize ~~should be: comment
-+ selection from `9`  
-+ `\` - manual update   `|` - auto update   
-` ' ` - RESELECT FOR CURENT TOOL  
+`9` selection group        
+`\` - manual update   `|` - auto update      
+` ' ` - RESELECT FOR CURENT TOOL     
 ` ~ ` - SECURE SELECTION  
 
 ### Wievport
