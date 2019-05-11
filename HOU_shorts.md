@@ -9,11 +9,17 @@
 ` ~ ` - SECURE SELECTION  
 
 ### Wievport
-`F2` `F3` `F4` - selection types   
 `Alt`+`Space` -  wieport  
 `B` - show uv layout !!!!!
 `9` - select by group
 `H` -  hide `H`+`ctrl`/`shift`   ??
+
+`F2`-`F5` - Selection types box/lasso/paint/laser  
+
+`M` World Coordinates    
+`;` `:` - Align    
+`'` `"` - Move pivot   
+`?` `/` - Align Grid    
 
 #### Selection modes:  
 `Shift`+`V` - backmasking    
@@ -41,16 +47,9 @@
 `Y` -  Edit  
 `Shift`+`T`- Tweek mode   (no handles )
 
-`F2`-`F5` - Selection types box/lasso/paint/laser  
-
-`M` World Coordinates  
-`;` `:` - Align   
-`'` `"` - Move pivot  
-`?` `/` - Align Grid   
-
 ### PolyDraw
 
-#### BUILD `Shift`+`1`
+#### build `Shift`+`1`
 
 **points:**
 `[LMB]` - create / selsct  
@@ -70,18 +69,12 @@
 `Shift`+`C` - Circle  
 `Shift`+`X` - Collapse 
 
-#### SLICE `Shift`+`2`  
-#### SPLIT `Shift`+`3`  
-#### BRUSH `Shift`+`4`  
-#### SMOOTH `Shift`+`5`  
+#### Slice `Shift`+`2`  
+#### Split `Shift`+`3`  
+#### Brush `Shift`+`4`  
+#### Smooth `Shift`+`5`  
 
-
-## TOPs
-- Generate nodes  
-`Shift` + `G` - revert cooked to graph and cook uncooked    // do it before delete from disc  
-`Shift` + `V` - Dirty node and cook all  
-
-## GRAPH
+### Graph
 
 `U` - Up  
 `I` - Dive  
@@ -94,15 +87,20 @@
 
 `F` `G` / `H` - zoomy 
 
-#### layaut 
+### Graph Layaut 
 `L` - layaut 
 `Shift`+`L` - layout Selected  
 `Shift` + `A` + `🡰` `🡲` - (on selected nodes) - align horizontaly  
 `Shift` + `A` +`🡱` `🡳`  - (on selected nodes) - align verticaly  
 `Shift` + `S` - Change link type 
-
-
 `Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
+
+### TOPs
+- Generate nodes  
+`Shift` + `G` - revert cooked to graph and cook uncooked    // do it before delete from disc  
+`Shift` + `V` - Dirty node and cook all  
+
+
 
 
 
