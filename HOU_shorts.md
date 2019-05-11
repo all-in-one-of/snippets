@@ -1,23 +1,25 @@
-# CUSTOM
+### CUSTOM
 `Shift` + `W` - In all windows wireframe mode   
 ~~`Alt` + `W`~~ - close window  
 ~~`Ctrl` + `1`,`2`~~ .... - change   
 ~~`C` is visualize ~~should be: comment
 + selection from `9`  
 + `\` - manual update   `|` - auto update   
+` ' ` - RESELECT FOR CURENT TOOL  
+` ~ ` - SECURE SELECTION  
 
-# Wievport
+### Wievport
 `F2` `F3` `F4` - selection types   
 `Alt`+`Space` -  wieport  
 `B` - show uv layout !!!!!
 `9` - select by group
 `H` -  hide `H`+`ctrl`/`shift`   ??
 
-#### selection:  
+#### Selection modes:  
 `Shift`+`V` - backmasking    
 `Shift`+`C` - contained  
 
-#### Change selection:  
+#### Selection modify:  
 `N` - select all  
 `Shift`+`N` - select none  
 `Shift`+`B` - bounds   
@@ -31,9 +33,7 @@
 `Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end  
 `K` - Growth till paint under mouse  
 
-
-# EDIT Geometry MODE
-
+### EDIT Geometry MODE
 `L` - Slide on Surface   
 `H` - Peak  
 `B` - Sculpt  
@@ -48,13 +48,11 @@
 `'` `"` - Move pivot  
 `?` `/` - Align Grid   
 
-# POLYDRAW SHORTS  
-
+### PolyDraw
 
 #### BUILD `Shift`+`1`
 
 **points:**
-
 `[LMB]` - create / selsct  
 `Shift`+`[LMB]` select  
 `Ctrl` - angels  
@@ -69,7 +67,6 @@
 `Shift`+`E` - Evenly space    
 
 **prims:**
-
 `Shift`+`C` - Circle  
 `Shift`+`X` - Collapse 
 
@@ -107,8 +104,5 @@
 
 `Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
 
-------------
-WIEVPORT WTF:  
-` ' ` - RESELECT FOR CURENT TOOL  
-` ~ ` - SECURE SELECTION  
+
 
