@@ -96,7 +96,7 @@
 `Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
 
 ### TOPs
-- Generate nodes  
+Generate nodes  
 `Shift` + `G` - revert cooked to graph and cook uncooked    // do it before delete from disc  
 `Shift` + `V` - Dirty node and cook all  
 
