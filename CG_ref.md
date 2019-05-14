@@ -33,7 +33,7 @@ References
    - Material (substance, stiffness)  
    - Age (wear, tear, erosion, dirt)   
    
-Draw    
+Sketch > Draw    
    - (proportion, shape recog)  
    - (bigest to smallest details)   
    - Flip  for perspective correction     
