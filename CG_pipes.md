@@ -52,6 +52,10 @@ Houdini:
 Unreal:  
 - [ ] connvert scene      
 
+### Flow Maps
+- Constant bias to make vector 2 ways (nm is ok and have biass) 
+- import map as vector displacement  2 channels  
+
 # Data transfer
 
 ### ZBrush
