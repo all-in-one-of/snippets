@@ -78,6 +78,7 @@ lo:
 - mirroring ? rebake and rotate ?  
 
 ### Substance Designer  
+- parts from Houdini: udims, or...    
 - part by materials in one mesh. (mesh ID)      
 - **bake by name:**    
 `low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes `a_low`, `b_low`  
