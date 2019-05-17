@@ -78,10 +78,10 @@ lo:
 - mirroring ? rebake and rotate ?  
 
 ### Substance Designer  
-- parts from Houdini: udims, or...    
-- part by materials in one mesh. (mesh ID)      
+- part by materials in one mesh. (mesh ID)       
+- parts from Houdini: `s@shop_materialpath` (prim)    
 - **bake by name:**    
-`low`: fbx from H - to get Substance groups files need to be in separate 'geometry' nodes `a_low`, `b_low`  
+`low`: fbx from H - to get Designer groups files need to be in separate 'geometry' nodes `a_low`, `b_low`  
 `high`: obj  from Z  (for evey subtool with name Name_high) - obj, one sub tool for substance: uncheck `Grp` before export `a_high_doesnotmatter`, `a_high_whatisafter`, `b_high_suffix`    
 
 ### Painter
