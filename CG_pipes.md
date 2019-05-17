@@ -28,18 +28,15 @@
 
 ### Houdini   
 (Houdini 1 U = 1m) (Zbrush ?) - scale *100  obj rotation ?    
-
 `s@shop_materialpath` (prim) - to split mesh in partes / or do it by primitive Groups: Attr copy to `name`  
 `s@name` (prim) - label    
 `i@class` (prim) -    
 `v@N` (vert) -   
 `@P`, `v@rest`, `v@Cd`, `i@id`, `@Alpha` (point) -  
 
-
 ### VAT    
 `4096` pix = `16 777 216` points   
 `4096` pix - 33 550 points - 500frames (~16sek)     
-`8192`    
 
 Unreal:   
 - [x] precise uvs on mesh   
