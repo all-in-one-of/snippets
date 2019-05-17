@@ -1,5 +1,5 @@
 # snippets
-sources u should use:  
+sources u should use instead of reading my garbage:    
 
 http://immersivemath.com/ila/index.html  
 http://www.tokeru.com/cgwiki/?title=Houdini    
