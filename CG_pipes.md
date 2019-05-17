@@ -47,12 +47,12 @@ Unreal:
 
 ### PivotPainter  
 Houdini:  
-- `s@name`(pts), `v@N`(pts) -  required  
+- object: `s@name`(pts), `v@N`(pts) -  required. We get: `position`, `x-axies`, `mask`
+- hierarchical: `[LeafGroup]` (prim), `[BranchGroup]` (prim)
 Unreal:  
 - [ ] create lightmap uv's
 - [ ] connvert scene      
-
-- If you turn object in unreal you must update normals by custom uvs (4,5)  
+- rotating in unreal required updated normals. ( by vertShader: custom uvs 4,5)   
 
 ### Flow Maps
 - Constant bias to make vector 2 ways (nm is ok and have biass) 
