@@ -44,8 +44,8 @@ Unreal:
 
 ### PivotPainter  
 Houdini:  
-- object: `s@name`(pts), `v@N`(pts) -  required. We get: `position`, `x-axies`, `mask`
-- hierarchical: `[LeafGroup]` (prim), `[BranchGroup]` (prim)  
+- object: `s@name`(pts), `v@N`(pts) -  required. We get: (position, x-axies, mask)  
+- hierarchical: `[LeafGroup]` (prim), `[BranchGroup]` (prim)   
 
 Unreal:  
 - [ ] create lightmap uv's
