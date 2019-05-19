@@ -1,17 +1,32 @@
+# [Detangle]
+can run in forloop with fedback.  
+- rest position as previous position 
+- pscale 
+- 
+
 # Curve/Spline
 
-Gradient along curve:
+###  Gradient along curve:
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-Curve on Ramp:
+###  Gradient along curve Ramp:
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); 
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
+### Delete last point    
+`@ptnum == @numpt-1` // group the last point on curve  
+`@ptnum == npoints(0)-1` //group the last point on curve (using fn)  
+`@ptnum%(@numpt-1)==0`  // first&last = 0 rest @ptnum   
+
+0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //  
+0 `npoints(0)-1` // select first and last point  
 
 
+### create Groupexpreesion SOP  
+neighbourcount(0, @ptnum) == 2  
 
 ### Shape Polywire with ramp for combined curves 
 ```
@@ -84,28 +99,16 @@ if( animPer > 0.0 ){
 }
 ```
 
-### Delete last point
+
+
 ```cpp
-@ptnum == `npoints(0)-1` //group the last point on curve
-@ptnum == @numpt-1 // group the last point on curve
-@ptnum%(@numpt-1)==0  //1st AND last point at the same time
-
-0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //
-0 `npoints(0)-1` // select first and last point
-/*to delete last point
-- Delete By Pattern: $N
-- Delete By Expression: $PT==$NPT-1
-- Delete By Range: change Start to: $N*/
-
-
 // Scale 10 times first and last points
 if ((@ptnum == 0) || (@ptnum == (@numpt-1))) f@pscale = 10; 
 else f@pscale = 1;
 // Scale 10 times first and last points, short form    
 f@pscale = (@ptnum == 0) || @ptnum ==(@numpt-1) ? 10 : 1;
 
-# create Groupexpreesion SOP
-neighbourcount(0, @ptnum) == 2
+
 
 ```
 

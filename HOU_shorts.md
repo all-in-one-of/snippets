@@ -1,25 +1,31 @@
-# CUSTOM
-`\` - manual update  
-`|` - auto update  
-## Hell-Shortuct to remove:  
+### CUSTOM
+`Shift` + `W` - In all windows wireframe mode   
 ~~`Alt` + `W`~~ - close window  
 ~~`Ctrl` + `1`,`2`~~ .... - change   
 ~~`C` is visualize ~~should be: comment
-**edit:**
-F5 - to selection ??? from9 ?
+`9` selection group        
+`\` - manual update   `|` - auto update      
+` ' ` - RESELECT FOR CURENT TOOL     
+` ~ ` - SECURE SELECTION  
 
-# Wievport
-`F2` `F3` `F4` - selection types   
+### Wievport
 `Alt`+`Space` -  wieport  
 `B` - show uv layout !!!!!
 `9` - select by group
 `H` -  hide `H`+`ctrl`/`shift`   ??
 
-#### selection:  
+`F2`-`F5` - Selection types box/lasso/paint/laser  
+
+`M` World Coordinates    
+`;` `:` - Align    
+`'` `"` - Move pivot   
+`?` `/` - Align Grid    
+
+#### Selection modes:  
 `Shift`+`V` - backmasking    
 `Shift`+`C` - contained  
 
-#### Change selection:  
+#### Selection modify:  
 `N` - select all  
 `Shift`+`N` - select none  
 `Shift`+`B` - bounds   
@@ -33,28 +39,19 @@ F5 - to selection ??? from9 ?
 `Shift` + `Ctrl` + `🡰` `🡲` `🡱` `🡳`- Growt pattern till the end  
 `K` - Growth till paint under mouse  
 
-
-# EDIT Geometry MODE
-`F2`-`F5` - Selection types box/lasso/paint/laser  
-`Y` -  Edit  
+### EDIT Geometry MODE
 `L` - Slide on Surface   
 `H` - Peak  
 `B` - Sculpt  
+
+`Y` -  Edit  
 `Shift`+`T`- Tweek mode   (no handles )
 
+### PolyDraw
 
-`M` World Coordinates  
-`;` `:` - Align   
-`'` `"` - Move pivot  
-`?` `/` - Align Grid   
-
-# POLYDRAW SHORTS  
-
-
-#### BUILD `Shift`+`1`
+#### build `Shift`+`1`
 
 **points:**
-
 `[LMB]` - create / selsct  
 `Shift`+`[LMB]` select  
 `Ctrl` - angels  
@@ -69,17 +66,15 @@ F5 - to selection ??? from9 ?
 `Shift`+`E` - Evenly space    
 
 **prims:**
-
 `Shift`+`C` - Circle  
 `Shift`+`X` - Collapse 
 
-#### SLICE `Shift`+`2`  
-#### SPLIT `Shift`+`3`  
-#### BRUSH `Shift`+`4`  
-#### SMOOTH `Shift`+`5`  
+#### Slice `Shift`+`2`  
+#### Split `Shift`+`3`  
+#### Brush `Shift`+`4`  
+#### Smooth `Shift`+`5`  
 
-## GRAPH
-
+### Graph
 
 `U` - Up  
 `I` - Dive  
@@ -92,18 +87,20 @@ F5 - to selection ??? from9 ?
 
 `F` `G` / `H` - zoomy 
 
-#### layaut 
+### Graph Layaut 
 `L` - layaut 
 `Shift`+`L` - layout Selected  
 `Shift` + `A` + `🡰` `🡲` - (on selected nodes) - align horizontaly  
 `Shift` + `A` +`🡱` `🡳`  - (on selected nodes) - align verticaly  
 `Shift` + `S` - Change link type 
-
-
 `Ctrl`+`Shift`+`Alt`+ `LMB` on a node will duplicate the node and automatically reference everything
 
-------------
-WIEVPORT WTF:  
-` ' ` - RESELECT FOR CURENT TOOL  
-` ~ ` - SECURE SELECTION  
+### TOPs
+Generate nodes  
+`Shift` + `G` - revert cooked to graph and cook uncooked    // do it before delete from disc  
+`Shift` + `V` - Dirty node and cook all  
+
+
+
+
 

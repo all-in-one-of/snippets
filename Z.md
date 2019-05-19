@@ -1,7 +1,10 @@
-- Dont forget aboud mid freq.  
-- Make contrast with details placement.  
-- Try to sculpt across the form (not with the flow).  
+
+presets:
+
+- Zstartup/BrushPresets - to permament save brush   
+- Zdata/BrushPresets - 
 # Ninja Combos basics:
+
   
 `Space` - Brush   
 `Alt` - Alternative brush / `Shift` Smooth Brush  
@@ -17,14 +20,15 @@
 `F` - zoom  
 `B` - brush  
 `X` - symetry    
-
+`Ctrl` + `W` > make one poly group   
 
 # Topo:  
 ### Sculptris mode:     
+- tesimate  
 
 ### Dynamesh:   
 - size important (up to 4096 grid)  
-- prepear special low with creasing to subdivide   
+- prepear special low with creasing to subdivide 
 
 ### ZRemesher Tools>Geometry  
 
@@ -36,6 +40,9 @@
 - layers   
 - split to parts  
 - subtools  
+
+
+create thickness: tools StoreMT (morph target) >> inflate >> create differnt mesh  
 
 # Tools:
 - Save with project (ZPR) `File` > `Save As`  
@@ -54,7 +61,7 @@
 
 `Polish`  
  
-`Planar` - Hard planes   
+`Planar` - Hard planes  (+alt łatanie dziur)   
 `Trim Adaptive` - Hard Edges, dont change angle   
 `Trim Front` - Trim to view angle   
 `Trim SmoothBorder` - !!!!!! use it  
@@ -63,3 +70,6 @@
   
 `Inflat` - Bubble   
 `Smooth` - more opttions and brushes on smooth   // but try to not use it to much because you are loosing sculpt details try to 'refine' insted of smooth.  
+`Pinch` - 
+
+`slash2` - 

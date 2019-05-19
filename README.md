@@ -1,16 +1,33 @@
 # snippets
-Quick and chaotic notes
+sources u should use instead of reading my garbage:    
 
-better sources:  
-https://github.com/wirginiaromanowska/Notes_On_Things  
-https://github.com/jhorikawa/HoudiniHowtos  
+http://immersivemath.com/ila/index.html  
+http://www.tokeru.com/cgwiki/?title=Houdini    
+
+https://github.com/wirginiaromanowska/Notes_On_Things    
+https://github.com/jhorikawa/HoudiniHowtos   
 https://github.com/jtomori  
-https://github.com/toadstorm/MOPS   
-http://www.tokeru.com/cgwiki/?title=Houdini  
+https://github.com/toadstorm/MOPS    
+https://github.com/kiryha/Houdini  
 
+https://mrpandey.github.io/d3graphTheory/unit.html
+
+
+https://spyrogif.tumblr.com/   
+http://richardlord.tumblr.com/  
+http://beesandbombs.tumblr.com/  
+http://the12principles.tumblr.com/  
+
+
+https://www.lucascheller.de/   
+https://vimeo.com/user2030228  
+https://androidarts.com/art_tut.htm  
 
 ----------
-Legend:
-() - source ref.  
-{} - shelf tool  
-`attribute`  
+
+
+
+https://www.richlord.com/tools?offset=1554489900662   
+
+
+
