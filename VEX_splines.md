@@ -67,6 +67,18 @@ vector displace = fit(noiseXYZ, 0,1, -1, 1)*power*remap_uv;
 @ramponcurve = chramp('ColorRamp', gradient);  // map it to ramp
 ```
 
+### pscale polyWire SOP
+prim wrangle between resample and polywire  
+```
+i[]@primPts = primpoints(0, @primnum);
+
+foreach (int i; int currentPoint; @primPts){
+    float ramp_index = fit(i, 0, len(@primPts)-1, 0,1);
+    f@widthPrim = chramp("shape", ramp_index)/20;
+    setpointattrib(0, "width", currentPoint, @widthPrim, "set"); 
+    }
+```
+
 ### Carve Curve
 ```cpp
 float max = chf("max"); // like carve u parm
