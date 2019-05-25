@@ -51,4 +51,4 @@ Sculpt
    - Don't use smooth.       
    
 Shading
-   - Work in HSV to manage chroma and valor in check.      
+   - Work in HSV to manage chroma and valor.      
