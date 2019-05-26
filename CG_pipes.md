@@ -17,7 +17,9 @@
 
 **Materials:**  
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
-`$HIP/${HIPNAME}/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake    
+`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake    
+
+**Hi/Sculpt:**
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake 
 `$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
 
