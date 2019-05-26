@@ -8,20 +8,18 @@
 **Exports:**  
 `$HIP/${HIPNAME}/export/$OS.fbx` - Export file  
 `$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
+`$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
+`$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake   
 `$HIP/${HIPNAME}/export/$OS.csv`   
 
 **Cache:**   
 ```$HIP/${HIPNAME}/cache_geo/$OS.obj``` - cache static  
-```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - cache static  
+```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - cache static   
 ```$HIP/${HIPNAME}/cache_sim/$OS.$F.bgeo.sc``` - cache sim  
 
 **Materials:**  
 `$HIP/${HIPNAME}/material/..`  - Substance&Material   
 `$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake    
-
-**Hi/Sculpt:**
-`$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake 
-`$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
 
 **PDG:**  
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
