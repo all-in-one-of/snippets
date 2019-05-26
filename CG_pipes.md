@@ -3,9 +3,10 @@
 **Project&Export:**  
 `File.hip`  
 `$HIP/source/` - sources (read only)   
-`$HIP/${HIPNAME}/$OS.fbx` - Export file  
+
 
 **Exports:**  
+`$HIP/${HIPNAME}/export/$OS.fbx` - Export file  
 `$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
 `$HIP/${HIPNAME}/export/$OS.csv`   
 
