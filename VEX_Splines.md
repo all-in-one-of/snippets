@@ -1,19 +1,10 @@
-# [Detangle]
+# Detangle
 can run in forloop with fedback.  
 - rest position as previous position 
 - pscale 
 
-# Curve/Spline
 
-###  Gradient along curve:
-```cpp
-float ValueAlongSpline = @ptnum/(@numpt-1.0);
-```
-###  Gradient along curve (ramp):
-```cpp
-float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
-@Cd.y = chramp('colorRamp', gradient);  
-```
+# Curve/Spline
 
 ### Delete last point    
 `@ptnum == @numpt-1` - group the last point on curve  
@@ -24,6 +15,16 @@ float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it
 0 `npoints(0)-1` - select first and last point   
 
 `neighbourcount(0, @ptnum) == 2` - Groupexpreesion SOP  
+
+###  Gradient along curve:
+```cpp
+float ValueAlongSpline = @ptnum/(@numpt-1.0);
+```
+###  Gradient along curve (ramp):
+```cpp
+float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
+@Cd.y = chramp('colorRamp', gradient);  
+```
 
 
 
@@ -43,9 +44,7 @@ foreach (int i; int currentPoint; @primPts){
     }
  ```
 
-
-
-### pscale polyWire SOP
+### PolyWire pscale SOP
 prim wrangle between resample and polywire  
 ```
 i[]@primPts = primpoints(0, @primnum);
@@ -66,6 +65,7 @@ int primnum = @primnum;
 float d = xyzdist(0, @P, primnum, uv);
 @P = primuv(0, "P", primnum, set(fit01(uv.x,min,max), 0.0, 0.0));
 ```
+
 ```cpp
 float animDur       = f@perimeter * 400.0;
 
@@ -97,7 +97,6 @@ else f@pscale = 1;
 // Scale 10 times first and last points, short form    
 f@pscale = (@ptnum == 0) || @ptnum ==(@numpt-1) ? 10 : 1;
 ```
-
 
  convert | arg; 
 --- | --- 
