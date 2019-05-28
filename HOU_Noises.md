@@ -78,6 +78,27 @@ vector dir = curlxnoise((@P * frequency) + offset); // simplex
 vector offset =  xnoise(v@P + set(p,p,p)) - {.5,.5,.5};
 v@P += offset;
 ```
+
+
+#### Fade noise on curves with ramp 
+```
+// Requires uvtexture SOP in "Pts and Columns" mode before this wrangle
+
+// Define UI controls
+float remap_uv = chramp('remap_uv', @uv.x);
+float power = chf('Noise_Power');
+float freq = chf('Noise_Frequency');
+
+// Create noise
+vector noiseXYZ = noise(@P*freq);
+// Modify noise values
+vector displace = fit(noiseXYZ, 0,1, -1, 1)*power*remap_uv;
+// Apply modified noise to a points position
+@P += displace;
+// Visualize fade ramp on curve
+@Cd = remap_uv;
+```
+
 #### Delete Points based on noise  
 ```
 
