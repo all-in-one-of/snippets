@@ -2,7 +2,6 @@
 can run in forloop with fedback.  
 - rest position as previous position 
 - pscale 
-- 
 
 # Curve/Spline
 
@@ -10,23 +9,25 @@ can run in forloop with fedback.
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-###  Gradient along curve Ramp:
+###  Gradient along curve (ramp):
 ```cpp
-float gradient = @ptnum/(@numpt-1.0); 
+float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
 ### Delete last point    
-`@ptnum == @numpt-1` // group the last point on curve  
-`@ptnum == npoints(0)-1` //group the last point on curve (using fn)  
-`@ptnum%(@numpt-1)==0`  // first&last = 0 rest @ptnum   
+`@ptnum == @numpt-1` - group the last point on curve  
+`@ptnum == npoints(0)-1` - group the last point on curve (using fn)  
+`@ptnum%(@numpt-1)==0`  - first&last = 0 rest @ptnum   
 
-0-`npoints(opinputpath(“.”,0))-2` // selects all points but the last. //  
-0 `npoints(0)-1` // select first and last point  
+0-`npoints(opinputpath(“.”,0))-2`- selects all points but the last.  
+0 `npoints(0)-1` - select first and last point   
+
+`neighbourcount(0, @ptnum) == 2` - Groupexpreesion SOP  
 
 
-### create Groupexpreesion SOP  
-neighbourcount(0, @ptnum) == 2  
+
+## Geometry From Spline 
 
 ### Shape Polywire with ramp for combined curves 
 ```
@@ -42,30 +43,7 @@ foreach (int i; int currentPoint; @primPts){
     }
  ```
 
-### Fade noise on curves with ramp 
-```
-// Requires uvtexture SOP in "Pts and Columns" mode before this wrangle
 
-// Define UI controls
-float remap_uv = chramp('remap_uv', @uv.x);
-float power = chf('Noise_Power');
-float freq = chf('Noise_Frequency');
-
-// Create noise
-vector noiseXYZ = noise(@P*freq);
-// Modify noise values
-vector displace = fit(noiseXYZ, 0,1, -1, 1)*power*remap_uv;
-// Apply modified noise to a points position
-@P += displace;
-// Visualize fade ramp on curve
-@Cd = remap_uv;
-```
-
-### Gradient on Curve
-```
-@gradient = @ptnum/(@numpt-1.0);
-@ramponcurve = chramp('ColorRamp', gradient);  // map it to ramp
-```
 
 ### pscale polyWire SOP
 prim wrangle between resample and polywire  
@@ -111,17 +89,13 @@ if( animPer > 0.0 ){
 }
 ```
 
-
+// Scale 10 times first and last points
 
 ```cpp
-// Scale 10 times first and last points
 if ((@ptnum == 0) || (@ptnum == (@numpt-1))) f@pscale = 10; 
 else f@pscale = 1;
 // Scale 10 times first and last points, short form    
 f@pscale = (@ptnum == 0) || @ptnum ==(@numpt-1) ? 10 : 1;
-
-
-
 ```
 
 
