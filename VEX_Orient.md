@@ -50,7 +50,7 @@ v@up = chv("up_vector");
 // create a 3x3 orientation matrix using N and up as
 matrix3 m = maketransform(@N, v@up);
 vector axis = @N;
-float angle = radians(ch("angle"));
+float angle = radians(ch("angle")); // or instead of angle: rand(@ptnum)*360
 rotate(m, angle, axis);
 p@orient = quaternion(m);// make the orient quaternion
 // OUT TO COPY TO POINTS SOP
