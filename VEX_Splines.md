@@ -19,6 +19,31 @@ float ValueAlongSpline = @ptnum/(@numpt-1.0);
 float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
 @Cd.y = chramp('colorRamp', gradient);  
 ```
+### Spring on Curve
+
+```
+float rad=chf("radius");
+vector dir=set(0,0,1)*rad;
+matrix3 myMatrix=set(v@T,v@B,normalize(cross(v@T,v@B)));
+3@myMatrix=myMatrix;
+float rot=radians(chf("rotate"));
+float sum=0;
+for (int i=0; i<=@ptnum;i++)
+    {
+    float tempt=float(i)/(@numpt-1);
+    sum+=(chramp("rampRot",tempt)-0.5)*2/@numpt;
+    }
+
+sum*=360*chf("scaleRamp");
+f@integralRamp=sum;
+
+
+rot+=radians(sum);
+
+rotate(myMatrix,rot,v@T);
+dir=myMatrix*dir;
+@P= @P+dir;
+```
 
 
 ## Geometry From Spline 
