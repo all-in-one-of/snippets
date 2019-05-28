@@ -1,10 +1,4 @@
-# Detangle
-can run in forloop with fedback.  
-- rest position as previous position 
-- pscale 
 
-
-# Curve/Spline
 
 ### Delete last point    
 `@ptnum == @numpt-1` - group the last point on curve  
@@ -25,7 +19,6 @@ float ValueAlongSpline = @ptnum/(@numpt-1.0);
 float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
 @Cd.y = chramp('colorRamp', gradient);  
 ```
-
 
 
 ## Geometry From Spline 
