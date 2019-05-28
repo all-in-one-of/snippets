@@ -12,25 +12,19 @@ If **[pscale]** exists, use it to scale the to scale the copy/instance (multipli
 If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
 If **[trans]** exists, use it and P to move the copy/instance.  
 
-```cpp
-
-v@pivot // Local pivot point for the copy
-3@ or 4@transform  // Transformmatrix overriding everything except translations from [P], [pivot], and [trans]
-p@orient // float4 (quaternion) //Orientation of the copy
-v@N // Normal (+Z axis of the copy, if no orient)
-v@up // Up vector of the copy use with @N to orient inst (+Y axis of the copy, if no orient)
-v@v // Velocity of the copy (motion blur, and used as +Z axis of the copy if no orient or N)
-p@rot // float4 (quaternion) // Additional Q rotation (applied after the orientation attributes above)
-f@pscale  // Uniform scale 
-v@scale // float3 // Non-uniform scale
-v@trans // Translation of the copy, in addition to P
-v@P //  Translation of the copy  //   Instance Position
-
-```
-
- if it's 1, you can use the scale() vex function(edited)like: scale(3@transform, vector(@pscale));
+`v@pivot` - Local pivot point for the copy
+`3@` or `4@transform` - Transformmatrix overriding everything except translations from [P], [pivot], and [trans]
+`p@orient` float4 (quaternion) - Orientation of the copy
+`v@N` - Normal (+Z axis of the copy, if no orient)
+`v@up` - Up vector of the copy use with @N to orient inst (+Y axis of the copy, if no orient)
+`v@v` - Velocity of the copy (motion blur, and used as +Z axis of the copy if no orient or N)
+`p@rot` - float4 (quaternion) // Additional Q rotation (applied after the orientation attributes above)
+`f@pscale` - Uniform scale 
+`v@scale` - float3 - Non-uniform scale `scale(3@transform, vector(@pscale));` //if transf 1
+`v@trans` - Translation of the copy, in addition to P
+`v@P` - Translation of the copy - Instance Position
  
-**roatate matrix:**
+#### roatate normal by matrix
 rotate normals along tangent. Add polyframe with tangent before
 ```
 matrix rot = ident();
@@ -38,7 +32,8 @@ float angle = radians(ch("angle"));
 rotate(rot, angle, @tangent);
 @N= @N*rot;
 ```
-transform position
+
+#### Rotate object about axies:
 ```cpp
 matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
 vector axis = chv("axies"); // to this matrixa around given axies 
@@ -47,18 +42,21 @@ rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot 
 @P *= m; // apply rotation
 ```
 
-**rotate matrix to quaternions:**
+#### Rotate individual points:
 The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
-```cpp
-v@up = chv("up_vec");
-matrix3 m = maketransform(@N, v@up); //3x3 otrien amtrix using N and up as ther principal axies 
+```
+// run@points, IN: points
+v@up = chv("up_vector");
+// create a 3x3 orientation matrix using N and up as
+matrix3 m = maketransform(@N, v@up);
 vector axis = @N;
-float angle = radians(ch("angle")); // now rot thji matrix round N axix at over time
-rotate(m, angle, axis); //make the orient quaternion from this matrix
-p@orient = quaternion(m);
+float angle = radians(ch("angle"));
+rotate(m, angle, axis);
+p@orient = quaternion(m);// make the orient quaternion
+// OUT TO COPY TO POINTS SOP
 ```
 
-**rotate packed geo:**
+#### Rotate packed geo:
 ```cpp
 // run over poinwrangle with packed geo input:
 matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
@@ -68,8 +66,7 @@ rotate(x, angle, axis);
 setprimintrinsic(0, "transform", @primnum, x, "set");
 ```
 
-
-**Move an object to the origin and return back**
+#### Move an object to the origin and return back:
 Create wrangle to move object to the origin
 ```
 // Get center of the oject bounding box (centroid)
@@ -93,11 +90,11 @@ Create the second wrangle to return it to the original position
 @P *= invert(4@xform_matrix);
 ```
 
-****Orient piece of geometry by 4 points:**** {@vux}
-1. src_pt - source point 1
-2. dst_pt - destination point 1
-3. src_opt - source point 2
-4. dst_opt - destination point 2
+#### Orient piece of geometry by 4 points: {@vux}
+- src_pt - source point 1
+- dst_pt - destination point 1
+- src_opt - source point 2
+- dst_opt - destination point 2
 ```
 int src_pt = 10 ;
 int dst_pt = 2 ;
