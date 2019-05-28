@@ -24,7 +24,7 @@ If **[trans]** exists, use it and P to move the copy/instance.
 `v@trans` - Translation of the copy, in addition to P  
 `v@P` - Translation of the copy - Instance Position  
   
-#### roatate normal by matrix
+#### Roatate Normal by matrix
 rotate normals along tangent. Add polyframe with tangent before
 ```
 matrix rot = ident();
@@ -33,7 +33,7 @@ rotate(rot, angle, @tangent);
 @N= @N*rot;
 ```
 
-#### Rotate object about axies:
+#### Rotate Object about axies:
 ```cpp
 matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
 vector axis = chv("axies"); // to this matrixa around given axies 
@@ -42,7 +42,7 @@ rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot 
 @P *= m; // apply rotation
 ```
 
-#### Rotate individual points:
+#### Rotate Individual Points quaternion:
 The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
 ```
 // run@points, IN: points
@@ -56,7 +56,7 @@ p@orient = quaternion(m);// make the orient quaternion
 // OUT TO COPY TO POINTS SOP
 ```
 
-#### Rotate packed geo:
+#### Rotate Packed Geometry:
 ```cpp
 // run over poinwrangle with packed geo input:
 matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
