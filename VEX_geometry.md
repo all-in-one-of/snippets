@@ -104,6 +104,121 @@ for(float angle = 0; angle < maxiter; angle += 0.01){
     addvertex(0, newprim, newpt);
 }
 ```
+
+### Superformula 2d
+
+```
+int   numsteps = chi("num_points");
+float a = chf("a");
+float b = chf("b");
+float m = chf("m");
+float n1 = chf("n1");
+float n2 = chf("n2");
+float n3 = chf("n3");
+
+float   rad = radians(chf("degrees"));
+float   step = (rad/numsteps);
+float   theta = 0.0f;
+
+for(int i=0; i<numsteps; i++) {
+    // superformula
+    float c = pow(abs(cos((m*theta)/4) / a), n2);
+    float s = pow(abs(sin((m*theta)/4) / b), n3);
+    float r = pow((c + s), (1/n1)*-1);
+        
+    // soh cah toa - convert polar coords to x,z plane
+    float zaxis = sin(theta) * r;
+    float xaxis = cos(theta) * r;    
+    vector pos = set(xaxis, 0, zaxis);
+    
+    // create the point
+    addpoint(geoself(), pos);
+    
+    // increse theta by the step size before next loop iter
+    theta += step;
+}
+```
+```
+int   numsteps = chi("num_points");
+float a = chf("a");
+float b = chf("b");
+float y = chf("y");
+float z = chf("z");
+float n1 = chf("n1");
+float n2 = chf("n2");
+float n3 = chf("n3");
+
+float   rad = radians(chf("degrees"));
+float   step = (rad/numsteps);
+float   theta = 0.0f;
+
+for(int i=0; i<numsteps; i++) {
+    // superformula
+    float c = pow(abs(cos((y*theta)/4) / a), n2);
+    float s = pow(abs(sin((z*theta)/4) / b), n3);
+    float r = pow((c + s), (1/n1)*-1);
+        
+    // soh cah toa - convert polar coords to x,z plane
+    float zaxis = sin(theta) * r;
+    float xaxis = cos(theta) * r;    
+    vector pos = set(xaxis, 0, zaxis);
+    
+    // create the point
+    addpoint(geoself(), pos);
+    
+    // increse theta by the step size before next loop iter
+    theta += step;
+}
+```
+### Superformula 3D
+
+```
+addpointattrib(geoself(), "long", 0, "");
+addpointattrib(geoself(), "lat", 0, "");
+// parms
+int   numsteps_long = chi("num_points_long");
+int   numsteps_lat = chi("num_points_lat");
+float a1 = chf("a1");
+float b1 = chf("b1");
+float m1 = chf("m1");
+float n1 = chf("n1");
+float n2 = chf("n2");
+float n3 = chf("n3");
+float a2 = chf("a2");
+float b2 = chf("b2");
+float m2 = chf("m2");
+float n4 = chf("n4");
+float n5 = chf("n5");
+float n6 = chf("n6");
+float   step_long = ((2*$PI)/numsteps_long);
+float   step_lat  = ($PI/numsteps_lat);
+float   long    = -1*($PI);
+float   lat     = -1*($PI/2);
+for(int j=0; j<numsteps_lat; j++) {
+for(int i=0; i<numsteps_long; i++) {
+// superformula a
+    float c1 = pow(abs(cos((m1*long)/4) / a1), n2);
+    float s1 = pow(abs(sin((m1*long)/4) / b1), n3);
+    float r1 = pow((c1 + s1), (1/n1)*-1);
+// superformula b
+    float c2 = pow(abs(cos((m2*lat)/4) / a2), n5);
+    float s2 = pow(abs(sin((m2*lat)/4) / b2), n6);
+    float r2 = pow((c2 + s2), (1/n4)*-1);
+// 3D point plotting
+    float xaxis = (r1 * cos(long)) * (r2 * cos(lat));
+    float yaxis = (r1 * sin(long)) * (r2 * cos(lat));
+    float zaxis = (r2 * sin(lat));
+    vector pos = set(xaxis, yaxis, zaxis);
+// create the point
+    int pt = addpoint(geoself(), pos);
+    setpointattrib(geoself(), "long", pt, i, "set");
+    setpointattrib(geoself(), "lat", pt, j, "set");
+// increse theta by the step size before next loop iter
+    long += step_long;
+}
+    lat += step_lat;
+}
+```
 ### Hypotrochoid
 detail
 - x = (R-r) * cos(alpha) + d * cos(R-r/r*alpha)
