@@ -1,9 +1,3 @@
-# RANDOM:
-`v@v = rand(@Time+@ptnum);` // random between 0-1  
-`v@v = sample_hemisphere({0,0,1},@bias,u);` -   
-`v@v = sample_direction_cone()` -     
-`v@v = sample_sphere_cone()` -    
-
 # NOISE TYPES:
 `Perlin` - perlin moze miec artefakty   
 `Simplex` - faster  
@@ -53,6 +47,13 @@ x | Simplex noise | - | (string value "xnoise")
 x |Zero Centered Perlin | - | (string value "correctnoise")
 
            
+           
+# RANDOM:
+`v@v = rand(@Time+@ptnum);` // random between 0-1  
+`v@v = sample_hemisphere({0,0,1},@bias,u);` -   
+`v@v = sample_direction_cone()` -     
+`v@v = sample_sphere_cone()` -   
+
 #### Random Color 
 ```cpp
 float pscale = rand(@ptnum);
