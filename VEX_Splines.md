@@ -30,7 +30,7 @@ float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it
 
 ## Geometry From Spline 
 
-### Shape Polywire with ramp for combined curves 
+### Polywire shape with ramp for combined curves 
 ```
 // Create Primitive Wrangle before polywire, use @width as Wire Radius
 // Get array of points in each curve (primitive)
