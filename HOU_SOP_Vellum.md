@@ -69,6 +69,9 @@ i@layer = layer shock on solver
 `Name_LB` -   Left Back  
 `Name_LF` -   Left Front  
 
-
+# Detangle
+run in forloop with fedback.  
+- rest position as previous position 
+- pscale 
 
 
