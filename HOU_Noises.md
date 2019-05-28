@@ -1,12 +1,8 @@
 # RANDOM:
-```
-2@u = rand(@Time+@ptnum);
-f@bias = 5; // 
-v@v = sample_hemisphere({0,0,1},@bias,u);
-```
-`sample_direction_cone()` -   
-`sample_sphere_cone()` -  
-
+`v@v = rand(@Time+@ptnum);` // random between 0-1
+`v@v = sample_hemisphere({0,0,1},@bias,u);` - 
+`v@v = sample_direction_cone()` -   
+`v@v = sample_sphere_cone()` -  
 
 # NOISE TYPES:
 `Perlin` - perlin moze miec artefakty   
@@ -57,7 +53,7 @@ x | Simplex noise | - | (string value "xnoise")
 x |Zero Centered Perlin | - | (string value "correctnoise")
 
            
-Random Color 
+#### Random Color 
 ```cpp
 float pscale = rand(@ptnum);
 vector direction = rand(@ptnum); //will create rand float for x, y and z direction
@@ -67,7 +63,7 @@ float b = random(@ptnum+3);
 @Cd = set(r,g,b);
 ```
 
-Divergence free noise  
+#### Divergence free noise  
 (divergence free vector field) based on the cross product of the derivatives of two simplex noise functions.  
 ```cpp
 vector frequency = chv("Frequency");
@@ -76,12 +72,12 @@ vector dir = curlnoise((@P * frequency) + offset);  // perlin
 vector dir = curlxnoise((@P * frequency) + offset); // simplex 
 
 ```
-Offset Position
+#### Offset Position
 ```
 vector offset =  xnoise(v@P + set(p,p,p)) - {.5,.5,.5};
 v@P += offset;
 ```
-Delete Points based on noise  
+#### Delete Points based on noise  
 ```
 
 // Visualise nose as Black and White values
