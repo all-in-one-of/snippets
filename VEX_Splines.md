@@ -20,7 +20,8 @@ float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 ### Spring on Curve
-
+Point wrangler  
+IN spline  
 ```
 float rad=chf("radius");
 vector dir=set(0,0,1)*rad;
