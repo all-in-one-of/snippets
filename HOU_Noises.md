@@ -139,3 +139,7 @@ if(noseValues < chf('Noise_Threshold')){
         }
     }
 ```
+
+
+
+https://www.nekopori.com/blog/houdini-noisesample  
