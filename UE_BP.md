@@ -1,5 +1,5 @@
-- Key Class C++ \ BP which inheret  
-- Lib > Components >  Data Assets    
+- Key Class C++ \ BP which inheret  - Lib > Components >  Data Assets    
+- Garbage Collector times in options  
 BP are signifient slower than C++ (to x10)Loops and itterations expensive   
 C++ load at begining BP at use . Watch to referencing lib and obj  
 PIE > Dev Play > Pack > Buiild    
