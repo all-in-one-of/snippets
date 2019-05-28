@@ -24,7 +24,7 @@ If **[trans]** exists, use it and P to move the copy/instance.
 `v@trans` - Translation of the copy, in addition to P  
 `v@P` - Translation of the copy - Instance Position  
   
-#### Roatate Normal by matrix
+#### Roatate Normal by matrix:
 rotate normals along tangent. Add polyframe with tangent before
 ```
 matrix rot = ident();
