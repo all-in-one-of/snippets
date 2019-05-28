@@ -52,3 +52,5 @@ Compare that situation to another scene where you have the same mesh instanced 1
 
 To really see the performance boost in using Instances bring up the Stat UNIT and watch the DRAW versus GPU (CPU vGPU) and notice when you instance a mesh the CPU time remains fairly consistent depending on the additional information you are wanting to pass to each instance, while the GPU will increase. All of these numbers are still dependent on the size of your mesh and the type of material setup and the ultimate limitations of your CPU and GPU.
 
+Check - Garbage Collector times in options  
+
