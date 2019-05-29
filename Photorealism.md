@@ -25,11 +25,15 @@ Shoot in central point of scene: Cannot change EV during shot.
 `Chroma ball` -  help to correct Lightprobe rotation and light locations- shoot front and side   
 `Lightprobe` shot for HDRI shoot with 8mm lens 3 shoots 0 120 240  
 
-#### 
 `RAW` > `TIFF` (PTGUI software) > merge to  `EXR` panorama  > color correction 
-For unreal HDRI mask out light sources to get ambient light  
- 
- 
+
+#### Unreal Light
+For unreal HDRI mask out light sources to get ambient light   
+Gray Ball 18% Sepecular 0.7 Roughtnss 0.85 - paint on physical grayball    
+Position ball in exact location, find front orientation   
+Turn off PP    
+Set lights in proper location  
+Set lights intensity: Go to HDR view and match chroma ball with reference image by seting   
  
  
  
