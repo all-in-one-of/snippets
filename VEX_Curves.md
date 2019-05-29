@@ -20,6 +20,7 @@ float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
+## Polyframe and direction  
 
 
 ## Geometry From Spline 
