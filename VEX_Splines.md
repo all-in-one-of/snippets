@@ -147,5 +147,6 @@ len > real   |        9  |  0.06
 len > unit    |        10  |  0.07
 len > unitlen |      11  |  0.033
 
-
+#### Boolean Curve: 
+https://www.toadstorm.com/blog/?p=529  
 
