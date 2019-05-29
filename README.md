@@ -2,7 +2,9 @@
 sources u should use instead of reading my garbage:    
 
 http://www.tokeru.com/cgwiki/?title=Houdini    
- 
+https://www.toadstorm.com/blog/?p=493 
+
+
 Gits  
 https://github.com/wirginiaromanowska/Notes_On_Things    
 https://github.com/jhorikawa/HoudiniHowtos   
