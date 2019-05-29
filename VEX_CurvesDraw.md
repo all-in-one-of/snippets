@@ -107,7 +107,7 @@ for(float angle = 0; angle < maxiter; angle += 0.01){
 }
 ```
 
-### Superformula 2d
+### Superformula 2D
 
 ```
 int   numsteps = chi("num_points");
