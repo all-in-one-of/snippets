@@ -309,8 +309,8 @@ int point = addpoint(0,set(x,y,0));
 }
 ```
 ### Spring on Curve
-Point wrangler  
-IN spline  
+on Points
+IN: spline > polyframe,(tan: T, btangent: B, [x]make fram orthogonal)    
 ```
 float rad=chf("radius");
 vector dir=set(0,0,1)*rad;
