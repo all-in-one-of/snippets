@@ -2,15 +2,15 @@
 sources u should use instead of reading my garbage:    
 
 http://www.tokeru.com/cgwiki/?title=Houdini    
-
-Git
+ 
+Gits  
 https://github.com/wirginiaromanowska/Notes_On_Things    
 https://github.com/jhorikawa/HoudiniHowtos   
 https://github.com/jtomori  
 https://github.com/toadstorm/MOPS    
 https://github.com/kiryha/Houdini  
 
-Tumblr
+Tumblrs  
 https://spyrogif.tumblr.com/   
 http://richardlord.tumblr.com/  
 http://beesandbombs.tumblr.com/  
