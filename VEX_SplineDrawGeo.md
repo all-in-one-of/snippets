@@ -308,3 +308,29 @@ float y = (R - r) * sin(theta-(resolution*i)) - d * sin((R-r/r)*(theta-(resoluti
 int point = addpoint(0,set(x,y,0));
 }
 ```
+### Spring on Curve
+Point wrangler  
+IN spline  
+```
+float rad=chf("radius");
+vector dir=set(0,0,1)*rad;
+matrix3 myMatrix=set(v@T,v@B,normalize(cross(v@T,v@B)));
+3@myMatrix=myMatrix;
+float rot=radians(chf("rotate"));
+float sum=0;
+for (int i=0; i<=@ptnum;i++)
+    {
+    float tempt=float(i)/(@numpt-1);
+    sum+=(chramp("rampRot",tempt)-0.5)*2/@numpt;
+    }
+
+sum*=360*chf("scaleRamp");
+f@integralRamp=sum;
+
+
+rot+=radians(sum);
+
+rotate(myMatrix,rot,v@T);
+dir=myMatrix*dir;
+@P= @P+dir;
+```
