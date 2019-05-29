@@ -308,13 +308,17 @@ float y = (R - r) * sin(theta-(resolution*i)) - d * sin((R-r/r)*(theta-(resoluti
 int point = addpoint(0,set(x,y,0));
 }
 ```
-### Spring on Curve
-on Points
-IN: spline > polyframe,(tan: T, btangent: B, [x]make fram orthogonal)    
+### Spring on Curve  
+Point  
+IN:   
+spline > polyframe  
+[x] tangent   
+[x] bitangent  
+[x] make fram orthogonal     
 ```
 float rad=chf("radius");
 vector dir=set(0,0,1)*rad;
-matrix3 myMatrix=set(v@T,v@B,normalize(cross(v@T,v@B)));
+matrix3 myMatrix=set(v@tangentu,v@tangentv,normalize(cross(v@tangentu,v@tangentv)));
 3@myMatrix=myMatrix;
 float rot=radians(chf("rotate"));
 float sum=0;
@@ -327,10 +331,9 @@ for (int i=0; i<=@ptnum;i++)
 sum*=360*chf("scaleRamp");
 f@integralRamp=sum;
 
-
 rot+=radians(sum);
 
-rotate(myMatrix,rot,v@T);
+rotate(myMatrix,rot,v@tangentu);
 dir=myMatrix*dir;
 @P= @P+dir;
 ```
