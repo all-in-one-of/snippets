@@ -1,4 +1,5 @@
 ### Circle
+detail  
 ```int a = ch("angle");
 float r = ch("radian");
 // ad point in given coords 
@@ -7,6 +8,7 @@ addpoint(geoself(),set(cos(radians(a))*r, sin(radians(a))*r,0));
 }
 ```
 ### Logarytmic spiral
+detail  
 - r = e^(a*theta)
 ```
 #include <math.h>
