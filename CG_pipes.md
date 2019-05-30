@@ -46,8 +46,18 @@ Unreal:
 
 ### PivotPainter  
 Houdini:  
-- **object**: `s@name`(pts), `v@N`(pts) -  required.    
-- **hierarchical**: `[LeafGroup]` (prim), `[BranchGroup]` (prim)   - on geometry   
+#### object 
+`s@name`(pts), `v@N`(pts)   
+- pos: `uv2.x`, `uv2.y`, `uv1.x`    
+- axies: `Cd.r`, `Cd.g`, `Cd.b`  
+- Random: `uv1.y`  
+- Mask: `Alpha`   
+
+#### hierarchical 
+`s@name`(pts), `v@N`(pts),  `[LeafGroup]` (prim), `[BranchGroup]` (prim) - on geometry     
+- Leaf: `uv2.x`, `uv2.y`, `uv1.x`  
+- Branch pivot: `Cd.r`, `Cd.g`, `Cd.b`  
+- Branch angle: `Alpha`, `uv1.y`,  
 
 Unreal:  
 - [ ] create lightmap uv's
