@@ -36,6 +36,7 @@
 `@P`, `v@rest`, `v@Cd`, `i@id`, `@Alpha` (point) -  
 
 ### VAT    
+Cloth, Liquid, Rigid, PointCloud
 `4096` pix = `16 777 216` points   
 `4096` pix - 33 550 points - 500frames (~16sek)     
 
@@ -45,8 +46,8 @@ Unreal:
 
 ### PivotPainter  
 Houdini:  
-- object: `s@name`(pts), `v@N`(pts) -  required. We get: (position, x-axies, mask)  
-- hierarchical: `[LeafGroup]` (prim), `[BranchGroup]` (prim)   - on geometry  
+- **object**: `s@name`(pts), `v@N`(pts) -  required. We get: (position, x-axies, mask)  
+- **hierarchical**: `[LeafGroup]` (prim), `[BranchGroup]` (prim)   - on geometry  
 
 Unreal:  
 - [ ] create lightmap uv's
