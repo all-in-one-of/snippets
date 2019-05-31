@@ -1,4 +1,4 @@
-### GROUP AS ATTRIBUTE
+### Group as Attribute
 
 `i@group_mygroup=1;` - in groups   
 `group_name` - In other than GroupSOP, specify a named group (created with the GroupSOP)  
@@ -23,7 +23,7 @@ else {
     @Cd = {0,0,1};
 }
 ```
-### ATTRIBUTE AS GROUP
+### Attribute as Group
 Attributes as groups, or groups with @ syntax
 
 expression:  
@@ -55,4 +55,10 @@ expression:
 `chramp(ramp_path, position, component_index)`   
 `ch("../A/sx")/2`   
 
-What’s more is, you can execute script in those fields by putting it in back-ticks - `
+What’s more is, you can execute script in those fields by putting it in back-ticks - ``` ` ```
+
+### Add to group
+```
+int my_rand = int(rand(@ptnum) * 10);
+setpointgroup(geoself(), sprintf("points_%g", (@ptnum + my_rand) % ch("num_groups") ), @ptnum, 1, "set");
+```
