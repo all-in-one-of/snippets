@@ -20,9 +20,37 @@ float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
+
+### Connect Adjacent Points
+```
+float   radius_max = chf("radius");
+int     points_max = chi("connections");
+
+int     points[] = nearpoints( 0, @P, radius_max, points_max );
+
+int     prim;
+string  name;
+
+for ( int i = 0; i < len(points); i++ )
+{
+    if ( points[i] <= @ptnum )
+        continue;         
+        
+    name = attrib( 0, "point", "name", points[i] );
+    
+    if ( name == s@name )
+        continue;         
+    
+    prim = addprim( geoself(), "polyline" );            
+    
+    addvertex( geoself(), prim, @ptnum );
+    addvertex( geoself(), prim, points[i] );
+    
+    @Cd = {1, 0, 0};
+}
+```
+
 ## Polyframe and direction  
-
-
 ## Geometry From Spline 
 
 ### Polywire shape with ramp for combined curves 
