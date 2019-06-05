@@ -1,8 +1,9 @@
-# snippets
-sources u should use instead of reading my garbage:    
+sources to use instead of reading my garbage:    
 
-http://www.tokeru.com/cgwiki/?title=Houdini    
-https://www.toadstorm.com/blog/?p=493 
+www.tokeru.com/cgwiki    
+www.toadstorm.com/blog
+www.wordpress.discretization.de/houdini
+www.richlord.com/tools?offset=1554489900662
 
 
 Gits  
@@ -13,22 +14,21 @@ https://github.com/toadstorm/MOPS
 https://github.com/kiryha/Houdini  
 
 Tumblrs  
-https://spyrogif.tumblr.com/   
+http://spyrogif.tumblr.com/   
 http://richardlord.tumblr.com/  
 http://beesandbombs.tumblr.com/  
 http://the12principles.tumblr.com/  
 
 
-https://www.lucascheller.de/   
-https://vimeo.com/user2030228  
-https://androidarts.com/art_tut.htm  
+www.lucascheller.de/   
+www.vimeo.com/user2030228  
+www.androidarts.com/art_tut.htm  
 
 ----------
 
 https://mrpandey.github.io/d3graphTheory/index.html - graph theory   
 http://immersivemath.com/ila/index.html  - immersive math    
 
-https://www.richlord.com/tools?offset=1554489900662   
 
 
 
