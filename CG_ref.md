@@ -52,3 +52,6 @@ Sculpt
    
 Shading
    - Work in HSV to manage chroma and valor.      
+   
+Simulation & procedura
+   - fit parameters to 0-1  
