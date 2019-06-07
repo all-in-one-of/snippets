@@ -36,4 +36,20 @@ Set lights in proper location
 Set lights intensity: Go to HDR view and match chroma ball with reference image by seting   
  
  
- 
+# Color
+#### Trichromatic Vision - RGB
+Radio Wave > Mivcrowave > Infrared > R (780nm) > G > B (380nm) > Ultraviolet > X-rays >Gamma    
+Spectral Locus - ploting all visible colors can show how much sRGB is limited. rec2020 (much vider color space)    
+Linear Color - (for render) humans persute color in not linear We apply gamm acorection to look like we see   
+Linear to sRGB (for sRGB dvices) -   
+Mid grey 18% after gamma look like 50%     
+Enviroment make diference how we see image  (monitor clalib and viewing conditions)
+#### HDR
+HDR Affect diffuse and specular
+Render in linear > Apply gamma > apply s-curve corections.
+ACES - Academy color space  to prserce dynamic rangfe and color values  
+
+
+BlackBody: 
+
+
