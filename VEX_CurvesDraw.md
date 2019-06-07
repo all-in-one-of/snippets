@@ -337,3 +337,4 @@ rotate(myMatrix,rot,v@tangentu);
 dir=myMatrix*dir;
 @P= @P+dir;
 ```
+### Strange Attractors 
