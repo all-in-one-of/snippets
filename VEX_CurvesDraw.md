@@ -338,3 +338,23 @@ dir=myMatrix*dir;
 @P= @P+dir;
 ```
 ### Strange Attractors 
+Svensson
+```
+int num = chi("num");
+float a = chf("a");
+float b = chf("b");
+float c = chf("c");
+float d = chf("d");
+
+vector prevpos = set(0.1,0,0.1);
+for(int i=0; i<num; i++){
+    float x = prevpos.x;
+    float z = prevpos.z;
+    float nx = d * sin(a * x) - sin(b * z);
+    float nz = c * cos(a * x) + cos(b * z);
+    vector npos = set(nx, 0, nz);
+    int npt = addpoint(0, npos);
+    prevpos = npos;
+}
+```
+
