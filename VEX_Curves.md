@@ -49,7 +49,35 @@ for ( int i = 0; i < len(points); i++ )
     @Cd = {1, 0, 0};
 }
 ```
+### Connect 2 curves
+Merge 2 curves and run on detail  
+```
+// parms
+float weight= ch("weight");
+int num = chi("num");
 
+// get endpoints and tangents
+vector pos1 = point(@OpInput1, "P", 1);
+vector pos4 = point(@OpInput1, "P", 3);
+vector vec1 = normalize(point(@OpInput1, "P", 1) - point(@OpInput1, "P", 0)) * weight;
+vector vec4 = normalize(point(@OpInput1, "P", 3) - point(@OpInput1, "P", 2)) * weight;
+vector pos2 = pos1 + vec1 * (1.0 / 3);
+vector pos3 = pos4 + vec4 * (1.0 / 3);
+
+// create cubic bezier curve
+float step = 1.0 / (num - 1);
+int curve = addprim(geoself(), "polyline");
+for(int i = 0; i < num; i++)
+{
+    float val = step * i;
+    vector p =  pos1 + 
+                (3 * pos2 - 3 * pos1) * val +
+                (3 * pos1 - 6 * pos2 + 3 * pos3) * pow(val, 2) + 
+                (-pos1 + 3 * pos2 - 3 * pos3 + pos4) * pow(val, 3);
+    int point = addpoint(geoself(), p);
+    addvertex(geoself(), curve, point);
+}
+```
 ## Polyframe and direction  
 ## Geometry From Spline 
 
