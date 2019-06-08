@@ -1,6 +1,6 @@
 
 # VELLUM
-Vellum is expansion of grain PBD - pos base dynamic. Ppoints + constraints   
+Vellum XPBD is expansion of grain PBD - pos base dynamic. Ppoints + constraints   
 Visualise evetyrhing by postprocess   
 Paintem mozemy zmieniac lokalnie restlen np.  
 v@v = ; - take speed directly. !
@@ -12,8 +12,10 @@ v@v = ; - take speed directly. !
 # [Vellum Solver] 
 Constraint iteration + substeps  
 
-
-
+#### Forces 
+Drag - if stuff in simulation have to much energy you can increse drag !!!!   
+#### Advancde
+Second order is more precisem, but canhav issues on colllsion, (bounce) if that turn on max accel   
 
 [Vellum Object]
 [Vellum Source]
