@@ -49,6 +49,47 @@ for ( int i = 0; i < len(points); i++ )
     @Cd = {1, 0, 0};
 }
 ```
+
+### Make Curve from points
+Input points, run on detail.  
+```// parms
+int num = chi("num");
+
+// get points and write position to array
+int points[] = expandpointgroup(@OpInput1, "!");
+vector pos_array[];
+foreach(int i; int point; points)
+{
+    pos_array[i] = point(@OpInput1, "P", point);
+    removepoint(geoself(), point);
+} 
+
+// calculate position at t for berzier curve with degree len(pos_array) - 1
+vector bezier_pos(const vector pos_array[]; const float t)
+{
+    int n = len(pos_array);
+    vector p_array[] = pos_array;
+    vector pos;
+    while(n--)
+    {
+        for(int i = 0; i < n; i++)
+            p_array[i] = p_array[i] * (1.0 - t) + p_array[i + 1] * t;
+    }
+    return p_array[0];
+}
+
+// create curve
+float step_size = 1.0 / (num - 1);
+for(int i = 0; i < num; i++)
+{
+    vector pos = bezier_pos(pos_array, step_size * i);
+    points[i] = addpoint(geoself(), pos);     
+}
+addprim(geoself(), "polyline", points);
+```
+
+ 
+ 
 ### Connect 2 curves
 Merge 2 curves and run on detail  
 ```
