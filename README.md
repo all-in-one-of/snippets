@@ -1,9 +1,9 @@
-sources to use instead of reading my garbage:    
-
-www.tokeru.com/cgwiki    
-www.toadstorm.com/blog
-www.wordpress.discretization.de/houdini
-www.richlord.com/tools?offset=1554489900662
+sources to use instead of reading my garbage:      
+  
+www.tokeru.com/cgwiki      
+www.toadstorm.com/blog  
+www.wordpress.discretization.de/houdini  
+www.richlord.com/tools?offset=1554489900662  
 
 
 Gits  
