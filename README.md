@@ -1,6 +1,6 @@
 sources to use instead of reading my garbage:      
   
-Liblaries
+Libs  
 www.tokeru.com/cgwiki  - wiki  
 https://mrpandey.github.io/d3graphTheory/index.html - graph theory   
 http://immersivemath.com/ila/index.html  - immersive math    
