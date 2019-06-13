@@ -27,17 +27,17 @@
 - Dont make excuses.  
 
 References   
-   - ref to human scale and relations  
-   - Paterns      
+   - Refer to human scale and relations  
    - Dna (culture, time period, function)     
    - Material (substance, stiffness)  
    - Age (wear, tear, erosion, dirt)   
-   
+   - Paterns      
+ 
 Sketch > Draw    
    - (proportion, shape recog)  
    - (bigest to smallest details)   
    - Flip  for perspective correction     
-   - Thumbs for detail correction    
+   - Thumbnails for detail correction    
    - B&W for valor correction    
    
 Paint    
@@ -49,9 +49,13 @@ Sculpt
    - Make contrast comp with details placement.     
    - Sculpt across the form (not with the flow).    
    - Don't use smooth.       
-   
+
+Scene Setup  
+   - keep texel density  
+   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights  
+
 Shading
    - Work in HSV to manage chroma and valor.      
    
 Simulation & procedura
-   - fit parameters to 0-1  
+   - fit parameters to 0-1   
