@@ -24,7 +24,7 @@
 
 
 # Ref:
-- Dont make excuses.  
+   - Dont make excuses.  
 
 References   
    - Refer to human scale and relations  
@@ -50,9 +50,9 @@ Sculpt
    - Sculpt across the form (not with the flow).    
    - Don't use smooth.       
 
-Scene Setup  
+Scene Setup   
    - keep texel density  
-   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights  
+   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights > Post (dof/grain/bloom) > Color Grading    
 
 Shading
    - Work in HSV to manage chroma and valor.      
