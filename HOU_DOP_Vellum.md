@@ -24,9 +24,14 @@ Second order is more precisem, but canhav issues on colllsion, (bounce) if that 
 Create frame can import obj everth fr. 
 
 
+
+
+
+hard pins: is storet as geo point attrib  - not solving constr, update pos directly.  
+
+mass = 0 hard const., ale masy nie animujemy   
 To break hard constraint:  
-i@stoped = 0;   
+i@stopped = 0;   // like in pops
 i@pintoanimation = 0;  
 
-
-
+Sofft pins : constr peimitives (pin stitch glue)
