@@ -65,9 +65,11 @@ To create drape from patches.
 `Name_LB` -   Left Back  
 `Name_LF` -   Left Front  
 
-# Detangle
-run in forloop with fedback.  
-- rest position as previous position 
-- pscale 
+# [Detangle]
+run in forloop with fedback.   
+- rest position as previous position   
+- pscale  
 
-
+# [Post Process]
+Spply Welds - Weld geometry that have cuts  and in therory should stick toghether   
+Vissualise - !  
