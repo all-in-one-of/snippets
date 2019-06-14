@@ -47,10 +47,6 @@ To create drape from patches.
 # [Configure grain]
 
 
-# Workflows  
-## VEX
-
-i@layer = layer shock on solver  
 
 ## Drape
 
