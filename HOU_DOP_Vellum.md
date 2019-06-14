@@ -36,3 +36,11 @@ To break hard constraint:
  
 #### Sofft pins:  
 constr peimitives (pin stitch glue)  
+
+
+
+
+# Workflows  
+## VEX
+
+`i@layer` = layer shock on solver    
