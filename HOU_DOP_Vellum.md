@@ -10,7 +10,9 @@ v@v = ; - take speed directly. !
 - collision
 ```
 # [Vellum Solver] 
-Constraint iteration + substeps  
+Constraint iteration + substeps   
+Colision iterations are lower cause are cost expensive   
+Smoothing error iters   
 
 #### Forces 
 Drag - if stuff in simulation have to much energy you can increse drag !!!!   
@@ -21,6 +23,10 @@ Second order is more precisem, but canhav issues on colllsion, (bounce) if that 
 [Vellum Source]
 Create frame can import obj everth fr. 
 
+
+To break hard constraint:  
+i@stoped = 0;   
+i@pintoanimation = 0;  
 
 
 
