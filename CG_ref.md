@@ -46,7 +46,7 @@ Paint
 Sculpt  
    - Siluette  
    - Dont forget aboud mid freq.    
-   - Make contrast comp with details placement.     
+   - Varie details placement.     
    - Sculpt across the form (not with the flow).    
    - Don't use smooth.       
 
