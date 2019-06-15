@@ -74,3 +74,7 @@ create thickness: tools StoreMT (morph target) >> inflate >> create differnt mes
 `Pinch` - 
 
 `slash2` - 
+
+# Trix
+
+- use noise as mask, and brush places  
