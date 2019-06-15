@@ -43,5 +43,5 @@ constr peimitives (pin stitch glue)
  
 # Workflows  
 ## VEX
- 
+`i@weld = -1` - same as stop  
 `i@layer` = layer shock on solver      
