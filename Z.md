@@ -77,4 +77,4 @@ create thickness: tools StoreMT (morph target) >> inflate >> create differnt mes
 
 # Trix
 
-- use noise as mask, and brush places  
+- use surface noise as mask, and brush places with clay buildup    
