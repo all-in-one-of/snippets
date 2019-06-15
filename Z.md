@@ -66,7 +66,8 @@ create thickness: tools StoreMT (morph target) >> inflate >> create differnt mes
 `Trim Front` - Trim to view angle   
 `Trim SmoothBorder` - !!!!!! use it  
 `HPolish` - smooth planes on edges  
-`Trim Dynamic`   - Smoothing angles.  
+`Trim Dynamic` - Smoothing angle   
+`Mallet Fast` - on edges  
   
 `Inflat` - Bubble   
 `Smooth` - more opttions and brushes on smooth   // but try to not use it to much because you are loosing sculpt details try to 'refine' insted of smooth.  
