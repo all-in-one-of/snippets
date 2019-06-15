@@ -1,9 +1,6 @@
 
 # VELLUM
 Vellum XPBD is expansion of grain PBD - pos base dynamic. Ppoints + constraints   
-Visualise evetyrhing by postprocess   
-Paintem mozemy zmieniac lokalnie restlen np.  
-v@v = ; - take speed directly. !
 ```
 - geometry 
 - constrain 
@@ -45,3 +42,4 @@ constr peimitives (pin stitch glue)
 ## VEX
 `i@weld = -1` - same as stop  
 `i@layer` = layer shock on solver      
+v@v = ; - take speed directly from sop  
