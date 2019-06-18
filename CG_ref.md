@@ -24,7 +24,8 @@
 
 
 # Ref:
-   - Dont make excuses.  
+   - Dont make excuses.   
+   - Pipelines: to make data and information flow throu department easy   
 
 References   
    - Refer to human scale and relations  
