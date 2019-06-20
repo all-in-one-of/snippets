@@ -36,8 +36,8 @@ OBJ TO FBX: Rotate 90
 `linear space` - RGB   
 `gamma space` - sRGB - 2.2 Gamma  (1/2.2=0.4545)     
 
-`*.tiff` (adobe reach format) - save image fom photoshop  
-`*.tga` - only for UE  16/24/32 bits per pixel (24?)  
+`*.tiff` (adobe Tagged Image File Format) - save image fom photoshop, can constain additional metadata i.e. GeoTiff   
+`*.tga` - only for UE  16/24/32 bits per pixel (24?)   
 
 `*.sbs` - Substance Designer Document  
 `*.sbsar` - Substance Archive  
