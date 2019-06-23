@@ -43,7 +43,9 @@ Sketch > Draw
    - B&W for valor correction    
    
 Paint    
-   - Complementary colors  
+   - Monochrom / Analogous / complimentary / Triad Tetradic  
+   - Avoid: Hidden,skimed fused, stolen egde of objects     
+   - temperature  
    
 Sculpt  
    - Siluette  
@@ -63,9 +65,9 @@ Simulation & procedural
    - fit parameters to 0-1  
 
 Composition
-   - sectio aurea a+b/a = 1.618 φ  
-   - golden spiral is a logarithmic spiral whose growth factor is φ  
+   - rule of 3rd  
+   - sectio aurea a+b/a = 1.618 φ  - golden spiral is a logarithmic spiral whose growth factor is φ  
    - Balance / Proportion / Movement / Rhythm / Harmony / Unity / Emphasis / Variety  
    
 Design 
-   - line / shape / form / color / value / space / text  
+   - line / shape / form / color / value / space (+negative) / text  
