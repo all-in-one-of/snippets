@@ -21,32 +21,29 @@
 - Retopo by hand  
 
 
-
-
 # 101:
    - Dont make excuses.   
    - Dont save on hardware  
    - Pipelines: to make data and information flow throu department easy   
-
 References   
    - Refer to human scale and relations  
    - Dna (culture, time period, function)     
    - Material (substance, stiffness)  
    - Age (wear, tear, erosion, dirt)   
    - Paterns      
- 
 Sketch > Draw    
    - (proportion, shape recog)  
    - (bigest to smallest details)   
    - Flip  for perspective correction     
    - Thumbnails for detail correction    
    - B&W for valor correction    
-   
 Paint    
-   - Monochrom / Analogous / complimentary / Triad Tetradic  
-   - Avoid: Hidden,skimed fused, stolen egde of objects     
-   - temperature  
-   
+   - Color Monochrom / Analogous / complimentary / Triad Tetradic  
+   - Color temperature 
+   - Avoid: Hidden,skimed fused, stolen egde of objects  
+Camera  
+   - Depth Frameing Croping (dof/grain/bloom)   
+   - Avoid unnecesery moves, unwanted obj cutouts.        
 Sculpt  
    - Siluette  
    - Dont forget aboud mid freq.    
@@ -56,7 +53,7 @@ Sculpt
 
 Scene Setup   
    - keep texel density  
-   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights > Post (dof/grain/bloom) > Color Grading    
+   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights > Cam Post > Color Grading    
 
 Shading
    - Work in HSV to manage chroma and valor.      
