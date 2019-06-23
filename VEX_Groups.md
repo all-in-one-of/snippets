@@ -62,3 +62,13 @@ What’s more is, you can execute script in those fields by putting it in back-t
 int my_rand = int(rand(@ptnum) * 10);
 setpointgroup(geoself(), sprintf("points_%g", (@ptnum + my_rand) % ch("num_groups") ), @ptnum, 1, "set");
 ```
+### Check ptim if is in 2 groups  
+run on prims
+```
+if(inprimgroup(0,"pointsgroup", @id) == 1 && inprimgorup(0,"dasd", @id)){
+ //what if in bought
+ }
+ else if(inprimgroup(0,"pointsgroup", @id)){
+ // what if only in 1 gr.
+ }
+```
