@@ -15,21 +15,23 @@ To create drape from patches.
 Stack constraints and applay them to point groups:  
 Edit it in "velumConstrainsProperties" inside vellum solver   
 
-`Distance ` - Keep Length Along Edges by Stifnes and Damping // basic    
-`Bend ` (Rotation) - Keep angle Across Trix // basic   
-`Cloth` = `Distance` + `Bend` 
+`Distance` - Keep Length Along Edges by Stifnes and Damping // basic    
+`Bend` (Rotation) - Keep angle Across Trix // basic   
+`Cloth` = `Distance` + `Bend`  
 
-`Hair` = `StretchShear` + `BendTwist` - Use polylines as input (its like distance bend and twist)   
-`String`  = `Distance` + `Angle` - cheaper than hairs   
+`Hair` = `StretchShear` + `BendTwist` - Use polylines as input (its like distance bend and twist)    
+`String`  = `Distance` + `Angle` - cheaper than hairs    
 
-`Pin to Target` - Help    
-`Attach to Geo` - to stick to geometry (target to geo to stic / up value of clostest point )
-`Stich` - Help (no łaczenie clohow)   
-`Pressure` - filled with compresable (Air) `Volume` - Constraint  
-`Tetrahedral Volume` - filled with uncompresable fluid (water) fwm   
-`Weld Points` -    
-`Glue`  -   ( Source and target geo 
-`Struts` - internal struts that conect opose sides, so sstretch body    stiff default 10 not stiff as much  100 stiffer 
+`Pressure` (Volume) - ompresable (Air) (enforce volume depending of stiffness)    
+`Tetrahedral` (Volume) - uncompresable materials (most liquids) fwm (slower than pressure)          
+`Struts` - stretch body (internal struts that conect opose sides)  stiffness (good for stftb. that does not stiff tu much)    
+
+`Pin to Target` - pin to pos (Soft pin with stiffness - like magnes)    
+`Attach to Geo` - look for closeest point and stick to geometry (target to geo to stic / up value of clostest point ) use in anim   
+`Stich` - (connect cloths) or stich points in 2 groups that are far away and keep it apart    
+
+`Glue`  -  Source and target geo and search distance to connect pts.  
+`Weld Points` - Tide fracture when pts are in same @P     Breaking level at stress level   
 
 
 # [Configure Cloth]
