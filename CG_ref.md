@@ -23,7 +23,7 @@
 
 
 
-# Ref:
+# 101:
    - Dont make excuses.   
    - Dont save on hardware  
    - Pipelines: to make data and information flow throu department easy   
