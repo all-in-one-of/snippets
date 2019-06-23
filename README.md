@@ -8,7 +8,7 @@ https://thebookofshaders.com/  - book of shaders
 http://mercury.sexy/hg_sdf/ - distance fields  
 Blogs   
 www.toadstorm.com/blog    
-www.wordpress.discretization.de/houdini    
+www.wordpress.discretization.de/houdini - for mathematicians  
 www.richlord.com/tools?offset=1554489900662    
 Gits  
 https://github.com/wirginiaromanowska/Notes_On_Things     
