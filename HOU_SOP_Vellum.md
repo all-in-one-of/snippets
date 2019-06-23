@@ -5,7 +5,7 @@
 - Colliion
 You can write initial attribs to points of geometry like velocity  
 You can enter solver and manage forces inside 
-Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame!     
+Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame! You can also set POP forces   
 # [Vellum Solver drape]
 To create drape from patches.  
 `welding frame` - where it start to fuse  (maby work on frame 1 ?)   
@@ -95,3 +95,5 @@ run in forloop with fedback.
 Spply Welds - Weld geometry that have cuts  and in therory should stick toghether   
 Vissualise - !  
 
+# Add  Friction 
+porint: `f@friction`  
