@@ -53,20 +53,20 @@ Edit it in "velumConstrainsProperties" inside vellum solver
  
  
 # [Configure baloon]
-= cloth Constraint + Pressure Constraint    
-`VelumConstraintProperties` in solver  
+= cloth Constraint + Pressure Constraint     
+`VelumConstraintProperties` in solver   
 - anim stretch on pressre   
 - change volume by - rest length scale    
 
 # [Configure soft body]
-= cloth + struts    
+= cloth + struts     
 
 # [Configure grain]
-Increase substeps !!! 5 + 
-`@isgrain = 1` - 
-`mass` -
-`pscale` - 
-`v` - 
+Increase substeps !!! 5 +   
+`@isgrain = 1` -   
+`mass` -   
+`pscale` -   
+`v` -   
 
 
 ## Drape
