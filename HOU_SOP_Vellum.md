@@ -5,7 +5,9 @@
 - Colliion
 You can write initial attribs to points of geometry like velocity  
 You can enter solver and manage forces inside 
-Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame! You can also set POP forces   
+Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame! You can also set POP forces  
+Add friction porint: `f@friction`  
+
 # [Vellum Solver drape]
 To create drape from patches.  
 `welding frame` - where it start to fuse  (maby work on frame 1 ?)   
@@ -34,7 +36,7 @@ Edit it in "velumConstrainsProperties" inside vellum solver
 `Weld Points` - Tide fracture when pts are in same @P     Breaking level at stress level   
 
 
-# [Configure Cloth]
+### [Configure Cloth]
  For Drape   
 `Mass` -   
 `Thicknes` - on drape see resoult in postprocess spheres could by to big  depend on `scale`     
@@ -52,16 +54,16 @@ Edit it in "velumConstrainsProperties" inside vellum solver
   - `rate` and  `hardening` higher - make hardne over time of banding    
  
  
-# [Configure baloon]
+### [Configure baloon]
 = cloth Constraint + Pressure Constraint     
 `VelumConstraintProperties` in solver   
 - anim stretch on pressre   
 - change volume by - rest length scale    
 
-# [Configure soft body]
+### [Configure soft body]
 = cloth + struts     
 
-# [Configure grain]
+### [Configure grain]
 Increase substeps !!! 5 +   
 `@isgrain = 1` -   
 `mass` -   
@@ -86,14 +88,11 @@ Increase substeps !!! 5 +
 `Name_LB` -   Left Back  
 `Name_LF` -   Left Front  
 
-# [Detangle]
+## [Detangle]
 run in forloop with fedback.   
 - rest position as previous position   
 - pscale  
 
-# [Post Process]
+## [Post Process]
 Spply Welds - Weld geometry that have cuts  and in therory should stick toghether   
-Vissualise - !  
-
-# Add  Friction 
-porint: `f@friction`  
+Vissualise - !   
