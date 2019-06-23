@@ -22,7 +22,7 @@ Edit it in "velumConstrainsProperties" inside vellum solver
 `Hair` = `StretchShear` + `BendTwist` - Use polylines as input (its like distance bend and twist)    
 `String`  = `Distance` + `Angle` - cheaper than hairs    
 
-`Pressure` (Volume) - ompresable (Air) (enforce volume depending of stiffness)    
+`Pressure` (Volume) - compresable (air) (enforce volume depending of stiffness)    
 `Tetrahedral` (Volume) - uncompresable materials (most liquids) fwm (slower than pressure)          
 `Struts` - stretch body (internal struts that conect opose sides)  stiffness (good for stftb. that does not stiff tu much)    
 
