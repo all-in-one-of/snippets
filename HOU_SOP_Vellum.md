@@ -30,7 +30,7 @@ Edit it in "velumConstrainsProperties" inside vellum solver
 `Attach to Geo` - look for closeest point and stick to geometry (target to geo to stic / up value of clostest point ) use in anim   
 `Stich` - (connect cloths) or stich points in 2 groups that are far away and keep it apart    
 
-`Glue`  -  Source and target geo and search distance to connect pts.  
+`Glue`  -  Source and target geo and search distance to connect pts. (check nr constrains per point)   breaking treshold 
 `Weld Points` - Tide fracture when pts are in same @P     Breaking level at stress level   
 
 
@@ -60,8 +60,13 @@ Edit it in "velumConstrainsProperties" inside vellum solver
 
 # [Configure soft body]
 = cloth + struts    
-# [Configure grain]
 
+# [Configure grain]
+Increase substeps !!! 5 + 
+`@isgrain = 1` - 
+`mass` -
+`pscale` - 
+`v` - 
 
 
 ## Drape
