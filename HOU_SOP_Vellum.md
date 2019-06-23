@@ -1,25 +1,34 @@
 
 # [Vellum Solver]
+- Geo - You can merge all geo and apply constraints by groups  
+- Constrains 
+- Colliion
+You can write initial attribs to points of geometry like velocity  
 You can enter solver and manage forces inside 
-Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place "velumConstrainsProperties"  
+Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame!     
 # [Vellum Solver drape]
 To create drape from patches.  
 `welding frame` - where it start to fuse  (maby work on frame 1 ?)   
 `forces` - increse velocity damping and air drag if cloth move to much  
 
 # Constraints
-`Distance Along Edges` - Keep Stifnes and Damping `Distance` (like spring)     
-`Bend Across Trix` - Keep angle  `Rotation` (rotation spring)    
-`Cloth` - Bend, Length
-`Hair` - Bend, Length, Twist   
-`String` - Bend, Length  
+Stack constraints and applay them to point groups:  
+Edit it in "velumConstrainsProperties" inside vellum solver   
+
+`Distance ` - Keep Length Along Edges by Stifnes and Damping // basic    
+`Bend ` (Rotation) - Keep angle Across Trix // basic   
+`Cloth` = `Distance` + `Bend` 
+
+`Hair` = `StretchShear` + `BendTwist` - Use polylines as input (its like distance bend and twist)   
+`String`  = `Distance` + `Angle` - cheaper than hairs   
+
 `Pin to Target` - Help    
-`Attach to Geo` - Help   
+`Attach to Geo` - to stick to geometry (target to geo to stic / up value of clostest point )
 `Stich` - Help (no łaczenie clohow)   
 `Pressure` - filled with compresable (Air) `Volume` - Constraint  
 `Tetrahedral Volume` - filled with uncompresable fluid (water) fwm   
 `Weld Points` -    
-`Glue`  -    
+`Glue`  -   ( Source and target geo 
 `Struts` - internal struts that conect opose sides, so sstretch body    stiff default 10 not stiff as much  100 stiffer 
 
 
@@ -42,9 +51,10 @@ To create drape from patches.
  
  
 # [Configure baloon]
-= cloth + pressure   
-anim stretch on pressre  
-volume - rest length scale  
+= cloth Constraint + Pressure Constraint    
+`VelumConstraintProperties` in solver  
+- anim stretch on pressre   
+- change volume by - rest length scale    
 
 # [Configure soft body]
 = cloth + struts    
@@ -77,3 +87,4 @@ run in forloop with fedback.
 # [Post Process]
 Spply Welds - Weld geometry that have cuts  and in therory should stick toghether   
 Vissualise - !  
+
