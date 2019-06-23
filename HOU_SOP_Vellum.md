@@ -1,6 +1,7 @@
 
 # [Vellum Solver]
-
+You can enter solver and manage forces inside 
+Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place "velumConstrainsProperties"  
 # [Vellum Solver drape]
 To create drape from patches.  
 `welding frame` - where it start to fuse  (maby work on frame 1 ?)   
@@ -42,6 +43,9 @@ To create drape from patches.
  
 # [Configure baloon]
 = cloth + pressure   
+anim stretch on pressre  
+volume - rest length scale  
+
 # [Configure soft body]
 = cloth + struts    
 # [Configure grain]
