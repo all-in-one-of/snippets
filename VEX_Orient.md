@@ -44,16 +44,15 @@ rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot 
 
 #### Rotate Individual Points quaternion:
 The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
+// run@points, 
+IN: points / OUT copy to points sop
 ```
-// run@points, IN: points
-v@up = chv("up_vector");
-// create a 3x3 orientation matrix using N and up as
-matrix3 m = maketransform(@N, v@up);
-vector axis = @N;
-float angle = radians(ch("angle")); // or instead of angle: rand(@ptnum)*360
-rotate(m, angle, axis);
-p@orient = quaternion(m);// make the orient quaternion
-// OUT TO COPY TO POINTS SOP
+v@up = chv("up_vector"); // create a 3x3 orientation matrix using N and up as  
+matrix3 m = maketransform(@N, v@up);   
+vector axis = @N;  
+float angle = radians(ch("angle")); // or instead of angle: rand(@ptnum)*360  
+rotate(m, angle, axis);  
+p@orient = quaternion(m); // make the orient quaternion  
 ```
 
 #### Rotate Packed Geometry:
