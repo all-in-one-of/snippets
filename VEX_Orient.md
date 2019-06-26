@@ -43,8 +43,8 @@ rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot 
 ```
 
 #### Rotate Individual Points quaternion:
-The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.
-// run@points, 
+The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.  
+// run@points,   
 IN: points / OUT copy to points sop
 ```
 v@up = chv("up_vector"); // create a 3x3 orientation matrix using N and up as  
