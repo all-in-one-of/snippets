@@ -30,7 +30,7 @@ Render
 
 # NAME SPACES  
 (readable/writable  R/W)  
-`User ` - **ALL OUT DATA** - set per component or through blueprints **R:EVERYWHERE** / **W:NOT writable within Niagara**   
+`User ` - **R:EVERYWHERE** / **W:NOT writable within Niagara** (set in component or through blueprints ) **[ALL OUT DATA]**   
 `System` - **R: EVERYWHERE** / **W: only within SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
 `Emitter` - **R: in EMITER & PARTICLE SCRIPTS** / **W: only in EMITER SCRIPT** (persisted frame to frame / shared within emitter inst)     
 `Particles` - **R:  only by PARTICLE SCRIPTS** / **W:only by PARTICLE SCRIPT** (persisted frame to frame / per-particle values)    
