@@ -58,8 +58,8 @@ https://unrealingens.wordpress.com/2018/06/11/exploring-niagara-pre-release-part
 *[emiter update]* spawn form array playback   
 *[particle spawn]* hanldle spawn particles / by type   
 ### H EVENTS:   
-*[particle update]* generate location event  // FOR LEADER  writing to struct pos and we can listen it    
-*[Event handler]* is listening for event. //FOR FOLLOWER  
+*[particle update]* generate location event  // LIDER  writing to struct pos and we can listen it    
+*[Event handler]* is listening for event. // FOLLOWER  
 
 ### POINT ANIM:
 
