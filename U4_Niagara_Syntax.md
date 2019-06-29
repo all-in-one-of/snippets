@@ -30,13 +30,16 @@ Render
 
 # NAME SPACES  
 (readable/writable  R/W)  
-`User ` - **R:EVERYWHERE** / **W:NOT writable within Niagara** (set in component or through blueprints ) **[ALL OUT DATA]**   
+
 `System` - **R: EVERYWHERE** / **W: only within SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
 `Emitter` - **R: in EMITER & PARTICLE SCRIPTS** / **W: only in EMITER SCRIPT** (persisted frame to frame / shared within emitter inst)     
 `Particles` - **R:  only by PARTICLE SCRIPTS** / **W:only by PARTICLE SCRIPT** (persisted frame to frame / per-particle values)    
 `Engine` - **R:EVERYWHERE** / **W:NOT writable**  (defined within the runtime for Niagara itself)  
-`Module` - **R/W: within that module and in the owning context (System/Emitter/Particle)** (defined within a module) can be written to if you know the unique module name in that context. In other words, if you add a AddVelocity module, you can address its parameters from the owning particle update script by replacing "Module" with "AddVelocity"    
-`NPC` - Niagara Parameter Collection / usually followed by another sub-namespace that defines the name of the NPC from which you are pulling the value from.  
+`Module` - **R/W: within that module and in the owning context (System/Emitter/Particle)** (defined within a module) can be written to if you know the unique module name in that context. In other words, if you add a AddVelocity module, you can address its parameters from the owning particle update script by replacing "Module" with "AddVelocity"      
+
+`User ` - **R:EVERYWHERE** / **W:NOT writable within Niagara** (set in component or through blueprints ) **[ALL OUT DATA]**    
+`NPC` - Niagara Parameter Collection / usually followed by another sub-namespace that defines the name of the NPC from which you are pulling the value from.   
+
 Arbitrary namespaces:  
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
 `Particles.MyCompanyName.VariableName` - Anything you create will follow that same paradigm. However, you can create sub-namespaces within the supported ones. So. is a perfectly valid namespace to organize all your custom variables into.  
