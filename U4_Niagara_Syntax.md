@@ -31,9 +31,9 @@ Render
 # NAME SPACES  
 (readable/writable  R/W)  
 
-`System` - **R: EVERYWHERE** / **W: only within SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
-`Emitter` - **R: in EMITER & PARTICLE SCRIPTS** / **W: only in EMITER SCRIPT** (persisted frame to frame / shared within emitter inst)     
-`Particles` - **R:  only by PARTICLE SCRIPTS** / **W:only by PARTICLE SCRIPT** (persisted frame to frame / per-particle values)    
+`System` - **R: EVERYWHERE** / **W: SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
+`Emitter` - **R: EMITER & PARTICLE SCRIPTS** / **W: EMITER SCRIPT** (persisted frame to frame / shared within emitter inst)     
+`Particles` - **R: PARTICLE SCRIPTS** / **W: PARTICLE SCRIPT** (persisted frame to frame / per-particle values)    
 `Engine` - **R:EVERYWHERE** / **W:NOT writable**  (defined within the runtime for Niagara itself)  
 `Module` - **R/W: within that module and in the owning context (System/Emitter/Particle)** (defined within a module) can be written to if you know the unique module name in that context. In other words, if you add a AddVelocity module, you can address its parameters from the owning particle update script by replacing "Module" with "AddVelocity"      
 
