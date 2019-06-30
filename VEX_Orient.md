@@ -14,15 +14,15 @@ If **[trans]** exists, use it and P to move the copy/instance.
 
 `v@pivot` - Local pivot point for the copy  
 `3@` or `4@transform` - Transformmatrix overriding everything except translations from [P], [pivot], and [trans]  
-`p@orient` float4 (quaternion) - Orientation of the copy  
+`p@orient` (quaternion) - Orientation of the copy  float4 
 `v@N` - Normal (+Z axis of the copy, if no orient)  
 `v@up` - Up vector of the copy use with @N to orient inst (+Y axis of the copy, if no orient)  
 `v@v` - Velocity of the copy (motion blur, and used as +Z axis of the copy if no orient or N)  
-`p@rot` - float4 (quaternion) // Additional Q rotation (applied after the orientation attributes above)  
+`p@rot` - (quaternion) // Additional Q rotation (applied after the orientation attributes above)  
 `f@pscale` - Uniform scale   
 `v@scale` - float3 - Non-uniform scale `scale(3@transform, vector(@pscale));` //if transf 1  
 `v@trans` - Translation of the copy, in addition to P  
-`v@P` - Translation of the copy - Instance Position  
+`v@P` - Translation of the copy - Instance Position   
   
 #### Roatate Normal by matrix:
 rotate normals along tangent. Add polyframe with tangent before
