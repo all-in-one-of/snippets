@@ -18,9 +18,9 @@ If **[trans]** exists, use it and P to move the copy/instance.
 `v@N` - Normal (+Z axis of the copy, if no orient)  
 `v@up` - Up vector of the copy use with @N to orient inst (+Y axis of the copy, if no orient)  
 `v@v` - Velocity of the copy (motion blur, and used as +Z axis of the copy if no orient or N)  
-`p@rot` - (quaternion) // Additional Q rotation (applied after the orientation attributes above)  
+`p@rot` - (quaternion) - Additional Q rotation (applied after the orientation attributes above)  
 `f@pscale` - Uniform scale   
-`v@scale` - float3 - Non-uniform scale `scale(3@transform, vector(@pscale));` //if transf 1  
+`v@scale` - Non-uniform scale `scale(3@transform, vector(@pscale));` (keep transform:1)    
 `v@trans` - Translation of the copy, in addition to P  
 `v@P` - Translation of the copy - Instance Position   
   
