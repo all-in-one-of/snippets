@@ -103,4 +103,6 @@ Create the second wrangle to return it to the original position
 ```
 @P *= invert(4@xform_matrix);
 ```
-https://www.toadstorm.com/blog/?p=493   
+https://www.toadstorm.com/blog/?p=493    
+http://www.tokeru.com/cgwiki/?title=Copy,_Stamps,_Rotation,_Hscript,_Vex,_a_ramble  
+http://yoong-cut-and.blogspot.com/2014/12/orienting-objects-to-curve-basic-of.html  
