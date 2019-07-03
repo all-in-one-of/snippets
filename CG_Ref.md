@@ -41,6 +41,7 @@ Sketch > Draw
    - B&W for valor correction    
    
 Paint    
+   - Edges change in object, plane or color. Can be  hard, soft or lost.  
    - Color Monochrom / Analogous / complimentary / Triad Tetradic  
    - Color temperature 
    - Avoid: Hidden,skimed fused, stolen egde of objects  
