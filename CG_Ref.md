@@ -28,9 +28,9 @@
    
 References   
    - Refer to human scale and relations  
-   - Dna (culture, time period, function)     
-   - Material (substance, stiffness)  
-   - Age (wear, tear, erosion, dirt)   
+   - Dna `culture`, `time`, `period`, `function`    
+   - Material `substance`, `stiffness`  
+   - Age `wear`, `tear`, `erosion`, `dirt`     
    - Paterns      
    
 Sketch > Draw    
@@ -41,28 +41,29 @@ Sketch > Draw
    - B&W for valor correction    
    
 Paint    
-   - Edges change in object, plane or color. Can be  hard, soft or lost.  
-   - Color Monochrom / Analogous / complimentary / Triad Tetradic  
-   - Color temperature 
-   - Avoid: Hidden,skimed fused, stolen egde of objects  
+ 
+   - high key painting has a `high-value` scale (light) whilst a low key painting uses a `low-value` scale (dark).  
+   - Color `Monochrom`, `Analogous`, `Complimentary`, `Split-Complementary`, `Triad(3)`, `Tetradic(4)`   
+   - Color temperature  vs  neutral colors (W&B and gray)  
+   - Edges change in `object`, `plane` or `color`. Can be  hard, soft or lost.  
+   - Edge Avoid: `Hidden`, `skimed fused`, `stolen` egde of objects  
    
 Camera  
-   - Depth Frameing Croping (dof/grain/bloom)   
+   - Depth Frameing Croping `dof` `grain` `bloom`   
    - Avoid unnecesery moves, unwanted obj cutouts.   
    
 Sculpt  
-   - Siluette  
-   - Dont forget aboud mid freq.    
+   - Siluette > mid freq > detail      
    - Varie details placement.     
    - Sculpt across the form (not with the flow).    
    - Don't use smooth.       
 
 Scene Setup   
    - keep texel density  
-   - Sky box > Exp fog > Sky Light > Directional Light > Secondary lights > Cam Post > Color Grading    
+   - `Sky box` > `Exp fog` > `Sky Light` > `Directional Light` > `Secondary lights` > `Cam Post` > `Color Grading`    
 
 Shading
-   - Work in HSV to manage chroma and valor.      
+   - Work in `HSV` to manage `chroma` and `valor`.      
    
 Simulation & procedural   
    - fit parameters to 0-1  
@@ -70,7 +71,7 @@ Simulation & procedural
 Composition
    - rule of 3rd  
    - sectio aurea a+b/a = 1.618 φ  - golden spiral is a logarithmic spiral whose growth factor is φ  
-   - Balance / Proportion / Movement / Rhythm / Harmony / Unity / Emphasis / Variety  
+   - `Balance`, `Proportion`, `Movement`, `Rhythm`, `Harmony`, `Unity`, `Emphasis`, `Variety`   
    
 Design 
-   - line / shape / form / color / value / space (+negative) / text  
+   - `line` `shape` `form` `color` `value` `space (+negative)` `text`   
