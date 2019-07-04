@@ -33,6 +33,9 @@ References
    - Age `wear`, `tear`, `erosion`, `dirt`     
    - Paterns      
    
+Design 
+   - `line` `shape` `form` `color` `value` `space (+negative)` `text`   
+   
 Sketch > Draw    
    - (proportion, shape recog)  
    - (bigest to smallest details)   
@@ -40,18 +43,16 @@ Sketch > Draw
    - Thumbnails for detail correction    
    - B&W for valor correction    
    
+Shading
+   - Work in `HSV` to manage `chroma` and `valor`.    
+   
 Paint    
- 
    - high key painting has a `high-value` scale (light) whilst a low key painting uses a `low-value` scale (dark).  
    - Color `Monochrom`, `Analogous`, `Complimentary`, `Split-Complementary`, `Triad(3)`, `Tetradic(4)`   
    - Color temperature  vs  neutral colors (W&B and gray)  
    - Edges change in `object`, `plane` or `color`. Can be  hard, soft or lost.  
    - Edge Avoid: `Hidden`, `skimed fused`, `stolen` egde of objects  
-   
-Camera  
-   - Depth Frameing Croping `dof` `grain` `bloom`   
-   - Avoid unnecesery moves, unwanted obj cutouts.   
-   
+ 
 Sculpt  
    - `Siluette` > `Midium Freqences` > `Detail`      
    - Varie details placement.     
@@ -61,9 +62,6 @@ Sculpt
 Scene Setup   
    - keep texel density  
    - `Sky box` > `Exp fog` > `Sky Light` > `Directional Light` > `Secondary lights` > `Cam Post` > `Color Grading`    
-
-Shading
-   - Work in `HSV` to manage `chroma` and `valor`.      
    
 Simulation & procedural   
    - fit parameters to 0-1  
@@ -72,11 +70,13 @@ Composition
    - rule of 3rd  
    - sectio aurea a+b/a = 1.618 φ  - golden spiral is a logarithmic spiral whose growth factor is φ  
    - `Balance`, `Proportion`, `Movement`, `Rhythm`, `Harmony`, `Unity`, `Emphasis`, `Variety`   
-   
-Design 
-   - `line` `shape` `form` `color` `value` `space (+negative)` `text`   
 
-Story:
+Story
    - you cannot say a story without `place`, `time` and `character`. Or you can :> ?  
    - true character reveale when human characters make choices under pressuere  
    - teatr jest przerysowany bo miedzy widzami a scena istnieje frame ktory trzba wypełnic.  
+       
+Camera  
+   - Depth Frameing Croping `dof` `grain` `bloom`   
+   - Avoid unnecesery moves, unwanted obj cutouts.   
+   
