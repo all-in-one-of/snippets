@@ -53,7 +53,7 @@ Camera
    - Avoid unnecesery moves, unwanted obj cutouts.   
    
 Sculpt  
-   - Siluette > mid freq > detail      
+   - `Siluette` > `Midium Freqences` > `Detail`      
    - Varie details placement.     
    - Sculpt across the form (not with the flow).    
    - Don't use smooth.       
@@ -77,6 +77,6 @@ Design
    - `line` `shape` `form` `color` `value` `space (+negative)` `text`   
 
 Story:
-   - you cannot say a story without place time and character. Or you can :> ?  
+   - you cannot say a story without `place`, `time` and `character`. Or you can :> ?  
    - true character reveale when human characters make choices under pressuere  
    - teatr jest przerysowany bo miedzy widzami a scena istnieje frame ktory trzba wypełnic.  
