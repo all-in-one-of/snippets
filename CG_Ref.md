@@ -72,9 +72,9 @@ Composition
    - `Balance`, `Proportion`, `Movement`, `Rhythm`, `Harmony`, `Unity`, `Emphasis`, `Variety`   
 
 Story
-   - you cannot say a story without `place`, `time` and `character`. Or you can :> ?  
-   - true character reveale when human characters make choices under pressuere  
-   - teatr jest przerysowany bo miedzy widzami a scena istnieje frame ktory trzba wypełnic.  
+   - Heroes Journey: `You`, `Need`, `Go`, `Search`, `Find`, `Take`, `Return`, `Change`  
+   - Cannot say a story without `place`, `time` and `character`. Or you can :> ?  
+   - Character reveale when human characters make choices under pressuere    
        
 Camera  
    - Depth Frameing Croping `dof` `grain` `bloom`   
