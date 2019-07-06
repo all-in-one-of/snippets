@@ -6,6 +6,7 @@ https://mrpandey.github.io/d3graphTheory/index.html - graph theory
 http://immersivemath.com/ila/index.html  - immersive math     
 https://thebookofshaders.com/  - book of shaders   
 http://mercury.sexy/hg_sdf/ - distance fields  
+http://www.karlsims.com/rd.html - reaction diffusion  
 Blogs   
 www.toadstorm.com/blog    
 www.wordpress.discretization.de/houdini - for mathematicians  
