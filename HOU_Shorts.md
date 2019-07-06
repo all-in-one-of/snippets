@@ -1,3 +1,5 @@
+To set/change key klick on shelf or menu item while holding `Ctrl` + `Alt` + `Shift`   
+
 ### CUSTOM
 `Shift` + `W` - In all windows wireframe mode   
 ~~`Alt` + `W`~~ - close window  
