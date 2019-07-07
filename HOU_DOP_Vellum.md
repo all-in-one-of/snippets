@@ -42,4 +42,4 @@ constr peimitives (pin stitch glue)
 ## VEX
 `i@weld = -1` - same as stop  
 `i@layer` = layer shock on solver      
-v@v = ; - take speed directly from sop  
+`v@v = 1;` - take speed directly from sop  
