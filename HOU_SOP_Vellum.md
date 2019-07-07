@@ -1,17 +1,4 @@
 
-# [Vellum Solver]
-- Geo - You can merge all geo and apply constraints by groups  
-- Constrains 
-- Colliion
-You can write initial attribs to points of geometry like velocity  
-You can enter solver and manage forces inside 
-Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame! You can also set POP forces  
-Add friction porint: `f@friction`  
-
-# [Vellum Solver drape]
-To create drape from patches.  
-`welding frame` - where it start to fuse  (maby work on frame 1 ?)   
-`forces` - increse velocity damping and air drag if cloth move to much  
 
 # Constraints
 Stack constraints and applay them to point groups:  
@@ -34,6 +21,21 @@ Edit it in "velumConstrainsProperties" inside vellum solver
 
 `Glue`  -  Source and target geo and search distance to connect pts. (check nr constrains per point)   breaking treshold 
 `Weld Points` - Tide fracture when pts are in same @P     Breaking level at stress level   
+
+
+# [Vellum Solver]
+- Geo - You can merge all geo and apply constraints by groups  
+- Constrains 
+- Colliion
+You can write initial attribs to points of geometry like velocity  
+You can enter solver and manage forces inside 
+Not updating some animatied values of attribs ffrom constrains in solver  instead of it dive velum solver and place `VelumConstraintProperties` check constr in each frame! You can also set POP forces  
+Add friction porint: `f@friction`  
+
+# [Vellum Solver drape]
+To create drape from patches.  
+`welding frame` - where it start to fuse  (maby work on frame 1 ?)   
+`forces` - increse velocity damping and air drag if cloth move to much  
 
 
 ### [Configure Cloth]
