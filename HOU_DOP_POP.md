@@ -37,7 +37,8 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 Bucket for particles 
 Physical parameters: `Bounce`, `Friction`, `Temperature`
 # [POP Source]  
-impulse count (fer frame) / constant birth (for time) / life  
+source types: set to all points for points in.  
+impulse count (per frame) / constant birth (for time) / life  
 attribtes > velocity > inherent (default!) from param: v@v  
 attribtes > velocity > for the first frame 
 Emission Attribute - ATTRIBUTE TO EMIT PARTICLES (float 0-1)
