@@ -26,8 +26,9 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 - `popvop` - sam mozesz zrobic force, np ( vel +=  noise)  
 - `popcurveforce` - podpinasz krzywa i leci  
 - `popcolision` - (stick/ bounce)  
-- `popgroup`  
+- `popgroup` -  
 - `popforce` - jakies noizy Old thing   
+- `popkill` - `if (@age>1) dead = 1;`  
 
 # [POP Solver] 
 ### [Collision]:
