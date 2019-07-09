@@ -47,7 +47,7 @@ OBJ TO FBX: Rotate 90
 `HDR` - 16F low precission     
 `HDR` - 32F high precision   
 
-### Compression game:
+### Unreal Compression:
 
 Unreal | Compression | ---  | --- 
 --- | ---  | ---  | --- 
