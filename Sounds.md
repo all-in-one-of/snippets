@@ -22,3 +22,5 @@ new engine is called audioMixer
 
 
 `Source Buses` and` Source Bus Effects`  
+
+https://learningsynths.ableton.com/oscillators/how-synths-make-sound  
