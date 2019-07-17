@@ -19,6 +19,8 @@
 `details(0, attribute)` - Returns the string value of a detail attribute.  
 `detail(0, attrib_name, attrib_index)` - Returns the value of a detail attribute.  
 
+@OpInput1 = 0  
+
 ### LOOP
 Iterations:
 ```
