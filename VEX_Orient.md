@@ -26,7 +26,7 @@ If **[trans]** exists, use it and P to move the copy/instance.
  
  
  
-
+@orient and @scale only have an effect when fed to a copy sop (or other things that are instance attribute  
 
  
 matrix3 m = ident(); // matrix3 m = {1,0,0,0,1,0,0,0,1}; no rotation form of @orient
