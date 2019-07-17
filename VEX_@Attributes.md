@@ -111,6 +111,7 @@ of the diffuse color (Cd) attribute. can also use .x, .y, and .z  [0], [1], and 
 `$NFRAMES` (the number of frames in the animation) = `$FEND - $FSTART + 1`.  
 `$ACTIVETAKE` - Contains the name of the current take.   
 
+`intrinsic` - being an extremely important and basic characteristic of a person or thing.  
 
 # VEX
 Accumulate
