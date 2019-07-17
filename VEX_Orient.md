@@ -26,8 +26,15 @@ If **[trans]** exists, use it and P to move the copy/instance.
  
  
  
-matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation  
+
+
  
+matrix3 m = ident(); // matrix3 m = {1,0,0,0,1,0,0,0,1}; no rotation form of @orient
+```
+1 0 0
+0 1 0
+0 0 1
+```
  
 #### Roatate Normal Along Tangent (RunOver:Points)
 IN: polyframe with `tangent`   
