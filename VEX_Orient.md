@@ -23,9 +23,14 @@ If **[trans]** exists, use it and P to move the copy/instance.
 `v@scale` - Non-uniform scale `scale(3@transform, vector(@pscale));` (keep transform:1)    
 `v@trans` - Translation of the copy, in addition to P  
 `v@P` - Translation of the copy - Instance Position   
-  
-#### Roatate Normal by matrix:
-rotate normals along tangent. Add polyframe with tangent before
+ 
+ 
+ 
+matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation  
+ 
+ 
+#### Roatate Normal Along Tangent:
+ Add polyframe with `tangent`. Run on points  
 ```
 matrix rot = ident();
 float angle = radians(ch("angle"));
@@ -34,12 +39,13 @@ rotate(rot, angle, @tangent);
 ```
 
 #### Rotate Object about axies:
+Point wrangle, input: geometry   
 ```cpp
-matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation
-vector axis = chv("axies"); // to this matrixa around given axies 
-float angle = radians(ch('amount')); // rot to radians 
-rotate(m, angle, axis); // multi each point by new matrix  (pivot @ orig to rot this in place)
-@P *= m; // apply rotation
+matrix3 m = ident(); 
+vector axis = chv("axies"); 
+float angle = radians(ch('amount')*360); // rot 0-1 *360 > to radians 
+rotate(m, angle, axis); 
+@P *= m;  
 ```
 
 #### Rotate Individual Points quaternion:
