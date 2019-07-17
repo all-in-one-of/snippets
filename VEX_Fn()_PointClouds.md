@@ -61,7 +61,7 @@ pcfilter(handle, radius, "irradiance", ir);
 
 ### GEOMETRY PROXIMITY  
 `neighbour()` point number of the next point connected to a given point   
-`neighboucount()` number of points that are connected to the specified point.    
+`neighboucount()` number of edges from point // i@count = neighbourcount(0,@ptnum);  
 `neighbours()`  array of the point numbers of the neighbours of a point.   
 `nearpoint()` - closest point in a geometry  
 `nearpoints()` - all the closest point in a geometry.  
