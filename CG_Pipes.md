@@ -4,22 +4,26 @@
 `File.hip`  
 `$HIP/source/` - sources (read only)   
 
-
 **Exports:**  
 `$HIP/${HIPNAME}/export/$OS.fbx` - Export file  
-`$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
 `$HIP/${HIPNAME}/export/$OS_lo.obj ` - Export Low to bake  
 `$HIP/${HIPNAME}/zbrush/$OS_hi.obj` - Export High to bake   
 `$HIP/${HIPNAME}/export/$OS.csv`   
 
-**Cache:**   
+`$HIP/${HIPNAME}/export/vat_$OS/$OS.bgeo.sc` - Export Vertex Anim     
+
+**FileCache:**   
 ```$HIP/${HIPNAME}/cache_geo/$OS.obj``` - cache static  
 ```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.obj``` - cache static   
 ```$HIP/${HIPNAME}/cache_sim/$OS.$F.bgeo.sc``` - cache sim  
-
+```$HIP/${HIPNAME}/cache_`opname("..")`/$OS.$F.bgeo.sc``` - cache sim   
+ 
+ 
+ `$HIP/${HIPNAME}/zbrush/..`  - Zbrush   
+ 
 **Materials:**  
-`$HIP/${HIPNAME}/material/..`  - Substance&Material   
-`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake    
+`$HIP/${HIPNAME}/material/..`  - Substance&Material    
+`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
 
 **PDG:**  
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
