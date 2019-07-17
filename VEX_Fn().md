@@ -35,6 +35,11 @@ getbbox(min, max);
 vector center = (min+max)/2;
 ```
 
+### Measurement
+
+`distance(@P, center );`  
+`minpos(1,@P);`  
+`nearpoint(1,@P);`  
 
 ### Conversion
 
