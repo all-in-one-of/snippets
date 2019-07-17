@@ -29,8 +29,8 @@ If **[trans]** exists, use it and P to move the copy/instance.
 matrix3 m = ident(); //create a def "identity" matrix, meaning no rotation  
  
  
-#### Roatate Normal Along Tangent:
- Add polyframe with `tangent`. Run on points  
+#### Roatate Normal Along Tangent (RunOver:Points)
+IN: polyframe with `tangent`   
 ```
 matrix rot = ident();
 float angle = radians(ch("angle"));
@@ -38,7 +38,7 @@ rotate(rot, angle, @tangent);
 @N= @N*rot;
 ```
 
-#### Rotate Object about axies:
+#### Rotate Object about axies (RunOver:Points)  
 Point wrangle, input: geometry   
 ```cpp
 matrix3 m = ident(); 
@@ -48,9 +48,9 @@ rotate(m, angle, axis);
 @P *= m;  
 ```
 
-#### Rotate Individual Points quaternion:
+#### Rotate Individual Points Quaternion (RunOver:Points)  
 The maketransform() function used here instead of ident()  means our starting matrix is already pointing the way we want it to be before we start rotating. We define an axis and angle, exactly as before, and spin that matrix around. The last step is just converting the matrix to a quaternion and naming it @orient,  which the Copy SOP knows to read.  
-// run@points,   
+  
 IN: points / OUT copy to points sop
 ```
 v@up = chv("up_vector"); // create a 3x3 orientation matrix using N and up as  
@@ -61,9 +61,9 @@ rotate(m, angle, axis);
 p@orient = quaternion(m); // make the orient quaternion  
 ```
 
-#### Rotate Packed Geometry:
+#### Rotate Packed Geometry (RunOver:Prims)  
+IN: packed geo 
 ```cpp
-// run over poinwrangle with packed geo input:
 matrix3 x = primintrinsic(0, "transform", @primnum); // matrix3 x = ident();
 vector axis = normalize(chv("axis"));
 float angle = radians(chf("angle"));
@@ -72,7 +72,7 @@ setprimintrinsic(0, "transform", @primnum, x, "set");
 ```
 
 
-#### Orient piece of geometry by 4 points: {@vux}
+#### Orient piece of geometry by 4 points: {@vux}  
 - src_pt - source point 1
 - dst_pt - destination point 1
 - src_opt - source point 2
