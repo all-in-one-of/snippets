@@ -1,5 +1,5 @@
-### Circle
-detail  
+### Circle  (RunOver:Detail)  
+  
 ```int a = ch("angle");
 float r = ch("radian");
 // ad point in given coords 
@@ -7,8 +7,7 @@ for(a=0; a<360; a++){
 addpoint(geoself(),set(cos(radians(a))*r, sin(radians(a))*r,0));
 }
 ```
-### Logarytmic spiral
-detail  
+### Logarytmic spiral (RunOver:Detail)  
 - r = e^(a*theta)
 ```
 #include <math.h>
@@ -33,8 +32,7 @@ addvertex(0,line,point);
 }
 ```
 
-### Rhodonea Curve (sin @ polar)
-detail
+### Rhodonea Curve (sin @ polar) (RunOver:Detail)  
 - k = n/d
 - x = cos(k(theta))*cos(theta)
 - y = cos(k(theta))*sin(theta)
@@ -59,8 +57,7 @@ addvertex(0,line,point);
 }
 ```
 
-### Polar Limacon
-detail  
+### Polar Limacon (RunOver:Detail)  
 - r = a + b * cos(theta)
 ```
 float a = ch("A");
@@ -81,8 +78,7 @@ int point = addpoint(0,set(x,y,0));
 addvertex(0,line,point);
 }
 ```
-### Lissajous Curve
-detail
+### Lissajous Curve (RunOver:Detail)  
 - Freq_1
 - Freq_2
 - Freq_3
@@ -221,8 +217,7 @@ for(int i=0; i<numsteps_long; i++) {
     lat += step_lat;
 }
 ```
-### Hypotrochoid
-detail
+### Hypotrochoid (RunOver:Detail)  
 - x = (R-r) * cos(alpha) + d * cos(R-r/r*alpha)
 - y = (R-r) * sin(alpha) - d * sin(R-r/r*alpha)
 - R is radius of outer circle
@@ -308,10 +303,8 @@ float y = (R - r) * sin(theta-(resolution*i)) - d * sin((R-r/r)*(theta-(resoluti
 int point = addpoint(0,set(x,y,0));
 }
 ```
-### Spring on Curve  
-Point  
-IN:   
-spline > polyframe  
+### Spring on Curve (RunOver:Points)  
+IN: spline > polyframe    
 [x] tangent   
 [x] bitangent  
 [x] make fram orthogonal     
