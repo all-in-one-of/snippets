@@ -10,18 +10,18 @@
 
 `neighbourcount(0, @ptnum) == 2` - Groupexpreesion SOP  
 
-###  Gradient along curve:
+###  Gradient along curve (RunOver:Points)
 ```cpp
 float ValueAlongSpline = @ptnum/(@numpt-1.0);
 ```
-###  Gradient along curve (ramp):
+###  Gradient along curve (ramp) (RunOver:Points)
 ```cpp
 float gradient = @ptnum/(@numpt-1.0); //numpt is int .0 < will convert it   
 @Cd.y = chramp('colorRamp', gradient);  
 ```
 
 
-### Connect Adjacent Points
+### Connect Adjacent Points (RunOver:Points)
 ```
 float   radius_max = chf("radius");
 int     points_max = chi("connections");
@@ -50,9 +50,9 @@ for ( int i = 0; i < len(points); i++ )
 }
 ```
 
-### Make Curve from points
-Input points, run on detail.  
-```// parms
+### Make Curve from points (RunOver:Detail)
+IN: points   
+```
 int num = chi("num");
 
 // get points and write position to array
@@ -90,10 +90,9 @@ addprim(geoself(), "polyline", points);
 
  
  
-### Connect 2 curves
-Merge 2 curves and run on detail  
+### Connect 2 curves (RunOver:Detail)
+IN: Merge 2 curves   
 ```
-// parms
 float weight= ch("weight");
 int num = chi("num");
 
@@ -122,12 +121,12 @@ for(int i = 0; i < num; i++)
 ## Polyframe and direction  
 ## Geometry From Spline 
 
-### Polywire shape with ramp for combined curves 
+### Polywire shape with ramp for combined curves  
+IN: combined curves   
 ```
 // Create Primitive Wrangle before polywire, use @width as Wire Radius
 // Get array of points in each curve (primitive)
 i[]@primPts = primpoints(0, @primnum);
-
 // For each point in current curve
 foreach (int i; int currentPoint; @primPts){
     float ramp_index = fit(i, 0, len(@primPts)-1, 0,1);
@@ -136,11 +135,11 @@ foreach (int i; int currentPoint; @primPts){
     }
  ```
 
-### PolyWire pscale SOP
-prim wrangle between resample and polywire  
+### PolyWire pscale SOP  (RunOver:Prims)
+IN: resample  
+OUT: polywire   
 ```
 i[]@primPts = primpoints(0, @primnum);
-
 foreach (int i; int currentPoint; @primPts){
     float ramp_index = fit(i, 0, len(@primPts)-1, 0,1);
     f@widthPrim = chramp("shape", ramp_index)/20;
