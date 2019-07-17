@@ -6,13 +6,19 @@ Point Clouds architecture in VEX is based on data structure called kd-trees. The
 
 `int handle = pcopen("test.pc", "P", P, "N", N, 1e6, 100, "ndot", 0.8);` // This will only return points where dot(N, Npoint) > 0.8 Returns a handle to a point cloud file.  
 `pcfilter()` Filters points found by pcopen using a simple reconstruction filter.  
-`pcfind()` Returns a list of closest points from a file.  
+`int pts[] = pcfind(1,'P',@P,ch('d'),25);` Returns a list of closest points from a file.  
 `pcfind_radius` Returns a list of closest points from a file taking into account their radii.  
 `pcfarthest()` Returns the distance to the farthest point found in the search performed by pcopen.  
  
 `pcclose(handle)` Na koniec zamykamy uchwyt, aby uzyskać dostęp do bazy danych punktu 
 
 
+#### Avg Position from 1Op 
+```
+int mypc = pcopen(1, 'P', @P, ch('d'), chi('amnt'));
+@P = pcfilter(mypc, 'P');
+```
+ 
 ```cpp
 int pc_ptnum, pc_points;
 float pc_attr, accum;
