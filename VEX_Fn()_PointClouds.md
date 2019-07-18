@@ -31,31 +31,6 @@ f@viz = float(many)/float(num); // point cloud density
 @Cd = vector(f@viz); 
 ```
 
-```cpp
-int pc_ptnum, pc_points;
-float pc_attr, accum;
-vector pc_pos;
-
-pc_points = 40;
-pc_attr = 0;
-accum = 0;
-
-int handle = pcopen(@OpInput1, "P", @P, 1000, pc_points);
-
-while(pciterate(handle)) { //untill there are points
-
-    pcimport(handle, "point.number", pc_ptnum);
-
-    if (pc_ptnum == @ptnum)
-        continue; 
-    
-    pcimport(handle, "Alpha", pc_attr);
-
-    accum += pc_attr;
-}
-pcclose(handle);
-f@Alpha = accum / pc_points;
-```
 Performing a proximity query  
 
 ```cpp
