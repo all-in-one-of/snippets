@@ -13,12 +13,24 @@ Point Clouds architecture in VEX is based on data structure called kd-trees. The
 `pcclose(handle)` Na koniec zamykamy uchwyt, aby uzyskać dostęp do bazy danych punktu 
 
 
-#### Avg Position from 1Op 
+#### Avg Position from Op:1 (RunOver:Points) 
 ```
 int mypc = pcopen(1, 'P', @P, ch('d'), chi('amnt'));
 @P = pcfilter(mypc, 'P');
 ```
  
+#### Points Density (RunOver:Points)
+```
+float rad = chf("radious");
+int num = chi("number");
+
+int handle = pcopen(0, "P", @P, rad, num);
+vector lookup_P = pcfilter(handle, "P");
+int many = pcnumfound(handle); //writ to attrib: i@many = many;
+f@viz = float(many)/float(num); // point cloud density
+@Cd = vector(f@viz); 
+```
+
 ```cpp
 int pc_ptnum, pc_points;
 float pc_attr, accum;
