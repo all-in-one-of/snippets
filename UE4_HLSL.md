@@ -37,3 +37,4 @@ for (int j = 0; j < r; j++)
 blur /= 2*(2*r)+1;
 return blur;
 ```
+https://forums.unrealengine.com/development-discussion/rendering/1409859-custom-hlsl-tips
