@@ -37,4 +37,6 @@ http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
 
 http://iquilezles.org/www/index.htm   
 https://www.bouncepatch.com/hlsl.html  
-
+https://www.ronja-tutorials.com/2018/03/20/hlsl-basics.html  
+http://www.catalinzima.com/xna/tutorials/crash-course-in-hlsl/  
+http://rbwhitaker.wikidot.com/hlsl-tutorials
