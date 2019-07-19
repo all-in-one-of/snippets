@@ -18,6 +18,7 @@ float3 ret = float3(lerp(ip1,ip2,ips));
 return ret;
 ```
 #### Blur (UE docs)
+IN: Tex, Uv, r, dist  
 ```hlsl
 float3 blur = Texture2DSample(Tex, TexSampler, UV);
 
