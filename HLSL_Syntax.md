@@ -12,20 +12,15 @@
 
 
 ## Switch
-`[Attribute] switch( Selector ) { case 0 : { StatementBlock; } break; case 1 : { StatementBlock; } break; case n : { StatementBlock; } break; default : { StatementBlock; } break;` Switch  
+`[Attribute] switch( Selector ) { case 0 : { StatementBlock; } break; case 1 : { StatementBlock; } break; case n : { StatementBlock; } break; default : { StatementBlock; } break;`
 
 
 ### Var
 
-```hlsl 
-
 float4 color;
 float fVar = 3.1f;
-
 int iVar[3];
-
 int iVar[3] = {1,2,3};
-
 uniform float4 position : SV_POSITION; 
 const float4 lightDirection = {0,0,1};
-```
+
