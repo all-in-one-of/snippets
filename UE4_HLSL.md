@@ -10,7 +10,7 @@ float S = float3(pow(ip1,ex));
 return S;
 ```
 
-lerp
+#### Lerp
 ```hlsl
 float3 ip1 = input_1;
 float3 ip2 = input_2;
