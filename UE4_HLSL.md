@@ -47,3 +47,40 @@ return blur;
 https://forums.unrealengine.com/development-discussion/rendering/1409859-custom-hlsl-tips
 https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions  fn list   
 https://api.unrealengine.com/INT/API/Runtime/Engine/FViewUniformShaderParameters/index.html   
+
+# NIAGARA
+
+
+
+### Math
+```hlsl
+sin(Emitter.Age)*56
+float3(Particles.UV,0)*400
+abs(Particles.NormalizedAge * 2.0f -1.0f) 
+normalize(((( rand(float3(1.0,1.0,1.0) ))) * 2 ) -1 )
+Particles.Position + float3(0, 0, ( sin(Engine.Time) * 0.3f ))
+Emitter.InitialPosition + Particles.RandomVector *rand(145.0f)
+(1.0f - abs(Particles.NormalizedAge * 2.0f -1.0f)) * 2.0f
+1-Particles.RandomVector * (length(Particles.Position - Emitter.InitialPosition)*0.25)
+
+cross(Particles.RandomVector, float3(0,8,0)) * 
+    (float3(0.0f, 0.0f, Emitter.ZOffset) *0.2f) + 
+    (-1.0f * normalize(Emitter.InitialPosition - Particles.Position)*20)
+```
+
+### Fn
+
+```hlsl
+rand(1.5f) + 2.2f
+rand(11.1f) + 2.5f
+length(Particles.Position - Emitter.InitialPosition)
+saturate (use as clamp 0-1 cause is fast!!)  
+
+```
+###  Conditioning  
+```hlsl
+Particles.NormalizedAge < 0.333 ? float4(1,0.1,0.1,1) : Particles.NormalizedAge < 0.575 ? float4(0.1,1,0.1,1) : float4(0.1,0.1,1,1)
+```
+```hlsl
+Particles.Position.z > Emitter.InitialPosition.z - Emitter.ZOffset ? Particles.Position : float3(Particles.Position.x, Particles.Position.y, Emitter.InitialPosition.z -Emitter.ZOffset)
+```
