@@ -1,12 +1,17 @@
 # Unreal custom node: 
 
- 
+
+```
+float3 foo = InputName;
+returen foo; 
+```
+
 #### Exp fn. 
 INPUT: `Input_1`  
-INPUT: `ex`  
+INPUT: `exp`  
 ```hlsl
 float ip1 = Input_1;
-float S = float3(pow(ip1,ex));
+float S = float3(pow(ip1,exp));
 return S;
 ```
 
@@ -17,6 +22,8 @@ float3 ip2 = input_2;
 float3 ret = float3(lerp(ip1,ip2,ips));
 return ret;
 ```
+
+
 #### Blur (UE docs)
 IN: Tex, Uv, r, dist  
 ```hlsl
@@ -39,3 +46,4 @@ return blur;
 ```
 https://forums.unrealengine.com/development-discussion/rendering/1409859-custom-hlsl-tips
 https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions  fn list   
+https://api.unrealengine.com/INT/API/Runtime/Engine/FViewUniformShaderParameters/index.html   
