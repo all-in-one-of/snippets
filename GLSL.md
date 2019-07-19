@@ -1,5 +1,6 @@
 
-https://thebookofshaders.com/03/  
+www.editor.thebookofshaders.com
+www.thebookofshaders.com
 Vertex shader pixel shader compute shader
 
 
