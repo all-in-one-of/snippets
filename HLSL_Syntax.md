@@ -8,12 +8,7 @@
 ## Conditioning
 `[Attribute] if ( Conditional ) { Statement Block; }`  
 
-```hlsl
-Particles.NormalizedAge < 0.333 ? float4(1,0.1,0.1,1) : Particles.NormalizedAge < 0.575 ? float4(0.1,1,0.1,1) : float4(0.1,0.1,1,1)
-```
-```hlsl
-Particles.Position.z > Emitter.InitialPosition.z - Emitter.ZOffset ? Particles.Position : float3(Particles.Position.x, Particles.Position.y, Emitter.InitialPosition.z -Emitter.ZOffset)
-```
+
 
 
 ## Switch
