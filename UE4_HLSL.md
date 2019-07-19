@@ -38,3 +38,4 @@ blur /= 2*(2*r)+1;
 return blur;
 ```
 https://forums.unrealengine.com/development-discussion/rendering/1409859-custom-hlsl-tips
+https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions  fn list   
