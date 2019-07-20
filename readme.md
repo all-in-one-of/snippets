@@ -4,6 +4,7 @@ Libs
 www.tokeru.com/cgwiki  - Vex  
 https://mrpandey.github.io/d3graphTheory/index.html - graph theory    
 http://immersivemath.com/ila/index.html  - immersive math     
+https://www.desmos.com/calculator - function plot  
 https://thebookofshaders.com/  - book of shaders   
 http://mercury.sexy/hg_sdf/ - distance fields  
 http://www.karlsims.com/rd.html - reaction diffusion  
