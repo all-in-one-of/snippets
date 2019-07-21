@@ -1,9 +1,9 @@
 ### Data types  
 
 `bool` true or false  
-`int` 32-bi integer  
+`int` 32-bi integer  - int Foo[3]; / int Foo[3] = {1,2,3};  
 `half` 16bit integer  
-`float` 32bit float  
+`float` 32bit float  - float Foo = 3.1f;  
 `double` 64bit double  
 `float3` vectorTest  
 `float` vectorTest[3]  
@@ -12,6 +12,15 @@
 `bool3` vectorTest    
 `float3x3`: a 3×3 matrix, type float  
 `float2x2`: a 2×2 matrix, type float  
+
+
+### Var
+
+float4 color;  
+uniform float4 position : SV_POSITION;   
+const float4 lightDirection = {0,0,1};  
+
+
 
 Use This Intrinsic Type    To Define Shader Variable   
 `Buffer`    Buffer, which contains one or more scalars  
