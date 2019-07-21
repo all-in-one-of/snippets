@@ -17,10 +17,10 @@
 
 ### Var
 
-float4 color;
-float fVar = 3.1f;
-int iVar[3];
-int iVar[3] = {1,2,3};
-uniform float4 position : SV_POSITION; 
-const float4 lightDirection = {0,0,1};
+float4 color;  
+float fVar = 3.1f;  
+int iVar[3];  
+int iVar[3] = {1,2,3};  
+uniform float4 position : SV_POSITION;   
+const float4 lightDirection = {0,0,1};  
 
