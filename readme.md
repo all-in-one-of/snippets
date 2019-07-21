@@ -14,6 +14,7 @@ www.wordpress.discretization.de/houdini - for mathematicians
 www.richlord.com/tools?offset=1554489900662    
 https://particula.org/ - vex
 http://dokaitutorials.com/tutorials/ - procedural town
+http://project-eden.blogspot.com/ - project earth  
 Gits  
 https://github.com/wirginiaromanowska/Notes_On_Things     
 https://github.com/jhorikawa/HoudiniHowtos    
