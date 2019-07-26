@@ -1,30 +1,38 @@
 # EMITER MODULES:
 Emiter Spawn
 ``` 
-- Particle ID  -   CPU ? - more persistent
-- Execution Index - GPU ?
-- ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)
+- local space
+- deterministic
 - interpolated spawning 
 - require persistent ID
+
+- Particle IDs  -   CPU ? - more persistent
+- Execution Index - GPU ?
+- ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)
+
+
 ```
 Emiter Update
 ```cpp
-- Age:  Emiter Looped Age - tyle żyją ile loop
-- Generate location Event  // ADD TO LEADER
+loop options
+spawn: burst / rate / per unit 
+
+
+
 ```
 Particle Spawn
 ```
--
+Age:  Emiter Looped Age - tyle żyją ile loop
 ```
 Particle Update
 ```
 - Generate Houdini Event (jak zwykly event tylko z fn.)
-
+- Generate location Event  // ADD TO LEADER
 ```
 Event Handler
 ```cpp
 Event Handler Properties // ADD TO FOLLOWER 
-Recive Enebt Locaation // ADD TO FOLLOWER```
+Recive Eneble Locaation // ADD TO FOLLOWER
 Render
 ```
 
@@ -44,6 +52,9 @@ Arbitrary namespaces:
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
 `Particles.MyCompanyName.VariableName` - Anything you create will follow that same paradigm. However, you can create sub-namespaces within the supported ones. So. is a perfectly valid namespace to organize all your custom variables into.  
 `Output` - Output namespace to signify that these are useful values for binding into other modules. convention: Output.Module.VariableName . is just a convention.    
+# MAP ATTRIBUTES
+
+Particles.Lifetime
 
 # EXECUTION INDEX / POINT ID :
 For this module we just need to get the particles execution index, make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
@@ -58,7 +69,7 @@ https://unrealingens.wordpress.com/2018/06/11/exploring-niagara-pre-release-part
 *[emiter update]* spawn form array playback   
 *[particle spawn]* hanldle spawn particles / by type   
 ### H EVENTS:   
-*[particle update]* generate location event  // LIDER  writing to struct pos and we can listen it    
+*[particle update]* generate location event  // LEADER  writing to struct pos and we can listen it    
 *[Event handler]* is listening for event. // FOLLOWER  
 
 ### POINT ANIM:
