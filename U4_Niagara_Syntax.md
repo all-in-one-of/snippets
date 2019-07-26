@@ -1,3 +1,8 @@
+- Particle IDs  -   CPU ? - more persistent  
+- Execution Index - GPU ?  
+- ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
+
+
 # EMITER MODULES:
 Emiter Spawn
 ``` 
@@ -5,20 +10,11 @@ Emiter Spawn
 - deterministic
 - interpolated spawning 
 - require persistent ID
-
-- Particle IDs  -   CPU ? - more persistent
-- Execution Index - GPU ?
-- ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)
-
-
 ```
 Emiter Update
 ```cpp
 loop options
 spawn: burst / rate / per unit 
-
-
-
 ```
 Particle Spawn
 ```
