@@ -40,12 +40,12 @@ Render
 
 NAME SPACE  | R | W | define | share
 --- | --- | --- | --- | --- 
-System | Everyehere | Sys scripts | persisted f2f | within the system
-Emitter | Emiter&Particle scripts | Emitter scripts | persisted f2f | shared within emitter inst
-Particles | Particle scripts | Particle scripts |  persisted f2f |  per-particle values
-Engine |  Everyehere  | no | defined within the runtime for Niagara itself
-Module | Within that module | -||-  | defined within a module
-User |  Everyehere  | no | (string value "snoise")
+System | Everyehere | System | persisted frame 2 frame | within the system
+Emitter | Emiter & Particle | Emitter | persisted f2f | shared within emitter inst
+Particles | Particle | Particle |  persisted f2f |  per-particle values
+Engine |  Everyehere  | NOT | runtime for Niagara itself | 
+Module | Within Module | Module with known name  | defined within a module |
+User |  Everyehere  | NOT | set in component or through blueprints | 
 
 
 
