@@ -66,15 +66,37 @@ NameSpace | R | W | Define | Share within
 `Module.LifeTime`
 `Module.LoopParticlesLifetime`
 
-#### ?
+#### Translation
+`Particles.Owner.Position`
+`Particles.Owner.Rotation`
+`Particles.Owner.Scale`
+
+`Particles.Position`
+`Particles.Scale`
+`Particles.SpriteAlignment`
+`Particles.SpriteFaceing`
+`Particles.SpriteRotation`
+`Particles.SpriteSize`
+
+`Particles.RibbonFaceing`
+`Particles.RibbonLinkOrder`
+`Particles.RibbonTwist`
+`Particles.RibbonWidth`
+
+`Particles.SpriteUVScale`
+`Particles.SpriteSubimageIndex`
+
+#### ID ?
 `Engine.ExecutionCount`
 `Engine.Owner.ExecutionState`
 `Particles.ID`
 `Particles.RibbonID`
 `Particles.UniqueID`
+
 #### v
 `Engine.Owner.Velocity`
 `Particles.Velocity`
+
 # EXECUTION INDEX / POINT ID :
 For this module we just need to get the particles execution index, make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
 
