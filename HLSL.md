@@ -36,7 +36,7 @@
 `TANGENT[n]`		float4 - Tangent    
 `TEXCOORD[n]`		float4 - Texture coordinates 
 
-#### Output: 
+##### Output: 
 `POSITION[n]`	float4 - Vertex position in homogenous space. Compute position in screen-space by dividing (x,y,z) by w   
 `FOG`	float - Vertex fog	   
 `PSIZE`float -	Point size  
@@ -49,7 +49,7 @@
 `SV_IsFrontFace` float - 	Floating-point scalar that indicates a back-facing primitive. A negative value faces backwards   
 `SV_Position`	float2 - The pixel location (x,y) in screen space  
 
-#### Output:    
+##### Output:    
 `SV_Depth`, `COLOR[n]`	float4 - Output color	     
 `SV_Target`, `DEPTH[n]`	float - Output depth	    
 
