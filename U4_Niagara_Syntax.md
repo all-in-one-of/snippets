@@ -37,7 +37,7 @@ Render
 NameSpace | R | W | Define | Share within 
 --- | --- | --- | --- | --- 
 System | Everyehere | System | persisted frame 2 frame | system
-Emitter | Emiter & Particle | Emitter | persisted frame 2 frame | emitter inst
+`Emitter` | Emiter & Particle | Emitter | persisted frame 2 frame | emitter inst
 Particles | Particle | Particle |  persisted frame 2 frame |  per-particle values
 Engine |  Everyehere  | NOT | runtime for Niagara itself | 
 Module | Module | Modules | within a module |
