@@ -40,15 +40,13 @@ Render
 
 NAME SPACE  | R | W | define | share
 --- | --- | --- | --- | --- 
-System | Perlin Noise | (see Periodic  Noise operator) | (string value "pnoise") |
+System | Everyehere | (see Periodic  Noise operator) | (string value "pnoise") |
 Emitter | Original Perlin Noise | (see Turbulent Noise operator) | (string value "onoise") |
-1.8 | Worley Noise | - | -
-1.8 | Periodic Worley Noise | (see Periodic Worley Noise operator) | -
-1.9 | Voronoi Noise | (see Voronoi   Noise operator) | -
-2.1 | Sparse Convolution Noise | (see Turbulent Noise operator) | (string value "snoise")
-2.3 | Alligator Noise | (see Turbulent Noise operator) | (string value "anoise")
-x | Simplex noise | - | (string value "xnoise")
-x |Zero Centered Perlin | - | (string value "correctnoise")
+Particles | Worley Noise | - | -
+Engine |  Everyehere  | (see Periodic Worley Noise operator) | -
+Module | Within that module | -||-  | -
+User |  Everyehere  | no | (string value "snoise")
+
 
 
 `System` - **R: EVERYWHERE** / **W: SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
