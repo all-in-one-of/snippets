@@ -40,11 +40,11 @@ Render
 
 NAME SPACE  | R | W | define | share
 --- | --- | --- | --- | --- 
-System | Everyehere | (see Periodic  Noise operator) | (string value "pnoise") |
-Emitter | Original Perlin Noise | (see Turbulent Noise operator) | (string value "onoise") |
-Particles | Worley Noise | - | -
-Engine |  Everyehere  | (see Periodic Worley Noise operator) | -
-Module | Within that module | -||-  | -
+System | Everyehere | Sys scripts | persisted f2f | within the system
+Emitter | Emiter&Particle scripts | Emitter scripts | persisted f2f | shared within emitter inst
+Particles | Particle scripts | Particle scripts |  persisted f2f |  per-particle values
+Engine |  Everyehere  | no | defined within the runtime for Niagara itself
+Module | Within that module | -||-  | defined within a module
 User |  Everyehere  | no | (string value "snoise")
 
 
