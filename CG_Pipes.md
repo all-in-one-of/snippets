@@ -23,7 +23,7 @@
  
 **Materials:**  
 `$HIP/${HIPNAME}/material/..`  - Substance&Material    
-`$HIP/${HIPNAME}/material/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
+`$HIP/${HIPNAME}/bake_$OS/${HIPNAME}_$OS_$(CHANNEL).png` - Texture bake      
 
 **PDG:**  
 ```$HIP/${HIPNAME}/cache_pdg/$HIPNAME.$OS.`@wedgeindex`.$F.bgeo.sc``` - PDG local  
