@@ -39,10 +39,10 @@ NameSpace | R | W | Define | Share within
 `System` | Everyehere | System | persisted frame 2 frame | system
 `Emitter` | Emiter, Particle | Emitter | persisted frame 2 frame | emitter inst
 `Particles` | Particle | Particle |  persisted frame 2 frame |  per-particle values
-`Engine` |  Everyehere  | NOT | runtime for Niagara itself | 
+`Engine` |  Everyehere  | - | runtime for Niagara itself | 
 `Module` | Module | Modules | within a module |
-`User` |  Everyehere  | NOT | in component or through blueprints | **[ALL OUT DATA]**
-`NPC` |  Everyehere | NOT | in parameter collection | 
+`User` |  Everyehere  | - | in component or through blueprints | **[ALL OUT DATA]**
+`NPC` |  Everyehere | - | in parameter collection | 
 
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
 `Particles.MyCompanyName.VariableName` - Anything you create will follow that same paradigm. However, you can create sub-namespaces within the supported ones. So. is a perfectly valid namespace to organize all your custom variables into.  
