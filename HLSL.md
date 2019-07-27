@@ -62,10 +62,10 @@ All system-values begin with an SV_ prefix,
 http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
 ### Key Words
 
-`return [value];`  
-`continue;`   - Stop executing the current loop (do, for, while) / update the loop conditions / begin executing from the top of the loop 
-`discard;`  - Do not output the result of the current pixel   
-`break;`  - Exit the surrounding loop (do, for, while).
+`return [value];`    
+`continue;`   - Stop loop (do, for, while) / update the loop conditions / begin executing from the top of the loop   
+`discard;`  - Do not output the result of the current pixel     
+`break;`  - Exit the surrounding loop (do, for, while).  
 
 
 ```
