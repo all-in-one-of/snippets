@@ -41,11 +41,11 @@ Render
 NAME SPACE  | R | W | define | share
 --- | --- | --- | --- | --- 
 System | Everyehere | System | persisted frame 2 frame | within the system
-Emitter | Emiter & Particle | Emitter | persisted f2f | shared within emitter inst
-Particles | Particle | Particle |  persisted f2f |  per-particle values
+Emitter | Emiter & Particle | Emitter | persisted frame 2 frame | shared within emitter inst
+Particles | Particle | Particle |  persisted frame 2 frame |  per-particle values
 Engine |  Everyehere  | NOT | runtime for Niagara itself | 
-Module | Within Module | Module with known name  | defined within a module |
-User |  Everyehere  | NOT | set in component or through blueprints | 
+Module | Within Module | Module with known name  | within a module |
+User |  Everyehere  | NOT | in component or through blueprints | 
 
 
 
