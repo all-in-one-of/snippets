@@ -35,18 +35,15 @@ Input	Description	Type
 `BINORMAL[n]`	Binormal	float4  
 `BLENDINDICES[n]`	Blend indices	uint    
 `BLENDWEIGHT[n]`	Blend weights	float    
-`COLOR[n]`	Diffuse and specular color	float4  
+`COLOR[n]`	Diffuse and specular color	float4  / Diffuse or specular color	float4  
 `NORMAL[n]`	Normal vector	float4  
-`POSITION[n]`	Vertex position in object space.	float4  
+`POSITION[n]`	Vertex position in object space.	float4  / Position of a vertex in homogenous space. Compute position in screen-space by dividing (x,y,z) by w. Every vertex shader must write out a parameter with this semantic.	float4  
 `POSITIONT`	Transformed vertex position.	float4  
 `PSIZE[n]`	Point size	float   
 `TANGENT[n]`	Tangent	float4  
 `TEXCOORD[n]`	Texture coordinates	float4  
 `Output`	Description	Type  
-`COLOR[n]`	Diffuse or specular color	float4  
 `FOG`	Vertex fog	float  
-`POSITION[n]`	Position of a vertex in homogenous space. Compute position in screen-space by dividing (x,y,z) by w. Every vertex shader must write out a parameter with this semantic.	float4  
-`PSIZE`	Point size	float  
 `TESSFACTOR[n]`	Tessellation factor	float  
 `TEXCOORD[n]`	Texture coordinates	float4  
 
@@ -58,6 +55,15 @@ Input	Description	Type
 `Output`	Description	Type   
 `COLOR[n]`	Output color	float4  
 `DEPTH[n]`	Output depth	float  
+
+All system-values begin with an SV_ prefix,  
+ `SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output. 
+ Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics.  
+ `SV_VertexID`, `SV_InstanceID`, `SV_IsFrontFace` can only be input into the first active shader   
+ `SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. The index indicates which of the 8 possibly bound render targets to write to. The value is available to all shaders.  
+`SV_Depth`  
+
+
 
 http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
 ### Key Words
