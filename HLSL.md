@@ -22,13 +22,6 @@ Use This Intrinsic Type    To Define Shader Variable:
 `float2x2`: a 2×2 matrix, type float  
 
 
-### Var
-
-`float4 color;`   
-`uniform float4 position : SV_POSITION;`    
-`const float4 lightDirection = {0,0,1};`  
-
-
 ### Vertex Shader Semantics:
 
 Input	Description	Type  
@@ -56,6 +49,7 @@ Input	Description	Type
 `COLOR[n]`	Output color	float4  
 `DEPTH[n]`	Output depth	float  
 
+### DirectX10 Semantics:  
 All system-values begin with an SV_ prefix,  
  `SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output. 
  Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics.  
