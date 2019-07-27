@@ -25,23 +25,23 @@
 
 
 ### Vertex Shader Semantics:
-
-Every vertex shader must write out a parameter with this semantic    
-`POSITION[n]`	float4 - Vertex position in object space. /  homogenous space. Compute position in screen-space by dividing (x,y,z) by w   
-
 `BINORMAL[n]`	float4 - Binormal	  
 `BLENDINDICES[n]`	uint - Blend indices	    
 `BLENDWEIGHT[n]`	float - Blend weights	    
 `COLOR[n]`	float4 - Diffuse and specular color	/ Diffuse or specular color  
 `NORMAL[n]` float4 -	Normal vector	  
+`POSITION[n]`	float4 - Vertex position in object space  
 `POSITIONT` 	float4 -	Transformed vertex position     
 `PSIZE[n]`		float - Point size   
 `TANGENT[n]`		float4 - Tangent    
-`TEXCOORD[n]`		float4 - Texture coordinates    
-`Output`	Description	Type  
-`FOG`	float - Vertex fog	 
-`TESSFACTOR[n]` float -	Tessellation factor 
-`TEXCOORD[n]`	float4 - Texture coordinates 
+`TEXCOORD[n]`		float4 - Texture coordinates 
+
+### Vertex Shader Semantics Output: 
+`POSITION[n]`	float4 - Vertex position in homogenous space. Compute position in screen-space by dividing (x,y,z) by w   
+`FOG`	float - Vertex fog	   
+`PSIZE`float -	Point size  
+`TESSFACTOR[n]` float -	Tessellation factor  
+`TEXCOORD[n]`	float4 - Texture coordinates   
 
 ### Pixel Shader Semantics:
 `COLOR[n]`	float4 - Diffuse or specular color    
@@ -49,7 +49,7 @@ Every vertex shader must write out a parameter with this semantic
 `SV_IsFrontFace` float - 	Floating-point scalar that indicates a back-facing primitive. A negative value faces backwards   
 `SV_Position`	float2 - The pixel location (x,y) in screen space  
 
-### Output	Description	Type:    
+### Pixel Shader Semantics Output:    
 `SV_Depth`, `COLOR[n]`	float4 - Output color	     
 `SV_Target`, `DEPTH[n]`	float - Output depth	    
 
@@ -58,8 +58,6 @@ Every vertex shader must write out a parameter with this semantic
 `SV_VertexID`, `SV_InstanceID`, `SV_IsFrontFace` can only be input into the first active shader   
 `SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. The value is available to all shaders    
 `SV_Depth`  
-
-
 
 http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
 ### Key Words
