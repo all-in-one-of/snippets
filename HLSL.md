@@ -1,13 +1,11 @@
-### Data types  
+### Intrinsic Data types    
+`Buffer` -   Buffer, which contains one or more scalars  
+`Scalar`  -  One-component scalar  
+`Vector`, `Matrix`  -  Multiple-component vector or matrix  
+`Sampler`, `Shader`, `Texture `  - Sampler, shader, or texture object  
+`Struct`, `User Defined`  - Custom structure or typedef  
 
-Use This Intrinsic Type    To Define Shader Variable: 
-`Buffer`    Buffer, which contains one or more scalars  
-`Scalar`    One-component scalar  
-`Vector`, `Matrix`    Multiple-component vector or matrix  
-`Sampler`, `Shader`, `Texture `   Sampler, shader, or texture object  
-`Struct`, `User Defined`    Custom structure or typedef  
-
-
+### Variables
 `bool` true or false  
 `int` 32-bi integer  - int Foo[3]; / int Foo[3] = {1,2,3};  
 `half` 16bit integer  
@@ -22,39 +20,43 @@ Use This Intrinsic Type    To Define Shader Variable:
 `float2x2`: a 2×2 matrix, type float  
 
 
+
+
+
+
 ### Vertex Shader Semantics:
 
-Input	Description	Type  
-`BINORMAL[n]`	Binormal	float4  
-`BLENDINDICES[n]`	Blend indices	uint    
-`BLENDWEIGHT[n]`	Blend weights	float    
-`COLOR[n]`	Diffuse and specular color	float4  / Diffuse or specular color	float4  
-`NORMAL[n]`	Normal vector	float4  
-`POSITION[n]`	Vertex position in object space.	float4  / Position of a vertex in homogenous space. Compute position in screen-space by dividing (x,y,z) by w. Every vertex shader must write out a parameter with this semantic.	float4  
-`POSITIONT`	Transformed vertex position.	float4  
-`PSIZE[n]`	Point size	float   
-`TANGENT[n]`	Tangent	float4  
-`TEXCOORD[n]`	Texture coordinates	float4  
+Every vertex shader must write out a parameter with this semantic    
+`POSITION[n]`	float4 - Vertex position in object space. /  homogenous space. Compute position in screen-space by dividing (x,y,z) by w   
+
+`BINORMAL[n]`	float4 - Binormal	  
+`BLENDINDICES[n]`	uint - Blend indices	    
+`BLENDWEIGHT[n]`	float - Blend weights	    
+`COLOR[n]`	float4 - Diffuse and specular color	/ Diffuse or specular color  
+`NORMAL[n]` float4 -	Normal vector	  
+`POSITIONT` 	float4 -	Transformed vertex position     
+`PSIZE[n]`		float - Point size   
+`TANGENT[n]`		float4 - Tangent    
+`TEXCOORD[n]`		float4 - Texture coordinates    
 `Output`	Description	Type  
-`FOG`	Vertex fog	float  
-`TESSFACTOR[n]`	Tessellation factor	float  
-`TEXCOORD[n]`	Texture coordinates	float4  
+`FOG`	float - Vertex fog	 
+`TESSFACTOR[n]` float -	Tessellation factor 
+`TEXCOORD[n]`	float4 - Texture coordinates 
 
 ### Pixel Shader Semantics:
-`COLOR[n]`	Diffuse or specular color.	float4  
-`TEXCOORD[n]`	Texture coordinates	float4  
-`SV_IsFrontFace`	Floating-point scalar that indicates a back-facing primitive. A negative value faces backwards, while a positive value faces the camera. float  
-`SV_Position`	The pixel location (x,y) in screen space. float2  
-`Output`	Description	Type   
-`COLOR[n]`	Output color	float4  
-`DEPTH[n]`	Output depth	float  
+`COLOR[n]`	float4 - Diffuse or specular color    
+`TEXCOORD[n]` float4	- Texture coordinates	   
+`SV_IsFrontFace` float - 	Floating-point scalar that indicates a back-facing primitive. A negative value faces backwards   
+`SV_Position`	float2 - The pixel location (x,y) in screen space  
+
+### Output	Description	Type:    
+`SV_Depth	DEPTH`, `COLOR[n]`	float4 - Output color	     
+`SV_Target	COLOR`, `DEPTH[n]`	float - Output depth	    
 
 ### DirectX10 Semantics:  
-All system-values begin with an SV_ prefix,  
- `SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output. 
- Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics.  
- `SV_VertexID`, `SV_InstanceID`, `SV_IsFrontFace` can only be input into the first active shader   
- `SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. The index indicates which of the 8 possibly bound render targets to write to. The value is available to all shaders.  
+`SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics    
+`SV_VertexID`, `SV_InstanceID`, `SV_IsFrontFace` can only be input into the first active shader   
+`SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. The value is available to all shaders    
 `SV_Depth`  
 
 
