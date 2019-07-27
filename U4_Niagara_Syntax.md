@@ -50,23 +50,31 @@ NameSpace | R | W | Define | Share within
 
 # MAP ATTRIBUTES
 
+#### Time:
 `Emitter.Age`
-`Emitter.DeltaTime`
-`Emitter.InverseDeltaTime`
-`Emitter.RealTime`
-`Emitter.SystemAge`
+`Engine.DeltaTime`
+`Engine.InverseDeltaTime`
+`Engine.Owner.TimeSinceRendered`
+`Engine.RealTime`
+`Emitter.System.Age`
+`Emitter.System.TickCount`
 `Emitter.Time`        
-
 `Particles.Age`
 `Particles.Lifetime`
 `Particles.NormalizedAge`
-
 `Module.DeltaTime`
 `Module.LifeTime`
 `Module.LoopParticlesLifetime`
 
-
-
+### ?
+`Engine.ExecutionCount`
+`Engine.Owner.ExecutionState`
+`Particles.ID`
+`Particles.RibbonID`
+`Particles.UniqueID`
+### V
+`Engine.Owner.Velocity`
+`Particles.Velocity`
 # EXECUTION INDEX / POINT ID :
 For this module we just need to get the particles execution index, make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
 
