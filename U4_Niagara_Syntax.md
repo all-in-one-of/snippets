@@ -38,30 +38,24 @@ Render
 
 ---
 
-NAME SPACE  | R | W | define | share
+NAME SPACE  | R | W | define | share within 
 --- | --- | --- | --- | --- 
-System | Everyehere | System | persisted frame 2 frame | within the system
-Emitter | Emiter & Particle | Emitter | persisted frame 2 frame | shared within emitter inst
+System | Everyehere | System | persisted frame 2 frame | system
+Emitter | Emiter & Particle | Emitter | persisted frame 2 frame | emitter inst
 Particles | Particle | Particle |  persisted frame 2 frame |  per-particle values
 Engine |  Everyehere  | NOT | runtime for Niagara itself | 
-Module | Within Module | Module with known name  | within a module |
-User |  Everyehere  | NOT | in component or through blueprints | 
+Module | Module | Modules | within a module |
+User |  Everyehere  | NOT | in component or through blueprints | **[ALL OUT DATA]**
 
 
-
-`System` - **R: EVERYWHERE** / **W: SYSTEM SCRIPT** (persisted frame to frame / shared within the system)    
-`Emitter` - **R: EMITER & PARTICLE SCRIPTS** / **W: EMITER SCRIPT** (persisted frame to frame / shared within emitter inst)     
-`Particles` - **R: PARTICLE SCRIPTS** / **W: PARTICLE SCRIPT** (persisted frame to frame / per-particle values)    
-`Engine` - **R:EVERYWHERE** / **W:NOT writable**  (defined within the runtime for Niagara itself)  
-`Module` - **R/W: within that module and in the owning context (System/Emitter/Particle)** (defined within a module) can be written to if you know the unique module name in that context. In other words, if you add a AddVelocity module, you can address its parameters from the owning particle update script by replacing "Module" with "AddVelocity"      
-
-`User ` - **R:EVERYWHERE** / **W:NOT writable within Niagara** (set in component or through blueprints ) **[ALL OUT DATA]**    
+  
 `NPC` - Niagara Parameter Collection / usually followed by another sub-namespace that defines the name of the NPC from which you are pulling the value from.   
 
 Arbitrary namespaces:  
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
 `Particles.MyCompanyName.VariableName` - Anything you create will follow that same paradigm. However, you can create sub-namespaces within the supported ones. So. is a perfectly valid namespace to organize all your custom variables into.  
 `Output` - Output namespace to signify that these are useful values for binding into other modules. convention: Output.Module.VariableName . is just a convention.    
+
 # MAP ATTRIBUTES
 
 Particles.Lifetime
