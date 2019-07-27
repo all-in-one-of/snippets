@@ -50,8 +50,8 @@ Every vertex shader must write out a parameter with this semantic
 `SV_Position`	float2 - The pixel location (x,y) in screen space  
 
 ### Output	Description	Type:    
-`SV_Depth	DEPTH`, `COLOR[n]`	float4 - Output color	     
-`SV_Target	COLOR`, `DEPTH[n]`	float - Output depth	    
+`SV_Depth`, `COLOR[n]`	float4 - Output color	     
+`SV_Target`, `DEPTH[n]`	float - Output depth	    
 
 ### DirectX10 Semantics:  
 `SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics    
