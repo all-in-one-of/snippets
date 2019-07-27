@@ -42,10 +42,7 @@ Particles | Particle | Particle |  persisted frame 2 frame |  per-particle value
 Engine |  Everyehere  | NOT | runtime for Niagara itself | 
 Module | Module | Modules | within a module |
 User |  Everyehere  | NOT | in component or through blueprints | **[ALL OUT DATA]**
-
-
-  
-`NPC` - Niagara Parameter Collection / usually followed by another sub-namespace that defines the name of the NPC from which you are pulling the value from.   
+NPC |  Everyehere | NOT | in parameter collection | 
 
 Arbitrary namespaces:  
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
@@ -54,7 +51,22 @@ Arbitrary namespaces:
 
 # MAP ATTRIBUTES
 
-Particles.Lifetime
+`Emitter.Age`
+`Emitter.DeltaTime`
+`Emitter.InverseDeltaTime`
+`Emitter.RealTime`
+`Emitter.SystemAge`
+`Emitter.Time`        
+
+`Particles.Age`
+`Particles.Lifetime`
+`Particles.NormalizedAge`
+
+`Module.DeltaTime`
+`Module.LifeTime`
+`Module.LoopParticlesLifetime`
+
+
 
 # EXECUTION INDEX / POINT ID :
 For this module we just need to get the particles execution index, make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
