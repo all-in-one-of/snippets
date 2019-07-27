@@ -63,17 +63,19 @@ http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
 ### Key Words
 
 `return [value];`  
-`continue;`   
-- Stop executing the current loop (do, for, while)  
-- update the loop conditions  
-- begin executing from the top of the loop  
+`continue;`   - Stop executing the current loop (do, for, while) / update the loop conditions / begin executing from the top of the loop 
+`discard;`  - Do not output the result of the current pixel   
+`break;`  - Exit the surrounding loop (do, for, while).
 
-`discard;`  
-- Do not output the result of the current pixel   
 
-`break;`  
-- Exit the surrounding loop (do, for, while).
-
+```
+float Scale;
+float4 main(in float2 uv: TEXCOORD0): SV_TARGET
+{
+ float x = sin(uv.x*Scale);
+ return float4(0.4,x,0.5,1.0);   
+}
+```
 http://iquilezles.org/www/index.htm   
 https://www.bouncepatch.com/hlsl.html  
 https://www.ronja-tutorials.com/2018/03/20/hlsl-basics.html  
