@@ -44,7 +44,6 @@ NameSpace | R | W | Define | Share within
 `User` |  Everyehere  | NOT | in component or through blueprints | **[ALL OUT DATA]**
 `NPC` |  Everyehere | NOT | in parameter collection | 
 
-Arbitrary namespaces:  
 `Physics/Temp/Transient/Etc.` - “temporary”, they only have meaning for the script type that you are on. The values are scoped to that update, spawn or event and are not persisted in any way.  
 `Particles.MyCompanyName.VariableName` - Anything you create will follow that same paradigm. However, you can create sub-namespaces within the supported ones. So. is a perfectly valid namespace to organize all your custom variables into.  
 `Output` - Output namespace to signify that these are useful values for binding into other modules. convention: Output.Module.VariableName . is just a convention.    
