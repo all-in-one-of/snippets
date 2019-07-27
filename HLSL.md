@@ -56,7 +56,7 @@
 ### DirectX10 Semantics:  
 `SV_POSITION`, which is interpreted by the rasterizer stage can be specified as an input to a vertex shader as well as an output Pixel shaders can only write to parameters with the SV_Depth and SV_Target system-value semantics    
 `SV_VertexID`, `SV_InstanceID`, `SV_IsFrontFace` can only be input into the first active shader   
-`SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. The value is available to all shaders    
+`SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. available to all shaders    
 `SV_Depth`  
 
 http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
