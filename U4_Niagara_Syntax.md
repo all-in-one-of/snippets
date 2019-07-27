@@ -33,12 +33,8 @@ Render
 ```
 
 # NAME SPACES  
-(readable/writable  R/W)  
 
-
----
-
-NAME SPACE  | R | W | define | share within 
+NameSpace | R | W | Define | Share within 
 --- | --- | --- | --- | --- 
 System | Everyehere | System | persisted frame 2 frame | system
 Emitter | Emiter & Particle | Emitter | persisted frame 2 frame | emitter inst
