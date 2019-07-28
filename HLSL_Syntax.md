@@ -1,5 +1,5 @@
 ### Shader structure 
-```
+```hlsl
 // Inputs
 float4x4 object_to_world: WORLD;
 float4x4 object_to_clip: WORLDVIEWPROJECTION;
