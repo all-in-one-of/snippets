@@ -59,7 +59,8 @@
 `SV_Target[n]`, where 0 <= n <= 7	The output value that will be stored in a render target. available to all shaders    
 `SV_Depth`  
 
-http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   
+http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm   - SDF & HLSL
+
 ### Key Words
 
 `return [value];`    
@@ -76,8 +77,7 @@ float4 main(in float2 uv: TEXCOORD0): SV_TARGET
  return float4(0.4,x,0.5,1.0);   
 }
 ```
-http://iquilezles.org/www/index.htm   
-https://www.bouncepatch.com/hlsl.html  
-https://www.ronja-tutorials.com/2018/03/20/hlsl-basics.html  
-http://www.catalinzima.com/xna/tutorials/crash-course-in-hlsl/  
-http://rbwhitaker.wikidot.com/hlsl-tutorials
+https://www.bouncepatch.com/hlsl.html  - hlsl tuts
+https://www.ronja-tutorials.com/2018/03/20/hlsl-basics.html  - hlsl tuts  
+http://www.catalinzima.com/xna/tutorials/crash-course-in-hlsl/  - hlsl ala wiki
+http://rbwhitaker.wikidot.com/hlsl-tutorials - hlsl xna
