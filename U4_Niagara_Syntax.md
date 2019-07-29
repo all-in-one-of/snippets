@@ -63,19 +63,16 @@ NameSpace | R | W | Define | Share within
 `Particles.Owner.Position`
 `Particles.Owner.Rotation`
 `Particles.Owner.Scale`
-
 `Particles.Position`
 `Particles.Scale`
 `Particles.SpriteAlignment`
 `Particles.SpriteFaceing`
 `Particles.SpriteRotation`
 `Particles.SpriteSize`
-
 `Particles.RibbonFaceing`
 `Particles.RibbonLinkOrder`
 `Particles.RibbonTwist`
 `Particles.RibbonWidth`
-
 `Particles.SpriteUVScale`
 `Particles.SpriteSubimageIndex`
 
