@@ -20,7 +20,7 @@ Faster than unified. Compute band-limited noise. Ideal for shading
 Presents a unified interface and uniform output range for all the noise types available in VEX
 
 ### Curl noise
-divergence-free 3D (vector) noise - function for perlin or simplex 
+divergence-free 3D (vector) noise - function for perlin or simplex divergence is a vector operator that produces a scalar field
 
 ### Turbulence noise 
 Compute turbulence with roughness and attenuation
