@@ -1,5 +1,4 @@
 
-- Execution Index - GPU ?   - ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
 
 # EMITER MODULES:
 Emitter Spawn
@@ -88,7 +87,8 @@ NameSpace | R | W | Define | Share within
 `Particles.Velocity`
 
 # EXECUTION INDEX / POINT ID :
-For this module we just need to get the particles execution index, make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
+- Execution Index - GPU ?   - ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
+make a Niagara ID and assign the execution index to the ID index, and then set Particles.RibbonID in the Map with our new ID
 
 Now we can return to the Niagara Emitter stack and add our new module (I named it SetRibbonIDByExecOrder) to the Particle Spawn section. With this, every ribbon in the grid should have a unique ID.
 https://unrealingens.wordpress.com/2018/06/11/exploring-niagara-pre-release-part-3//
