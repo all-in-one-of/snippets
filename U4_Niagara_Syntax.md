@@ -1,36 +1,28 @@
-- Particle IDs  -   CPU ? - more persistent  
-- Execution Index - GPU ?  
-- ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
 
+- Execution Index - GPU ?   - ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
 
 # EMITER MODULES:
-Emiter Spawn
-``` 
 - local space
 - deterministic
 - interpolated spawning 
-- require persistent ID
-```
-Emiter Update
-```cpp
-loop options
-spawn: burst / rate / per unit 
-```
-Particle Spawn
-```
-Age:  Emiter Looped Age - tyle żyją ile loop
-```
-Particle Update
-```
+- require persistent ID  // - Particle IDs  -   CPU ? - more persistent  
+
+Emiter Update  
+- spawn loop options
+- spawn: burst / rate / per unit 
+
+Particle Spawn  
+- Age:  Emiter Looped Age - tyle żyją ile loop
+
+Particle Update  
 - Generate Houdini Event (jak zwykly event tylko z fn.)
 - Generate location Event  // ADD TO LEADER
-```
-Event Handler
-```cpp
-Event Handler Properties // ADD TO FOLLOWER 
-Recive Eneble Locaation // ADD TO FOLLOWER
+
+Event Handler  
+- Event Handler Properties // ADD TO FOLLOWER 
+- Recive Eneble Locaation // ADD TO FOLLOWER
+
 Render
-```
 
 # NAME SPACES  
 
