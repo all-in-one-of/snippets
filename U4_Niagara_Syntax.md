@@ -2,25 +2,26 @@
 - Execution Index - GPU ?   - ArrayIndex != ExecIndex (you can verify this by writing out Particles.MyExecIndex)  
 
 # EMITER MODULES:
+Emitter Spawn
 - local space
 - deterministic
 - interpolated spawning 
 - require persistent ID  // - Particle IDs  -   CPU ? - more persistent  
 
-Emiter Update  
+Emitter Update  
 - spawn loop options
-- spawn: burst / rate / per unit 
+- spawn: `Burst` / `Rate` / `Per Unit` 
 
 Particle Spawn  
-- Age:  Emiter Looped Age - tyle żyją ile loop
+- `Age`:  Emiter Looped Age - tyle żyją ile loop
 
 Particle Update  
-- Generate Houdini Event (jak zwykly event tylko z fn.)
-- Generate location Event  // ADD TO LEADER
+- `Generate Houdini Event` (jak zwykly event tylko z fn.)
+- `Generate Location Event`  // ADD TO LEADER
 
 Event Handler  
-- Event Handler Properties // ADD TO FOLLOWER 
-- Recive Eneble Locaation // ADD TO FOLLOWER
+- `Event Handler Properties` // ADD TO FOLLOWER 
+- `Recive Locaation Event` // ADD TO FOLLOWER
 
 Render
 
@@ -103,7 +104,7 @@ https://unrealingens.wordpress.com/2018/06/11/exploring-niagara-pre-release-part
 *[particle spawn]* hanldle spawn particles / by type   
 ### H EVENTS:   
 *[particle update]* generate location event  // LEADER  writing to struct pos and we can listen it    
-*[Event handler]* is listening for event. // FOLLOWER  
+*[Event handler]* is listening for event. 2  events! // FOLLOWER  
 
 ### POINT ANIM:
 
