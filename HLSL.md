@@ -83,3 +83,8 @@ http://www.catalinzima.com/xna/tutorials/crash-course-in-hlsl/  - hlsl ala wiki
 http://rbwhitaker.wikidot.com/hlsl-tutorials - hlsl xna
 
 http://www.alanzucconi.com/2016/07/01/volumetric-rendering/ - volume implementation hlsl 
+
+pos_object  
+pos_world  
+pos_camera  
+pos_clip  (projective space)  
