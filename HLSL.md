@@ -81,3 +81,5 @@ https://www.bouncepatch.com/hlsl.html  - hlsl tuts
 https://www.ronja-tutorials.com/2018/03/20/hlsl-basics.html  - hlsl tuts  
 http://www.catalinzima.com/xna/tutorials/crash-course-in-hlsl/  - hlsl ala wiki
 http://rbwhitaker.wikidot.com/hlsl-tutorials - hlsl xna
+
+http://www.alanzucconi.com/2016/07/01/volumetric-rendering/ - volume implementation hlsl 
