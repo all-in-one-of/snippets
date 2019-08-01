@@ -28,6 +28,7 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 - `popcolision` - (stick/ bounce)  
 - `popgroup` -  
 - `popforce` - jakies noizy Old thing   
+- `popwind` - stop accumulating v on given speed  
 - `popkill` - `if (@age>1) dead = 1;`  
 
 # [POP Solver] 
