@@ -19,16 +19,12 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 - `pop vop`  
 
 #### *Input SOURCE*  
+
 - `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
-- `fireworks`
-- `popattract` - (to point or geometry)  
-- `popdrag`  
-- `popvop` - sam mozesz zrobic force, np ( vel +=  noise)  
-- `popcurveforce` - podpinasz krzywa i leci  
-- `popcolision` - (stick/ bounce)  
+- pop forces
 - `popgroup` -  
-- `popforce` - jakies noizy Old thing   
-- `popwind` - stop accumulating v when reaching given speed  
+
+
 - `popkill` - `if (@age>1) dead = 1;`  
 
 # [POP Solver] 
@@ -77,7 +73,22 @@ https://vimeo.com/132847114
 # [POP Wrangler]
 @dead = 1; // kill (pop solver > update > reap particles)
 
+## Forces 
 
+- `popforce` - basic with VOP
+- `popwind` - stop accumulating v when reaching given speed  
+- `popattract` - (to point or geometry)  if bouncing increase Air Resistance
+- `popaxies`  rotate around axies  (use suction speed to not let go too far) 
+- `fireworks`
+
+- `popdrag`  
+- `popvop` - sam mozesz zrobic force, np ( vel +=  noise)  
+- `popcurveforce` - podpinasz krzywa i leci  
+- `popcolision` - (stick/ bounce)    
+####orient:
+- `poptorque` - like a force adding every frame
+- `popspin` - spin at constant speed  (+`popDragSpin`) (`W` - rotation velo, + `oriten`)
+- `popLookat`
 # Setups  
 
 #### Condensation - Shelf tool 
@@ -106,3 +117,5 @@ Tensile Strengh - keep distance between particles 0.01 - larger make
 https://vimeo.com/323269227 (Entagma)
 
 
+`v` - velocity  
+`w` - rotation Velocity  
