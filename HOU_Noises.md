@@ -47,7 +47,7 @@ x | Simplex noise | - | (string value "xnoise")
 x |Zero Centered Perlin | - | (string value "correctnoise")
 
 
-![GitHub Logo](/Sources/noise/HoudiniNoises.jpg)
+![GitHub Logo](/Sources/noise/HoudiniNoise.jpg)
 
 https://www.nekopori.com/post/houdini-noisesample         
            
