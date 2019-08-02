@@ -46,7 +46,10 @@ COST | NOISE | - | VEX
 x | Simplex noise | - | (string value "xnoise")
 x |Zero Centered Perlin | - | (string value "correctnoise")
 
-           
+
+![GitHub Logo](/Sources/noise/HoudiniNoises.jpg)
+
+https://www.nekopori.com/post/houdini-noisesample         
            
 # RANDOM:
 `v@v = rand(@Time+@ptnum);` // random between 0-1  
