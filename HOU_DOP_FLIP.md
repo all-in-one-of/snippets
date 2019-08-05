@@ -22,11 +22,12 @@ Time sensitive !! I don't know how and why
 
 #### *Input PARTICLE VELOCITY* 
 - `Pop Solver`   
-- `Pop Curve force` (Illume Jeff I ) // input curve  
 - `Sop Solver` // acces any sop (cmi) 
+- `PopVop` / `popwrangle` - @viscosity= 
 
-- `popwrangle` - @viscosity= 
 - `popforce` (can be merged)
+- `Pop Curve force` (Illume Jeff I ) // input curve  
+
 #### *Input VOLUME VELOCITY*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
 - `source volume` -  fluid source as velocity field 
