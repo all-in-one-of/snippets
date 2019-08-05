@@ -1,6 +1,6 @@
 
 # OPTIMISATION  
-
+Measure performance in ms instead of fps
 
 `ctrl`+`shift`+`,` -  Rendering stats windows    
  
