@@ -155,3 +155,12 @@ position = p.selectPosition() #position clicked
 new_node = p.pwd().createNode("box") #posWorkDir
 new_node.setPosition(position) 
 ```
+
+
+### swap $HIP to $JOB
+NickD
+def hipToJob():
+    for node in hou.node("/").allSubChildren():
+        if node.type().name()=="redshift::TextureSampler":
+            fileJob = node.parm("tex0").rawValue().replace("$HIP","$JOB")
+            node.parm("tex0").set(fileJob)
