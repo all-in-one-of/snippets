@@ -28,13 +28,13 @@
    
 References   
    - Refer to human scale and relations  
-   - Dna `culture`, `time`, `period`, `function`    
-   - Material `substance`, `stiffness`  
-   - Age `wear`, `tear`, `erosion`, `dirt`     
-   - Paterns      
+   - Dna: `Culture`, `Time`, `Period`, `Function`    
+   - Material: `Substance`, `Stiffness`  
+   - Age: `Wear`, `Tear`, `Erosion`, `Dirt`     
+   - Paterns.        
    
 Design 
-   - `line` `shape` `form` `color` `value` `space (+negative)` `text`   
+   - `Line` `Shape` `Form` `Color` `Value` `Space (+negative)` `Text`   
    
 Sketch > Draw    
    - (proportion, shape recog)  
@@ -50,7 +50,7 @@ Paint
    - high key painting has a `high-value` scale (light) whilst a low key painting uses a `low-value` scale (dark).  
    - Color `Monochrom`, `Analogous`, `Complimentary`, `Split-Complementary`, `Triad(3)`, `Tetradic(4)`   
    - Color temperature  vs  neutral colors (W&B and gray)  
-   - Edges change in `object`, `plane` or `color`. Can be  hard, soft or lost.  
+   - Edges change in `Object`, `Plane` or `Color`. Can be  hard, soft or lost.  
    - Edge Avoid: `Hidden`, `skimed fused`, `stolen` egde of objects  
  
 Sculpt  
