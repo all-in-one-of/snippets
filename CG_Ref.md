@@ -80,3 +80,5 @@ Camera
    - Depth Frameing Croping `dof` `grain` `bloom`   
    - Avoid unnecesery moves, unwanted obj cutouts.   
    
+Cut
+   - J cut - sound precedes the cut  - smoooth scene introduction
