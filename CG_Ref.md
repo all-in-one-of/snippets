@@ -77,8 +77,9 @@ Story
    - Character reveale when human characters make choices under pressuere    
        
 Camera  
-   - Depth Frameing Croping `dof` `grain` `bloom`   
+   - Depth Frameing Croping 
    - Avoid unnecesery moves, unwanted obj cutouts.   
-   
+   - `Depth of Field` `Grain` `Bloom`   
+  
 Cut
    - J cut - sound precedes the cut  - smoooth scene introduction
