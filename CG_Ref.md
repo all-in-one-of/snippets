@@ -44,14 +44,14 @@ Sketch > Draw
    - B&W for valor correction    
    
 Shading
-   - Work in `HSV` to manage `chroma` and `valor`.    
+   - Work in `HSV` to manage `Chroma` and `Valor`.    
    
 Paint    
    - high key painting has a `high-value` scale (light) whilst a low key painting uses a `low-value` scale (dark).  
    - Color `Monochrom`, `Analogous`, `Complimentary`, `Split-Complementary`, `Triad(3)`, `Tetradic(4)`   
    - Color temperature  vs  neutral colors (W&B and gray)  
    - Edges change in `Object`, `Plane` or `Color`. Can be  hard, soft or lost.  
-   - Edge Avoid: `Hidden`, `skimed fused`, `stolen` egde of objects  
+   - Edge Avoid: `Hidden`, `Skimed fused`, `Stolen` egde of objects  
  
 Sculpt  
    - `Siluette` > `Midium Freqences` > `Detail`      
