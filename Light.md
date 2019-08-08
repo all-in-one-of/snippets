@@ -8,7 +8,8 @@
  Surface specific | Luminance | (cd/ft2) | Material dir specular | white-mirror (Metallic)
  Surface specific |Luminescence|||Emisive
  
-density of light apera a sq rot of dist. dist^2 intensity (cd) ∝ 1/square of the distance.
+ 
+ intensity (cd) ∝ 1/square of the distance.
 
 - Solid Angle Ω equals [A/r2] sr A full sphere has a solid angle of 4π `steradians` (sr)
 
