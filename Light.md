@@ -3,12 +3,18 @@
  --- | --- | --- | --- | - | 
  At the Source  | Intensity | `Candela` (cd) | Direction | Light
  Flow in Air | Flux | `Lumen` (lm) | Solid Angle | how much In the Air | 
- Density on surf | Illuminance | `Lux` (m/m2) | Distance & od Incidence | how much on material (FootCandela)
+ Density on surf | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material (FootCandela)
  Total off a surface | Exitance | (lm/ft2) | material reflectance | white-black (Albedo)
  Specific off a surface | Luminance | (cd/ft2) | material directional specular | white-mirror (Metallic)
 
 density of light apera a sq rot of dist. dist^2
-  
+
+- solid angle Ω equals [A/r2] sr A full sphere has a solid angle of 4π `steradians` (sr)
+
+- `candela` of luminous intensity uniformly across a solid angle of one `steradian`, the total luminous flux emitted into that angle is one `lumen` (1 cd·1 sr = 1 lm). 
+-  isotropic one-`candela` light-source emits a total luminous flux of exactly 4π `lumens`.
+- light source that uniformly radiates one `candela` in all directions has a total luminous flux of 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)**  
+- 
 ### black-body 
  
 1700 K	Match  
