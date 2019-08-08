@@ -2,7 +2,7 @@
  Def | Term | Unit | - |  - |
  --- | --- | --- | --- | - | 
  At the Source  | Intensity | `Candela` (cd) | Point(Direction) | Light
- Flow in Air | Flux | `Lumen` (lm) | Solid Angle | how much In the Air | 
+ Flow in Air | Flux | `Lumen` (lm  = cd*sr) | Solid Angle (steradian) | how much In the Air | 
  Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
  Surface total | Exitance | (lm/ft2) | Material reflectance | white-black (Albedo)
  Surface specific | Luminance | (cd/ft2) | Material dir specular | white-mirror (Metallic)
