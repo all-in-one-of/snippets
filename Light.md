@@ -20,8 +20,8 @@ density of light apera a sq rot of dist. dist^2 intensity (cd) ∝ 1/square of t
 ~3:1 sunrise/sunset    
 ~2:1 overcast    
 
-### Color temperature (K) 
-temperature of a blackbody
+### Color temperature 
+temperature of a blackbody measured in Kelvin (K) 
 
 Color Temp (K) | Descrip | RGB Linear color |
 -- | -- | -- |
