@@ -3,7 +3,7 @@
  --- | --- | --- | --- | - | 
  At the Source  | Intensity | `Candela` (cd) | Direction | Light
  Flow in Air | Flux | `Lumen` (lm) | Solid Angle | how much In the Air | 
- Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material (FootCandela)
+ Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
  surface total | Exitance | (lm/ft2) | material reflectance | white-black (Albedo)
  surface specific | Luminance | (cd/ft2) | material dir specular | white-mirror (Metallic)
 
