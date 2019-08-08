@@ -23,21 +23,21 @@ density of light apera a sq rot of dist. dist^2 intensity (cd) ∝ 1/square of t
 ### Color temperature (K) 
 temperature of a blackbody
 
-Temp | Descrip | RGB Linear color |
+Color Temp (K) | Descrip | RGB Linear color |
 -- | -- | -- |
-1700 K |	Match  | (255, 51, 0)
-1850 K | Candle | (255, 60, 0)
+1700 |	Match  | (255, 51, 0)
+1850 | Candle | (255, 60, 0)
 1 800- 3100 | Sunset/Sunrise | (255, 60, 0) - (255, 130, 40)
-2400 K | Incandescent lamp  |
-3200 K	| Studio lamp  | (255, 134, 46)
-3500 - 3600 K | Golden Hour |  (255, 149, 62) - (255, 152, 68) 
-4000 K | Fluorescent |  (255, 170, 91)
-3500-5000 K | Early Morning\Evening | (255, 149, 62) - (255, 204, 154)
-5000 K	| Horizon daylight   |
-6500 K	| Daylight, overcast   | (255, 242, 246)
-6500 – 9500 K	| LCD or CRT screen  |
-8000 K | outdoor Shade | (200, 208, 255)
-15,000 – 27,000 K	| Clear blue poleward sky  |
+2400 | Incandescent lamp  |
+3200	| Studio lamp  | (255, 134, 46)
+3500 - 3600 | Golden Hour |  (255, 149, 62) - (255, 152, 68) 
+4000 | Fluorescent |  (255, 170, 91)
+3500-5000 | Early Morning\Evening | (255, 149, 62) - (255, 204, 154)
+5000	| Horizon daylight   |
+6500	| Daylight, overcast   | (255, 242, 246)
+6500 – 9500	| LCD or CRT screen  |
+8000 | outdoor Shade | (200, 208, 255)
+15,000 – 27,000 | Clear blue poleward sky  |
 
 
 Visible light 400nm - 700nm red
