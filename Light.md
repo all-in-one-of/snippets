@@ -6,7 +6,7 @@
  Density on surface | Illumination | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
  Surface total | Exitance | (lm/ft2) | Material reflectance | white-black (Albedo)
  Surface specific | Luminance | (cd/ft2) | Material dir specular | white-mirror (Metallic)
- |Luminescence|||Emisive
+ Surface specific |Luminescence|||Emisive
  
  is spontaneous emission of light by a substance not resulting from heat; or "cold light".
 
