@@ -3,7 +3,7 @@
  --- | --- | --- | --- | - | 
  At the Source  | Intensity | `Candela` (cd) | Point(Direction) | Light
  Flow in Air | Flux | `Lumen` (lm  = cd*sr) | Solid Angle (steradian) | how much In the Air | 
- Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
+ Density on surface | Illumination | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
  Surface total | Exitance | (lm/ft2) | Material reflectance | white-black (Albedo)
  Surface specific | Luminance | (cd/ft2) | Material dir specular | white-mirror (Metallic)
 
@@ -42,33 +42,21 @@ Color Temp (K) | Descrip | RGB Linear color |
 
 Visible light 400nm - 700nm red
 
-
-### Intensity
-Intensity | Descrip |
+### Flux 
+Lux (lx) | Descrip |
 -- | -- |
-30,000 - 120,000 lux   | Sunlight Range  
-111,000 lux | Bright Sunlight    
-20,000 lux  | Clear, Midday Shade  
-12,000 cd/m² | Fluorescent Lights   
-10,000 cd/m² | Brightest, White Clouds   
-5,000 - 7,000 cd/m²  | Average, Clear Sky  
-1,000 - 2,000 lux  | Midday Overcast  
-1,000 cd/m²  | HDR10 LCD Monitor  
-400  lux | Clear Sunrise/Sunset 
-250 cd/m² | LCD Monitor Peak Luminance 
-200 lux | Thickest, Midday Storm Clouds < 
-80 cd/m² | sRGB Reference Monitor White   
-40 lux | Sunrise/Sunset Overcast 
-2 cd/m² | Floodlit Buildings 
-< 1 lux | Thickest Sunrise/Sunset Storm Clouds 
-0.25 lux | Clear Night with Full Moon
-0.01 lux | Clear Night with Quarter Moon 
-0.002 lux | Clear, Moonless Night with Airglow 
-0.0002 lux | Clear, Moonless Night 
-0.0001 lux | Moonless Night Overcast  
-
-13 000 candelas - w kazdym punkcie - dzien  
-500- bounce enviro ?
+30,000 - 120,000 | Sunlight Range 
+111,000 | Bright Sunlight    
+20,000 | Full Sunlight Shadow  
+1,000 - 2,000 | Tv studio lighting / Midday Overcast
+400 | Clear Sunrise/Sunset 
+250 - 500 | Office lighting
+150 | Trainstation platforms 
+100 - 200 | Midday overcast Storm Clouds
+80 | office hallway /  toilets
+40 | Sunrise / Sunset 
+0.01 - 0.25 | Clear Night with Quarter Moon - Full Moon
+0.0001 - 0.0002 | Moonless Night Overcast - Clear
 
 ### measurement  
 Azimuth - Horizontal angle of the sun’s position.
