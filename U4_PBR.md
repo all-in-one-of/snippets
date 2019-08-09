@@ -12,7 +12,7 @@ Desert sand | 0.36
 Fresh concrete | 0.51  
 Ocean Ice | 0.56  
 Fresh snow | 0.81  
-Metallic  | (179, 179, 179) - (255, 255, 255) | 0.7 - 1
+Metallic  |  0.7 - 1
 
 Spec / Refraction
 
