@@ -4,32 +4,24 @@
  At the Source  | Intensity | `Candela` (cd) | Point(Direction) | Light
  Flow per Area | Flux | `Lumen` (lm  = cd*sr) | Solid Angle (steradian) | how much In the Air | 
  Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
- Surface total | exitance | (lm/m2) | Material reflectance | white-black 
+ Surface total | Exitance | (lm/m2) | Material reflectance | white-black 
  Surface specific | Luminance | `Nit` (cd/m2) | Material dir specular | white-mirror
  Surface specific |Luminescence||| cold-body radiation
  
- 
+
+#### terms 
 - `Candela` measures the visible intensity from the light source. `candela`  of luminous intensity uniformly across a solid angle of one `steradian`, the total luminous flux emitted into that angle is one `lumen` (1 cd·1 sr = 1 lm). 
 - `Lumens` are how much light is given off - light source that uniformly radiates one `candela` in all directions has a total luminous flux of 12.57 `lumens`
-- `Lux` is how bright your surface will be 
+- `Lux` is how bright your surface will be   
+ 
 
-
+#### calculate
 - 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** 
 - Solid Angle Ω (sr) equals [A/r2]  A full sphere has a solid angle of 4π `steradians` (sr)
 - isotropic one-`candela` light-source emits a total luminous flux of exactly 4π `lumens`.
 
-
+#### Intensity
 - intensity of light disappear with square of distance (cd) ∝ 1/square of the distance.
-
-- 
-
-
-
-
-
- 
-
-
 
 ~4:1 sun/sky (direct light vs shade) intensity ratio   
 ~3:1 sunrise/sunset    
