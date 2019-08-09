@@ -62,15 +62,3 @@ Lux (lx) | Descrip |
 40 | Sunrise / Sunset 
 0.01 - 0.25 | Clear Night with Quarter Moon - Full Moon
 0.0001 - 0.0002 | Moonless Night Overcast - Clear
-
-### measurement  
-Azimuth - Horizontal angle of the sun’s position.
-Zenith - Vertical angle of the sun’s altitude.
-Unmotivated Light - Support light that doesn't have a physical representation.
-`Key light`, `fill light`, `rim light`, 
-`Direct`, `Indirect`, `Ambient`, `Difuse light `  
-
-#### Camera 
-Shutter Speed = (1 / Time) = Fraction of a Second
-EV100 = ( log2(Aperture² / (Shutter Speed) * 100 / ISO) )
-
