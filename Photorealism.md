@@ -54,4 +54,16 @@ ACES - Academy color space  to prserce dynamic rangfe and color values
 
 BlackBody: 
 
+### measurement  
+Azimuth - Horizontal angle of the sun’s position.
+Zenith - Vertical angle of the sun’s altitude.
+Unmotivated Light - Support light that doesn't have a physical representation.
+`Key light`, `fill light`, `rim light`, 
+`Direct`, `Indirect`, `Ambient`, `Difuse light `  
+
+#### Camera 
+Shutter Speed = (1 / Time) = Fraction of a Second
+EV100 = ( log2(Aperture² / (Shutter Speed) * 100 / ISO) )
+
+
 
