@@ -1,12 +1,18 @@
 ### Mat 
 Albedo 
 
-Mat | col | col intensity | 
+Mat | Albedo | |  
 -- | -- | -- | 
-Charcoal | (5,5,5) | 0.02
-Snow  |  (207,207,207)  | 0.81
+Charcoal | 0.02  
+Fresh asphalt | 0.02   
+Worn asphalt | 0.08 
+Bare soil | 0.13  
+Green grass | 0.21  
+Desert sand | 0.36  
+Fresh concrete | 0.51  
+Ocean Ice | 0.56  
+Fresh snow | 0.81  
 Metallic  | (179, 179, 179) - (255, 255, 255) | 0.7 - 1
-
 
 Spec / Refraction
 
@@ -32,6 +38,7 @@ Gray | Col | % |
 -- | -- | -- | 
 Neutral Gray | 128 | .5
 Middle Gray |  46 | .18
+
 
 
 Gamma Correction-to-Linear RGB
