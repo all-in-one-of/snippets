@@ -19,16 +19,16 @@ Metallic  |  0.7 - 1 |
 
 Spec / Refraction
 
-Mat | specular | IRO  Refraction |  
+Mat | specular | Index of Refraction (IOR) |  
 -- | -- | -- | 
 Air | | 1
 Ice | 0.224 | 1.31
 Water  |  0.255 | 1.33
-Milk | 0.277 |
+Milk | 0.277 | 1.350
 Skin | 0.35 |  
 Glass | 0.5 | 1.52
-Plastic | 0.5 | 
-Quartz | 0.57 |
+Plastic | 0.5 | 1.460
+Quartz | 0.57 | 1.544 - 1.644
 Diamond | | 2.42
 Dielectrics COMON | | 1.5
 
