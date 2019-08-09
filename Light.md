@@ -4,7 +4,7 @@
  At the Source  | Intensity | `Candela` (cd) | Point(Direction) | Light
  Flow per Area | Flux | `Lumen` (lm  = cd*sr) | Solid Angle (steradian) | how much In the Air | 
  Density on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
- Surface total | Exitance | (lm/m2) | Material reflectance | white-black 
+ Surface total | Exitance | `Lux` (lx = lm/m2) | Material reflectance | white-black 
  Surface specific | Luminance | `Nit` (cd/m2) | Material dir specular | white-mirror
  Surface specific |Luminescence||| cold-body radiation
  
