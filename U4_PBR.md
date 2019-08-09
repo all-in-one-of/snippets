@@ -19,7 +19,7 @@ Metallic  |  0.7 - 1 |
 
 Spec / Refraction
 
-Mat | specular | Index of Refraction (IOR) |  
+Mat | specular U4 | Index of Refraction (IOR) |  
 -- | -- | -- | 
 Air | | 1
 Ice | 0.224 | 1.31
