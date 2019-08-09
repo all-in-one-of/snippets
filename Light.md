@@ -47,8 +47,6 @@ Color Temp (K) | Descrip | RGB Linear color |
 15,000 – 27,000 | Clear blue poleward sky  |
 
 
-Visible light 400nm - 700nm red
-
 ### Flux 
 Lux (lx) | Descrip |
 -- | -- |
