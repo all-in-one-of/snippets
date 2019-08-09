@@ -1,18 +1,21 @@
 ### Mat 
 Albedo 
 
-Mat | Albedo | |  
+Mat | Albedo int U4 | Lagarde tut (linear space) other workfolw?|  
 -- | -- | -- | 
-Charcoal | 0.02  
-Fresh asphalt | 0.02   
-Worn asphalt | 0.08 
-Bare soil | 0.13  
-Green grass | 0.21  
-Desert sand | 0.36  
-Fresh concrete | 0.51  
-Ocean Ice | 0.56  
-Fresh snow | 0.81  
-Metallic  |  0.7 - 1
+Charcoal / Fresh asphalt | 0.02 | 0.04
+Worn asphalt | 0.08 | 0.12
+Bare soil | 0.13  | 0.17
+Green grass | 0.21 |  0.25
+Desert sand | 0.36  | 0.40
+Fresh concrete | 0.51 |   0.55
+Ocean Ice | 0.56 | 0.5–0.7
+Fresh snow | 0.81 |  0.80–0.90
+Metallic  |  0.7 - 1 |
+
+
+
+
 
 Spec / Refraction
 
@@ -43,3 +46,11 @@ Middle Gray |  46 | .18
 
 (Dielectric F0 Reflectance Value / 0.08) = UE4 Specular Reflectivity Value 
 
+
+
+
+
+
+https://seblagarde.wordpress.com/2011/08/17/feeding-a-physical-based-lighting-mode/
+
+Note: The roughness here is coupled with the BRDF used by the Unreal engine 4, it may not be compatible with other engine or offline renderer.
