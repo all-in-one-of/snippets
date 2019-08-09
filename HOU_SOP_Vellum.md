@@ -98,3 +98,9 @@ run in forloop with fedback.
 ## [Post Process]
 Spply Welds - Weld geometry that have cuts  and in therory should stick toghether   
 Vissualise - !   
+
+
+## Tips of adjusting params (in solver):
+- stretch > stiffnes - low is stretch high is stiff
+- stretch > compression stiffnes (if compress how likley it stay compress)  more is more likley stay 
+- bend > stiffnes how much bend (how much resistent to unroll or bend) 
