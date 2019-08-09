@@ -1,4 +1,6 @@
-
+- It tdepends on point density !  and scale !!
+if resolution of geo increasse >> mass chancge, constrains: number, input, itters. 
+- uv direction is importatnt to good simulation work!!!!!!!!!!!! 
 
 # Constraints
 Stack constraints and applay them to point groups:  
