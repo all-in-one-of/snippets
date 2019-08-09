@@ -1,3 +1,5 @@
+Eye 20 f-stops / best cams 16 / dlsr - up to 13  
+
 #### Photo references
 - ISO 
 - EV 
