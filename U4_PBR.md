@@ -21,6 +21,7 @@ Spec / Refraction
 
 Mat | specular U4 | Index of Refraction (IOR) |  
 -- | -- | -- | 
+COMON | 0.5 | 1.5
 Air | | 1
 Ice | 0.224 | 1.31
 Water  |  0.255 | 1.33
@@ -30,7 +31,7 @@ Glass | 0.5 | 1.52
 Plastic | 0.5 | 1.460
 Quartz | 0.57 | 1.544 - 1.644
 Diamond | | 2.42
-Dielectrics COMON | | 1.5
+
 
 Grays
 
