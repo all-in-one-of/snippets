@@ -16,11 +16,6 @@ Metallic  |  0.7 - 1
 
 Spec / Refraction
 
-DIELECTRIC F0 REFLECTANCE VALUE FORMULA​
-​( (1 - IOR) / (1 + IOR) )² = Dielectric F0 Reflectance Value
-(Dielectric F0 Reflectance Value / 0.08) = UE4 Specular Reflectivity Value 
-
-
 Mat | specular | IRO  Refraction |  
 -- | -- | -- | 
 Air | | 1
@@ -34,14 +29,17 @@ Quartz | 0.57 |
 Diamond | | 2.42
 Dielectrics COMON | | 1.5
 
+Grays
+
 Gray | Col | % | 
 -- | -- | -- | 
 Neutral Gray | 128 | .5
 Middle Gray |  46 | .18
 
+- Dielectric F0 Reflectance Value = ( (1 - IOR) / (1 + IOR) )² 
+- Gamma Correction-to-Linear RGB Linear RGB Value = ( Gamma Correction Value ^ (1 / 2.2))  
+- Linear RGB-to-Gamma Correction Gamma Correction Value = (Linear RGB Value ^ 2.2)  
 
 
-Gamma Correction-to-Linear RGB
-( Gamma Correction Value ^ (1 / 2.2) ) = Linear RGB Value
-Linear RGB-to-Gamma Correction
-(Linear RGB Value ^ 2.2) = Gamma Correction Value
+(Dielectric F0 Reflectance Value / 0.08) = UE4 Specular Reflectivity Value 
+
