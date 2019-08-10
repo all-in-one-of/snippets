@@ -38,7 +38,7 @@ OBJ TO FBX: Rotate 90
 
 `*.tiff` (adobe Tagged Image File Format) - save image fom photoshop, can constain additional metadata i.e. GeoTiff   
 `*.tga` - only for UE  16/24/32 bits per pixel (24?)   
-
+`*.exr` - OpenEXR is Light & Magic  high dynamic range raster file format, 
 `*.sbs` - Substance Designer Document  
 `*.sbsar` - Substance Archive  
 
