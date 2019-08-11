@@ -1,12 +1,12 @@
 
- Def | Term | Unit | - |  - |
- --- | --- | --- | --- | - | 
- At the Source  | Intensity | `Candela` (cd) | Point(Direction) | Light
- Flow per Area | Flux | `Lumen` (lm  = cd*sr) | Solid Angle (steradian) | how much In the Air | 
- Bright on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on material
- Surface total | Exitance | `Lux` (lx = lm/m2) | Material reflectance | white-black 
- Surface specific | Luminance | `Nit` (cd/m2) | Material dir specular | white-mirror
- Surface specific |Luminescence||| cold-body radiation
+Def | Term | Unit | - |  - |
+--- | --- | --- | --- | - | 
+At the Source  | Intensity | `Candela` (cd) | Direction | Light
+Flow per Area | Flux | `Lumen` (lm  = cd*sr) | Solid Angle | How much In the Air | 
+Bright on surface | Illuminance | `Lux` (lx = lm/m2) | Distance & od Incidence | how much on Material
+total bright of Surface | Exitance | `Lux` (lx = lm/m2) | Material reflectance | white-black 
+Surface specific | Luminance | `Nit` (cd/m2) | Material dir specular | white-mirror
+Surface specific |Luminescence||| cold-body radiation
  
 
 #### terms 
@@ -16,9 +16,9 @@
  
 
 #### calculate
-- 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** 
-- Solid Angle Ω (sr) equals [A/r2]  A full sphere has a solid angle of 4π `steradians` (sr)
-- isotropic one-`candela` light-source emits a total luminous flux of exactly 4π `lumens`.
+- 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** dla swiatła rownomiernie emitowanego we wszystkich kierunkach  
+- A full sphere has a `solid angle` of 4π `steradians`(sr) (1`candela` light-source emits a total luminous flux of exactly 4π `lumens`)
+- `Solid Angle` of 1 Ω (sr) equals [A/r2].  Area = radious^2   (kąt stożka jest stały)  
 
 #### Intensity
 - intensity of light disappear with square of distance (cd) ∝ 1/square of the distance.
