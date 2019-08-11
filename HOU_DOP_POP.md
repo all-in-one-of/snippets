@@ -21,7 +21,7 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 #### *Input SOURCE*  
 
 - `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
-- pop forces
+- `pop forces`
 - `popgroup` -   
 - `pop vop`    
 
@@ -117,5 +117,6 @@ Tensile Strengh - keep distance between particles 0.01 - larger make
 https://vimeo.com/323269227 (Entagma)
 
 
-`v` - velocity  
-`w` - rotation Velocity  
+`v` - velocity   
+`w` - rotation Velocity   
+`dead` = 1  
