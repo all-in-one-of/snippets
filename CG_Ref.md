@@ -79,7 +79,11 @@ Story
 Camera  
    - Depth Frameing Croping 
    - Avoid unnecesery moves, unwanted obj cutouts.   
-   - `Depth of Field` `Grain` `Bloom`   
-  
+   - `Depth of Field` `Grain` `Bloom` 
+   
+Light 
+   - Unmotivated Light - Support light that doesn't have a physical representation.  
+   - `Key light`, `Fill light`, `Rim light`,  `Direct`, `Indirect`, `Ambient`, `Difuse light ` 
+   
 Cut
    - J cut - sound precedes the cut  - smoooth scene introduction
