@@ -1,15 +1,13 @@
 #### Camera 
-- ISO 
-- EV - Eye 20 f-stops / best cams 16 / dlsr - up to 13  
-- shutter speed 
-- f-number - 
+- `Shutter Speed` = (1 / Time) = Fraction of a Second EV100 = ( log2(Aperture² / (Shutter Speed) * 100 / ISO) )
+- `f-number` = Aperture. Focal length to the diameter of the entrance pupil. f/4 big hole - f/16 small 
+- `ISO` - 
 
-Shutter Speed = (1 / Time) = Fraction of a Second
-EV100 = ( log2(Aperture² / (Shutter Speed) * 100 / ISO) )
+- `EV` Exposition Values - Eye 20 f-stops / best cams 16 / dlsr - up to 13  
 
 #### Photo references
-Lenns info
-The Nodal Point of the lens (or more correctly, the entrance pupil) can be considered as the point at which the rays entering the lens converge. It can also be considered as the centre of perspective of the lens or the apparent pupil. 
+**Lenns info**
+The `Nodal Point` of the lens (or more correctly, the entrance pupil) can be considered as the point at which the rays entering the lens converge. It can also be considered as the centre of perspective of the lens or the apparent pupil. 
 
 HDR: (if not PBR will be affected)    
 AEB examples:  
@@ -17,10 +15,9 @@ AEB examples:
 26EVs for Outdoors - Sun visible sometimes even on -20EV  
 
 #### Shoot
-- Shoot RAW - 16 bit if possible (most cams 14)  
+- Shoot RAW - 16 bit if possible 
 - Orient set to recognize front direction  
 - Shoot in central point of scene: Cannot change EV during shot.    
-
 
 `Color checker` - white ballans. from differences between shoot and CG create transform matrix to neutralize colour cast (shoot fulll exposure)   
 `Gray card` - to set base EV (correctly expoing for 18% grey calibration card (fill frame) which is oriented twoward main light (without shadow))  
@@ -37,11 +34,9 @@ AEB examples:
 - Turn off PP    
 - Set lights in proper location  
 - Set lights intensity: Go to HDR view and match chroma ball with reference image by seting   
- 
 
 #### Color
 people have Trichromatic Vision - RGB
-`Radio Wave`(1km-1m)> `Mivcrowave` (1mm-1m) > `Infrared` (800nm-1mm) > `R` (780nm) > `G` > `B` (400nm) > `Ultraviolet` (400nm-10nm) > `X-rays` (10nm-0.01nm) > `Gamma`    
 
 - `Spectral Locus` - ploting all visible colors can show how much sRGB is limited. rec2020 (much vider color space)    
 - `Linear Color` - (for render) humans persute color in not linear We apply gamm acorection to look like we see   
@@ -52,14 +47,5 @@ people have Trichromatic Vision - RGB
 HDR Affect diffuse and specular
 Render in linear > Apply gamma > apply s-curve corections.
 ACES - Academy color space  to prserce dynamic rangfe and color values  
-
-### measurement  
-Azimuth - Horizontal angle of the sun’s position.
-Zenith - Vertical angle of the sun’s altitude.
-Unmotivated Light - Support light that doesn't have a physical representation.
-`Key light`, `fill light`, `rim light`, 
-`Direct`, `Indirect`, `Ambient`, `Difuse light `  
-
-
 
 
