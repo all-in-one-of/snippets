@@ -1,8 +1,8 @@
 ### Circle  (RunOver:Detail)  
   
-```int a = ch("angle");
+```
+int a = ch("angle");
 float r = ch("radian");
-// ad point in given coords 
 for(a=0; a<360; a++){
 addpoint(geoself(),set(cos(radians(a))*r, sin(radians(a))*r,0));
 }
