@@ -53,7 +53,7 @@ Note: The roughness here is coupled with the BRDF used by the Unreal engine 4, i
 
 
 
-# Transfer phis params 
+# Photorealism transfer guide
 
 #### Photo references
 
