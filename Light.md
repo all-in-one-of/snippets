@@ -20,10 +20,6 @@ Surface specific |Luminescence||| cold-body radiation
 - Intensity of light disappear with square of distance (cd) ∝ 1/square of the distance.
 
 
-#### Intensity  
-~4:1 sun/sky (direct light vs shade) intensity ratio   
-~3:1 sunrise/sunset    
-~2:1 overcast    
 
 ### Color temperature 
 temperature of a blackbody measured in Kelvin (K) 
@@ -61,6 +57,11 @@ Lux (lx) | Descrip |
 0.01 - 0.25 | Clear Night with Quarter Moon - Full Moon
 0.0001 - 0.0002 | Moonless Night Overcast - Clear
 
+
+#### Intensity  
+~4:1 sun/sky (direct light vs shade) intensity ratio   
+~3:1 sunrise/sunset    
+~2:1 overcast    
 
 
 
