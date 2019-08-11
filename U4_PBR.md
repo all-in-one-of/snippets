@@ -13,8 +13,8 @@ Ocean Ice | 0.56 | 0.5–0.7
 Fresh snow | 0.81 |  0.80–0.90
 Metallic  |  0.7 - 1 |
 -- | -- | -- | 
-Neutral Gray | 128 | .5
-Middle Gray |  46 | .18
+Neutral Gray | .5 | (128, 128, 128)
+Middle Gray |  .18 | (46, 46, 46)
 
 
 
