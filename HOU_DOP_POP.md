@@ -22,10 +22,10 @@ Apply it by forces or inheret v@v - create from motion by trail sop!
 
 - `pop source` - !!! mandatory (birth/birth from attribute) constant activation - for sec., impuls for frame.
 - pop forces
-- `popgroup` -  
+- `popgroup` -   
+- `pop vop`    
 
-
-- `popkill` - `if (@age>1) dead = 1;`  
+- `popkill` - `if (@age>1) dead = 1;`   
 
 # [POP Solver] 
 ### [Collision]:
