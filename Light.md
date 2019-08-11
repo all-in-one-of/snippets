@@ -60,3 +60,22 @@ Lux (lx) | Descrip |
 40 | Sunrise / Sunset 
 0.01 - 0.25 | Clear Night with Quarter Moon - Full Moon
 0.0001 - 0.0002 | Moonless Night Overcast - Clear
+
+
+
+
+### Wavelengths
+`Radio Wave`(1km-1m)> `Mivcrowave` (1mm-1m) > `Infrared` (800nm-1mm) > `R` (780nm) > `G` > `B` (400nm) > `Ultraviolet` (400nm-10nm) > `X-rays` (10nm-0.01nm) > `Gamma`    
+
+
+
+
+Azimuth - Horizontal angle of the sun’s position.  
+Zenith - Vertical angle of the sun’s altitude.  
+Unmotivated Light - Support light that doesn't have a physical representation.  
+`Key light`, `Fill light`, `Rim light`,  `Direct`, `Indirect`, `Ambient`, `Difuse light `    
+
+
+
+
+
