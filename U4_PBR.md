@@ -35,10 +35,6 @@ Quartz | 0.57 | 1.544 - 1.644
 Diamond | | 2.42
 
 
-Grays
-
-
-
 - Dielectric F0 Reflectance Value = ( (1 - IOR) / (1 + IOR) )² 
 - Gamma Correction-to-Linear RGB Linear RGB Value = ( Gamma Correction Value ^ (1 / 2.2))  
 - Linear RGB-to-Gamma Correction Gamma Correction Value = (Linear RGB Value ^ 2.2)  
