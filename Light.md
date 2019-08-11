@@ -18,10 +18,10 @@ Surface specific |Luminescence||| cold-body radiation
 
 #### calculate
 - A full sphere has a `solid angle` of 4π `steradians`(sr) (1`candela` light-source uniformly radiates in all directions a total luminous flux of exactly 4π `lumens` 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 )
-
-#### Intensity
 - intensity of light disappear with square of distance (cd) ∝ 1/square of the distance.
 
+
+#### Intensity  
 ~4:1 sun/sky (direct light vs shade) intensity ratio   
 ~3:1 sunrise/sunset    
 ~2:1 overcast    
