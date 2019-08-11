@@ -16,7 +16,7 @@ Surface specific |Luminescence||| cold-body radiation
  
 
 #### calculate
-- 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** dla swiatła rownomiernie emitowanego we wszystkich kierunkach  
+- 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** (light emited in every direciotn) 
 - A full sphere has a `solid angle` of 4π `steradians`(sr) (1`candela` light-source emits a total luminous flux of exactly 4π `lumens`)
 - `Solid Angle` of 1 Ω (sr) equals [A/r2].  1 sr = Area on surface = radious^2 of sphere (kąt stożka jest stały)  
 
