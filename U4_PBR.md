@@ -12,7 +12,9 @@ Fresh concrete | 0.51 |   0.55
 Ocean Ice | 0.56 | 0.5–0.7
 Fresh snow | 0.81 |  0.80–0.90
 Metallic  |  0.7 - 1 |
-
+-- | -- | -- | 
+Neutral Gray | 128 | .5
+Middle Gray |  46 | .18
 
 
 
@@ -35,10 +37,7 @@ Diamond | | 2.42
 
 Grays
 
-Gray | Col | % | 
--- | -- | -- | 
-Neutral Gray | 128 | .5
-Middle Gray |  46 | .18
+
 
 - Dielectric F0 Reflectance Value = ( (1 - IOR) / (1 + IOR) )² 
 - Gamma Correction-to-Linear RGB Linear RGB Value = ( Gamma Correction Value ^ (1 / 2.2))  
