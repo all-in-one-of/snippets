@@ -10,15 +10,14 @@ Surface specific |Luminescence||| cold-body radiation
  
 
 #### terms 
-- `Candela` measures the visible intensity from the light source. `candela`  of luminous intensity uniformly across a solid angle of one `steradian`, the total luminous flux emitted into that angle is one `lumen` (1 cd·1 sr = 1 lm). 
-- `Lumens` are how much light is given off - light source that uniformly radiates one `candela` in all directions has a total luminous flux of 12.57 `lumens`
+- `Solid Angle` of 1 Ω (sr) equals [A/r2].  1 sr = Area on surface = radious^2 of sphere (kąt stożka jest stały) 
+
+- `Candela` measures the visible intensity from the light source. `candela`  of luminous intensity uniformly across a solid angle of one `steradian`, the total luminous flux emitted into that angle is one `lumen`
+- `Lumens` are how much light is given off **(= candela steradians)**
 - `Lux` is how bright your surface will be   
- 
 
 #### calculate
-- 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 `lumens`**(= candela steradians)** (light emited in every direciotn) 
-- A full sphere has a `solid angle` of 4π `steradians`(sr) (1`candela` light-source emits a total luminous flux of exactly 4π `lumens`)
-- `Solid Angle` of 1 Ω (sr) equals [A/r2].  1 sr = Area on surface = radious^2 of sphere (kąt stożka jest stały)  
+- A full sphere has a `solid angle` of 4π `steradians`(sr) (1`candela` light-source uniformly radiates in all directions a total luminous flux of exactly 4π `lumens` 1 cd × 4π sr = 4π cd⋅sr ≈ 12.57 )
 
 #### Intensity
 - intensity of light disappear with square of distance (cd) ∝ 1/square of the distance.
