@@ -69,12 +69,11 @@ Lux (lx) | Descrip |
 `Radio Wave`(1km-1m)> `Mivcrowave` (1mm-1m) > `Infrared` (800nm-1mm) > `R` (780nm) > `G` > `B` (400nm) > `Ultraviolet` (400nm-10nm) > `X-rays` (10nm-0.01nm) > `Gamma`    
 
 
-
+#### Atmosphere 
 
 Azimuth - Horizontal angle of the sun’s position.  
 Zenith - Vertical angle of the sun’s altitude.  
-Unmotivated Light - Support light that doesn't have a physical representation.  
-`Key light`, `Fill light`, `Rim light`,  `Direct`, `Indirect`, `Ambient`, `Difuse light `    
+  
 
 
 
