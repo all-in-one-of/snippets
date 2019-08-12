@@ -41,7 +41,7 @@ Color Temp (K) | Descrip | RGB Linear color |
 15,000 – 27,000 | Clear blue poleward sky  |
 
 
-### Flux 
+### Luminous Flux
 Lux (lx) | Descrip |
 -- | -- |
 30,000 - 120,000 | Sunlight Range 
