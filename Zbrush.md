@@ -25,6 +25,7 @@ presets:
 # Topo:  
 ### Sculptris mode:     
 - tesimate  
+- up to 0,5 mil poly  
 
 ### Dynamesh:   
 - size important (up to 4096 grid)  
