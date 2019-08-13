@@ -21,7 +21,7 @@ presets:
 `B` - brush  
 `X` - symetry    
 `Ctrl` + `W` > make one poly group   
-
+`/` - sculptris
 # Topo:  
 ### Sculptris mode:     
 - tesimate  
