@@ -1,7 +1,6 @@
   
 
 
-
 translate = (1.0, 4.0, 2.0)
 print translate[0]
 
@@ -16,7 +15,6 @@ float_var = 3.1415
 ```python 
 from math import *
 ```
-
 
 #### Strings
 ```python 
@@ -33,15 +31,21 @@ print(phrase[3] + " - 3 letter of string")   # search array for
 print(phrase.index("have"))    # search array for in
 print(phrase.replace("have", "dont have"))  # replace
 ```
+
 #### List, Key&Value
-```
+```python
 colors = ['red','green','blue'] //list  
 print colors[1] //call list item   
 
-geo = {"ROP": "Mantra", "COP": "Color", "SOP": "Platonic"}  // key and value   
+geo = {"ROP": "Mantra", "COP": "Color", "SOP": "Platonic"}  # key and value   
 geo["ROP"]  
 ```
 
+#### import operator
+```python
+weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
+sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
+```
 
 ### Function
 ```python 
