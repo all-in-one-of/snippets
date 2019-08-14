@@ -25,7 +25,7 @@ foo.name #return name of object.
 
 ```
 
-reference to this Python SOP via the node variable, we can use **evalParm(path)** to access each parameter  
+Reference to this Python SOP via the node variable, we can use **evalParm(path)** to access each parameter  
 ```python
 seed = node.evalParm('seed')
 threshold = node.evalParm('threshold')
