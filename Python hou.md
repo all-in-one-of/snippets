@@ -1,15 +1,12 @@
-
+Where to use:
 - Python Shell - Live code
 - Python Source Editor - you can save  code and function / hou.session.myDefinedFunction()
 - Digital Asset -
 - Shelf Tool - scrpit section to write code Executed after shelf click
 
-### Basics:
-
+### hou:
 - `hou.` is houdini python class. We can drop it in **expressions**:  
 - see what params is passing `kwargs` (pthos dict to see what is avalable)
-
-
 
 
 # Python:
