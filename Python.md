@@ -18,10 +18,10 @@ from math import *
 
 #### Strings
 ```python 
-print 230  
-print "Hello World" 
-print("String Text")
-print("String Text" + string_var + "Another Text")  #with var
+print 230    
+print "Hello World" # python 2.x   
+print("String Text") # python 3.x  
+print("String Text" + string_var + "Another Text")  #with var  
 print("FirstLine \nSecondLine")  # Virtual Enter
 
 phrase = "String text with more signs"  # VAR called phrase
