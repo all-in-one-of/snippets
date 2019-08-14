@@ -56,3 +56,12 @@ say_hi("Mike", "35") # ads not in function anymore
 say_hi("Mi2ke", "325") # ads not in function anymore
 ```
 
+```python 
+def example(name):
+   print name + "Our String" + colors[4]
+
+def examplereturn(name):
+   return name.upper()
+
+print examplereturn("houdini") # will print HOUDINI with all big captions
+```
