@@ -1,76 +1,46 @@
 
-hou. is houdini python class. We can drop it in **expressions**:  
-`frame()/4` - $F/4    
-`time()` - $T  
-`lvar("nameoflocalVAr")`  
-`lvar("PT")` - $PT  
+- Python Shell - Live code
+- Python Source Editor - you can save  code and function / hou.session.myDefinedFunction()
+- Digital Asset -
+- Shelf Tool - scrpit section to write code Executed after shelf click
 
-see what params is passing kwargs (pthos dict to see what is avalable)
+### Basics:
+
+- `hou.` is houdini python class. We can drop it in **expressions**:  
+- see what params is passing `kwargs` (pthos dict to see what is avalable)
 
 
-# .pwd & evalParam
 
-getting a reference to the current node. (grab all the data associated with this node into a variable called node)
+
+# Python:
+`node = hou.pwd()` - 
+`node = hou.node('.')` - getting a reference to the current node.
+`hou.node('/path')` - object in class hou  
+`param = hou.ch("param")` - Read node parameter  
+`bitmask = hou.ch("bitmask")` - Read node parameter   
+`xBoundSize=lvar('SIZEX')` - Read local variables    
+`geo = node.geometry()` - grabs the geometry data that is being fed into this node by calling its geometry() method.  
+
+Assign objecto to var: foo
 ```python
-node = hou.pwd()
-node = hou.node('.')
+foo = hou.node('/path')
+foo.name #return name of object.
+
 ```
-grabs the geometry data that is being fed into this node by calling its geometry() method.
-```python
-geo = node.geometry()
-# Add code to modify contents of geo.
-# Use drop down menu to select examples.
-```
-Now that we have a reference to this Python SOP via the node variable, we can use evalParm(path)to access each parameter
+
+
+### evalParm(path) 
+reference to this Python SOP via the node variable, we can use evalParm(path)to access each parameter  
 ```python
 seed = node.evalParm('seed')
 threshold = node.evalParm('threshold')
-# use seed and threshold to set values
-```
-
-### Python Shell
-```
-Live code
-```
-### Python Source Editor // you can save  code and function
-``` python
-hou.session.myDefinedFunction()
-```
-### Shelf Tool
-```
-create as new shelf tool 
-scrpit section to write code
-Execute after shelf click
-from here create node acces scene ect...
-```
-### Digital Asset
-code section
-
-# Python:
-object in class hou
-```python
-hou.node('/path')
-```
-Read node parameter:
-```python
-param = hou.ch("param")
-```
-Assign objecto to var: n
-```python
-n = hou.node('/path')
-n.name #return name of object.
-```
-
-Access local variables:
-```python
-xBoundSize=lvar('SIZEX')
 ```
 
 ### Groups:
-Create group:
-```python
-myGrp=geo.createPrimGroup('name')
-```
+
+`myGrp=geo.createPrimGroup('name')` - Create group   
+`group.destroy()` - Delete group, leaving contents intact  
+
 Add Point to group:
 ```python
 point=geo.createPoint()
@@ -83,21 +53,14 @@ groups = geo.primGroups()
 for group in groups:
     print group.name
 ```
-Delete group, leaving contents intact:
-```python
-group.destroy()
-```
+
 ### Attributes:
-Set attribute:
-```python
-points[index].setAttribValue("Cd",(1.0,1.0,1.0))
+
+`points[index].setAttribValue("Cd",(1.0,1.0,1.0))` - Set attribute
+`redVal=point.attribValue("Cd")[0]` - Get attribute:
+
+###  Delete primitives
 ```
-Get attribute:
-```python
- redVal=point.attribValue("Cd")[0]
- ```
-### Delete primitives
-```python
 deleteList=[]
 for i in boundingGrp.prims():
     deleteList.append(i)
@@ -140,16 +103,11 @@ childrenOfNode(hou.node('/obj/adress'))
 
 ### UI
 
+`hou.ui.displayMessage("hello")` #display popup 
+`print p.selectPosition()` - print location of click in the node editor  network 
 
-```
-hou.ui.displayMessage("hello") #display popup 
-```
-print location of click in the node editor  network 
-```
-print p.selectPosition()
-```
 create new node with box on the position under mouse 
-```
+```python
 p = hou.ui.paneTabOfType (hou.paneTabType.NetworkEditor)
 position = p.selectPosition() #position clicked
 new_node = p.pwd().createNode("box") #posWorkDir
@@ -159,21 +117,20 @@ new_node.setPosition(position)
 
 ### swap $HIP to $JOB
 NickD
+```python
 def hipToJob():
     for node in hou.node("/").allSubChildren():
         if node.type().name()=="redshift::TextureSampler":
             fileJob = node.parm("tex0").rawValue().replace("$HIP","$JOB")
             node.parm("tex0").set(fileJob)
+```
 
-# Houdini
 
-Johny
-```py
+### Johny
+
+```python
 node = hou.pwd()
 geo = node.geometry()
-
-# Add code to modify contents of geo.
-# Use drop down menu to select examples.
 
 for shali in geo.points():
     print shali.number()
@@ -184,61 +141,19 @@ for shali in geo.points():
     shali.setAttribValue("rot", rot)
 ```
 
+
+ 
+### Expressions:
+`frame()/4` - $F/4    
+`time()` - $T  
+`lvar("nameoflocalVAr")`  
+`lvar("PT")` - $PT  
+
+### External editor
+
 If you find yourself editing a lot of python code, you might like the joy of Sublime or vi(m) to edit your files. Place your python code in $HOME/houdiniXX.X/scripts/python, for example as "test.py", then inside Houdini, drop a python node and do as follows:
+```python 
 import test
 reload(test)
 from test import *
-
-Group related:
-Create group:
-```myGrp=geo.createPrimGroup('name')```
-Add Point to group:
 ```
-point=geo.createPoint()
-myGrp=geo.createPointGroup('name')
-myGrp.add(point)
-```
-Iterate group:
-```
-groups = geo.primGroups()
-for group in groups:
-    print group.name
-```
-Delete group, leaving contents intact:
-```
-group.destroy()
-```
-Attributes
-```
-Set attribute
-points[index].setAttribValue("Cd",(1.0,1.0,1.0))
-```
-Get attribute:
-```
- redVal=point.attribValue("Cd")[0]
-```
-Delete primitives
-```
-deleteList=[]
-for i in boundingGrp.prims():
-    deleteList.append(i)
-geo.deletePrims(deleteList)
-```
-Access local variables:
-```
-xBoundSize=lvar('SIZEX')
-```
-Read node parameter:
-```
-bitmask = hou.ch("bitmask")
-```
-More or less Houdini unrelated:
-```
-sort a dict, if needed into list of tuples
-```
-import operator
-```
-weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
-sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
-```
- 
