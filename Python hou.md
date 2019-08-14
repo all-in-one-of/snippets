@@ -51,8 +51,8 @@ for group in groups:
 
 ### Attributes:
 
-`points[index].setAttribValue("Cd",(1.0,1.0,1.0))` - Set attribute
-`redVal=point.attribValue("Cd")[0]` - Get attribute:
+`points[index].setAttribValue("Cd",(1.0,1.0,1.0))` - Set attribute  
+`redVal=point.attribValue("Cd")[0]` - Get attribute   
 
 ###  Delete primitives
 ```
@@ -62,11 +62,6 @@ for i in boundingGrp.prims():
 geo.deletePrims(deleteList)
 ```
 
-### Import operator
-```python
-weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
-sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
-```
 ### Arrays
 ```python
 t = n.children() # tablica dzieci noda
@@ -74,7 +69,7 @@ t[0]
 t[1]
 ....
 ```
-
+### For Loop
 ```python
 for c in n.children():
      print.name()
