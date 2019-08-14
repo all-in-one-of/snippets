@@ -11,12 +11,12 @@ Where to use:
 
 # Python:
 `node = hou.pwd()` -    
-`node = hou.node('.')` - getting a reference to the current node.
+`node = hou.node('.')` - getting a reference to the current node  
 `hou.node('/path')` - object in class hou  
 `param = hou.ch("param")` - Read node parameter  
 `bitmask = hou.ch("bitmask")` - Read node parameter   
 `xBoundSize=lvar('SIZEX')` - Read local variables    
-`geo = node.geometry()` - grabs the geometry data that is being fed into this node by calling its geometry() method.  
+`geo = node.geometry()` - grabs the geometry data that is being fed into this node by calling its geometry() method    
 
 Assign objecto to var: foo
 ```python
