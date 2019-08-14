@@ -10,7 +10,7 @@ Where to use:
 
 
 # Python:
-`node = hou.pwd()` - 
+`node = hou.pwd()` -    
 `node = hou.node('.')` - getting a reference to the current node.
 `hou.node('/path')` - object in class hou  
 `param = hou.ch("param")` - Read node parameter  
