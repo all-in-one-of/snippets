@@ -26,9 +26,12 @@ print("String Text") # python 3.x
 print("String Text" + string_var + "Another Text")  #with var  
 print("FirstLine \nSecondLine")  # Virtual Enter
 
+print "ChAnGe StRiNg To LoW CaSe".lower()  # lower( ), belong to strings, and can only be used attached to strings, 
+print(phrase.upper()) #
+
 phrase = "String text with more signs"  # VAR called phrase
 print(phrase + "Another Text")
-print(phrase.upper()) #
+
 print(phrase[3] + " - 3 letter of string")   # search array for
 print(phrase.index("have"))    # search array for in
 print(phrase.replace("have", "dont have"))  # replace
