@@ -38,6 +38,8 @@
 `i@class` (prim) -    
 `v@N` (vert) -   
 `@P`, `v@rest`, `v@Cd`, `i@id`, `@Alpha` (point) -  
+### Collisions
+UCX_NameOfGeoContainer - object level  
 
 ### VAT    
 Cloth, Liquid, Rigid, PointCloud
