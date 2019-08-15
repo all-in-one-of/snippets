@@ -4,7 +4,7 @@
 translate = (1.0, 4.0, 2.0)
 print translate[0]
 
-### Variable types
+### Data types
 ```python
 str = "3" + str(3) 
 float = 3.
@@ -16,12 +16,6 @@ bool = False
 `str()` - to string  
 `int()` - if used on float it will  round down  
 `float()`  
-
-### Import Lib
-
-```python 
-from math import *
-```
 
 #### Strings
 ```python 
@@ -73,4 +67,10 @@ def examplereturn(name):
    return name.upper()
 
 print examplereturn("houdini") # will print HOUDINI with all big captions
+```
+
+### Import Library
+
+```python 
+from math import *
 ```
