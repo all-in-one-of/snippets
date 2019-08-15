@@ -9,8 +9,8 @@ print translate[0]
 string = "3" + str(3) 
 float = 3.
 int = 3
-bool1 = True 
-bool2 = False 
+bool = True 
+bool = False 
 ```
 #### Cast
 `str()` - to string  
