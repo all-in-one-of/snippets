@@ -5,11 +5,18 @@ translate = (1.0, 4.0, 2.0)
 print translate[0]
 
 ### Variable types
-```python 
-string_var = "stringi"  
-bool_var = True  
-float_var = 3.1415  
+```python
+string = "3" + str(3) 
+float = 3.
+int = 3
+bool1 = True 
+bool2 = False 
 ```
+#### Cast
+`str()` - to string  
+`int()` - if used on float it will  round down  
+`float()`  
+
 ### Import Lib
 
 ```python 
@@ -47,6 +54,10 @@ geo["ROP"]
 weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
 sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
 ```
+#### Math
+`divisiontyp1 = 7/2` = 3   
+`divisiontyp2 = 7/2.` = 3.5    
+`divisiontyp2 = float(7)/2` = 3.5  
 
 ### Function
 ```python 
