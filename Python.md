@@ -26,7 +26,7 @@ print("String Text") # python 3.x
 print("String Text" + string_var + "Another Text")  #with var  
 print("FirstLine \nSecondLine")  # Virtual Enter
 
-print "ChAnGe StRiNg To LoW CaSe".lower()  # lower( ), belong to strings, and can only be used attached to strings, 
+print "ChAnGe StRiNg To LoW CaSe".lower()  # lower( ), belong to strings, only attached to strings, 
 print(phrase.upper()) #
 
 phrase = "String text with more signs"  # VAR called phrase
