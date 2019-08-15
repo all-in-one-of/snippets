@@ -48,7 +48,7 @@ geo["ROP"]
 weightDict={"plane": 150, "car": 2, "house": 400, "banana":0.2}
 sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
 ```
-#### Math
+### Math
 `divisiontyp1 = 7/2` = 3   
 `divisiontyp2 = 7/2.` = 3.5    
 `divisiontyp2 = float(7)/2` = 3.5  
