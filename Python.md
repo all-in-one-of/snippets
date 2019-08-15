@@ -6,7 +6,7 @@ print translate[0]
 
 ### Variable types
 ```python
-string = "3" + str(3) 
+str = "3" + str(3) 
 float = 3.
 int = 3
 bool = True 
