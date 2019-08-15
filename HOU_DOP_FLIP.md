@@ -163,9 +163,17 @@ In self they reduce gravity
 Substeps up!!
 ```
 **Droplet**
-```
-Surface tenssion 48000
-```
+
+- if small flip is unstable if smaller increase substeps minim 5 -6 
+- Surface tenssion 48000
+- grid scale tez wpływa 
+- reduce gravity for slow moving slow scale 
+
+**Suction**
+- op2 antigravity (opose gravity around object)
+- op3 suctionforce. strength + gradient on distance sometimes you need to keyframe it  
+- collision source on geometry (velocity, volume out) + interior exterior distance for gradient
+
 **floating RDB:**   DOP>flipsolver>Volume Motion>solver change Feedback Scale from 0 to 1.   https://vimeo.com/116176349#at=158
 ```
 Merge: rigidbody solver + flip solver 
