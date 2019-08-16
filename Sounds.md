@@ -3,19 +3,20 @@
 melodyka – wyznacza następstwo dźwięków o różnej wysokości i różnym czasie trwania,  
 rytmika – porządkuje materiał dźwiękowy w czasie,  
 dynamika – reguluje natężenie dźwięku,  
-agogika (tempo) – określa szybkość utworu,  
+tempo (agogika) – określa szybkość utworu,  BPM 
 artykulacja – określa sposób wydobywania dźwięku,  
 harmonika – porządkuje współbrzmienia dźwięków w utworze,  
 kolorystyka – określa barwę dźwięku.  
 
 matrum:
 tempo 96
- jeśli zmienisz tempo, w góre to automatycznie jej czas będzie się skracał
-3/4  Ćwirćnuta trwa  625 ms Czyli cały takt trwa 625 * 3  -= 1875 ms
-4/4   652ms * 4  =  2500 ms
-6/8   Ósemka trwa 313 ms czyli  313 * 6 = 1878 ms.
-
-frazy 4/8/16 taktowe
+jeśli zmienisz tempo, w góre to automatycznie jej czas będzie się skracał    
+ile wartosc i takcie / jakie wartosci w takcie  
+3/4  Ćwirćnuta trwa  625 ms Czyli cały takt trwa 625 * 3  -= 1875 ms    
+4/4   652ms * 4  =  2500 ms    
+6/8   Ósemka trwa 313 ms czyli  313 * 6 = 1878 ms.    
+ 
+frazy 4/8/16 taktowe 
 
 
 # UE4
