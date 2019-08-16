@@ -9,12 +9,14 @@ harmonika – porządkuje współbrzmienia dźwięków w utworze,
 kolorystyka – określa barwę dźwięku.  
 
 matrum:
-tempo 96
-jeśli zmienisz tempo, w góre to automatycznie jej czas będzie się skracał    
+tempo 96 BPM - jeśli zwiekszasz tempo to automatycznie jej czas będzie się skracał    
+dal 96 BPM Ćwierćnuta = 625 ms,  Ósemka trwa 313 ms
+
 ile wartosc i takcie / jakie wartosci w takcie  
-3/4  Ćwirćnuta trwa  625 ms Czyli cały takt trwa 625 * 3  -= 1875 ms    
-4/4   652ms * 4  =  2500 ms    
-6/8   Ósemka trwa 313 ms czyli  313 * 6 = 1878 ms.    
+3/4   625 * 3 = takt trwa 1875 ms    
+6/8    czyli  313 * 6 = 1878 ms.    
+4/4   652ms * 4  = takt trwa  2500 ms    
+
  
 frazy 4/8/16 taktowe 
 
