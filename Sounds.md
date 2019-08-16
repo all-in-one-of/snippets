@@ -19,7 +19,7 @@ ile wartosc i takcie / jakie wartosci w takcie
 
  
 frazy 4/8/16 taktowe 
-
+http://www.sengpielaudio.com/calculator-bpmtempotime.htm
 
 # UE4
 
