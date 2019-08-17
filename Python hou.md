@@ -7,16 +7,45 @@ Where to use:
 
 
 # Python:
-`node = hou.pwd()` -    
-`param = hou.ch("param")` - Read node parameter  
-`bitmask = hou.ch("bitmask")` - Read node parameter   
-`xBoundSize=lvar('SIZEX')` - Read local variables    
 
 Assign objecto to var: foo
 ```python
 foo = hou.node('/path')
 foo.name #return name of object.
 
+```
+`node = hou.pwd()` -  
+
+
+# Syntax:
+
+### Arrays
+```python
+t = n.children() # tablica dzieci noda
+t[0]
+t[1]
+....
+```
+### For Loop
+```python
+for c in n.children():
+     print.name()
+```
+
+### Function:
+Create function (define)
+```python
+def childrenOfNode(node):
+	result = []
+	for c in node.children():
+		result.appnd(c)
+		result += childrenOfNode(c)
+	return result 
+```
+Call defined fn by calling var: n with (node):
+```python
+childrenOfNode(n) 
+childrenOfNode(hou.node('/obj/adress'))
 ```
 
 
@@ -51,34 +80,6 @@ for i in boundingGrp.prims():
 geo.deletePrims(deleteList)
 ```
 
-### Arrays
-```python
-t = n.children() # tablica dzieci noda
-t[0]
-t[1]
-....
-```
-### For Loop
-```python
-for c in n.children():
-     print.name()
-```
-
-### Function:
-Create function (define)
-```python
-def childrenOfNode(node):
-	result = []
-	for c in node.children():
-		result.appnd(c)
-		result += childrenOfNode(c)
-	return result 
-```
-Call defined fn by calling var: n with (node):
-```python
-childrenOfNode(n) 
-childrenOfNode(hou.node('/obj/adress'))
-```
 # Class
 
 
@@ -183,6 +184,8 @@ ry.asCode() # will print code
 ```python
 ```
 
+`param = hou.ch("param")` - Read node parameter 
+`xBoundSize=lvar('SIZEX')` - Read local variables    
 ### UI
 
 `hou.ui.displayMessage("hello")` #display popup 
