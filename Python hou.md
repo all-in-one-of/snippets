@@ -1,13 +1,10 @@
-Where to use:
+
+# Python:
 - Python Shell - Live code
 - Python Source Editor - you can save  code and function / hou.session.myDefinedFunction()
 - Digital Asset -
 - Shelf Tool - scrpit section to write code Executed after shelf click
-
-
-
-# Python:
-
+---
 Assign objecto to var: foo
 ```python
 foo = hou.node('/path')
