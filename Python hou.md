@@ -8,12 +8,9 @@ Where to use:
 
 # Python:
 `node = hou.pwd()` -    
-`node = hou.node('.')` - getting a reference to the current node  
-`hou.node('/path')` - object in class hou  
 `param = hou.ch("param")` - Read node parameter  
 `bitmask = hou.ch("bitmask")` - Read node parameter   
 `xBoundSize=lvar('SIZEX')` - Read local variables    
-`geo = node.geometry()` - grabs the geometry data that is being fed into this node by calling its geometry() method    
 
 Assign objecto to var: foo
 ```python
@@ -22,11 +19,6 @@ foo.name #return name of object.
 
 ```
 
-Reference to this Python SOP via the node variable, we can use **evalParm(path)** to access each parameter  
-```python
-seed = node.evalParm('seed')
-threshold = node.evalParm('threshold')
-```
 
 ### Groups:
 
@@ -128,6 +120,15 @@ for output in mynode.outputs():
 hou.node('/obj/nodetochange').setInput(0, hou.node('/obj.newnode'))
 ```
 
+`node = hou.node('.')` - getting a reference to the current node  
+`hou.node('/path')` - object in class hou  
+`geo = node.geometry()` - grabs the geometry data that is being fed into this node by calling its geometry() method    
+
+Reference to this Python SOP via the node variable, we can use **evalParm(path)** to access each parameter  
+```python
+seed = node.evalParm('seed')
+threshold = node.evalParm('threshold')
+```
 
 ### hou.parm 
 behaviour of all parameters 
