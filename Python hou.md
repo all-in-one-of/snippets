@@ -142,13 +142,31 @@ for key in ry.keyframes():
 ry.asCode() # will print code 
 ```
 
-### hou.Obj.Node
-
+### hou.ObjNode
+how is displayed and how manipulate 
 ```python
+
+ball = hou.node("/obj/ball") # creates hou.ObjNode of type geo at /obj/ball
+
+ball.setDisplayFlag(False)
+ball.isDisplayFlagSet() # False
+ball.isObjectDisplayed()
+ball.setSelectableInViewport(False)
+
+parent = ball.parentTransform()
+pre = ball.preTransform()
+parm = ball.parmTransform()
+world = ball.worldTransform()
+product = parent * pre * parm 
+print (product == world) # True
+
+ball.mmoveParmTransformIntoPreTransform()
+
 ```
 ### hou.Geometry
-
+Define 3d geo shape  
 ```python
+
 ```
 
 `param = hou.ch("param")` - Read node parameter 
