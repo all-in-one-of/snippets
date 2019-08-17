@@ -90,11 +90,8 @@ childrenOfNode(hou.node('/obj/adress'))
 ### hou.node
 node in trees
 ```python
-box = hou.node('/obj/ball').createNode("box","NewBoxName") # create node conected to parrent
-
 ball = hou.node('/obj/ball')
-box = ball.createNode("box","NewBoxName")
-box.destroy
+
 ball = setSelected(True) # select ball node
 ball = isSelected() # give you a bool 
 ball = type().name() # geo
@@ -118,6 +115,10 @@ for output in mynode.outputs():
 
 # change which node input node
 hou.node('/obj/nodetochange').setInput(0, hou.node('/obj.newnode'))
+
+box = hou.node('/obj/ball').createNode("box","NewBoxName") # create node conected to parrent
+box = ball.createNode("box","NewBoxName")
+box.destroy 
 ```
 
 `node = hou.node('.')` - getting a reference to the current node  
@@ -129,7 +130,15 @@ Reference to this Python SOP via the node variable, we can use **evalParm(path)*
 seed = node.evalParm('seed')
 threshold = node.evalParm('threshold')
 ```
-
+#### swap $HIP to $JOB
+NickD
+```python
+def hipToJob():
+    for node in hou.node("/").allSubChildren():
+        if node.type().name()=="redshift::TextureSampler":
+            fileJob = node.parm("tex0").rawValue().replace("$HIP","$JOB")
+            node.parm("tex0").set(fileJob)
+``` 
 ### hou.parm 
 behaviour of all parameters 
 ```python
@@ -169,6 +178,10 @@ ry.asCode() # will print code
 
 ```python
 ```
+### hou.Geometry
+
+```python
+```
 
 ### UI
 
@@ -182,18 +195,6 @@ position = p.selectPosition() #position clicked
 new_node = p.pwd().createNode("box") #posWorkDir
 new_node.setPosition(position) 
 ```
-
-
-### swap $HIP to $JOB
-NickD
-```python
-def hipToJob():
-    for node in hou.node("/").allSubChildren():
-        if node.type().name()=="redshift::TextureSampler":
-            fileJob = node.parm("tex0").rawValue().replace("$HIP","$JOB")
-            node.parm("tex0").set(fileJob)
-```
-
 
 ### Johny
 
@@ -210,19 +211,21 @@ for shali in geo.points():
     shali.setAttribValue("rot", rot)
 ```
 
+### Import
 
- 
-### Expressions:
-`frame()/4` - $F/4    
-`time()` - $T  
-`lvar("nameoflocalVAr")`  
-`lvar("PT")` - $PT  
-
-### External editor
-
-If you find yourself editing a lot of python code, you might like the joy of Sublime or vi(m) to edit your files. Place your python code in $HOME/houdiniXX.X/scripts/python, for example as "test.py", then inside Houdini, drop a python node and do as follows:
 ```python 
 import test
 reload(test)
 from test import *
 ```
+
+# Expressions:
+
+`frame()/4` - $F/4    
+`time()` - $T  
+`lvar("nameoflocalVAr")`  
+`lvar("PT")` - $PT  
+
+10/frame() * sin(frame()/10.0)
+(1+ch("../ty"))/2
+
