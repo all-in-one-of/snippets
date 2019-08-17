@@ -56,7 +56,37 @@ sortedDict = sorted(weightDict.items(), key=operator.itemgetter(1),reverse=True)
 `divisiontyp2 = 7/2.` = 3.5    
 `divisiontyp2 = float(7)/2` = 3.5  
 
-### Function
+# Syntax:
+
+### Arrays
+```python
+t = n.children() # tablica dzieci noda
+t[0]
+t[1]
+....
+```
+### For Loop
+```python
+for c in n.children():
+     print.name()
+```
+
+### Function:
+Create function (define)
+```python
+def childrenOfNode(node):
+	result = []
+	for c in node.children():
+		result.appnd(c)
+		result += childrenOfNode(c)
+	return result 
+```
+Call defined fn by calling var: n with (node):
+```python
+childrenOfNode(n) 
+childrenOfNode(hou.node('/obj/adress'))
+```
+
 ```python 
 def say_hi(name, age):  
     print("Hello" + name + " ,you are" + age) #(code inside fn must be indentet)  
