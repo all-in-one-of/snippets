@@ -32,11 +32,12 @@ Time sensitive !! I don't know how and why
   
 
 #### *Input SOURCE*  
-- `source volume` (initialize source flip) with SOP link to: `fluid source SOP` NEW ONE
+If nothing here will use source from op1 Flip Object  
+- `source volume` (initialize source flip) (with SOP link to: `fluid source SOP` NEW ONE)
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `gas temp update` 
 - `pop color` 
-
+---
 # [FLIP Solver]   
 ### [Substeps]:
 Time Scale !  
@@ -103,7 +104,7 @@ Createing the surfacepressure field. Fight against gravity trying to put particl
 ### [Distribution]:    
 - for net renders
 
-
+---
 # [Flip Object]
 - **particle separation** Point separation (seed density)  
 - **particle radious scale**  - actual radious of every particle  
@@ -113,6 +114,10 @@ Createing the surfacepressure field. Fight against gravity trying to put particl
 Input type: *Surface sop, particle field, Narrow Band*  
 ### [Physical]
 Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if viscosity by attribute in solver is checked and there is point attribute at sop viscosity will be multiplayed)
+
+
+
+
 
 # [FLIP Wrangler]
 `i@stopped`   - You can stop the particles in a flip sim with 
