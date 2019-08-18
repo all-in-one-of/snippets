@@ -70,7 +70,8 @@ Chaos and for for white water.
 #### Collisions:  
 - Stick on collision [viscosity free solutions!: ]( simualte sth like (free slip condition) but inbverse)   
 #### Viscosity:    
-Adhesive force which resist motion (lava).  Measured in: (centi)Poise.
+Adhesive force which resist motion (lava).  Measured in: (centi)Poise.  
+To control locally use `viscosity` attribute on points
 
 Substance | CentiPoise
 --- | --- 
