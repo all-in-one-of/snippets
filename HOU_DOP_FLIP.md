@@ -147,9 +147,10 @@ Initialize as
 
 - `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
 ---
-# Populate cointiners 
-Can work with flips 
-`Pump from ` - create volume velocity (like)
+# Populate cointiners  
+Can work with flips   
+`Pump from ` - create volume velocity (like)  
+
 ---
 # Collision 
  Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
