@@ -4,18 +4,8 @@
 - Python Source Editor - you can save  code and function / hou.session.myDefinedFunction()
 - Digital Asset -
 - Shelf Tool - scrpit section to write code Executed after shelf click
+
 ---
-Assign objecto to var: foo
-```python
-foo = hou.node('/path')
-foo.name #return name of object.
-
-```
-`node = hou.pwd()` -  
-
-
-
-
 ### Groups:
 
 `myGrp=geo.createPrimGroup('name')` - Create group   
@@ -58,6 +48,9 @@ geo.deletePrims(deleteList)
 ### hou.node
 node in trees
 ```python
+foo = hou.node('/path')
+foo.name #return name of object.
+
 ball = hou.node('/obj/ball')
 
 ball = setSelected(True) # select ball node
