@@ -37,10 +37,11 @@ If nothing here will use source from op1 Flip Object
 
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `gas temp update` 
-- `pop color` 
+- `pop color`
 
-# [FLIP Solver] 
 ---
+# [FLIP Solver] 
+
 ### [Substeps]:
 Time Scale !  
 - timestep = (divide 1 frame to few)  
