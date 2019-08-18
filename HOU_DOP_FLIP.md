@@ -7,8 +7,8 @@ http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf
 Size sensitive, use units as meters. 
 Time sensitive !! I don't know how and why  
 
-`v`, `targetv`, or `force` 
- Increasing the Particle Separation will lower the resolution, which will make your simulation faster to process
+
+
 ```md
 - OBJECT 
 - PARTICLE VELOCITY
@@ -107,7 +107,7 @@ Createing the surfacepressure field. Fight against gravity trying to put particl
 
 ---
 # [Flip Object]
-- **particle separation** Point separation (seed density)  
+- **particle separation** Point separation (seed density) Increasing will lower the resolution 
 - **particle radious scale**  - actual radious of every particle  
 - **grid scale** // higher for sharper // fat crona >> thinner splash   
 - Bounds
