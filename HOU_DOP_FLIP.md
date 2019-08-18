@@ -128,23 +128,29 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 youcan cereate `velocity field` > `source volume`
 
 # Sourcing
-`Volume Source` - to last solver op  
-
+#### [Volume Source] - to last solver op  
+Initialize as
+- `Source FLIP` - default
+- `Sink FLIP` - sink point  (size depend speed of sink)
 ---
 # SOP Sourcing
 
-- `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
+#### [FLIP Source] (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
 [volume operations] set behaviour (add/overide velo)      
 [velocity volumes] source attributes - we can sample it from N or sth. 
 [container settings] - velocity
 
-- `Flip Tank`  
+#### [Flip Tank]
 
 - `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
 -- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
 - `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
-
+---
+# Populate cointiners 
+Can work with flips 
+`Pump from ` - create volume velocity (like)
+---
 # Collision 
  Deforming Object shelf tool to set up deforming geometry as a FLIP collision object.!! (docs note)  
  
