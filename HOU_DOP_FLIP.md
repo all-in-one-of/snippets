@@ -33,7 +33,8 @@ Time sensitive !! I don't know how and why
 
 #### *Input SOURCE*  
 If nothing here will use source from op1 Flip Object  
-- `source volume` (initialize source flip) (with SOP link to: `fluid source SOP` NEW ONE)
+- `Volume Source` (initialize source flip) (with SOP link to: `Flip Source` SOP)
+
 - `heatvoluem`  // can spread temperatue   // lave cool rate 
 - `gas temp update` 
 - `pop color` 
@@ -118,7 +119,7 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 
 
 
-
+---
 # [FLIP Wrangler]
 `i@stopped`   - You can stop the particles in a flip sim with 
 `v@v` => vel
@@ -126,15 +127,21 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 ## Velocity
 youcan cereate `velocity field` > `source volume`
 
+
+---
 # Sourcing
 
-- SOP `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
+---
+# SOP Sourcing
+
+- `FLIP Source` (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
 [volume operations] set behaviour (add/overide velo)      
 [velocity volumes] source attributes - we can sample it from N or sth. 
 [container settings] - velocity
-       
-- SOP `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
-- SOP `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
+
+
+- `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
+- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
 - `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
 
@@ -155,6 +162,7 @@ youcan cereate `velocity field` > `source volume`
  -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
 For emitting large numbers of particles, the Volume Source DOP can be much faster than the Particle Fluid Emitter DOP.
 
+---
 # Setups  
 **Crown Splash**
 ```
