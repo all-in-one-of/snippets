@@ -191,6 +191,36 @@ for prim in glob:
 
 ```
 
+```python
+node = hou.pwd()
+geo = node.geometry()
+
+# --------------------------------------------- IN SOP
+# moving point 
+
+point = geo.createPoint()
+point.setPosition((0,-2,0))
+
+# --------------------------------------------- IN SOP
+# create trix
+poly = geo.createPolygon()
+for pos in (0,0,0),(1,0,0),(0,1,0):
+	point = geo.createPoint()
+	point.setPosition(pos)
+	poly.addVertex(point)  
+
+
+# setattrib
+
+geo.addAttrib(hou.attribType.Point, "PointFoo", 14)
+geo.addAttrib(hou.attribType.Vertes, "VertFoo", 15)
+geo.addAttrib(hou.attribType.Prim, "PrimFoo", 44)
+geo.setPrimIntAttribValues("PrimFoo", (11))
+
+# import geo
+
+geo.loadFromFile("C:/Temp/red.geo")
+```
 `param = hou.ch("param")` - Read node parameter 
 `xBoundSize=lvar('SIZEX')` - Read local variables    
 ### UI
