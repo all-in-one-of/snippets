@@ -127,9 +127,8 @@ Physical behaviour : `Bounce`,`Friction`,`Temperature`,`Density`,`Viscosity` (if
 ## Velocity
 youcan cereate `velocity field` > `source volume`
 
-
----
 # Sourcing
+`Volume Source` - to last solver op  
 
 ---
 # SOP Sourcing
@@ -139,9 +138,10 @@ youcan cereate `velocity field` > `source volume`
 [velocity volumes] source attributes - we can sample it from N or sth. 
 [container settings] - velocity
 
+- `Flip Tank`  
 
 - `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
-- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
+-- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
 - `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
 
