@@ -1,6 +1,6 @@
 
 # FLIP
-Fluid Implicit Particle - Based on Navier–Stokes equations, Particle-Based Fluids are implemented in OpenCL (can combine with vellum) hybrid solver. All fluid data is stored in the particles (with pscale) and only particles need to persist frame to frame, However, the pressure projection step is done on a volume. 
+Fluid Implicit Particle - Based on Navier–Stokes equations, implemented in OpenCL (can combine with vellum) hybrid solver. All fluid data is stored in the particles (with pscale) and only particles need to persist frame to frame, However, the pressure projection step is done on a volume. 
 www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html   
 http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf  
 
@@ -17,16 +17,15 @@ Time sensitive !! I don't know how and why
 ```
 
 #### *Input OBJECT*
-- `Flip Object`
+- `Flip Object` - mandatory
 
 #### *Input PARTICLE VELOCITY* 
-- `Pop Solver`   
-- `Sop Solver` // acces any sop (cmi) 
 - `PopVop` / `popwrangle` - @viscosity= 
-
 - `popforce` (can be merged)
 - `Pop Curve force` (Illume Jeff I ) // input curve  
 
+- `Pop Solver`   
+- `Sop Solver` // acces any sop (cmi) 
 #### *Input VOLUME VELOCITY*  
 - `gas field vop` // taki volume from sim  (Illume Jeff II )
 - `source volume` -  fluid source as velocity field 
