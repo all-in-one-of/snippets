@@ -166,6 +166,35 @@ ball.mmoveParmTransformIntoPreTransform()
 ### hou.Geometry
 Define 3d geo shape  
 ```python
+geo = hou.node('/obj/ball/AddPointNormal').geometry()
+
+
+for point in points: 
+		pos = point.position()
+
+
+for prim in prims:
+		verts = prim.vertices()
+		buff = "("
+		for i in range(prim.numVertices()):
+			buff += dtr(verts[i].point().number()) + " " 
+		buff += ")"
+		print "(%d -> %s)" % (prim.number(), buff)
+# (0) -> (1 1 1)
+# (1) -> (1 2 1)
+
+glob = geo.globPrims("50-60:2")
+for prim in glob:
+		verts = prim.vertices()
+		buff = "("
+		for i in range(prim.numVertices()):
+			buff += dtr(verts[i].point().number()) + " " 
+		buff += ")"
+		print "(%d -> %s)" % (prim.number(), buff)
+# (50) -> (1 1 1)
+# (52) -> (1 2 1)
+#...
+# (60) -> (1 2 1)
 
 ```
 
