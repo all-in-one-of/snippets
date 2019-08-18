@@ -138,7 +138,8 @@ Initialize as
 ---
 # SOP Sourcing
 
-#### [FLIP Source] (for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
+#### [FLIP Source] 
+(for Volume Source DOP)- converts its input geometry into a volume that can be used to control simulations. For instance, the generated volume can be used to inject liquid into a FLIP simulation or act as a sink in a smoke simulation.   
 [volume operations] set behaviour (add/overide velo)      
 [velocity volumes] source attributes - we can sample it from N or sth. 
 [container settings] - velocity
@@ -146,13 +147,9 @@ Initialize as
 #### [Flip Tank]
 
 - `Points From Volume` (for source volume  DOP) // source from points (change[Initial Data] input to *particle field*)
--- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
+- `Oceane Source` (for flip object  DOP) (particles(points)+volume for: sop path and surface volume) //  (change [Initial Data] input to *narrow band*) Fluid Tank ?   
 
 - `Limit Refinment iteration` - can remove glitches, use only in small scale (good for visc droplets ect...)    (particle fluid surface)  
----
-# Populate cointiners  
-Can work with flips   
-`Pump from ` - create volume velocity (like)  
 
 ---
 # Collision 
@@ -169,8 +166,14 @@ Can work with flips
 
 
  # Dop import
- -`Particle Fluid Surface` - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
+[Particle Fluid Surface] - limit refinment if unstable. / Change surfacing > surface output > from surfacepolygons to SUrface VDB !!
 For emitting large numbers of particles, the Volume Source DOP can be much faster than the Particle Fluid Emitter DOP.
+
+
+---
+# Populate cointiners  
+Can work with flips   
+`Pump from ` - create volume velocity (like)  
 
 ---
 # Setups  
