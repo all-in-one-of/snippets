@@ -7,7 +7,7 @@ http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf
 Size sensitive, use units as meters. 
 Time sensitive !! I don't know how and why  
 
- v, targetv, or force 
+`v`, `targetv`, or `force` 
  Increasing the Particle Separation will lower the resolution, which will make your simulation faster to process
 ```md
 - OBJECT 
