@@ -3,6 +3,7 @@
 Fluid Implicit Particle - Based on Navier–Stokes equations, implemented in OpenCL (can combine with vellum) hybrid solver. All fluid data is stored in the particles (with pscale) and only particles need to persist frame to frame, However, the pressure projection step is done on a volume.   
 - Size sensitive, use units as meters.  
 - Time sensitive !! I don't know how and why.   
+
 www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html     
 www.danenglesson.com/images/portfolio/FLIP/rapport.pdf    
 
