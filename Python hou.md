@@ -191,6 +191,8 @@ for prim in glob:
 
 ```
 
+#### Create points and geo
+
 ```python
 node = hou.pwd()
 geo = node.geometry()
@@ -209,18 +211,47 @@ for pos in (0,0,0),(1,0,0),(0,1,0):
 	point.setPosition(pos)
 	poly.addVertex(point)  
 
+```
+
+
+# Timeline keys 
+```
+rz = hou.paramTuple("/obj/ball/r")[2]
+keys = rz.keyframes()
+
+for key in keys: 
+		print key 
+
+# hou.Keyframe t=0 exp="becier()" lang=exprLanguage.Python v=0 s=0 in a=0.22 out a=0.42 use_acce_ratio=True
+
+key4 = keys[3]
+key4 
+# hou.Keyframe t=0 exp="becier()" lang=exprLanguage.Python v=0 s=0 in a=0.22 out a=0.42 use_acce_ratio=True
+
+key4.frame() # 10.0
+key4.time() # 24.00000
+key4.expression() # 'bezier()'
+key4.expressionLanguage() # exprLanguage.Python
+ket4.value() # 114.22
+key4.slope() #-123.442
+key4.accle() # 34.324
+key4.setExpression("spline()",exprLanguage.Python)
+
+key4.setValue(400) # 
+rz.setKeyFrame(key4) # here change in wievport
+```
 
 # setattrib
-
+```
 geo.addAttrib(hou.attribType.Point, "PointFoo", 14)
 geo.addAttrib(hou.attribType.Vertes, "VertFoo", 15)
 geo.addAttrib(hou.attribType.Prim, "PrimFoo", 44)
 geo.setPrimIntAttribValues("PrimFoo", (11))
-
+```
 # import geo
 
 geo.loadFromFile("C:/Temp/red.geo")
-```
+
 `param = hou.ch("param")` - Read node parameter 
 `xBoundSize=lvar('SIZEX')` - Read local variables    
 ### UI
