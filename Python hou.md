@@ -214,7 +214,7 @@ for pos in (0,0,0),(1,0,0),(0,1,0):
 ```
 
 
-# Timeline keys 
+### Timeline keys 
 ```
 rz = hou.paramTuple("/obj/ball/r")[2]
 keys = rz.keyframes()
@@ -241,14 +241,14 @@ key4.setValue(400) #
 rz.setKeyFrame(key4) # here change in wievport
 ```
 
-# setattrib
+### setattrib
 ```
 geo.addAttrib(hou.attribType.Point, "PointFoo", 14)
 geo.addAttrib(hou.attribType.Vertes, "VertFoo", 15)
 geo.addAttrib(hou.attribType.Prim, "PrimFoo", 44)
 geo.setPrimIntAttribValues("PrimFoo", (11))
 ```
-# import geo
+### import geo
 
 geo.loadFromFile("C:/Temp/red.geo")
 
