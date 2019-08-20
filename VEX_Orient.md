@@ -1,16 +1,18 @@
-Try to use one transform at a time:
+  perfect loop: `sin(2*PI*(@Time*frequency + offset))`  
+rot types: matrices, N and up, Euler, Quaternions  
 
-If pivot exists, use it as the **[local transformation]** of the copy/instance.  
-If the **[transform]** attribute exists: Use it as a 3×3/4×4 matrix to transform the copy/instance.  
+Use one transform at a time:
+If pivot exists, use it as the `local transformation` of the copy/instance.  
+If the `transform` attribute exists: Use it as a 3×3/4×4 matrix to transform the copy/instance.  
 //If the transform attribute does not exist:  
-If the **[orient]** attribute exists: Use it to orient the copy/instance.  
+If the `orient` attribute exists: Use it to orient the copy/instance.  
 //If the orient attributes does not exist:  
-Orient the copy/instance using **[N]** as the +Z axis and up as +Y axis.  
-If N does not exist, use **[v]** (velocity) if it exists.  
-If the **[rot]** attribute exists, apply it after the above.  
-If **[pscale]** exists, use it to scale the to scale the copy/instance (multiplied by scale if it exists).  
-If **[scale]** exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
-If **[trans]** exists, use it and P to move the copy/instance.  
+Orient the copy/instance using `N` as the +Z axis and `up` as +Y axis.  
+If N does not exist, use `v` (velocity) if it exists.  
+If the `rot` attribute exists, apply it after the above.  
+If `pscale` exists, use it to scale the to scale the copy/instance (multiplied by scale if it exists).  
+If `scale` exists, use it to scale the copy/instance (multiplied by pscale if it exists).  
+If `trans` exists, use it and P to move the copy/instance.  
 
 `v@pivot` - Local pivot point for the copy  
 `3@` or `4@transform` - Transformmatrix overriding everything except translations from [P], [pivot], and [trans]  
@@ -25,17 +27,17 @@ If **[trans]** exists, use it and P to move the copy/instance.
 `v@P` - Translation of the copy - Instance Position   
  
  
- 
-@orient and @scale only have an effect when fed to a copy sop (or other things that are instance attribute  
+@orient and @scale only have an effect when fed to a copy sop (or other things that are instance attribute      
+rotation operate on matrices where orient is a quaternion     
 
- 
-matrix3 m = ident(); // matrix3 m = {1,0,0,0,1,0,0,0,1}; no rotation form of @orient
+matrix3 m = ident(); // matrix3 m = {1,0,0,0,1,0,0,0,1}; no rotation form of @orient    
 ```
 1 0 0
 0 1 0
 0 0 1
 ```
- 
+
+ .Orient is really the result of your rotation matrix as a quaternion. As in there is no orient function that rotates quaternions.  
 #### Roatate Normal Along Tangent (RunOver:Points)
 IN: polyframe with `tangent`   
 ```
